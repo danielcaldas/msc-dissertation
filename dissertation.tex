@@ -1,0 +1,190 @@
+\documentclass[
+  oneside,
+  %twoside,
+  11pt, a4paper,
+  footinclude=true,
+  headinclude=true,
+  cleardoublepage=empty
+]{scrbook}
+
+\usepackage{dissertation}
+
+% ----------------------------------------------------------------
+
+% Title
+\titleA{Analysis and Visualisation of}
+\titleB{Social Networks}
+
+% Author
+\author{Jorge Caldas}
+
+% Supervisor(s)
+\supervisor{Pedro Rangel Henriques}
+\cosupervisor{Alda Lopes Gançarski}
+
+% Date
+\date{\myear}
+
+% Keywords
+%\keywords{master thesis}
+
+% Glossaries & Acronyms
+\makeglossaries
+%\makeindex	   % ... or this
+
+% Define Acronyms
+\input{sec/acronyms}
+\glsaddall[types={\acronymtype}]
+
+\ummetadata
+
+\newcommand{\itab}{\hspace{4em}}
+\begin{document}
+	% Cover page ---------------------------------------
+	\umfrontcover	
+	\umtitlepage
+	
+	% Add acknowledgements ----------------------------
+	\chapter*{Acknowledgements}
+	Write acknowledgements here
+
+	% Add abstracts (en,pt) ---------------------------
+	\chapter*{Abstract}
+	Write abstract here (en) or import corresponding file
+	
+	\cleardoublepage
+	\chapter*{Resumo}
+	Escrever aqui resumo (pt) ou importar respectivo ficheiro
+	
+	% Summary Lists ------------------------------------
+	\tableofcontents
+	
+	\chapter*{List of Abbreviations}
+	\input{sec/abbreviations}
+		
+	\listoffigures
+	\listoftables
+	%\lstlistoflistings
+	
+	\pagenumbering{arabic}
+	
+	% CHAPTER - Introduction -------------------------
+	\chapter{Introduction}
+	\section{Context and Problem}
+	SNs, SNAs, OSNs, Unstructured Data Analysis
+	\section{Motivation}
+	\section{Goals}
+	
+	
+	% CHAPTER - Social Networks in Sociology -------------------------
+	\chapter{Social Networks in Sociology}
+	
+	
+	% CHAPTER - Online Social Networks -------------------------
+	\chapter{Online Social Networks}
+	Present table and comment. A, B and C are studied more deeply in the following sections.
+	\section{SN A}
+	\subsection{Domain Modeling}
+	\subsection{API}
+	\section{SN B}
+	\section{SN C}
+	
+	
+	% CHAPTER - Social Network Analysis -------------------------
+	\chapter{Social Network Analysis}
+	\section{Network Analysis}
+	\subsection{Scientific Background}
+	\subsubsection{Graphs}
+	\subsubsection{Statistics}
+	\subsubsection{...}
+	\subsection{Power Law}
+	\subsection{Centrality Measures}
+	\subsection{Link Analysis}
+	\subsection{...}
+	
+	\section{Network Visualisation}
+	It's a science by itself.
+	
+	\section{Real World Applications}
+	What SNAs are used for.
+	
+	% CHAPTER - State of the Art ---------------------
+	\chapter{State of the art}
+	State of the art review; related work
+
+	\section{Basics/Background/Related work}
+	Example of a citation where the author should be cited directly on the text like, the work of \cite{GRM97}, on producing \LaTeX files with \Bibtex\ references. \\
+	Another way of citing whithout a direct mention to the author can used like the work done on C language \citep{KeR88}.
+
+
+	% CHAPTER - Problem and Challenges ---------------
+	\chapter{The problem and its challenges??}
+
+
+	% CHAPTER - Proposed Solution -------------------------
+	\chapter{Proposed Solution}
+	\section{Solution Requirements}
+	\subsection{Requirements Analysis}
+	\subsection{Requirements Specification}
+	\subsection{Requirements Prioritisation}
+	\section{System Modeling}
+	\section{System Architecture}
+	\section{Technology Selection}
+	\subsection{Technology A}
+	\subsection{Technology B}
+	\subsection{Technology C}
+	\subsection{Technology Comparision}
+	\subsection{Decision}
+	
+	
+	% CHAPTER - Implementation -------------------------
+	\chapter{Implementation}
+	\section{Data Extraction}
+	\subsection{Data Sources} % Related to Online Social Networks Chapter
+	\section{Data Mining}
+	\section{Back end}
+	\section{Front end}
+	\section{Outcomes}
+
+
+	% CHAPTER - Results -------------------------
+	\chapter{Case Studies}
+	Application of main result (examples and case studies)
+    	\section{Results}
+    	\section{Discussion}
+	\section{Summary}
+
+	% CHAPTER - Conclusion/Future Work --------------
+	\chapter{Conclusion}
+	Conclusions and future work.
+	\section{Conclusions}
+	\section{Prospect for future work}
+			
+	\bookmarksetup{startatroot}
+	\addtocontents{toc}{\bigskip}
+	\cleardoublepage
+
+	%- Bibliography (needs bibtex) -%
+	\bibliography{dissertation}
+
+	% Index of terms (needs  makeindex) -------------
+	%\printindex
+	
+	
+	% APPENDIX --------------------------------------
+	\umappendix{Appendix}
+	
+	% Add appendix chapters
+	\chapter{Support material}
+	Auxiliary results which are not main-stream; or
+
+	%\chapter{Details of results}
+	Details of results whose length would compromise readability of main text; or
+
+	%\chapter{Listings}
+	Specifications and Code Listings: should this be the case; or
+
+	%\chapter{Tooling}
+	Tooling: Should this be the case.
+
+\end{document}

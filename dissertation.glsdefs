@@ -1,0 +1,30 @@
+\ifglsentryexists{rest}{}%
+{%
+\gls@defglossaryentry{rest}%
+{%
+name={REST},%
+sort={REST},%
+type={acronym},%
+first={Representational State Transfer\glsspace (REST)},%
+firstplural={Representational State Transfer\acrpluralsuffix \glsspace (REST\acrpluralsuffix )},%
+text={REST},%
+plural={REST\acrpluralsuffix },%
+description={Representational State Transfer},%
+descriptionplural={Representational State Transfer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Representational State Transfer},%
+longplural={Representational State Transfers},%
+short={REST},%
+shortplural={RESTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
