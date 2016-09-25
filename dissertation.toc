@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {7.4.1}Technology A}{7}{subsection.7.4.1}
 \contentsline {subsection}{\numberline {7.4.2}Technology B}{7}{subsection.7.4.2}
 \contentsline {subsection}{\numberline {7.4.3}Technology C}{7}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Technology Comparision}{7}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.4}Technology Comparison}{7}{subsection.7.4.4}
 \contentsline {subsection}{\numberline {7.4.5}Decision}{7}{subsection.7.4.5}
 \contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Implementation}}{8}{chapter.8}
 \contentsline {section}{\numberline {8.1}Data Extraction}{8}{section.8.1}
