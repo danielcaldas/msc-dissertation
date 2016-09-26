@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 SEP 2016 00:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 SEP 2016 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1592,7 +1592,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 	\chapter{Online Social Networks}
+l.87 	\chapter{Online Social Networks}
                                        [2
 
 
@@ -1609,11 +1609,11 @@ chapter 4.
 ]
 chapter 5.
 
-Package natbib Warning: Citation `GRM97' on page 5 undefined on input line 116.
+Package natbib Warning: Citation `GRM97' on page 5 undefined on input line 121.
 
 
 
-Package natbib Warning: Citation `KeR88' on page 5 undefined on input line 117.
+Package natbib Warning: Citation `KeR88' on page 5 undefined on input line 122.
 
 
 [5
@@ -1663,22 +1663,22 @@ Package natbib Warning: There were undefined citations.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (./dissertation.aux
 * soulpos - computing points - it may take a few seconds *
 \openout5 = `dissertation.upb'.
 
  (./dissertation.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 190.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 37412 strings out of 493014
- 693409 string characters out of 6133352
- 1176944 words of memory out of 5000000
- 40215 multiletter control sequences out of 15000+600000
+ 37418 strings out of 493014
+ 693460 string characters out of 6133352
+ 1176946 words of memory out of 5000000
+ 40218 multiletter control sequences out of 15000+600000
  46514 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1690,10 +1690,10 @@ fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/u
 rw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on dissertation.pdf (21 pages, 105450 bytes).
+Output written on dissertation.pdf (21 pages, 106655 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 15781 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 15805 words of extra memory for PDF output out of 17280 (max. 10000000)
 
