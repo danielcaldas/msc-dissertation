@@ -9,6 +9,37 @@
 
 \usepackage{dissertation}
 
+% ACRONYMS -----------------------------------------------------
+\usepackage[acronym,nonumberlist,nomain]{glossaries}
+
+%enable the following to avoid links from the acronym usage to the list
+\glsdisablehyper
+
+\defglsdisplayfirst[\acronymtype]{\emph{#1#4}}
+
+\glossarystyle{listgroup}
+
+\renewcommand{\glossaryname}{Acronyms}
+
+\makeglossaries
+
+% Acronym entries
+% S
+\newacronym{sn}{SN}{Social Network}
+\newacronym{sna}{SNA}{Social Network Analysis}
+% O
+\newacronym{osn}{OSN}{Online Social Network}
+
+%to use an acronym:
+%\gls{qps}
+
+% compile the thesis in command line with the following command sequence:
+% pdlatex dissertation.tex
+% makeglossaries dissertation
+% bibtex dissertation
+% pdlatex dissertation.tex
+% pdlatex dissertation.tex
+
 % ----------------------------------------------------------------
 
 % Title
@@ -29,19 +60,19 @@
 %\keywords{master thesis}
 
 % Glossaries & Acronyms
-\makeglossaries
+%\makeglossaries
 %\makeindex	   % ... or this
 
 % Define Acronyms
-\input{sec/acronyms}
-\glsaddall[types={\acronymtype}]
+%\input{sec/acronyms}
+%\glsaddall[types={\acronymtype}]
 
 \ummetadata
 
 \newcommand{\itab}{\hspace{4em}}
 \begin{document}
 	% Cover page ---------------------------------------
-	\umfrontcover	
+	\umfrontcover
 	\umtitlepage
 	
 	% Add acknowledgements ----------------------------
@@ -58,20 +89,20 @@
 	
 	% Summary Lists ------------------------------------
 	\tableofcontents
-	
-	\chapter*{List of Abbreviations}
-	\input{sec/abbreviations}
-		
 	\listoffigures
 	\listoftables
 	%\lstlistoflistings
+	%\listofabbreviations
+	\printglossary[type=\acronymtype]
+	\clearpage
+	\thispagestyle{empty}
 	
 	\pagenumbering{arabic}
 	
 	% CHAPTER - Introduction -------------------------
 	\chapter{Introduction}
 	\section{Context and Problem}
-	SNs, SNAs, OSNs, Unstructured Data Analysis
+	\glspl{sn}, \gls{sna}, \glspl{osn}, Unstructured Data Analysis
 	\section{Motivation}
 	\section{Goals}
 	
@@ -173,25 +204,5 @@
 
 	%- Bibliography (needs bibtex) -%
 	\bibliography{dissertation}
-
-	% Index of terms (needs  makeindex) -------------
-	%\printindex
-	
-	
-	% APPENDIX --------------------------------------
-	\umappendix{Appendix}
-	
-	% Add appendix chapters
-	\chapter{Support material}
-	Auxiliary results which are not main-stream; or
-
-	%\chapter{Details of results}
-	Details of results whose length would compromise readability of main text; or
-
-	%\chapter{Listings}
-	Specifications and Code Listings: should this be the case; or
-
-	%\chapter{Tooling}
-	Tooling: Should this be the case.
 
 \end{document}
