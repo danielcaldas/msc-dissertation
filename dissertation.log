@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 SEP 2016 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  30 SEP 2016 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1580,7 +1580,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 	\chapter{Social Networks in Sociology}
+l.82 	\chapter{Social Networks in Sociology}
                                              [1
 
 
@@ -1588,60 +1588,123 @@ l.80 	\chapter{Social Networks in Sociology}
 
 ]
 chapter 2.
+(./sec/social_networks_in_sociology.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+./sec/social_networks_in_sociology.tex:10: Undefined control sequence.
+l.10 \say
+         {a website or computer program that allows people to communicate an...
+
+? ret
+OK, entering \nonstopmode...
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+./sec/social_networks_in_sociology.tex:20: Undefined control sequence.
+l.20 \say
+         {A social structure made of nodes that are generally individuals or...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+./sec/social_networks_in_sociology.tex:31: Undefined control sequence.
+l.31 \say
+         {(...) many people attribute the first use of the term "social netw...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 	\chapter{Online Social Networks}
-                                       [2
+l.36 \hfill
+            \break [2
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+./sec/social_networks_in_sociology.tex:44: Undefined control sequence.
+l.44 \say
+         {Social relations in Bremnes, Norway, fall into three categories: r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [3]
 chapter 3.
-[3
+[4
 
 
 ]
 chapter 4.
-[4
+[5
 
 
 ]
 chapter 5.
 
-Package natbib Warning: Citation `GRM97' on page 5 undefined on input line 121.
+Package natbib Warning: Citation `GRM97' on page 6 undefined on input line 123.
 
 
 
-Package natbib Warning: Citation `KeR88' on page 5 undefined on input line 122.
+Package natbib Warning: Citation `KeR88' on page 6 undefined on input line 124.
 
 
-[5
-
-
-]
-chapter 6.
 [6
 
 
 ]
-chapter 7.
+chapter 6.
 [7
 
 
 ]
-chapter 8.
+chapter 7.
 [8
 
 
 ]
-chapter 9.
+chapter 8.
 [9
 
 
 ]
-chapter 10.
+chapter 9.
 [10
+
+
+]
+chapter 10.
+[11
 
 
 ]
@@ -1655,7 +1718,7 @@ This document will not have a glossary.
 
 Package natbib Warning: There were undefined citations.
 
-[11
+[12
 
 
 
@@ -1663,22 +1726,22 @@ Package natbib Warning: There were undefined citations.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./dissertation.aux
 * soulpos - computing points - it may take a few seconds *
 \openout5 = `dissertation.upb'.
 
  (./dissertation.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 37418 strings out of 493014
- 693460 string characters out of 6133352
+ 37429 strings out of 493014
+ 693768 string characters out of 6133352
  1176946 words of memory out of 5000000
- 40218 multiletter control sequences out of 15000+600000
+ 40221 multiletter control sequences out of 15000+600000
  46514 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1690,10 +1753,10 @@ fonts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/u
 rw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on dissertation.pdf (21 pages, 106655 bytes).
+Output written on dissertation.pdf (22 pages, 112889 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 392 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
  15805 words of extra memory for PDF output out of 17280 (max. 10000000)
 
