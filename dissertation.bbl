@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,14 +14,40 @@ John~Arundel Barnes.
 Vangie Beal.
 \newblock Webopedia definition for social network, 2016.
 
+\bibitem[couchsurfing.com(2016)]{csurf}
+couchsurfing.com.
+\newblock Couchsurfing about page, 2016.
+
 \bibitem[Dictionary(2002)]{dictionary2002cambridge}
 Cambridge Dictionary.
 \newblock Cambridge dictionaries online, 2002.
+
+\bibitem[Ellison et~al.(2007)]{ellison2007social}
+Nicole~B Ellison et~al.
+\newblock Social network sites: Definition, history, and scholarship.
+\newblock \emph{Journal of Computer-Mediated Communication}, 13\penalty0
+  (1):\penalty0 210--230, 2007.
+
+\bibitem[expandedramblings.com(2016)]{expandedramblings}
+expandedramblings.com.
+\newblock Social media statistics, 2016.
 
 \bibitem[Kilduff and Tsai(2003)]{kilduff2003social}
 Martin Kilduff and Wenpin Tsai.
 \newblock \emph{Social networks and organizations}.
 \newblock Sage, 2003.
+
+\bibitem[meetup.com(2016)]{meetup}
+meetup.com.
+\newblock Meetup about page, 2016.
+
+\bibitem[researchgate.net(2016)]{rgate}
+researchgate.net.
+\newblock Researchgate about page, 2016.
+
+\bibitem[statista.com(2016)]{statista}
+statista.com.
+\newblock statista, global social media ranking, 2016.
 
 \bibitem[Wasserman and Faust(1994)]{wasserman1994social}
 Stanley Wasserman and Katherine Faust.

@@ -3,47 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: dissertation.bib
-Warning--I didn't find a database entry for "GRM97"
-Warning--I didn't find a database entry for "KeR88"
-You've used 5 entries,
+You've used 11 entries,
             2773 wiz_defined-function locations,
-            620 strings with 5338 characters,
-and the built_in function-call counts, 1616 in all, are:
-= -- 125
-> -- 72
-< -- 6
-+ -- 26
-- -- 21
-* -- 92
-:= -- 257
-add.period$ -- 13
-call.type$ -- 5
-change.case$ -- 19
-chr.to.int$ -- 5
-cite$ -- 10
-duplicate$ -- 90
-empty$ -- 161
-format.name$ -- 30
-if$ -- 336
+            639 strings with 5736 characters,
+and the built_in function-call counts, 3475 in all, are:
+= -- 283
+> -- 142
+< -- 12
++ -- 53
+- -- 42
+* -- 191
+:= -- 535
+add.period$ -- 26
+call.type$ -- 11
+change.case$ -- 43
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 185
+empty$ -- 361
+format.name$ -- 58
+if$ -- 735
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 31
-num.names$ -- 20
-pop$ -- 63
+missing$ -- 7
+newline$ -- 56
+num.names$ -- 44
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 35
 quote$ -- 0
-skip$ -- 72
+skip$ -- 157
 stack$ -- 0
-substring$ -- 10
-swap$ -- 6
+substring$ -- 47
+swap$ -- 12
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 106
 warning$ -- 0
-while$ -- 15
+while$ -- 35
 width$ -- 0
-write$ -- 64
-(There were 2 warnings)
+write$ -- 127

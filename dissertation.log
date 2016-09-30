@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  30 SEP 2016 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  30 SEP 2016 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,15 +1017,23 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count180
+\float@exts=\toks43
+\float@box=\box46
+\@float@everytoks=\toks44
+\@floatcapt=\box47
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen190
 \WF@size=\dimen191
-\c@WF@wrappedlines=\count180
-\WF@box=\box46
-\WF@everypar=\toks43
+\c@WF@wrappedlines=\count181
+\WF@box=\box48
+\WF@everypar=\toks45
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
@@ -1043,30 +1051,31 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen198
 )
 Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count181
+\c@ContinuedFloat=\count182
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count182
-\lst@gtempboxa=\box47
-\lst@token=\toks44
-\lst@length=\count183
+\lst@mode=\count183
+\lst@gtempboxa=\box49
+\lst@token=\toks46
+\lst@length=\count184
 \lst@currlwidth=\dimen199
-\lst@column=\count184
-\lst@pos=\count185
+\lst@column=\count185
+\lst@pos=\count186
 \lst@lostspace=\dimen256
 \lst@width=\dimen257
-\lst@newlines=\count186
-\lst@lineno=\count187
+\lst@newlines=\count187
+\lst@lineno=\count188
 \lst@maxwidth=\dimen258
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count188
-\lst@skipnumbers=\count189
-\lst@framebox=\box48
+\c@lstnumber=\count189
+\lst@skipnumbers=\count190
+\lst@framebox=\box50
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1084,7 +1093,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip121
 \bibsep=\skip122
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count190
+\c@NAT@ctr=\count191
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
@@ -1094,14 +1103,14 @@ Package: todonotes 2012/07/25
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count191
+\c@@todonotes@numberoftodonotes=\count192
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/16 v1.25 PDF bookmarks (HO)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2016/05/16 v1.25 bookmark driver for pdfTeX (HO)
-\BKM@id=\count192
+\BKM@id=\count193
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
@@ -1122,25 +1131,25 @@ Package cleveref Info: always capitalise cross-reference names on input line 74
 Package cleveref Info: always capitalise cross-reference names on input line 74
 93.
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 269.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 271.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 269.
-Package hyperref Info: Option `unicode' set `true' on input line 269.
+Package hyperref Info: Option `plainpages' set `false' on input line 271.
+Package hyperref Info: Option `unicode' set `true' on input line 271.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdffitwindow' set `true' on input line 269.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 269.
-Package hyperref Info: Option `colorlinks' set `true' on input line 269.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 271.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 271.
+Package hyperref Info: Option `colorlinks' set `true' on input line 271.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2016/04/30 v4.23 (NLCT)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2015/12/17 v2.02 (NLCT)
-\@glsmfirst=\toks45
-\@glsmrest=\toks46
+\@glsmfirst=\toks47
+\@glsmrest=\toks48
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
@@ -1150,7 +1159,7 @@ Package: datatool-base 2016/01/18 v2.25 (NLCT)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count193
+\c@su@anzahl=\count194
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2016/01/18 v2.25 (NLCT)
@@ -1161,19 +1170,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count194
+\actioncount=\count195
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count195
-\FP@xia=\count196
-\FP@xib=\count197
-\FP@xfa=\count198
-\FP@xfb=\count199
-\FP@rega=\count266
-\FP@regb=\count267
-\FP@regs=\count268
-\FP@times=\count269
+\FP@xs=\count196
+\FP@xia=\count197
+\FP@xib=\count198
+\FP@xfa=\count199
+\FP@xfb=\count266
+\FP@rega=\count267
+\FP@regb=\count268
+\FP@regs=\count269
+\FP@times=\count270
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1192,7 +1201,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count270
+\FPseed=\count271
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1203,27 +1212,27 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks47
-\@dtl@tmpcount=\count271
+\@dtl@toks=\toks49
+\@dtl@tmpcount=\count272
 \dtl@tmplength=\skip123
-\dtl@sortresult=\count272
-\@dtl@numgrpsepcount=\count273
-\@dtl@datatype=\count274
-\dtl@codeA=\count275
-\dtl@codeB=\count276
-\@dtl@foreach@level=\count277
+\dtl@sortresult=\count273
+\@dtl@numgrpsepcount=\count274
+\@dtl@datatype=\count275
+\dtl@codeA=\count276
+\dtl@codeB=\count277
+\@dtl@foreach@level=\count278
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
 Package: glossaries-compatible-307 2016/04/30 v4.23 (NLCT)
 )
-\gls@level=\count278
-\@gls@tmpb=\toks48
+\gls@level=\count279
+\@gls@tmpb=\toks50
 \gls@tmplen=\skip124
-\glskeylisttok=\toks49
-\glslabeltok=\toks50
-\glsshorttok=\toks51
-\glslongtok=\toks52
+\glskeylisttok=\toks51
+\glslabeltok=\toks52
+\glsshorttok=\toks53
+\glslongtok=\toks54
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -1243,17 +1252,17 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip127
 \LTpre=\skip128
 \LTpost=\skip129
-\LTchunksize=\count279
+\LTchunksize=\count280
 \LTcapwidth=\dimen259
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count280
-\LT@rows=\count281
-\c@LT@tables=\count282
-\c@LT@chunks=\count283
-\LT@p@ftn=\toks53
+\LT@head=\box51
+\LT@firsthead=\box52
+\LT@foot=\box53
+\LT@lastfoot=\box54
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
+\LT@p@ftn=\toks55
 )
 Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip130
@@ -1264,7 +1273,7 @@ sty
 Package: glossary-super 2016/04/30 v4.23 (NLCT)
  (/usr/local/texlive/2016/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count284
+\c@tracingst=\count285
 \ST@wd=\dimen260
 \ST@rightskip=\skip132
 \ST@leftskip=\skip133
@@ -1279,7 +1288,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@prevht=\dimen268
 \ST@toadd=\dimen269
 \ST@dimen=\dimen270
-\ST@pbox=\box53
+\ST@pbox=\box55
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
@@ -1328,19 +1337,19 @@ File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
+\scratchcounter=\count286
 \scratchdimen=\dimen271
-\scratchbox=\box54
-\nofMPsegments=\count286
-\nofMParguments=\count287
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count288
+\scratchbox=\box56
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count289
 \MPscratchDim=\dimen272
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks55
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks57
 )
-\AtBeginShipoutBox=\box55
+\AtBeginShipoutBox=\box57
 Package hyperref Info: Link coloring ON on input line 63.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1348,7 +1357,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count291
+\c@section@level=\count292
 )
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
@@ -1383,11 +1392,11 @@ Package: soulutf8 2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks56
-\SOUL@lasttoken=\toks57
-\SOUL@cmds=\toks58
-\SOUL@buffer=\toks59
-\SOUL@token=\toks60
+\SOUL@word=\toks58
+\SOUL@lasttoken=\toks59
+\SOUL@cmds=\toks60
+\SOUL@buffer=\toks61
+\SOUL@token=\toks62
 \SOUL@spaceskip=\skip136
 \SOUL@ttwidth=\dimen273
 \SOUL@uldp=\dimen274
@@ -1418,10 +1427,10 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count292
+\c@lstlisting=\count293
 
 (./dissertation.glsdefs)
-\GPT@outputbox=\box56
+\GPT@outputbox=\box58
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 65.
 
 
@@ -1569,7 +1578,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 	\chapter{Social Networks in Sociology}
+l.108 	\chapter{Social Networks in Sociology}
                                               [1
 
 
@@ -1580,56 +1589,89 @@ chapter 2.
 the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \subsection{Sociology Perspective}
+l.35 \subsection{Sociology Perspective}
                                         [2
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 60.
 
-LaTeX Font Info:    No file OMSpplj.fd. on input line 58.
+LaTeX Font Info:    No file OMSpplj.fd. on input line 60.
 
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 58.
+(Font)              for symbol `textbullet' on input line 60.
 
 [3]) [4]
 chapter 3.
+(./sec/online_social_networks.tex
+Missing character: There is no â in font pplr9o!
+Missing character: There is no € in font pplr9o!
+Missing character: There is no ™ in font pplr9o!
+
+Overfull \hbox (47.85777pt too wide) in paragraph at lines 15--56
+[]|   [] 
+ []
+
 [5
 
 
 ]
+Overfull \vbox (73.01668pt too high) has occurred while \output is active []
+
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 60--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--74
+
+ []
+
+) [7]
 chapter 4.
-[6
+(./sec/social_network_analysis.tex
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
+
+ []
+
+[8
 
 
-]
+]) [9] [10]
 chapter 5.
-[7
+[11
 
 
 ]
 chapter 6.
-[8
+[12
 
 
 ]
 chapter 7.
-[9
+[13
 
 
 ]
 chapter 8.
-[10
+[14
 
 
 ]
 chapter 9.
-[11
+[15
 
 
-] (./dissertation.bbl) [12
+] (./dissertation.bbl) [16
 
 
 
@@ -1637,43 +1679,46 @@ chapter 9.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./dissertation.aux
 * soulpos - computing points - it may take a few seconds *
 \openout4 = `dissertation.upb'.
 
  (./dissertation.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 178.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 37046 strings out of 493014
- 687934 string characters out of 6133352
- 1064785 words of memory out of 5000000
- 39850 multiletter control sequences out of 15000+600000
- 46943 words of font info for 96 fonts, out of 8000000 for 9000
+ 37160 strings out of 493014
+ 689745 string characters out of 6133352
+ 1073010 words of memory out of 5000000
+ 39932 multiletter control sequences out of 15000+600000
+ 52812 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
-w/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
-ino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/upl
-ri8a.pfb>
-Output written on dissertation.pdf (22 pages, 126154 bytes).
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
+palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
+o/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri
+8a.pfb>
+Output written on dissertation.pdf (26 pages, 142363 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 89 named destinations out of 1000 (max. 500000)
- 16309 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 16829 words of extra memory for PDF output out of 17280 (max. 10000000)
 
