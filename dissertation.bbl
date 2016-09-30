@@ -1,19 +1,31 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Goossens et~al.(1997)Goossens, Rahtz, and Mittelbach]{GRM97}
-Michel Goossens, Sebastian Rahtz, and Frank Mittelbach.
-\newblock \emph{The LaTeX Graphics Companion}.
-\newblock Addison-Wesley, 1997.
-\newblock ISBN 0-201-85469-4.
+\bibitem[Barnes(1954)]{barnes1954class}
+John~Arundel Barnes.
+\newblock \emph{Class and committees in a Norwegian island parish}.
+\newblock Plenum New York, 1954.
 
-\bibitem[Kernighan and Ritchie(1988)]{KeR88}
-B.W. Kernighan and D.M. Ritchie.
-\newblock \emph{The C Programming Language (ANSI C)}.
-\newblock Prentice Hall Software series, 2nd edition, 1988.
+\bibitem[Beal(2016)]{webopediasn}
+Vangie Beal.
+\newblock Webopedia definition for social network, 2016.
+
+\bibitem[Dictionary(2002)]{dictionary2002cambridge}
+Cambridge Dictionary.
+\newblock Cambridge dictionaries online, 2002.
+
+\bibitem[Kilduff and Tsai(2003)]{kilduff2003social}
+Martin Kilduff and Wenpin Tsai.
+\newblock \emph{Social networks and organizations}.
+\newblock Sage, 2003.
+
+\bibitem[Wasserman and Faust(1994)]{wasserman1994social}
+Stanley Wasserman and Katherine Faust.
+\newblock \emph{Social network analysis: Methods and applications}, volume~8.
+\newblock Cambridge university press, 1994.
 
 \end{thebibliography}

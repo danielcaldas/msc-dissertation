@@ -1,4 +1,5 @@
 \vspace {-\cftbeforepartskip }
+\hypertarget {toc}{}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Context and Problem}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motivation}{1}{section.1.2}
@@ -7,55 +8,53 @@
 \contentsline {section}{\numberline {2.1}Origins of Social Networks}{2}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Sociology Perspective}{3}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Relevant SN related terms}{3}{section.2.2}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Online Social Networks}}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}Portuguese and Online Social Networks}{4}{section.3.1}
-\contentsline {section}{\numberline {3.2}SN A}{4}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Domain Modeling}{4}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}API}{4}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}SN B}{4}{section.3.3}
-\contentsline {section}{\numberline {3.4}SN C}{4}{section.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{5}{chapter.4}
-\contentsline {section}{\numberline {4.1}Network Analysis}{5}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Scientific Background}{5}{subsection.4.1.1}
-\contentsline {subsubsection}{Graphs}{5}{subsection.4.1.1}
-\contentsline {subsubsection}{Statistics}{5}{subsection.4.1.1}
-\contentsline {subsubsection}{...}{5}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Power Law}{5}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Centrality Measures}{5}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Link Analysis}{5}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}...}{5}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Six Degrees of Separation}{5}{section.4.2}
-\contentsline {section}{\numberline {4.3}Network Visualisation}{5}{section.4.3}
-\contentsline {section}{\numberline {4.4}Real World Applications}{5}{section.4.4}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {State of the art}}{6}{chapter.5}
-\contentsline {section}{\numberline {5.1}Basics/Background/Related work}{6}{section.5.1}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {The problem and its challenges??}}{7}{chapter.6}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Proposed Solution}}{8}{chapter.7}
-\contentsline {section}{\numberline {7.1}Solution Requirements}{8}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Requirements Analysis}{8}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Requirements Specification}{8}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Requirements Prioritisation}{8}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}System Modeling}{8}{section.7.2}
-\contentsline {section}{\numberline {7.3}System Architecture}{8}{section.7.3}
-\contentsline {section}{\numberline {7.4}Technology Selection}{8}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Technology A}{8}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Technology B}{8}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Technology C}{8}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Technology Comparison}{8}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}Decision}{8}{subsection.7.4.5}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Implementation}}{9}{chapter.8}
-\contentsline {section}{\numberline {8.1}Data Extraction}{9}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Data Sources}{9}{subsection.8.1.1}
-\contentsline {section}{\numberline {8.2}Data Mining}{9}{section.8.2}
-\contentsline {section}{\numberline {8.3}Back end}{9}{section.8.3}
-\contentsline {section}{\numberline {8.4}Front end}{9}{section.8.4}
-\contentsline {section}{\numberline {8.5}Outcomes}{9}{section.8.5}
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Case Studies}}{10}{chapter.9}
-\contentsline {section}{\numberline {9.1}Results}{10}{section.9.1}
-\contentsline {section}{\numberline {9.2}Discussion}{10}{section.9.2}
-\contentsline {section}{\numberline {9.3}Summary}{10}{section.9.3}
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Conclusion}}{11}{chapter.10}
-\contentsline {section}{\numberline {10.1}Conclusions}{11}{section.10.1}
-\contentsline {section}{\numberline {10.2}Prospect for future work}{11}{section.10.2}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Online Social Networks}}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Portuguese and Online Social Networks}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}SN A}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Domain Modeling}{5}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}API}{5}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}SN B}{5}{section.3.3}
+\contentsline {section}{\numberline {3.4}SN C}{5}{section.3.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Network Analysis}{6}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Scientific Background}{6}{subsection.4.1.1}
+\contentsline {subsubsection}{Graphs}{6}{subsection.4.1.1}
+\contentsline {subsubsection}{Statistics}{6}{subsection.4.1.1}
+\contentsline {subsubsection}{...}{6}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Power Law}{6}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Centrality Measures}{6}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Link Analysis}{6}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}...}{6}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Six Degrees of Separation}{6}{section.4.2}
+\contentsline {section}{\numberline {4.3}Network Visualisation}{6}{section.4.3}
+\contentsline {section}{\numberline {4.4}Real World Applications}{6}{section.4.4}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The problem and its challenges}}{7}{chapter.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Proposed Solution}}{8}{chapter.6}
+\contentsline {section}{\numberline {6.1}Solution Requirements}{8}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Requirements Analysis}{8}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Requirements Specification}{8}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Requirements Prioritisation}{8}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}System Modeling}{8}{section.6.2}
+\contentsline {section}{\numberline {6.3}System Architecture}{8}{section.6.3}
+\contentsline {section}{\numberline {6.4}Technology Selection}{8}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Technology A}{8}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Technology B}{8}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Technology C}{8}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Technology Comparison}{8}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Decision}{8}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{9}{chapter.7}
+\contentsline {section}{\numberline {7.1}Data Extraction}{9}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Data Sources}{9}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Data Mining}{9}{section.7.2}
+\contentsline {section}{\numberline {7.3}Back end}{9}{section.7.3}
+\contentsline {section}{\numberline {7.4}Front end}{9}{section.7.4}
+\contentsline {section}{\numberline {7.5}Outcomes}{9}{section.7.5}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Case Studies}}{10}{chapter.8}
+\contentsline {section}{\numberline {8.1}Results}{10}{section.8.1}
+\contentsline {section}{\numberline {8.2}Discussion}{10}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary}{10}{section.8.3}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Conclusion}}{11}{chapter.9}
+\contentsline {section}{\numberline {9.1}Conclusions}{11}{section.9.1}
+\contentsline {section}{\numberline {9.2}Prospect for future work}{11}{section.9.2}
 \vspace \bigskipamount 
 \vspace \bigskipamount 

@@ -23,22 +23,12 @@
 
 \makeglossaries
 
-% Acronym entries
+% Acronym entries -----------------------------------------
 % S
 \newacronym{sn}{SN}{Social Network}
 \newacronym{sna}{SNA}{Social Network Analysis}
 % O
 \newacronym{osn}{OSN}{Online Social Network}
-
-%to use an acronym:
-%\gls{qps}
-
-% compile the thesis in command line with the following command sequence:
-% pdlatex dissertation.tex
-% makeglossaries dissertation
-% bibtex dissertation
-% pdlatex dissertation.tex
-% pdlatex dissertation.tex
 
 % ----------------------------------------------------------------
 
@@ -89,6 +79,10 @@
 	
 	% Summary Lists ------------------------------------
 	\tableofcontents
+	
+	\addtocontents{toc}{\protect\hypertarget{toc}{}}
+	%\rfoot{\textit{\hyperlink{toc}{Social Networks}}}
+	
 	\listoffigures
 	\listoftables
 	%\lstlistoflistings
@@ -102,9 +96,12 @@
 	% CHAPTER - Introduction -------------------------
 	\chapter{Introduction}
 	\section{Context and Problem}
-	\glspl{sn}, \gls{sna}, \glspl{osn}, Unstructured Data Analysis
+	%SNs, SNA, OSNs, Unstructured Data Analysis
 	\section{Motivation}
+	% Many Analyse Unstructured Data means a lot of things that we can infer and dicover
+	% the information is there and it is up to us to make good and creative use of it
 	\section{Goals}
+	% Analyse Unstructured Data
 	
 	
 	% CHAPTER - Social Networks in Sociology -------------------------
@@ -116,9 +113,9 @@
 	
 	% CHAPTER - Online Social Networks -------------------------
 	\chapter{Online Social Networks}
-	Present table and comment. A, B and C are studied more deeply in the following sections.
+	% Present table and comment. A, B and C are studied more deeply in the following sections.
 	\section{Portuguese and Online Social Networks}
-	Mentioning relevant facts from marktest study "Os Portugueses e as Redes Sociais 2016"
+	% Mentioning relevant facts from marktest study "Os Portugueses e as Redes Sociais 2016"
 	\section{SN A}
 	\subsection{Domain Modeling}
 	\subsection{API}
@@ -138,25 +135,17 @@
 	\subsection{Link Analysis}
 	\subsection{...}
 	\section{Six Degrees of Separation}
-	Small World Problem, Stanley Milgram's Experiment
+	% Small World Problem, Stanley Milgram's Experiment
 	
 	\section{Network Visualisation}
-	It's a science by itself.
+	% It's a science by itself.
 	
 	\section{Real World Applications}
-	What SNAs are used for.
-	
-	% CHAPTER - State of the Art ---------------------
-	\chapter{State of the art}
-	State of the art review; related work
-
-	\section{Basics/Background/Related work}
-	Example of a citation where the author should be cited directly on the text like, the work of \cite{GRM97}, on producing \LaTeX files with \Bibtex\ references. \\
-	Another way of citing whithout a direct mention to the author can used like the work done on C language \citep{KeR88}.
+	% What SNAs are used for.
 
 
 	% CHAPTER - Problem and Challenges ---------------
-	\chapter{The problem and its challenges??}
+	\chapter{The problem and its challenges}
 
 
 	% CHAPTER - Proposed Solution -------------------------

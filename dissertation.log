@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  30 SEP 2016 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  30 SEP 2016 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1122,17 +1122,17 @@ Package cleveref Info: always capitalise cross-reference names on input line 74
 Package cleveref Info: always capitalise cross-reference names on input line 74
 93.
 )
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 270.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 269.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 270.
-Package hyperref Info: Option `unicode' set `true' on input line 270.
+Package hyperref Info: Option `plainpages' set `false' on input line 269.
+Package hyperref Info: Option `unicode' set `true' on input line 269.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdffitwindow' set `true' on input line 270.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 270.
-Package hyperref Info: Option `colorlinks' set `true' on input line 270.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 269.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 269.
+Package hyperref Info: Option `colorlinks' set `true' on input line 269.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2016/04/30 v4.23 (NLCT)
@@ -1304,23 +1304,23 @@ Package glossaries Info: Writing glossary file dissertation.acn on input line 2
 (./dissertation.aux)
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+pplj on input line 63.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pplj.fd
@@ -1341,7 +1341,7 @@ File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 \everyMPtoPDFconversion=\toks55
 )
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 63.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1350,10 +1350,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
-LaTeX Info: Redefining \microtypecontext on input line 73.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \microtypecontext on input line 63.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1377,7 +1377,7 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-Package soulpos Info: Loading soulutf8 on input line 73.
+Package soulpos Info: Loading soulutf8 on input line 63.
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/soulutf8.sty
 Package: soulutf8 2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)
 
@@ -1422,31 +1422,31 @@ Package caption Info: End \AtBeginDocument code.
 
 (./dissertation.glsdefs)
 \GPT@outputbox=\box56
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 65.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 65.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 65.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 65.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 65.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1456,7 +1456,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 65.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -1480,9 +1480,9 @@ Missing character: There is no ç in font phvb7t!
 
 ]
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 73.
  [1
 
 
@@ -1497,7 +1497,7 @@ LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <9> not available
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 91
+Package tocbasic Info: character protrusion at toc deactivated on input line 81
 .
 
 (./dissertation.toc
@@ -1512,9 +1512,9 @@ Package microtype Info: Character `013' is missing
 \openout8 = `dissertation.toc'.
 
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 81.
  [5]
-Package tocbasic Info: character protrusion at lof deactivated on input line 92
+Package tocbasic Info: character protrusion at lof deactivated on input line 86
 .
  (./dissertation.lof)
 \tf@lof=\write9
@@ -1526,7 +1526,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 92
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 93
+Package tocbasic Info: character protrusion at lot deactivated on input line 87
 .
  (./dissertation.lot)
 \tf@lot=\write10
@@ -1569,78 +1569,63 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 	\chapter{Social Networks in Sociology}
+l.110 	\chapter{Social Networks in Sociology}
                                               [1
 
 
 
 ]
 chapter 2.
-(./sec/social_networks_in_sociology.tex
-Overfull \hbox (0.31322pt too wide) in paragraph at lines 25--26
-[]\OT1/pplj/m/it/10.95 ''The net-work con-cept is one of the defin-ing paradigm
-s of the mod-ern era.'' \OT1/pplj/m/n/10.95 [REF[]BOOK] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
+(./sec/social_networks_in_sociology.texpdfTeX warning (ext4): destination with 
+the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \end{quote}
-                 [2
+l.33 \subsection{Sociology Perspective}
+                                        [2
 
 
 ]
-Overfull \hbox (52.50458pt too wide) in paragraph at lines 55--58
-\OT1/pplj/b/n/10.95 In this sec-tion talk about some in-her-ent con-cepts of so
--cial net-works, $[]$.
- []
-
 LaTeX Font Info:    Try loading font information for OMS+pplj on input line 58.
 
 LaTeX Font Info:    No file OMSpplj.fd. on input line 58.
+
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 58.
 
-) [3]
+[3]) [4]
 chapter 3.
-[4
-
-
-]
-chapter 4.
 [5
 
 
 ]
-chapter 5.
+chapter 4.
 [6
 
 
 ]
-chapter 6.
+chapter 5.
 [7
 
 
 ]
-chapter 7.
+chapter 6.
 [8
 
 
 ]
-chapter 8.
+chapter 7.
 [9
 
 
 ]
-chapter 9.
+chapter 8.
 [10
 
 
 ]
-chapter 10.
+chapter 9.
 [11
 
 
@@ -1652,27 +1637,27 @@ chapter 10.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./dissertation.aux
 * soulpos - computing points - it may take a few seconds *
 \openout4 = `dissertation.upb'.
 
  (./dissertation.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 197.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 37041 strings out of 493014
- 687615 string characters out of 6133352
+ 37046 strings out of 493014
+ 687934 string characters out of 6133352
  1064785 words of memory out of 5000000
- 39844 multiletter control sequences out of 15000+600000
- 48717 words of font info for 99 fonts, out of 8000000 for 9000
+ 39850 multiletter control sequences out of 15000+600000
+ 46943 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1685,10 +1670,10 @@ pe1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on dissertation.pdf (22 pages, 128611 bytes).
+Output written on dissertation.pdf (22 pages, 126154 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 16325 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 16309 words of extra memory for PDF output out of 17280 (max. 10000000)
 
