@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  3 OCT 2016 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  5 OCT 2016 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1644,45 +1644,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--74
 <img/timeline.png, id=261, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
  <use img/timeline.png>
-Package pdftex.def Info: img/timeline.png used on input line 78.
+Package pdftex.def Info: img/timeline.png used on input line 79.
 (pdftex.def)             Requested size: 354.12434pt x 562.497pt.
-)
-[7] [8 <./img/timeline.png>] [9]
+
+[7] [8 <./img/timeline.png>] [9]) [10]
 chapter 4.
 (./sec/social_network_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
-[10
+[11
 
 
-]) [11] [12]
+]) [12] [13]
 chapter 5.
-[13
-
-
-]
-chapter 6.
 [14
 
 
 ]
-chapter 7.
+chapter 6.
 [15
 
 
 ]
-chapter 8.
+chapter 7.
 [16
 
 
 ]
-chapter 9.
+chapter 8.
 [17
 
 
-] (./dissertation.bbl) [18
+]
+chapter 9.
+[18
+
+
+] (./dissertation.bbl) [19
 
 
 
@@ -1703,16 +1703,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 178.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 37179 strings out of 493014
- 690002 string characters out of 6133352
+ 37184 strings out of 493014
+ 690086 string characters out of 6133352
  1073010 words of memory out of 5000000
- 39943 multiletter control sequences out of 15000+600000
+ 39946 multiletter control sequences out of 15000+600000
  52812 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1729,10 +1726,10 @@ ts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
 o/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on dissertation.pdf (28 pages, 338316 bytes).
+Output written on dissertation.pdf (29 pages, 343607 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 109 named destinations out of 1000 (max. 500000)
  16850 words of extra memory for PDF output out of 17280 (max. 10000000)
 
