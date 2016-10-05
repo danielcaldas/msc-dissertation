@@ -89,16 +89,15 @@ and habits of portuguese concerning social networks. The study information was c
   \item 87\% is used to watch videos in social networks.
 \end{itemize}
 
-\indent These are indeed interesting conclusions, but what about the top used \glspl{osn}, when it comes to that, the most used are the following: 97.2\% uses Facebook; 58.3\% uses Twitter; 54.9\% uses Instagram; 28\% uses LinkedIn;
-17.3\% uses Snapchat.\\
-\indent Relatively to \cite{marktest2016} past studies, there is one change only, that is the \textbf{ascendence of Instagram to the second most used \glspl{osn}}, Facebook has maintain
+\indent These are indeed interesting conclusions, but what about the top used \glspl{osn}, when it comes to that, the most used are
+the following by order: Facebook, Youtube, Google+, Instagram, LinkedIn, Twitter and Pinterest.\\
+\indent Relatively to \cite{marktest2016} past studies, Facebook has maintain
 its top position, maintaining a grow tendency that has been standing out in the past years.
 
 \indent Going back to Table \ref{table:osns}, we may now comment the portuguese \glspl{osn} comparing it
 to the global scenario. As one may notice Facebook still rules users preferences within portuguese.
 The other noticeable point is that the \glspl{osn} preferred among portuguese are general propose ones,
-but with a slight tendency to content sharing networks (mainly photos), thus, Instagram assuming
-a so relevant position in the portuguese landscape.
+but with a slight tendency to content sharing networks (mainly photos).
 
 \indent Concerning to global time related usage statistics, according to \cite{marktest2016}, \textbf{portuguese spend 91 minutes a day with social networks},
 68\% considers that this is the ideal time to spent with social media, despite 1 in each 4 saying that in the past year has dedicated even more time to them.
@@ -160,9 +159,14 @@ of the adaptability of the system to different kinds of \glspl{osn}.\\
 
 \subsection{Facebook}
 
-Facebook allows you to send messages and post status updates to keep in touch with friends and family. You can also share different types
-of content, like photos and links. But sharing something on Facebook is a bit different from other types of online communication, because shared content
-on facebook is, by default, public.
+Facebook is an \gls{osn}, created by Mark Zuckerberg in 2004, which started out by being an exclusive social network for Harvard students, but came later to spread across
+the country and the globe, having today more than one billion users.\\
+\indent Before diving into details of this platform, one must first point out its general aspects. Facebook basically allows anyone with a valid email address to create a public and personalized profile,
+we say personalized in terms of displayed content or information such as profile photo, name, work, homeland, education etc. .
+The next fundamental step is connect with other users, by sending friendship requests to other Facebook users (this are bidirectional relations).
+The base entity of the network is the user, but entities such as brands, companies can also be part of the platform, appearing normally
+in the form of page, being a page a public place inside the network with marketing or business related purposes (celebrities, public institutions also use pages as form of appearing in Facebook).\\
+\indent The next parts of this section will clarify the roles of this entities and their way of interact with each other, also other important concepts will be presented.
 
 \subsubsection*{Domain Model}
 
@@ -172,9 +176,28 @@ on facebook is, by default, public.
 \caption{\label{img:fbdomain} Facebook domain model schema.}
 \end{figure}
 
-\indent
+\indent In this section we explore the domain of Facebook represented in Figure \ref{img:fbdomain} in detail, what are the pieces that build
+the concept of this platform, and how they relate. This diagram or schema in Figure \ref{img:fbdomain} represents
+a macroscopic perspective among Facebook components and their organization.\\
+\indent There are two entities with bold labels in the schema, this are, \textbf{User} and \textbf{Post}, being
+\textit{User} the base entity in the network (the node in the network graph basically), and \textit{Post} the
+most basic unit of content sharing in Facebook.\\
+\indent Facebook is interesting in terms of data gathering, because despite offering user's basic information
+and to whom that user is related (\textit{Friends} box), it has a collection of other interesting data
+such as the family relationships (\textit{Family} box), geographical locations where the user lives or lived, or
+visited locations (\textit{Locations} and \textit{VisitedPlaces} boxes respectively), and among other things, user information
+may contain the personal interests that were explicitly inputed by the user (\textit{Likes} box).\\
+\indent In what concerns to user activity in the platform, the \textit{Timeline}, provides all the user
+Posts chronologically ordered, this is where Facebook dynamism takes place, users are constantly
+adding content to their timeline, it may be life related events or simply sharing other users posts
+linking content.
+
+PAGES, LOCALS, EVENTS,
+
+GROUPS (PRIVATE/OPEN) which turns Facebook in some way, a \textbf{multi interest based social network}!!!!!! HURRAY!!!
 
 \subsubsection*{Facebook Graph API}
+TALK STUFF ABOUT THE FACEBOOK DATA GRAPH API!!!!!!!
 
 
 %% ---------------------------------------------- How Social Networks Have Changed The World
