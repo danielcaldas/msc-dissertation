@@ -9,52 +9,54 @@
 \contentsline {subsection}{\numberline {2.1.1}Sociology Perspective}{3}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Relevant SN related terms}{3}{section.2.2}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Online Social Networks}}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Portuguese and Online Social Networks}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}History of Online Social Networks}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Exploring Specific Online Social Networks}{9}{section.3.3}
+\contentsline {section}{\numberline {3.1}History of Online Social Networks}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Portuguese and Online Social Networks}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Exploring Specific Online Social Networks}{10}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Facebook}{10}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}How Social Networks Have Changed The World}{12}{section.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Network Analysis}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Scientific Background}{15}{subsection.4.2.1}
-\contentsline {subsubsection}{Graphs}{15}{subsection.4.2.1}
-\contentsline {subsubsection}{Statistics}{15}{subsection.4.2.1}
-\contentsline {subsubsection}{...}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Power Law}{15}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Centrality Measures}{15}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Link Analysis}{15}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}...}{15}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Six Degrees of Separation}{15}{section.4.3}
-\contentsline {section}{\numberline {4.4}Network Visualisation}{15}{section.4.4}
-\contentsline {section}{\numberline {4.5}Real World Applications}{15}{section.4.5}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The problem and its challenges}}{16}{chapter.5}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Proposed Solution}}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Solution Requirements}{17}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Requirements Analysis}{17}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Requirements Specification}{17}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Requirements Prioritisation}{17}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}System Modeling}{17}{section.6.2}
-\contentsline {section}{\numberline {6.3}System Architecture}{17}{section.6.3}
-\contentsline {section}{\numberline {6.4}Technology Selection}{17}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Technology A}{17}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Technology B}{17}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Technology C}{17}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Technology Comparison}{17}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Decision}{17}{subsection.6.4.5}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{18}{chapter.7}
-\contentsline {section}{\numberline {7.1}Data Extraction}{18}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Data Sources}{18}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Data Mining}{18}{section.7.2}
-\contentsline {section}{\numberline {7.3}Back end}{18}{section.7.3}
-\contentsline {section}{\numberline {7.4}Front end}{18}{section.7.4}
-\contentsline {section}{\numberline {7.5}Outcomes}{18}{section.7.5}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Case Studies}}{19}{chapter.8}
-\contentsline {section}{\numberline {8.1}Results}{19}{section.8.1}
-\contentsline {section}{\numberline {8.2}Discussion}{19}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary}{19}{section.8.3}
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Conclusion}}{20}{chapter.9}
-\contentsline {section}{\numberline {9.1}Conclusions}{20}{section.9.1}
-\contentsline {section}{\numberline {9.2}Prospect for future work}{20}{section.9.2}
+\contentsline {subsection}{\numberline {3.3.2}Twitter}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}LinkedIn}{13}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}How Social Networks Have Changed The World}{13}{section.3.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Network Analysis}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Scientific Background}{16}{subsection.4.2.1}
+\contentsline {subsubsection}{Graphs}{16}{subsection.4.2.1}
+\contentsline {subsubsection}{Statistics}{16}{subsection.4.2.1}
+\contentsline {subsubsection}{...}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Power Law}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Centrality Measures}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Link Analysis}{16}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}...}{16}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Six Degrees of Separation}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}Network Visualisation}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Real World Applications}{16}{section.4.5}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The problem and its challenges}}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Proposed Solution}}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}Solution Requirements}{18}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Requirements Analysis}{18}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Requirements Specification}{18}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Requirements Prioritisation}{18}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}System Modeling}{18}{section.6.2}
+\contentsline {section}{\numberline {6.3}System Architecture}{18}{section.6.3}
+\contentsline {section}{\numberline {6.4}Technology Selection}{18}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Technology A}{18}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Technology B}{18}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Technology C}{18}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Technology Comparison}{18}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Decision}{18}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Data Extraction}{19}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Data Sources}{19}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Data Mining}{19}{section.7.2}
+\contentsline {section}{\numberline {7.3}Back end}{19}{section.7.3}
+\contentsline {section}{\numberline {7.4}Front end}{19}{section.7.4}
+\contentsline {section}{\numberline {7.5}Outcomes}{19}{section.7.5}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Case Studies}}{20}{chapter.8}
+\contentsline {section}{\numberline {8.1}Results}{20}{section.8.1}
+\contentsline {section}{\numberline {8.2}Discussion}{20}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary}{20}{section.8.3}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Conclusion}}{21}{chapter.9}
+\contentsline {section}{\numberline {9.1}Conclusions}{21}{section.9.1}
+\contentsline {section}{\numberline {9.2}Prospect for future work}{21}{section.9.2}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
