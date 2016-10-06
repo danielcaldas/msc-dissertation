@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 OCT 2016 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 OCT 2016 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1615,7 +1615,7 @@ Missing character: There is no â in font pplr9o!
 Missing character: There is no € in font pplr9o!
 Missing character: There is no ™ in font pplr9o!
 
-Overfull \hbox (47.85777pt too wide) in paragraph at lines 15--56
+Overfull \hbox (56.60638pt too wide) in paragraph at lines 15--56
 []|   [] 
  []
 
@@ -1623,47 +1623,33 @@ Overfull \hbox (47.85777pt too wide) in paragraph at lines 15--56
 
 
 ]
-Overfull \vbox (73.01668pt too high) has occurred while \output is active []
+Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 60--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--74
-
- []
-
-<img/timeline.png, id=261, 448.67625pt x 712.6625pt>
+[6] <img/timeline.png, id=264, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
- <use img/timeline.png>
-Package pdftex.def Info: img/timeline.png used on input line 80.
+
+<use img/timeline.png>
+Package pdftex.def Info: img/timeline.png used on input line 83.
 (pdftex.def)             Requested size: 309.85626pt x 492.1835pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8 <./img/timeline.png>] [9]
-<img/facebook-domain-model.png, id=298, 1519.6775pt x 1242.6425pt>
+<img/facebook-domain-model.png, id=301, 1519.6775pt x 1242.6425pt>
 File: img/facebook-domain-model.png Graphic file (type png)
 
 <use img/facebook-domain-model.png>
-Package pdftex.def Info: img/facebook-domain-model.png used on input line 177.
+Package pdftex.def Info: img/facebook-domain-model.png used on input line 180.
 (pdftex.def)             Requested size: 566.59625pt x 463.31627pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 176--178
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 179--181
 []|  [] 
  []
 
 [10] [11 <./img/facebook-domain-model.png>]
-Overfull \hbox (31.55342pt too wide) in paragraph at lines 210--221
+Overfull \hbox (31.55342pt too wide) in paragraph at lines 213--224
 \OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
  to [][]developers.facebook.com/docs/graph-
  []
@@ -1727,15 +1713,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 37204 strings out of 493014
- 690474 string characters out of 6133352
+ 37205 strings out of 493014
+ 690485 string characters out of 6133352
  1073010 words of memory out of 5000000
  39959 multiletter control sequences out of 15000+600000
  52812 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -1750,10 +1739,10 @@ ts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
 o/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on dissertation.pdf (32 pages, 412255 bytes).
+Output written on dissertation.pdf (32 pages, 412466 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 537 compressed objects within 6 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
  16847 words of extra memory for PDF output out of 17280 (max. 10000000)
 
