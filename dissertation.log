@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  7 OCT 2016 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  15 OCT 2016 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1535,17 +1535,12 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 86
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 87
 .
- (./dissertation.lot
-Overfull \hbox (11.76604pt too wide) in paragraph at lines 5--5
- [][] [][][]\OT1/pplj/m/n/10.95 Table of []OSNs. ([][]statista.com[][] ([][]201
-6[][]), [][]ex-pand-e-dram-blings.com[][] ([][]2016[][]))[][] []  
- []
-
-)
+ (./dissertation.lot)
 \tf@lot=\write10
 \openout10 = `dissertation.lot'.
 
- [7
+
+[7
 
 
 
@@ -1609,20 +1604,20 @@ LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 [3]) [4]
 chapter 3.
 (./sec/online_social_networks.tex
-LaTeX Font Info:    Try loading font information for OML+pplj on input line 21.
+LaTeX Font Info:    Try loading font information for OML+pplj on input line 32.
 
-LaTeX Font Info:    No file OMLpplj.fd. on input line 21.
+LaTeX Font Info:    No file OMLpplj.fd. on input line 32.
 
 
 LaTeX Font Warning: Font shape `OML/pplj/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 21.
+(Font)              for symbol `textgreater' on input line 32.
 
 Missing character: There is no â in font pplr9o!
 Missing character: There is no € in font pplr9o!
 Missing character: There is no ™ in font pplr9o!
 
-Overfull \hbox (53.31088pt too wide) in paragraph at lines 15--56
+Overfull \hbox (53.31088pt too wide) in paragraph at lines 26--67
 []|   [] 
  []
 
@@ -1633,70 +1628,94 @@ Overfull \hbox (53.31088pt too wide) in paragraph at lines 15--56
 Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
-[6] <img/timeline.png, id=265, 448.67625pt x 712.6625pt>
+[6] <img/timeline.png, id=267, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
 
 <use img/timeline.png>
-Package pdftex.def Info: img/timeline.png used on input line 85.
+Package pdftex.def Info: img/timeline.png used on input line 96.
 (pdftex.def)             Requested size: 309.85626pt x 492.1835pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8 <./img/timeline.png>] [9]
-<img/facebook-domain-model.png, id=300, 1519.6775pt x 1242.6425pt>
-File: img/facebook-domain-model.png Graphic file (type png)
+<img/facebook-domain-model.jpg, id=302, 1302.8675pt x 918.43124pt>
+File: img/facebook-domain-model.jpg Graphic file (type jpg)
 
-<use img/facebook-domain-model.png>
-Package pdftex.def Info: img/facebook-domain-model.png used on input line 179.
-(pdftex.def)             Requested size: 566.59625pt x 463.31627pt.
+<use img/facebook-domain-model.jpg>
+Package pdftex.def Info: img/facebook-domain-model.jpg used on input line 191.
+(pdftex.def)             Requested size: 566.59625pt x 399.41626pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 178--180
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 190--192
 []|  [] 
  []
 
-[10] [11 <./img/facebook-domain-model.png>]
-Overfull \hbox (31.55342pt too wide) in paragraph at lines 212--223
+[10] [11 <./img/facebook-domain-model.jpg>]
+Overfull \hbox (31.55342pt too wide) in paragraph at lines 224--235
 \OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
  to [][]developers.facebook.com/docs/graph-
  []
 
-[12]) [13] [14]
+[12]
+Overfull \hbox (47.59229pt too wide) in paragraph at lines 244--245
+\OT1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion."
+ [][]\OT1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
+ []
+
+<img/instagram-domain-model.jpg, id=329, 1142.2675pt x 739.76375pt>
+File: img/instagram-domain-model.jpg Graphic file (type jpg)
+
+<use img/instagram-domain-model.jpg>
+Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 258.
+
+(pdftex.def)             Requested size: 566.59625pt x 366.9461pt.
+
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 257--259
+[]|  [] 
+ []
+
+[13] [14 <./img/instagram-domain-model.jpg>]
+Overfull \hbox (12.51135pt too wide) in paragraph at lines 273--279
+\OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
+ps://www.instagram.com/developer/limits/[][]
+ []
+
+) [15]
 chapter 4.
 (./sec/social_network_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
-[15
+[16
 
 
-]) [16] [17]
+]) [17] [18]
 chapter 5.
-[18
-
-
-]
-chapter 6.
 [19
 
 
 ]
-chapter 7.
+chapter 6.
 [20
 
 
 ]
-chapter 8.
+chapter 7.
 [21
 
 
 ]
-chapter 9.
+chapter 8.
 [22
 
 
-] (./dissertation.bbl) [23
+]
+chapter 9.
+[23
+
+
+] (./dissertation.bbl) [24
 
 
 
@@ -1720,18 +1739,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 37221 strings out of 493014
- 690712 string characters out of 6133352
- 1073010 words of memory out of 5000000
- 39971 multiletter control sequences out of 15000+600000
+ 37238 strings out of 493014
+ 691059 string characters out of 6133352
+ 1075010 words of memory out of 5000000
+ 39983 multiletter control sequences out of 15000+600000
  53171 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
@@ -1744,10 +1760,10 @@ s/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 alatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on dissertation.pdf (33 pages, 420088 bytes).
+Output written on dissertation.pdf (34 pages, 722591 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
- 16855 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 16860 words of extra memory for PDF output out of 17280 (max. 10000000)
 

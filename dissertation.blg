@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: dissertation.bib
-You've used 14 entries,
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            648 strings with 5948 characters,
-and the built_in function-call counts, 4324 in all, are:
-= -- 352
-> -- 172
-< -- 15
-+ -- 65
-- -- 51
-* -- 230
-:= -- 661
-add.period$ -- 32
-call.type$ -- 14
-change.case$ -- 55
-chr.to.int$ -- 14
-cite$ -- 28
-duplicate$ -- 230
-empty$ -- 457
-format.name$ -- 70
-if$ -- 918
+            654 strings with 6087 characters,
+and the built_in function-call counts, 4890 in all, are:
+= -- 398
+> -- 192
+< -- 17
++ -- 73
+- -- 57
+* -- 256
+:= -- 745
+add.period$ -- 36
+call.type$ -- 16
+change.case$ -- 63
+chr.to.int$ -- 16
+cite$ -- 32
+duplicate$ -- 260
+empty$ -- 521
+format.name$ -- 78
+if$ -- 1040
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 7
-newline$ -- 68
-num.names$ -- 56
-pop$ -- 174
+newline$ -- 76
+num.names$ -- 64
+pop$ -- 200
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 50
 quote$ -- 0
-skip$ -- 199
+skip$ -- 227
 stack$ -- 0
-substring$ -- 53
-swap$ -- 15
+substring$ -- 57
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 139
+type$ -- 161
 warning$ -- 0
-while$ -- 44
+while$ -- 50
 width$ -- 0
-write$ -- 157
+write$ -- 177
