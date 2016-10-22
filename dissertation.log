@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  15 OCT 2016 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  22 OCT 2016 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1592,14 +1592,14 @@ l.35 \subsection{Sociology Perspective}
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 63.
 
-LaTeX Font Info:    No file OMSpplj.fd. on input line 60.
+LaTeX Font Info:    No file OMSpplj.fd. on input line 63.
 
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 60.
+(Font)              for symbol `textbullet' on input line 63.
 
 [3]) [4]
 chapter 3.
@@ -1760,7 +1760,7 @@ s/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 alatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on dissertation.pdf (34 pages, 722591 bytes).
+Output written on dissertation.pdf (34 pages, 722866 bytes).
 PDF statistics:
  625 PDF objects out of 1000 (max. 8388607)
  563 compressed objects within 6 object streams
