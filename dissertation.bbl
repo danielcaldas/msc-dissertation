@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -39,6 +39,22 @@ Nicole~B Ellison et~al.
 \bibitem[expandedramblings.com(2016)]{expandedramblings}
 expandedramblings.com.
 \newblock Social media statistics, 2016.
+
+\bibitem[Guardian(2016)]{microlink}
+The Guardian.
+\newblock Linkedin bought by microsoft for \$26.2bn in cash.
+\newblock
+  \url{https://www.theguardian.com/technology/2016/jun/13/linkedin-bought-by-microsoft-for-262bn-in-cash},
+  2016.
+\newblock Online; accessed 22 October 2016.
+
+\bibitem[https://developer.linkedin.com/docs/rest api(2016)]{linkapi}
+https://developer.linkedin.com/docs/rest api.
+\newblock Linkedin developer docs, 2016.
+
+\bibitem[https://press.linkedin.com/about linkedin(2016)]{linkabout}
+https://press.linkedin.com/about linkedin.
+\newblock Linkedin about page, 2016.
 
 \bibitem[https://www.instagram.com/about/us/(2016)]{instabout}
 https://www.instagram.com/about/us/.

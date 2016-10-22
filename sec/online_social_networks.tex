@@ -43,13 +43,13 @@ of the most used \glspl{osn}.
 \hline
 \cellcolor{gray!30}Instagram & 2010 & \textgreater 500 000 000 & 500 000 000 & A photo and video sharing site.\\
 \hline
+\cellcolor{gray!30}LinkedIn & 2003 & \textgreater 450 000 000 & 106 000 000 & Business and professional networking.\\
+\hline
 \cellcolor{gray!30}Sina Weibo & 2009 & 300 000 000 & 282 000 000 & \begin{tabular}{@{}l@{}}Social microblogging site in mainland China.\end{tabular}\\
 \hline
 \cellcolor{gray!30}VK & 2006 & 249 409 900 & 100 000 000 & \begin{tabular}{@{}l@{}}\textbf{General}, including music upload, listening and search.\\Popular in Russia and former Soviet republics.\end{tabular} \\
 \hline
 \cellcolor{gray!30}Reddit & 2005 & 234 000 000 & 120 000 000 & \begin{tabular}{@{}l@{}}Social media, social news aggregation, web\\content rating, and discussion website.\end{tabular}\\
-\hline
-\cellcolor{gray!30}LinkedIn & 2003 & 200 000 000 & 106 000 000 & Business and professional networking.\\
 \hline
 \cellcolor{gray!30}Vine & \textbf{2013} & 200 000 000 & 100 000 000 & \begin{tabular}{@{}l@{}}Short-form video sharing service where\\ users can share six-second-long looping video clips.\end{tabular}\\
 \hline
@@ -280,15 +280,68 @@ perform 30 requests per hour to getting users' relationships data. (\cite{instad
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- LinkedIn
 \subsection{LinkedIn}
-...
+
+Moving on to the next \gls{osn} we now have LinkedIn. According to \cite{linkabout}, LinkedIn was launched officially on May 5 of 2003, and by the end of
+that month, the network had already more than 4500 members. In 13 June of 2016 LinkedIn was acquired by Microsoft in an all-cash transaction valued at \$26.2
+billion (\cite{microlink}).\\
+\indent LinkedIn is an \gls{osn} that has a very narrow purpose, which is
+connecting professionals around the globe to make them more productive and successful.
+
+\subsubsection*{Domain Model}
+
+\begin{figure}[h!]
+  \hspace*{-1in}
+  \includegraphics[width=1.20\textwidth]{img/linkedin-domain-model.jpg}
+\caption{\label{img:linkdomain} LinkedIn domain model schema.}
+\end{figure}
+
+\indent Being a more purpose oriented \gls{osn} and focused on the professional
+world, makes LinkedIn platform more complex, even with a simplified representation of the domain model, as we can observe in Figure \ref{img:linkdomain} it is schema
+\footnote{\indent In the schema presented on Figure \ref{img:linkdomain}, much of the platform complexity was simplified in order to produce a simple domain, and to narrow
+down this analysis to the core components and concepts of LinkedIn.}
+far more complex that Instagram, having more or a similar complexity comparing to Facebook.\\
+\indent In LinkedIn the user profile (\textbf{UserProfile} box) is very rich in terms of what is important for building an individual professional image (profile),
+starting by one individual's basic information (\textbf{BasicInformation} box) that has information like name, location and current and/or previous jobs. Then
+the user profile has several sections with very specific purposes such as professional experience (\textbf{Experience} box), languages (\textbf{Languages} box) or
+education (\textbf{Education} box), all this summed up give a very precise perspective of an individual's "professional appearence". At the bottom of the profile
+we have along with the professional recommendations and connections, the skills or expertise section (\textbf{Skills} box), this is one of the most attractive features
+in the LinkedIn platform. Skills in LinkedIn are a tagging system that allow user's to expose their expertise trough their public profile and then receive feedback
+on them according to their ability on that specific skill, this is a very important and promising feature for matching user's profiles with
+job positions requirements.\\
+\indent LinkedIn's main entities are not only users, the industry is massively represented in this network too. Companies may have a company profile
+(\textbf{Company} and \textbf{CompanyProfile} boxes) where they present the company, containing basic information such as number of people following the company
+number of employees (giving the idea of the company dimension) and the area where the company fits (pharmaceuticals, technology etc.) (\textbf{NumberOfFollowers},
+\textbf{NumberOfEmployees} and \textbf{Area} boxes respectively).\\
+\indent Other important concept of LinkedIn is the user feed where the user can chronologically consult a series of posts produced by their connections
+or by companies that their follow.
+
+\subsection*{LinkedIn API}
+LinkedIn provides a REST API (\cite{linkapi}), but still similarly to the \glspl{osn} we been studying its very limited. In what concerns to data retrieval LinkedIn only allows
+the consult of basic profile data, this is the data retried from the LinkedIn interactive REST console:\\
+
+\begin{verbatim}
+  {
+  "firstName": "Daniel",
+  "headline": "Graduate Front-end Developer at Blip.pt",
+  "id": "k_yk8W37WH",
+  "lastName": "Caldas",
+  "siteStandardProfileRequest":  {
+    "url": "https://www.linkedin.com/profile/..."
+  }
+\end{verbatim}
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- ResearchGate
 \subsection{ResearchGate}
 ...
 
+%% ---------------------------------------------- Exploring Some OSNs
+%% -------------------------------------------------- Pinterest
+%\subsection{Pinterest}
+%...
+
 %% ---------------------------------------------- How Social Networks Have Changed The World
-\section{How Social Networks Have Changed The World}
-...
+%\section{How Social Networks Have Changed The World}
+%...
 % Cool overview: https://www.youtube.com/watch?v=trH4iuebjjI
 % What really changed? What people did that was good that people don't do anymore? A general overview to the impacts of OSNs!
