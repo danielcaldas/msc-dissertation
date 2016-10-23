@@ -203,7 +203,8 @@ visited locations (\textit{Locations} and \textit{VisitedPlaces} boxes respectiv
 may contain the personal interests that were explicitly inputed by the user (\textit{Likes} box).\\
 \indent In what concerns to user activity in the platform, the \textit{Timeline}, provides all the user
 Posts chronologically ordered, this is where Facebook dynamism takes place, users are constantly
-adding content to their timeline, it may be life related events or simply sharing other users posts linking content.\\
+adding content to their timeline, it may be life related events or simply sharing other users posts linking content. The user feed (\textit{Feed} box) represents
+a global timeline where the user can consult all the posts on his network (this is by default the user's landing page on the platform).\\
 \indent Facebook has, with time, become more then a user profile centralized network, it has invested in expand its horizons, becoming
 the place where pages of brands, companies, organizations (media, political, non-profitable etc.), or places (cities, monuments, bars etc.) live (\textit{Page/Local} box).
 This entities that are now cohabiting with users in the Facebook ecosystem, take advantage of the platform and its range to get their updates to most people as possible. The profile
@@ -300,18 +301,18 @@ world, makes LinkedIn platform more complex, even with a simplified representati
 \footnote{\indent In the schema presented on Figure \ref{img:linkdomain}, much of the platform complexity was simplified in order to produce a simple domain, and to narrow
 down this analysis to the core components and concepts of LinkedIn.}
 far more complex that Instagram, having more or a similar complexity comparing to Facebook.\\
-\indent In LinkedIn the user profile (\textbf{UserProfile} box) is very rich in terms of what is important for building an individual professional image (profile),
-starting by one individual's basic information (\textbf{BasicInformation} box) that has information like name, location and current and/or previous jobs. Then
-the user profile has several sections with very specific purposes such as professional experience (\textbf{Experience} box), languages (\textbf{Languages} box) or
-education (\textbf{Education} box), all this summed up give a very precise perspective of an individual's "professional appearence". At the bottom of the profile
-we have along with the professional recommendations and connections, the skills or expertise section (\textbf{Skills} box), this is one of the most attractive features
+\indent In LinkedIn the user profile (\textit{UserProfile} box) is very rich in terms of what is important for building an individual professional image (profile),
+starting by one individual's basic information (\textit{BasicInformation} box) that has information like name, location and current and/or previous jobs. Then
+the user profile has several sections with very specific purposes such as professional experience (\textit{Experience} box), languages (\textit{Languages} box) or
+education (\textit{Education} box), all this summed up give a very precise perspective of an individual's "professional appearence". At the bottom of the profile
+we have along with the professional recommendations and connections, the skills or expertise section (\textit{Skills} box), this is one of the most attractive features
 in the LinkedIn platform. Skills in LinkedIn are a tagging system that allow user's to expose their expertise trough their public profile and then receive feedback
 on them according to their ability on that specific skill, this is a very important and promising feature for matching user's profiles with
 job positions requirements.\\
 \indent LinkedIn's main entities are not only users, the industry is massively represented in this network too. Companies may have a company profile
-(\textbf{Company} and \textbf{CompanyProfile} boxes) where they present the company, containing basic information such as number of people following the company
-number of employees (giving the idea of the company dimension) and the area where the company fits (pharmaceuticals, technology etc.) (\textbf{NumberOfFollowers},
-\textbf{NumberOfEmployees} and \textbf{Area} boxes respectively).\\
+(\textit{Company} and \textit{CompanyProfile} boxes) where they present the company, containing basic information such as number of people following the company
+number of employees (giving the idea of the company dimension) and the area where the company fits (pharmaceuticals, technology etc.) (\textit{NumberOfFollowers},
+\textit{NumberOfEmployees} and \textit{Area} boxes respectively).\\
 \indent Other important concept of LinkedIn is the user feed where the user can chronologically consult a series of posts produced by their connections
 or by companies that their follow.
 
@@ -341,6 +342,7 @@ Horst Fickenscher, ResearchGate today has more than 11+ million members. We stri
 
 ResearchGate is an \gls{osn} built specifically for scientists, with the goal of easing the task of collaborative research around the globe. ResearchGate
 strikes to connect the world of science and make research open to all.
+\clearpage
 
 \subsubsection*{Domain Model}
 
@@ -358,22 +360,22 @@ Some terms on the schema presented in Figure \ref{img:rgatedomain} may be quite 
 \item \textbf{Topics} - Topics represent the user's scientific areas of interest, ResearchGate uses topics to provide personalized suggestions;
 \item \textbf{Disciplins} - Represent more broad areas of the user education,
 expertise and interest;
-\item \textbf{Type} \begin{small}(\textbf{Type} box connected with the \textbf{Publication} box in Figure \ref{img:rgatedomain})\end{small} - A type classifies a publication, this said, a publication may be an article, a book, a thesis a conference paper etc. .
+\item \textbf{Type} \begin{small}(\textit{Type} box connected with the \textit{Publication} box in Figure \ref{img:rgatedomain})\end{small} - A type classifies a publication, this said, a publication may be an article, a book, a thesis a conference paper etc. .
 \end{itemize}
 
 \subsubsection*{Domain Model Analysis}
 ResearchGate is a peculiar \gls{osn} that despite having connections between individuals, it has alongside connections between individuals and scientific publications,
-making the publication (\textbf{Publication} box) a social object, playing the same role that videos play in Youtube for example.\\
-\indent Like LinkedIn the user profile (\textbf{UserProfile} box), is very detailed and builds up a very clear image of the researches work, positions and areas of interest. The relations
-among users are bidirectional, following the followers/following (\textbf{Followers} and \textbf{Following} box) strategy like other \glspl{osn} such as Instagram or Twitter. Very simillarlly to LinkedIn, a
-user's profile has a skills (\textbf{Skills} box) section, where skills are expressed in the form of tags, the tag description is far more specific than LinkedIn tags, that may some
+making the publication (\textit{Publication} box) a social object, playing the same role that videos play in Youtube for example.\\
+\indent Like LinkedIn the user profile (\textit{UserProfile} box), is very detailed and builds up a very clear image of the researches work, positions and areas of interest. The relations
+among users are bidirectional, following the followers/following (\textit{Followers} and \textit{Following} box) strategy like other \glspl{osn} such as Instagram or Twitter. Very simillarlly to LinkedIn, a
+user's profile has a skills (\textit{Skills} box) section, where skills are expressed in the form of tags, the tag description is far more specific than LinkedIn tags, that may some
 times acquire very abstract or high level descriptions (e.g. Technology Information). In ResearchGate tags have are very specific and are
-normally related with the user topics (\textbf{Topics} box) or disciplines.\\
-\indent Publications play along with the user a main role in ResearchGate. Normally publications have associated a type (already explained in the data dictionary section), a date, an abstract and may have one or more authors. The main metrics for Publications rating are the number of reads (\textbf{Reads} box) and the number of
-citations (\textbf{Citations} box) of that publication. The publications may also be followed by users that may have interest on particular publications.\\
+normally related with the user topics (\textit{Topics} box) or disciplines.\\
+\indent Publications play along with the user a main role in ResearchGate. Normally publications have associated a type (already explained in the data dictionary section), a date, an abstract and may have one or more authors. The main metrics for Publications rating are the number of reads (\textit{Reads} box) and the number of
+citations (\textit{Citations} box) of that publication. The publications may also be followed by users that may have interest on particular publications.\\
 \indent Other concept of ResearchGate that raises the collaborative spirit among users, living up to the values that originated the platform, is the questioning system
-(\textbf{Question} box). Users may ask each other specific questions and have them answered by an expert on a specific scientific area, this opens up the possibility of having
-the best experts on a specific matter giving their opinion, thus the possibility of obtaining the "best answer possible in the globe".\\
+(\textit{Question} box). Users may ask each other specific questions and have them answered by an expert on a specific scientific area, this opens up the possibility of having
+the best experts on a specific matter giving their opinion, thus the possibility of obtaining the \textit{"best possible answer in the globe"}.\\
 \indent ResearchGate users' receive open jobs suggestions based on their profile, also user's have a post where they receive activity notifications of the people
 or publications that they are following.
 
@@ -382,11 +384,13 @@ Today ResearchGate does not provide any API for accessing its data or for any ki
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Pinterest
-%\subsection{Pinterest}
-%...
+\subsection{Pinterest}
+...
+
 
 %% ---------------------------------------------- How Social Networks Have Changed The World
-%\section{How Social Networks Have Changed The World}
-%...
+\section{How Social Networks Have Changed The World}
+...
 % Cool overview: https://www.youtube.com/watch?v=trH4iuebjjI
 % What really changed? What people did that was good that people don't do anymore? A general overview to the impacts of OSNs!
+% Phycological impacts on humans https://www.youtube.com/watch?v=HffWFd_6bJ0 NICE!!!
