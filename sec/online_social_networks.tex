@@ -61,7 +61,7 @@ of the most used \glspl{osn}.
 \hline
 \cellcolor{gray!10}Couchsurfing & 2004 & 12 000 000 & - & \begin{tabular}{@{}l@{}}Couchsurfing connects travelers with\\a global network of people willing\\to share in profound and meaningful ways,\\ making travel a truly\\ social experience. Is commonly used by travelers\\to find free hosts across the globe.\\\cite{csurf}\end{tabular}\\
 \hline
-\cellcolor{gray!10}ResearchGate & 2008 & 10 000 000 & - & \begin{tabular}{@{}l@{}}Built by scientists, for scientists.\\Connect the world of\\ science and make\\ research open to all. \cite{rgate}\end{tabular}\\
+\cellcolor{gray!10}ResearchGate & 2008 & \textgreater 11 000 000 & - & \begin{tabular}{@{}l@{}}Built by scientists, for scientists.\\Connect the world of\\ science and make\\ research open to all. \cite{rgate}\end{tabular}\\
 \hline
 \end{tabular}
 \caption{\label{table:osns} Table describing most used \glspl{osn}. (\cite{statista}, \cite{expandedramblings})}
@@ -228,7 +228,7 @@ have their apps embedded in the Facebook platform understand their audience and 
 from Facebook such as posts, photos, videos, pages etc. According to \cite{fbgapi}, the common scenarios for using the Graph API
 are the following: determine whether two people are friends on Facebook; publishing new status and updates, uploading content (photos, video etc.); sharing links. But in this project what we seek is
 build the most biggest and detailed network as possible, with analysis and visualization purposes in mind.\\
-\indent For building the network fetching users friends information is crucial, this was possible until Facebook Graph API v2.0 (trough the router \textit{/me/friends}), one could actually retrive
+\indent For building the network fetching users friends information is crucial, this was possible until Facebook Graph API v2.0 (trough the router \textit{/me/friends}), one could actually retrieve
 friends information and build a network from there. From v2.0 on, to achieve what was explained before, one must request a special permission called \textbf{user\_friends}
 from each user. The permission \textbf{user\_friends} is no longer included by default in every login. This change breaks down the possibility of gather Facebook information via its Graph API,
 this said, we need in the future to look up alternative paths to extract data from Facebook.
@@ -333,7 +333,52 @@ the consult of basic profile data, this is the data retried from the LinkedIn in
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- ResearchGate
 \subsection{ResearchGate}
-...
+
+\begin{quote}
+\textit{"Founded in 2008 by physicians Dr. Ijad Madisch and Dr. Sören Hofmayer, and computer scientist
+Horst Fickenscher, ResearchGate today has more than 11+ million members. We strive to help them make progress happen faster."} \cite{rgate}
+\end{quote}
+
+ResearchGate is an \gls{osn} built specifically for scientists, with the goal of easing the task of collaborative research around the globe. ResearchGate
+strikes to connect the world of science and make research open to all.
+
+\subsubsection*{Domain Model}
+
+\begin{figure}[h!]
+  \hspace*{-1in}
+  \includegraphics[width=1.20\textwidth]{img/researchgate-domain-model.jpg}
+\caption{\label{img:rgatedomain} ResearchGate domain model schema.}
+\end{figure}
+
+\subsubsection*{Data Dictionary}
+Some terms on the schema presented in Figure \ref{img:rgatedomain} may be quite ambiguous due to the the specificity that they represent. In order to make the schema fully legible and before diving into the domain model analysis, we present first, a small data dictionary detailing the terms one may found more ambiguous:
+
+\begin{itemize}
+\item \textbf{Scores} - This term represents a collection of metrics that evaluate the performance of a user based on his contributions and research experience. The user has also associated a global score;
+\item \textbf{Topics} - Topics represent the user's scientific areas of interest, ResearchGate uses topics to provide personalized suggestions;
+\item \textbf{Disciplins} - Represent more broad areas of the user education,
+expertise and interest;
+\item \textbf{Type} \begin{small}(\textbf{Type} box connected with the \textbf{Publication} box in Figure \ref{img:rgatedomain})\end{small} - A type classifies a publication, this said, a publication may be an article, a book, a thesis a conference paper etc. .
+\end{itemize}
+
+\subsubsection*{Domain Model Analysis}
+ResearchGate is a peculiar \gls{osn} that despite having connections between individuals, it has alongside connections between individuals and scientific publications,
+making the publication (\textbf{Publication} box) a social object, playing the same role that videos play in Youtube for example.\\
+\indent Like LinkedIn the user profile (\textbf{UserProfile} box), is very detailed and builds up a very clear image of the researches work, positions and areas of interest. The relations
+among users are bidirectional, following the followers/following (\textbf{Followers} and \textbf{Following} box) strategy like other \glspl{osn} such as Instagram or Twitter. Very simillarlly to LinkedIn, a
+user's profile has a skills (\textbf{Skills} box) section, where skills are expressed in the form of tags, the tag description is far more specific than LinkedIn tags, that may some
+times acquire very abstract or high level descriptions (e.g. Technology Information). In ResearchGate tags have are very specific and are
+normally related with the user topics (\textbf{Topics} box) or disciplines.\\
+\indent Publications play along with the user a main role in ResearchGate. Normally publications have associated a type (already explained in the data dictionary section), a date, an abstract and may have one or more authors. The main metrics for Publications rating are the number of reads (\textbf{Reads} box) and the number of
+citations (\textbf{Citations} box) of that publication. The publications may also be followed by users that may have interest on particular publications.\\
+\indent Other concept of ResearchGate that raises the collaborative spirit among users, living up to the values that originated the platform, is the questioning system
+(\textbf{Question} box). Users may ask each other specific questions and have them answered by an expert on a specific scientific area, this opens up the possibility of having
+the best experts on a specific matter giving their opinion, thus the possibility of obtaining the "best answer possible in the globe".\\
+\indent ResearchGate users' receive open jobs suggestions based on their profile, also user's have a post where they receive activity notifications of the people
+or publications that they are following.
+
+\subsubsection*{API}
+Today ResearchGate does not provide any API for accessing its data or for any kind of interaction with the platform.
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Pinterest

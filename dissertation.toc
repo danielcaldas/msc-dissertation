@@ -16,47 +16,47 @@
 \contentsline {subsection}{\numberline {3.3.2}Instagram}{13}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}LinkedIn}{15}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}ResearchGate}{17}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Network Analysis}{20}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Scientific Background}{20}{subsection.4.2.1}
-\contentsline {subsubsection}{Graphs}{20}{subsection.4.2.1}
-\contentsline {subsubsection}{Statistics}{20}{subsection.4.2.1}
-\contentsline {subsubsection}{...}{20}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Power Law}{20}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Centrality Measures}{20}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Link Analysis}{20}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}...}{20}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Six Degrees of Separation}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Network Visualization}{20}{section.4.4}
-\contentsline {section}{\numberline {4.5}Real World Applications}{20}{section.4.5}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The problem and its challenges}}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Proposed Solution}}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}Solution Requirements}{22}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Requirements Analysis}{22}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Requirements Specification}{22}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Requirements Prioritization}{22}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}System Modeling}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}System Architecture}{22}{section.6.3}
-\contentsline {section}{\numberline {6.4}Technology Selection}{22}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Technology A}{22}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Technology B}{22}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Technology C}{22}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Technology Comparison}{22}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Decision}{22}{subsection.6.4.5}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{23}{chapter.7}
-\contentsline {section}{\numberline {7.1}Data Extraction}{23}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Data Sources}{23}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Data Mining}{23}{section.7.2}
-\contentsline {section}{\numberline {7.3}Back end}{23}{section.7.3}
-\contentsline {section}{\numberline {7.4}Front end}{23}{section.7.4}
-\contentsline {section}{\numberline {7.5}Outcomes}{23}{section.7.5}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Case Studies}}{24}{chapter.8}
-\contentsline {section}{\numberline {8.1}Results}{24}{section.8.1}
-\contentsline {section}{\numberline {8.2}Discussion}{24}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary}{24}{section.8.3}
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Conclusion}}{25}{chapter.9}
-\contentsline {section}{\numberline {9.1}Conclusions}{25}{section.9.1}
-\contentsline {section}{\numberline {9.2}Prospect for future work}{25}{section.9.2}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Network Analysis}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Scientific Background}{22}{subsection.4.2.1}
+\contentsline {subsubsection}{Graphs}{22}{subsection.4.2.1}
+\contentsline {subsubsection}{Statistics}{22}{subsection.4.2.1}
+\contentsline {subsubsection}{...}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Power Law}{22}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Centrality Measures}{22}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Link Analysis}{22}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}...}{22}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Six Degrees of Separation}{22}{section.4.3}
+\contentsline {section}{\numberline {4.4}Network Visualization}{22}{section.4.4}
+\contentsline {section}{\numberline {4.5}Real World Applications}{22}{section.4.5}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The problem and its challenges}}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Proposed Solution}}{24}{chapter.6}
+\contentsline {section}{\numberline {6.1}Solution Requirements}{24}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Requirements Analysis}{24}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Requirements Specification}{24}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Requirements Prioritization}{24}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}System Modeling}{24}{section.6.2}
+\contentsline {section}{\numberline {6.3}System Architecture}{24}{section.6.3}
+\contentsline {section}{\numberline {6.4}Technology Selection}{24}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Technology A}{24}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Technology B}{24}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Technology C}{24}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Technology Comparison}{24}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Decision}{24}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Data Extraction}{25}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Data Sources}{25}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Data Mining}{25}{section.7.2}
+\contentsline {section}{\numberline {7.3}Back end}{25}{section.7.3}
+\contentsline {section}{\numberline {7.4}Front end}{25}{section.7.4}
+\contentsline {section}{\numberline {7.5}Outcomes}{25}{section.7.5}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Case Studies}}{26}{chapter.8}
+\contentsline {section}{\numberline {8.1}Results}{26}{section.8.1}
+\contentsline {section}{\numberline {8.2}Discussion}{26}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary}{26}{section.8.3}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Conclusion}}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Conclusions}{27}{section.9.1}
+\contentsline {section}{\numberline {9.2}Prospect for future work}{27}{section.9.2}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
