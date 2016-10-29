@@ -386,8 +386,33 @@ Today ResearchGate does not provide any API for accessing its data or for any ki
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Pinterest
 \subsection{Pinterest}
-...
+According to \cite{pintabout}, Pinterest \textbf{is the world's catalog of ideas}. Created by Ben Silbermann, Paul Sciarra and Evan Sharp and launched in 2010, Pinterest is a simple but yet very original \gls{osn}, instead of aiming for connecting people like Facebook or LinkedIn, it aims for inspire people trough new ideas.
 
+\subsubsection*{Domain Model}
+
+\begin{figure}[h!]
+  \hspace*{-1in}
+  \includegraphics[width=1.20\textwidth]{img/pinterest-domain-model.jpg}
+\caption{\label{img:pintdomain} Pinterest domain model schema.}
+\end{figure}
+
+\subsubsection*{Data Dictionary}
+As one may notice from Figure \ref{img:pintdomain}, Pinterest introduces very particular concepts that may lack explanation, that is why we present first a small data dictionay before going trough the analysis, as we did with ResearchGate on a previous section:
+
+\begin{itemize}
+\item \textbf{Pin} - A Pin is the basic unit of Pinterest, it represents an idea of some user, presented in some context (the board context), and it is presented to us with a picture;
+\item \textbf{Board} - As the name suggests, a board is a collection of pins. Boards are created from users to other users, and normally present pins within some context (e.g. travels, technology, food etc.). In Pinterest boards may be followed by other users;
+\item \textbf{NumberOfPinedTimes} - This entity is not entirely a Pinterest entity, instead it represents a relevant metric introduced to measure pins popularity, and it refers to the act of saving pins. Pins that are presented to the users may be saved (or \textit{"pinned"}), and the number of times that users have saved a particular pin is expressed in Figure \ref{img:pintdomain} by the box \textit{NumberOfPinnedTimes};
+\end{itemize}
+
+\subsubsection*{Domain Model Analysis}
+Pinterest introduces new concepts forming a very original \gls{osn}, because it's very different from others that we analyzed previously. Just as we seen in ResearchGate, where the domain model is build around a social object (the scientific publication), with Pinterest we have a similar scenario, where the concept of the platform is built around a different social object the Pin (\textit{Pin} box), which also as a grouped perspective introduced by a group or collection of pins that are the boards (\textit{Board} pin). Pinterest is basically a set of pins aggregated in boards that are explored in the platform accordingly to the user's interests.\\
+\indent Simmilarly to other networks (e.g. Instagram) Pinterest also has direct unidirectional connections between users that adopt the concept of \textit{"follow/following"} (\textit{Followers} and \textit{Following} boxes). As user's can follow publications in ResearchGate, Pinterest users may follow boards, being then notified if some pin is added to that specific board.\\
+\indent In what concerns to Pins, they may be commented by users (\textit{Comments} box), they also may be targeted by likes as posts in Facebook (\textit{Likes} box). A particular point concerning to Pins is that they can have a explicit external reference, for instance, if some image is extracted by some other web site or from other \gls{osn} they can be explicitly referenced, and that same reference appears at the top of the pin along with its title (\textit{ExternalSource} box).\\
+\indent Pinterest was the traditional concept of feed, but in this case, the feed represents a completely different concept compared to other \gls{osn}. First the content of the feed (pins) is not related with users we follow on the network, is instead related is our personal interests (\textit{InterestArea} box) and second, they are not presented according to a chronological order, and visually they do not follow the standards of typical timeline/feed design, instead the different pins displayed on some user's feed, form some kind of board or catalog, like the ones people use to hang in walls and pin post-its on it.
+
+\subsubsection*{Pinterest API}
+According to \cite{pintdev}, Pinterest provides a REST API for developers interact with the platform. The data restrictions follow Facebook politics, where the application that integrates Pinterest API can only fetch data for authenticated users. Pinterest provides endpoints to interact with users, boards and pins. Concerning to the requests limitation, Pinterest offers a 60 minute sliding window where 1000 requests can be made by unique user token.
 
 %% ---------------------------------------------- How Social Networks Have Changed The World
 \section{How Social Networks Have Changed The World}

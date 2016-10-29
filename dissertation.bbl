@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,12 @@ Vangie Beal.
 \bibitem[couchsurfing.com(2016)]{csurf}
 couchsurfing.com.
 \newblock Couchsurfing about page, 2016.
+
+\bibitem[Developers(2016)]{pintdev}
+Pinterest Developers.
+\newblock {Pinterest developers page}.
+\newblock \url{https://developers.pinterest.com/}, 2016.
+\newblock Online; accessed 29 October 2016.
 
 \bibitem[developers.facebook.com/docs/graph-api/common scenarios(2016)]{fbgapi}
 developers.facebook.com/docs/graph-api/common scenarios.
@@ -76,6 +82,12 @@ Marktest.
 \bibitem[meetup.com(2016)]{meetup}
 meetup.com.
 \newblock Meetup about page, 2016.
+
+\bibitem[Pinterest(2016)]{pintabout}
+Pinterest.
+\newblock {Pinterest about page}.
+\newblock \url{https://about.pinterest.com/en}, 2016.
+\newblock Online; accessed 29 October 2016.
 
 \bibitem[researchgate.net(2016)]{rgate}
 researchgate.net.
