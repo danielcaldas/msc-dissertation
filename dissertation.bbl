@@ -1,9 +1,15 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[AsapSCIENCE(2014)]{asapscience}
+AsapSCIENCE.
+\newblock {5 Crazy Ways Social Media is changing your brain right now}.
+\newblock \url{https://www.youtube.com/watch?v=HffWFd_6bJ0}, 2014.
+\newblock Online accessed 29 October 2016.
 
 \bibitem[Barnes(1954)]{barnes1954class}
 John~Arundel Barnes.
@@ -22,7 +28,7 @@ couchsurfing.com.
 Pinterest Developers.
 \newblock {Pinterest developers page}.
 \newblock \url{https://developers.pinterest.com/}, 2016.
-\newblock Online; accessed 29 October 2016.
+\newblock Online accessed 29 October 2016.
 
 \bibitem[developers.facebook.com/docs/graph-api/common scenarios(2016)]{fbgapi}
 developers.facebook.com/docs/graph-api/common scenarios.
@@ -36,6 +42,23 @@ developers.facebook.com/products/.
 Cambridge Dictionary.
 \newblock Cambridge dictionaries online, 2002.
 
+\bibitem[Duggan(2015)]{demogsmu}
+Maeve Duggan.
+\newblock {The Demographics of Social Media Users}.
+\newblock
+  \url{http://www.pewinternet.org/2015/08/19/the-demographics-of-social-media-users/},
+  2015.
+\newblock Online accessed 29 October 2016.
+
+\bibitem[Elgot(2015)]{relrevfacebook}
+Jessica Elgot.
+\newblock {From relationships to revolutions: seven ways Facebook has changed
+  the world}.
+\newblock
+  \url{https://www.theguardian.com/technology/2015/aug/28/from-relationships-to-revolutions-seven-ways-facebook-has-changed-the-world},
+  2015.
+\newblock Online accessed 29 October 2016.
+
 \bibitem[Ellison et~al.(2007)]{ellison2007social}
 Nicole~B Ellison et~al.
 \newblock Social network sites: Definition, history, and scholarship.
@@ -46,13 +69,21 @@ Nicole~B Ellison et~al.
 expandedramblings.com.
 \newblock Social media statistics, 2016.
 
+\bibitem[Farida~Vis(2016)]{6wayschange}
+Alejandra~Guzman Farida~Vis.
+\newblock {6 ways social media is changing the world}.
+\newblock
+  \url{https://www.weforum.org/agenda/2016/04/6-ways-social-media-is-changing-the-world/},
+  2016.
+\newblock Online accessed 29 October 2016.
+
 \bibitem[Guardian(2016)]{microlink}
 The Guardian.
 \newblock {LinkedIn bought by Microsoft for \$26.2bn in cash}.
 \newblock
   \url{https://www.theguardian.com/technology/2016/jun/13/linkedin-bought-by-microsoft-for-262bn-in-cash},
   2016.
-\newblock Online; accessed 22 October 2016.
+\newblock Online accessed 22 October 2016.
 
 \bibitem[https://developer.linkedin.com/docs/rest api(2016)]{linkapi}
 https://developer.linkedin.com/docs/rest api.
@@ -87,7 +118,7 @@ meetup.com.
 Pinterest.
 \newblock {Pinterest about page}.
 \newblock \url{https://about.pinterest.com/en}, 2016.
-\newblock Online; accessed 29 October 2016.
+\newblock Online accessed 29 October 2016.
 
 \bibitem[researchgate.net(2016)]{rgate}
 researchgate.net.
