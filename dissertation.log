@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  29 OCT 2016 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  29 OCT 2016 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1595,21 +1595,22 @@ LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 
 [3]) [4]
 chapter 3.
-(./sec/online_social_networks.tex
-LaTeX Font Info:    Try loading font information for OML+pplj on input line 32.
-
-LaTeX Font Info:    No file OMLpplj.fd. on input line 32.
+(./sec/online_social_networks/online_social_networks.tex
+(./sec/online_social_networks/chapter_introduction.tex)
+(./sec/online_social_networks/table_of_osns.tex
+LaTeX Font Info:    Try loading font information for OML+pplj on input line 8.
+LaTeX Font Info:    No file OMLpplj.fd. on input line 8.
 
 
 LaTeX Font Warning: Font shape `OML/pplj/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 32.
+(Font)              for symbol `textgreater' on input line 8.
 
 Missing character: There is no â in font pplr9o!
 Missing character: There is no € in font pplr9o!
 Missing character: There is no ™ in font pplr9o!
 
-Overfull \hbox (53.31088pt too wide) in paragraph at lines 26--67
+Overfull \hbox (53.31088pt too wide) in paragraph at lines 2--43
 []|   [] 
  []
 
@@ -1620,36 +1621,37 @@ Overfull \hbox (53.31088pt too wide) in paragraph at lines 26--67
 Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
-[6] <img/timeline.png, id=269, 448.67625pt x 712.6625pt>
+[6]) (./sec/online_social_networks/history_of_osns.tex
+<img/timeline.png, id=269, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
-
-<use img/timeline.png>
-Package pdftex.def Info: img/timeline.png used on input line 96.
+ <use img/timeline.png>
+Package pdftex.def Info: img/timeline.png used on input line 4.
 (pdftex.def)             Requested size: 309.85626pt x 492.1835pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 <./img/timeline.png>] [9]
+) (./sec/online_social_networks/portuguese_and_osns.tex [7] [8 <./img/timeline.
+png>]) (./sec/online_social_networks/exploring_some_osns.tex [9]
 <img/facebook-domain-model.jpg, id=303, 1302.8675pt x 872.25874pt>
 File: img/facebook-domain-model.jpg Graphic file (type jpg)
 
 <use img/facebook-domain-model.jpg>
-Package pdftex.def Info: img/facebook-domain-model.jpg used on input line 191.
+Package pdftex.def Info: img/facebook-domain-model.jpg used on input line 38.
 (pdftex.def)             Requested size: 566.59625pt x 379.33632pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 190--192
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 37--39
 []|  [] 
  []
 
 [10] [11 <./img/facebook-domain-model.jpg>]
-Overfull \hbox (31.55342pt too wide) in paragraph at lines 225--236
+Overfull \hbox (31.55342pt too wide) in paragraph at lines 72--83
 \OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
  to [][]developers.facebook.com/docs/graph-
  []
 
 [12]
-Overfull \hbox (47.59229pt too wide) in paragraph at lines 245--246
+Overfull \hbox (47.59229pt too wide) in paragraph at lines 92--93
 \OT1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion."
  [][]\OT1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
  []
@@ -1658,22 +1660,22 @@ Overfull \hbox (47.59229pt too wide) in paragraph at lines 245--246
 File: img/instagram-domain-model.jpg Graphic file (type jpg)
 
 <use img/instagram-domain-model.jpg>
-Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 259.
+Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 106.
 
 (pdftex.def)             Requested size: 566.59625pt x 366.9461pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 258--260
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 105--107
 []|  [] 
  []
 
 [13] [14 <./img/instagram-domain-model.jpg>]
-Overfull \hbox (12.51135pt too wide) in paragraph at lines 274--280
+Overfull \hbox (12.51135pt too wide) in paragraph at lines 121--127
 \OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
 ps://www.instagram.com/developer/limits/[][]
  []
 
 
-Overfull \hbox (38.56065pt too wide) in paragraph at lines 285--290
+Overfull \hbox (38.56065pt too wide) in paragraph at lines 132--137
 \OT1/pplj/m/n/10.95 Moving on to the next []OSN we now have LinkedIn. Ac-cord-i
 ng to [][]https://press.linkedin.com/about
  []
@@ -1682,10 +1684,10 @@ ng to [][]https://press.linkedin.com/about
 File: img/linkedin-domain-model.jpg Graphic file (type jpg)
 
 <use img/linkedin-domain-model.jpg>
-Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 295.
+Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 142.
 (pdftex.def)             Requested size: 531.18314pt x 302.78307pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 294--296
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 141--143
 []|  [] 
  []
 
@@ -1693,13 +1695,13 @@ Overfull \hbox (18.67935pt too wide) in paragraph at lines 294--296
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.3454pt too wide) in paragraph at lines 299--318
+Overfull \hbox (1.3454pt too wide) in paragraph at lines 146--165
 \OT1/pplj/m/n/10.95 Being a more pur-pose ori-ented []OSN and fo-cused on the p
 ro-fes-sional world, makes LinkedIn
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
@@ -1715,11 +1717,11 @@ Missing character: There is no ¶ in font pplri9o!
 File: img/researchgate-domain-model.jpg Graphic file (type jpg)
 
 <use img/researchgate-domain-model.jpg>
-Package pdftex.def Info: img/researchgate-domain-model.jpg used on input line 3
-53.
+Package pdftex.def Info: img/researchgate-domain-model.jpg used on input line 2
+00.
 (pdftex.def)             Requested size: 531.18314pt x 295.57222pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 352--354
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 199--201
 []|  [] 
  []
 
@@ -1730,15 +1732,15 @@ Overfull \hbox (18.67935pt too wide) in paragraph at lines 352--354
 File: img/pinterest-domain-model.jpg Graphic file (type jpg)
 
 <use img/pinterest-domain-model.jpg>
-Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 395.
+Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 242.
 
 (pdftex.def)             Requested size: 531.18314pt x 281.6899pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 394--396
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 241--243
 []|  [] 
  []
 
-[20 <./img/pinterest-domain-model.jpg>]) [21] [22]
+[20 <./img/pinterest-domain-model.jpg>])) [21] [22]
 chapter 4.
 (./sec/social_network_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 56--61
@@ -1815,10 +1817,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 37296 strings out of 493014
- 692187 string characters out of 6133352
+ 37327 strings out of 493014
+ 693680 string characters out of 6133352
  1075010 words of memory out of 5000000
- 40021 multiletter control sequences out of 15000+600000
+ 40036 multiletter control sequences out of 15000+600000
  53429 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
