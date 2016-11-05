@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -77,6 +77,12 @@ Alejandra~Guzman Farida~Vis.
   2016.
 \newblock Online accessed 29 October 2016.
 
+\bibitem[Fiore and Donath(2005)]{fiore2005homophily}
+Andrew~T Fiore and Judith~S Donath.
+\newblock Homophily in online dating: when do you like someone like yourself?
+\newblock In \emph{CHI'05 Extended Abstracts on Human Factors in Computing
+  Systems}, pages 1371--1374. ACM, 2005.
+
 \bibitem[Guardian(2016)]{microlink}
 The Guardian.
 \newblock {LinkedIn bought by Microsoft for \$26.2bn in cash}.
@@ -110,6 +116,12 @@ Martin Kilduff and Wenpin Tsai.
 Marktest.
 \newblock Os portugueses e as redes sociais, 2016.
 
+\bibitem[McPherson et~al.(2001)McPherson, Smith-Lovin, and
+  Cook]{mcpherson2001birds}
+Miller McPherson, Lynn Smith-Lovin, and James~M Cook.
+\newblock Birds of a feather: Homophily in social networks.
+\newblock \emph{Annual review of sociology}, pages 415--444, 2001.
+
 \bibitem[meetup.com(2016)]{meetup}
 meetup.com.
 \newblock Meetup about page, 2016.
@@ -123,6 +135,13 @@ Pinterest.
 \bibitem[researchgate.net(2016)]{rgate}
 researchgate.net.
 \newblock Researchgate about page, 2016.
+
+\bibitem[Retica(2006)]{nytmagazinehomop}
+Aaron Retica.
+\newblock Homophily.
+\newblock
+  \url{http://www.nytimes.com/2006/12/10/magazine/10Section2a.t-4.html}, 2006.
+\newblock Online accessed 5 November 2016.
 
 \bibitem[statista.com(2016)]{statista}
 statista.com.
