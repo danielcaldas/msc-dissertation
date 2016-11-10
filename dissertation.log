@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  8 NOV 2016 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  10 NOV 2016 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1562,25 +1562,36 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-(./sec/intro.tex)pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.1}) has been already used, duplicate ignored
+(./sec/intro.texpdfTeX warning (ext4): destination with the same identifier (na
+me{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 	\chapter{Social Networks in Sociology}
-                                              [1
+l.26 \item D
+            ata extraction trough social media APIs or trough web crawlers (...
+[1
 
 
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+]
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 26.
+
+LaTeX Font Info:    No file OMSpplj.fd. on input line 26.
+
+
+LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 26.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.102 	\chapter{Social Networks in Sociology}
-                                              [2]
+                                              [2] [3]
 chapter 2.
-(./sec/social_networks_in_sociology.tex [3
+(./sec/social_networks_in_sociology.tex [4
 
 
 ]
@@ -1588,15 +1599,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 66.
-
-LaTeX Font Info:    No file OMSpplj.fd. on input line 66.
-
-LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 66.
-
-[4]
+[5]
 LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/pplj/b/it' tried instead on input line 90.
 Missing character: There is no ‚ in font pplbi9o!
@@ -1605,12 +1608,12 @@ Missing character: There is no ú in font pplbi9o!
 Missing character: There is no ‚ in font pplbi9o!
 Missing character: There is no Ä in font pplbi9o!
 Missing character: There is no ù in font pplbi9o!
- [5]
+ [6]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-) [6] [7]
+) [7] [8]
 chapter 3.
 (./sec/online_social_networks/online_social_networks.tex
 (./sec/online_social_networks/chapter_introduction.tex)
@@ -1631,15 +1634,15 @@ Overfull \hbox (53.31088pt too wide) in paragraph at lines 2--43
 []|   [] 
  []
 
-[8
+[9
 
 
 ]
 Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
-[9]) (./sec/online_social_networks/history_of_osns.tex
-<img/timeline.png, id=313, 448.67625pt x 712.6625pt>
+[10]) (./sec/online_social_networks/history_of_osns.tex
+<img/timeline.png, id=318, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
  <use img/timeline.png>
 Package pdftex.def Info: img/timeline.png used on input line 4.
@@ -1648,9 +1651,9 @@ Package pdftex.def Info: img/timeline.png used on input line 4.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sec/online_social_networks/portuguese_and_osns.tex [10] [11 <./img/timelin
-e.png>]) (./sec/online_social_networks/exploring_some_osns.tex [12]
-<img/facebook-domain-model.jpg, id=349, 1302.8675pt x 872.25874pt>
+) (./sec/online_social_networks/portuguese_and_osns.tex [11] [12 <./img/timelin
+e.png>]) (./sec/online_social_networks/exploring_some_osns.tex [13]
+<img/facebook-domain-model.jpg, id=353, 1302.8675pt x 872.25874pt>
 File: img/facebook-domain-model.jpg Graphic file (type jpg)
 
 <use img/facebook-domain-model.jpg>
@@ -1661,19 +1664,19 @@ Overfull \hbox (54.09247pt too wide) in paragraph at lines 37--39
 []|  [] 
  []
 
-[13] [14 <./img/facebook-domain-model.jpg>]
+[14] [15 <./img/facebook-domain-model.jpg>]
 Overfull \hbox (31.55342pt too wide) in paragraph at lines 72--83
 \OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
  to [][]developers.facebook.com/docs/graph-
  []
 
-[15]
+[16]
 Overfull \hbox (47.59229pt too wide) in paragraph at lines 92--93
 \OT1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion."
  [][]\OT1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
  []
 
-<img/instagram-domain-model.jpg, id=375, 1142.2675pt x 739.76375pt>
+<img/instagram-domain-model.jpg, id=380, 1142.2675pt x 739.76375pt>
 File: img/instagram-domain-model.jpg Graphic file (type jpg)
 
 <use img/instagram-domain-model.jpg>
@@ -1685,7 +1688,7 @@ Overfull \hbox (54.09247pt too wide) in paragraph at lines 105--107
 []|  [] 
  []
 
-[16] [17 <./img/instagram-domain-model.jpg>]
+[17] [18 <./img/instagram-domain-model.jpg>]
 Overfull \hbox (12.51135pt too wide) in paragraph at lines 121--127
 \OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
 ps://www.instagram.com/developer/limits/[][]
@@ -1697,7 +1700,7 @@ Overfull \hbox (38.56065pt too wide) in paragraph at lines 132--137
 ng to [][]https://press.linkedin.com/about
  []
 
-<img/linkedin-domain-model.jpg, id=398, 1318.9275pt x 751.80875pt>
+<img/linkedin-domain-model.jpg, id=402, 1318.9275pt x 751.80875pt>
 File: img/linkedin-domain-model.jpg Graphic file (type jpg)
 
 <use img/linkedin-domain-model.jpg>
@@ -1717,20 +1720,20 @@ Overfull \hbox (1.3454pt too wide) in paragraph at lines 146--165
 ro-fes-sional world, makes LinkedIn
  []
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
-[19 <./img/linkedin-domain-model.jpg>]
+[20 <./img/linkedin-domain-model.jpg>]
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Missing character: There is no √ in font pplri9o!
 Missing character: There is no ∂ in font pplri9o!
- [20]
-<img/researchgate-domain-model.jpg, id=425, 1262.7175pt x 702.625pt>
+ [21]
+<img/researchgate-domain-model.jpg, id=429, 1262.7175pt x 702.625pt>
 File: img/researchgate-domain-model.jpg Graphic file (type jpg)
 
 <use img/researchgate-domain-model.jpg>
@@ -1742,10 +1745,10 @@ Overfull \hbox (18.67935pt too wide) in paragraph at lines 199--201
 []|  [] 
  []
 
-[21
+[22
 
- <./img/researchgate-domain-model.jpg>] [22]
-<img/pinterest-domain-model.jpg, id=440, 1258.7025pt x 667.49374pt>
+ <./img/researchgate-domain-model.jpg>] [23]
+<img/pinterest-domain-model.jpg, id=445, 1258.7025pt x 667.49374pt>
 File: img/pinterest-domain-model.jpg Graphic file (type jpg)
 
 <use img/pinterest-domain-model.jpg>
@@ -1757,7 +1760,7 @@ Overfull \hbox (18.67935pt too wide) in paragraph at lines 241--243
 []|  [] 
  []
 
-[23 <./img/pinterest-domain-model.jpg>]) [24]
+[24 <./img/pinterest-domain-model.jpg>]) [25]
 (./sec/online_social_networks/how_osns_have_changed_the_world.tex
 Missing character: There is no ‚ in font pplbi9o!
 Missing character: There is no Ä in font pplbi9o!
@@ -1777,40 +1780,40 @@ Missing character: There is no ô in font pplri9o!
 Missing character: There is no ‚ in font pplb9o!
 Missing character: There is no Ä in font pplb9o!
 Missing character: There is no ì in font pplb9o!
-)) [25]
-[26] [27]
+)) [26]
+[27] [28]
 chapter 4.
 (./sec/social_network_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
-[28
+[29
 
 
-]) [29] [30]
+]) [30] [31]
 chapter 5.
-[31
-
-
-]
-chapter 6.
 [32
 
 
 ]
-chapter 7.
+chapter 6.
 [33
 
 
 ]
-chapter 8.
+chapter 7.
 [34
 
 
 ]
-chapter 9.
+chapter 8.
 [35
+
+
+]
+chapter 9.
+[36
 
 
 ] (./dissertation.bbl
@@ -1831,7 +1834,7 @@ Overfull \hbox (5.8166pt too wide) in paragraph at lines 54--61
 cebook-[]has-[]changed-[]the-[]world$[][]\OT1/pplj/m/n/10.95 ,
  []
 
-[36
+[37
 
 
 
@@ -1856,7 +1859,7 @@ Underfull \hbox (badness 3068) in paragraph at lines 87--93
 h$[][]\OT1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
  []
 
-) [37]
+) [38]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./dissertation.aux
@@ -1876,8 +1879,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 37395 strings out of 493014
- 694975 string characters out of 6133352
+ 37396 strings out of 493014
+ 694982 string characters out of 6133352
  1075004 words of memory out of 5000000
  40073 multiletter control sequences out of 15000+600000
  55519 words of font info for 112 fonts, out of 8000000 for 9000
@@ -1901,10 +1904,10 @@ urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
 uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (46 pages, 1379665 bytes).
+Output written on dissertation.pdf (47 pages, 1382059 bytes).
 PDF statistics:
- 820 PDF objects out of 1000 (max. 8388607)
- 739 compressed objects within 8 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 825 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 157 named destinations out of 1000 (max. 500000)
  17979 words of extra memory for PDF output out of 20736 (max. 10000000)
 
