@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  13 NOV 2016 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  28 NOV 2016 22:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1642,7 +1642,7 @@ Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
 [10]) (./sec/online_social_networks/history_of_osns.tex
-<img/timeline.png, id=318, 448.67625pt x 712.6625pt>
+<img/timeline.png, id=322, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
  <use img/timeline.png>
 Package pdftex.def Info: img/timeline.png used on input line 4.
@@ -1653,61 +1653,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./sec/online_social_networks/portuguese_and_osns.tex [11] [12 <./img/timelin
 e.png>]) (./sec/online_social_networks/exploring_some_osns.tex [13]
-<img/facebook-domain-model.jpg, id=353, 1302.8675pt x 872.25874pt>
-File: img/facebook-domain-model.jpg Graphic file (type jpg)
+<img/facebook-domain-model-opt.jpg, id=357, 1090.0725pt x 1230.5975pt>
+File: img/facebook-domain-model-opt.jpg Graphic file (type jpg)
 
-<use img/facebook-domain-model.jpg>
-Package pdftex.def Info: img/facebook-domain-model.jpg used on input line 38.
-(pdftex.def)             Requested size: 566.59625pt x 379.33632pt.
+<use img/facebook-domain-model-opt.jpg>
+Package pdftex.def Info: img/facebook-domain-model-opt.jpg used on input line 3
+9.
+(pdftex.def)             Requested size: 522.32817pt x 589.66612pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 37--39
+Overfull \hbox (45.95938pt too wide) in paragraph at lines 37--40
 []|  [] 
  []
 
-[14] [15 <./img/facebook-domain-model.jpg>]
-Overfull \hbox (31.55342pt too wide) in paragraph at lines 72--83
+[14]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+
+Overfull \vbox (2.06584pt too high) has occurred while \output is active []
+
+
+[16 <./img/facebook-domain-model-opt.jpg>]
+Overfull \hbox (31.55342pt too wide) in paragraph at lines 73--84
 \OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
  to [][]developers.facebook.com/docs/graph-
  []
 
-[16]
-Overfull \hbox (47.59229pt too wide) in paragraph at lines 92--93
+
+Overfull \hbox (47.59229pt too wide) in paragraph at lines 93--94
 \OT1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion."
  [][]\OT1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
  []
 
-<img/instagram-domain-model.jpg, id=380, 1142.2675pt x 739.76375pt>
+[17] <img/instagram-domain-model.jpg, id=392, 1142.2675pt x 739.76375pt>
 File: img/instagram-domain-model.jpg Graphic file (type jpg)
 
 <use img/instagram-domain-model.jpg>
-Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 106.
+Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 107.
 
 (pdftex.def)             Requested size: 566.59625pt x 366.9461pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 105--107
-[]|  [] 
- []
-
-[17] [18 <./img/instagram-domain-model.jpg>]
-Overfull \hbox (12.51135pt too wide) in paragraph at lines 121--127
-\OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
-ps://www.instagram.com/developer/limits/[][]
- []
-
-
-Overfull \hbox (38.56065pt too wide) in paragraph at lines 132--137
-\OT1/pplj/m/n/10.95 Moving on to the next []OSN we now have LinkedIn. Ac-cord-i
-ng to [][]https://press.linkedin.com/about
- []
-
-<img/linkedin-domain-model.jpg, id=402, 1318.9275pt x 751.80875pt>
-File: img/linkedin-domain-model.jpg Graphic file (type jpg)
-
-<use img/linkedin-domain-model.jpg>
-Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 142.
-(pdftex.def)             Requested size: 531.18314pt x 302.78307pt.
-
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 141--143
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 106--108
 []|  [] 
  []
 
@@ -1715,53 +1705,81 @@ Overfull \hbox (18.67935pt too wide) in paragraph at lines 141--143
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.3454pt too wide) in paragraph at lines 146--165
-\OT1/pplj/m/n/10.95 Being a more pur-pose ori-ented []OSN and fo-cused on the p
-ro-fes-sional world, makes LinkedIn
+Overfull \hbox (12.51135pt too wide) in paragraph at lines 122--128
+\OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
+ps://www.instagram.com/developer/limits/[][]
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+[18]
+Overfull \hbox (38.56065pt too wide) in paragraph at lines 133--138
+\OT1/pplj/m/n/10.95 Moving on to the next []OSN we now have LinkedIn. Ac-cord-i
+ng to [][]https://press.linkedin.com/about
+ []
+
+<img/linkedin-domain-model.jpg, id=406, 1318.9275pt x 751.80875pt>
+File: img/linkedin-domain-model.jpg Graphic file (type jpg)
+
+<use img/linkedin-domain-model.jpg>
+Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 143.
+(pdftex.def)             Requested size: 531.18314pt x 302.78307pt.
+
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 142--144
+[]|  [] 
+ []
+
+[19 <./img/instagram-domain-model.jpg>] [20 <./img/linkedin-domain-model.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-[20 <./img/linkedin-domain-model.jpg>]
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Missing character: There is no Ã in font pplri9o!
 Missing character: There is no ¶ in font pplri9o!
- [21]
-<img/researchgate-domain-model.jpg, id=429, 1262.7175pt x 702.625pt>
+[21] <img/researchgate-domain-model.jpg, id=433, 1262.7175pt x 702.625pt>
 File: img/researchgate-domain-model.jpg Graphic file (type jpg)
 
 <use img/researchgate-domain-model.jpg>
 Package pdftex.def Info: img/researchgate-domain-model.jpg used on input line 2
-00.
+01.
 (pdftex.def)             Requested size: 531.18314pt x 295.57222pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 199--201
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 200--202
 []|  [] 
  []
 
 [22
 
  <./img/researchgate-domain-model.jpg>] [23]
-<img/pinterest-domain-model.jpg, id=445, 1258.7025pt x 667.49374pt>
+<img/pinterest-domain-model.jpg, id=449, 1258.7025pt x 667.49374pt>
 File: img/pinterest-domain-model.jpg Graphic file (type jpg)
 
 <use img/pinterest-domain-model.jpg>
-Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 242.
+Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 243.
 
 (pdftex.def)             Requested size: 531.18314pt x 281.6899pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 241--243
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 242--244
 []|  [] 
  []
 
-[24 <./img/pinterest-domain-model.jpg>]) [25]
-(./sec/online_social_networks/how_osns_have_changed_the_world.tex
+[24 <./img/pinterest-domain-model.jpg>] [25]
+<img/twitter-domain-model.jpg, id=465, 660.4675pt x 883.3pt>
+File: img/twitter-domain-model.jpg Graphic file (type jpg)
+
+<use img/twitter-domain-model.jpg>
+Package pdftex.def Info: img/twitter-domain-model.jpg used on input line 274.
+(pdftex.def)             Requested size: 486.92181pt x 651.21921pt.
+
+
+LaTeX Warning: Float too large for page by 36.61893pt on input line 276.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./sec/online_social_networks/how_osns_have_changed_the_world.tex
 Missing character: There is no â in font pplbi9o!
 Missing character: There is no € in font pplbi9o!
 Missing character: There is no œ in font pplbi9o!
@@ -1781,39 +1799,39 @@ Missing character: There is no â in font pplb9o!
 Missing character: There is no € in font pplb9o!
 Missing character: There is no “ in font pplb9o!
 )) [26]
-[27] [28]
+[27] [28] [29 <./img/twitter-domain-model.jpg>]
 chapter 4.
 (./sec/social_network_analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
-[29
+[30
 
 
-]) [30] [31]
+]) [31] [32]
 chapter 5.
-[32
-
-
-]
-chapter 6.
 [33
 
 
 ]
-chapter 7.
+chapter 6.
 [34
 
 
 ]
-chapter 8.
+chapter 7.
 [35
 
 
 ]
-chapter 9.
+chapter 8.
 [36
+
+
+]
+chapter 9.
+[37
 
 
 ] (./dissertation.bbl
@@ -1834,7 +1852,7 @@ Overfull \hbox (5.8166pt too wide) in paragraph at lines 54--61
 cebook-[]has-[]changed-[]the-[]world$[][]\OT1/pplj/m/n/10.95 ,
  []
 
-[37
+[38
 
 
 
@@ -1859,7 +1877,7 @@ Underfull \hbox (badness 3068) in paragraph at lines 87--93
 h$[][]\OT1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
  []
 
-) [38]
+) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./dissertation.aux
@@ -1876,10 +1894,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 37396 strings out of 493014
- 694982 string characters out of 6133352
+ 37407 strings out of 493014
+ 695234 string characters out of 6133352
  1075004 words of memory out of 5000000
- 40073 multiletter control sequences out of 15000+600000
+ 40080 multiletter control sequences out of 15000+600000
  55519 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1901,10 +1919,10 @@ urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
 uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (47 pages, 1381968 bytes).
+Output written on dissertation.pdf (48 pages, 1522712 bytes).
 PDF statistics:
- 825 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 157 named destinations out of 1000 (max. 500000)
- 17979 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 755 compressed objects within 8 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 17992 words of extra memory for PDF output out of 20736 (max. 10000000)
 
