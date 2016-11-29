@@ -269,37 +269,37 @@ One \glspl{osn} that frequently is bring to discussion for being more of a \text
 listed in Table \ref{table:osns}, is basically a social networking microblogging service that allows their users to broadcast short posts (short because they're maximum size cannot exceed the 140 characters) called tweets.
 Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams, gaining fast worldwide popularity, Twitter has today more then 300 Million users according to Table \ref{table:osns}.\\
 
-\indent Unlike many other social networks that have private or semi-public profiles with restrict policies concerning to exterior acess to information within the network (examples of this kind of \glspl{osn} may be LinkedIn or Facebook),
-Twitter default settings are public, making tweets spread more effectivily accross all social media, this particularity makes Twitter one of the most \textit{"barrier-free}" \glspl{osn}. Of course that despite unregistred people may read tweets
+\indent Unlike many other social networks that have private or semi-public profiles with restrict policies concerning to exterior access to information within the network (examples of this kind of \glspl{osn} may be LinkedIn or Facebook),
+Twitter default settings are public, making tweets spread more effectively across all social media, this particularity makes Twitter one of the most \textit{"barrier-free}" \glspl{osn}. Of course that despite unregistered people may read tweets
 they cannot interact with them as Twitter users by linking, comment or \textit{"retweet"}\footnote{The act of retweet consists and share some existent tweet originated by another user.} them.
 
 \subsubsection*{Domain Model}
 
 \begin{figure}[h!]
   \hspace*{-1in}
-  \includegraphics[width=1.10\textwidth]{img/twitter-domain-model.jpg}
+  \includegraphics[width=1.0\textwidth]{img/twitter-domain-model.jpg}
 \caption{\label{img:twitter} Twitter domain model schema.}
 \end{figure}
 
 \subsubsection*{Domain Model Analysis}
 In Figure \ref{img:twitter} on may observe a very concise representation of the Twitter domain. Despite being a very minimalist \gls{osn}
-concerning to data properties and relationship complecity, Twitter has some very semantically strong features that brand the platform, being those
-features used among other well known \glspl{osn} such as Facebook. We are refering specifically the hastag ((\textit{HashTag} box) and the (\textit{TwitterHandle} box),
+concerning to data properties and relationship complexity, Twitter has some very semantically strong features that brand the platform, being those
+features used among other well known \glspl{osn} such as Facebook. We are referring specifically the hashtag ((\textit{HashTag} box) and the (\textit{TwitterHandle} box),
 but let us first introduce some of the more basic features.\\
 
 \indent As usual in these platforms Twitter's users posses a user profile
 (\textit{UserProfile} box) that as attached to it some properties and user metrics such as number of followers, number of tweets, number of
-other users the user is following, and number of likes the user has obtained across all his or her tweets (\textit{Followers}, \textit{Tweets}, \textit{Following}, \textit{Likes} boxes respectivelly).\\
+other users the user is following, and number of likes the user has obtained across all his or her tweets (\textit{Followers}, \textit{Tweets}, \textit{Following}, \textit{Likes} boxes respectively).\\
 
 \indent The tweet is the basic unit of Twitter, is trough tweets that information flows in Twitter. Also tweets may have several comments, and they may
-be \textit{retweeted}. Now back to hastags and twitter handles. Hashtags is in some way how these caos of unstructured tweets gain some semantic
-value, in order to agroup tweets according to a specific matter. Hashtags may in many cases be mesleading, because users
-start to adopt hashtag to express sentiments or simply describing a tweet pushing back to the already mencioned unstructed caos.
-Twitter handles are the same as tags in Facebook they serve as a mean to mark a specific twitter user, a twitter handle may be invoqued in a comment or
-in a tweet leading directily to the respective user's twitter profile.
+be \textit{retweeted}. Now back to hashtags and twitter handles. Hashtags is in some way how these chaos of unstructured tweets gain some semantic
+value, in order to a group tweets according to a specific matter. Hashtags may in many cases be misleading, because users
+start to adopt hashtag to express sentiments or simply describing a tweet pushing back to the already mentioned unstructured chaos.
+Twitter handles are the same as tags in Facebook they serve as a mean to mark a specific twitter user, a twitter handle may be used in a comment or
+in a tweet leading directly to the respective user's twitter profile.
 
 \subsubsection*{Twitter API}
-Simillarly to other \glspl{osn}, twitter provides a REST API to fetch users data such as profile data, tweets or user's followers. Restrictions are felt
+Similarly to other \glspl{osn}, twitter provides a REST API to fetch users data such as profile data, tweets or user's followers. Restrictions are felt
 again this API is very limited providing a 15 minutes window for making http requests.
 
 \subsubsection*{Other data sources}
@@ -307,7 +307,7 @@ As more and more of \gls{osn} appear to be closing doors to data availability ev
 want to search for alternative data sources to feed the system that we intend to build along this project. Projects as
 KONECT(http://konect.uni-koblenz.de/) aim to provide large data sets of networks collected online so that researchers may
 perform all types of operations and experiments on that data. This kind of alternatives are very valuable in terms of network
-analysis even for real time data analysis systems that may in a more imature phase of the project benefit from this data sets.
+analysis even for real time data analysis systems that may in a more immature phase of the project benefit from this data sets.
 
 \begin{quote}
 \textit{"KONECT (the Koblenz Network Collection) is a project to collect large network datasets of all
@@ -319,4 +319,4 @@ of Web Science and Technologies at the University of Koblenz–Landau."} \cite{r
 %% -------------------------------------------------- Summary
 \subsection{Summary}
 In this section we have explored with some detail five of the \glspl{osn} listed in the Table \ref{table:osns}. In this analysis we followed a similar approach for analyzing each \gls{osn}, adding only an additional step for the more domain specific \glspl{osn}, that were ResearchGate and Pinterest, which was building a small data dictionary in order to ease the interpretation of the domain model schema.\\
-\indent From the analysis we may draw some generic conclusions concerning the domain of each \gls{osn}. Despite the differences and specificness of each platform, all them sum up to the basic primitive concepts of social networks, that are \textbf{actors} and \textbf{relational ties} between them, which form \textbf{subgroups} originating \textbf{groups} that build the network. This being the high level conclusion for our analysis, there are other patterns that emerge when analyzing different \glspl{osn} like the \textbf{user profile} that is a key element characteristic of this platforms and \textbf{feeds} (or \textbf{timelines}) that represent a standardized way of communicating events within a \gls{osn}.
+\indent From the analysis we may draw some generic conclusions concerning the domain of each \gls{osn}. Despite the differences and specifics of each platform, all them sum up to the basic primitive concepts of social networks, that are \textbf{actors} and \textbf{relational ties} between them, which form \textbf{subgroups} originating \textbf{groups} that build the network. This being the high level conclusion for our analysis, there are other patterns that emerge when analyzing different \glspl{osn} like the \textbf{user profile} that is a key element characteristic of this platforms and \textbf{feeds} (or \textbf{timelines}) that represent a standardized way of communicating events within a \gls{osn}.
