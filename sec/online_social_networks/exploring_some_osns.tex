@@ -266,19 +266,12 @@ According to \cite{pintdev}, Pinterest provides a REST API for developers intera
 %% -------------------------------------------------- Twitter
 \subsection{Twitter}
 One \glspl{osn} that frequently is bring to discussion for being more of a \textit{"news content generator"} is Twitter. Twitter is another of must most used \gls{osn}
-listed in Table \ref{table:osns}, is basically a social networking microblogging service that allows their users to broadcast short posts (short because they're maximum size cannot exceed the 140 characters) called tweets
+listed in Table \ref{table:osns}, is basically a social networking microblogging service that allows their users to broadcast short posts (short because they're maximum size cannot exceed the 140 characters) called tweets.
+Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams, gaining fast worldwide popularity, Twitter has today more then 300 Million users according to Table \ref{table:osns}.\\
 
-
-...
-
-
-Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams and launched in July, whereby the service rapidly gained worldwide popularity. In 2012, more than 100 million users posted 340 million tweets a day,[12] and the service handled an average of 1.6 billion search queries per day.[13][14][15] In 2013, it was one of the ten most-visited websites and has been described as "the SMS of the Internet".[16][17] As of March 2016, Twitter had more than 310 million monthly active users.[6] On the day of the 2016 U.S. presidential election, Twitter proved to be the largest source of breaking news, with 40 million tweets sent by 10 p.m. that day.[18]
-
-Twitter is a free social networking microblogging service that allows registered members to broadcast short posts called tweets. Twitter members can broadcast tweets and follow other users' tweets by using multiple platforms and devices. Tweets and replies to tweets can be sent by cell phone text message, desktop client or by posting at the Twitter.com website.
-
-The default settings for Twitter are public. Unlike Facebook or LinkedIn, where members need to approve social connections, anyone can follow anyone on publicTwitter. To weave tweets into a conversation thread or connect them to a general topic, members can add hashtags to a keyword in their post. The hashtag, which acts like a meta tag, is expressed as #keyword.
-
-Twitter (/ˈtwɪtər/) is an online news and social networking service where users post and read short 140-character messages called "tweets". Registered users can post and read tweets, but those who are unregistered can only read them. Users access Twitter through the website interface, SMS or mobile device app.[10] Twitter Inc. is based in San Francisco and has more than 25 offices around the world.[11]
+\indent Unlike many other social networks that have private or semi-public profiles with restrict policies concerning to exterior acess to information within the network (examples of this kind of \glspl{osn} may be LinkedIn or Facebook),
+Twitter default settings are public, making tweets spread more effectivily accross all social media, this particularity makes Twitter one of the most \textit{"barrier-free}" \glspl{osn}. Of course that despite unregistred people may read tweets
+they cannot interact with them as Twitter users by linking, comment or \textit{"retweet"}\footnote{The act of retweet consists and share some existent tweet originated by another user.} them.
 
 \subsubsection*{Domain Model}
 
@@ -289,11 +282,38 @@ Twitter (/ˈtwɪtər/) is an online news and social networking service where use
 \end{figure}
 
 \subsubsection*{Domain Model Analysis}
+In Figure \ref{img:twitter} on may observe a very concise representation of the Twitter domain. Despite being a very minimalist \gls{osn}
+concerning to data properties and relationship complecity, Twitter has some very semantically strong features that brand the platform, being those
+features used among other well known \glspl{osn} such as Facebook. We are refering specifically the hastag ((\textit{HashTag} box) and the (\textit{TwitterHandle} box),
+but let us first introduce some of the more basic features.\\
 
-\subsubsection*{Pinterest API}
+\indent As usual in these platforms Twitter's users posses a user profile
+(\textit{UserProfile} box) that as attached to it some properties and user metrics such as number of followers, number of tweets, number of
+other users the user is following, and number of likes the user has obtained across all his or her tweets (\textit{Followers}, \textit{Tweets}, \textit{Following}, \textit{Likes} boxes respectivelly).\\
+
+\indent The tweet is the basic unit of Twitter, is trough tweets that information flows in Twitter. Also tweets may have several comments, and they may
+be \textit{retweeted}. Now back to hastags and twitter handles. Hashtags is in some way how these caos of unstructured tweets gain some semantic
+value, in order to agroup tweets according to a specific matter. Hashtags may in many cases be mesleading, because users
+start to adopt hashtag to express sentiments or simply describing a tweet pushing back to the already mencioned unstructed caos.
+Twitter handles are the same as tags in Facebook they serve as a mean to mark a specific twitter user, a twitter handle may be invoqued in a comment or
+in a tweet leading directily to the respective user's twitter profile.
+
+\subsubsection*{Twitter API}
+Simillarly to other \glspl{osn}, twitter provides a REST API to fetch users data such as profile data, tweets or user's followers. Restrictions are felt
+again this API is very limited providing a 15 minutes window for making http requests.
 
 \subsubsection*{Other data sources}
-... talk here about the free available and anonymous databases that one can download online!
+As more and more of \gls{osn} appear to be closing doors to data availability even when for research purposes one may
+want to search for alternative data sources to feed the system that we intend to build along this project. Projects as
+KONECT(http://konect.uni-koblenz.de/) aim to provide large data sets of networks collected online so that researchers may
+perform all types of operations and experiments on that data. This kind of alternatives are very valuable in terms of network
+analysis even for real time data analysis systems that may in a more imature phase of the project benefit from this data sets.
+
+\begin{quote}
+\textit{"KONECT (the Koblenz Network Collection) is a project to collect large network datasets of all
+types in order to perform research in network science and related fields, collected by the Institute
+of Web Science and Technologies at the University of Koblenz–Landau."} \cite{rgate}
+\end{quote}
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Summary
