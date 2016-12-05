@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  29 NOV 2016 02:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  5 DEC 2016 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1562,34 +1562,43 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-(./sec/intro.texpdfTeX warning (ext4): destination with the same identifier (na
-me{page.1}) has been already used, duplicate ignored
+(./sec/intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 \item D
-            ata extraction trough social media APIs or trough web crawlers (...
-[1
+l.11 
+      [1
 
 
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 17.
 
-LaTeX Font Info:    No file OMSpplj.fd. on input line 26.
+LaTeX Font Info:    No file OMSpplj.fd. on input line 17.
 
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 26.
+(Font)              for symbol `textbullet' on input line 17.
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 	\chapter{Social Networks in Sociology}
-                                              [2] [3]
+l.36 \section{Research Hypothesis}
+                                   [2]) [3]
 chapter 2.
 (./sec/social_networks_in_sociology.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
@@ -1930,7 +1939,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
 Here is how much of TeX's memory you used:
  37409 strings out of 493014
  695247 string characters out of 6133352
- 1075003 words of memory out of 5000000
+ 1075004 words of memory out of 5000000
  40080 multiletter control sequences out of 15000+600000
  55519 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1956,10 +1965,10 @@ urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
 uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (49 pages, 1526630 bytes).
+Output written on dissertation.pdf (49 pages, 1528013 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 764 compressed objects within 8 object streams
+ 850 PDF objects out of 1000 (max. 8388607)
+ 765 compressed objects within 8 object streams
  162 named destinations out of 1000 (max. 500000)
  17992 words of extra memory for PDF output out of 20736 (max. 10000000)
 
