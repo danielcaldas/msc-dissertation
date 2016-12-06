@@ -64,18 +64,14 @@
 	% Cover page ---------------------------------------
 	\umfrontcover
 	\umtitlepage
-	
-	% Add acknowledgements ----------------------------
-	\chapter*{Acknowledgements}
-	Write acknowledgements here
 
 	% Add abstracts (en,pt) ---------------------------
 	\chapter*{Abstract}
-	Write abstract here (en) or import corresponding file
+	\input{sec/0_abstract/abstract_en}
 	
 	\cleardoublepage
 	\chapter*{Resumo}
-	Escrever aqui resumo (pt) ou importar respectivo ficheiro
+	\input{sec/0_abstract/abstract_pt}
 	
 	% Summary Lists ------------------------------------
 	\tableofcontents
@@ -112,49 +108,9 @@
 	\chapter{Social Network Analysis}
 	\input{sec/4_social_network_analysis/social_network_analysis}
 
-
-	% CHAPTER - Problem and Challenges ---------------
-	\chapter{The problem and its challenges}
-
-
-	% CHAPTER - Proposed Solution -------------------------
-	\chapter{Proposed Solution}
-	\section{Solution Requirements}
-	\subsection{Requirements Analysis}
-	\subsection{Requirements Specification}
-	\subsection{Requirements Prioritization}
-	\section{System Modeling}
-	\section{System Architecture}
-	\section{Technology Selection}
-	\subsection{Technology A}
-	\subsection{Technology B}
-	\subsection{Technology C}
-	\subsection{Technology Comparison}
-	\subsection{Decision}
-	
-	
-	% CHAPTER - Implementation -------------------------
-	\chapter{Implementation}
-	\section{Data Extraction}
-	\subsection{Data Sources} % Related to Online Social Networks Chapter
-	\section{Data Mining}
-	\section{Back end}
-	\section{Front end}
-	\section{Outcomes}
-
-
-	% CHAPTER - Results -------------------------
-	\chapter{Case Studies}
-	Application of main result (examples and case studies)
-    	\section{Results}
-    	\section{Discussion}
-	\section{Summary}
-
-	% CHAPTER - Conclusion/Future Work --------------
+	% CHAPTER - Conclusion and Future Work for RPD --------------
 	\chapter{Conclusion}
-	Conclusions and future work.
-	\section{Conclusions}
-	\section{Prospect for future work}
+	Conclusions and future work for the RPD. Also do a summary on what work was developed until this point.
 			
 	\bookmarksetup{startatroot}
 	\addtocontents{toc}{\bigskip}
