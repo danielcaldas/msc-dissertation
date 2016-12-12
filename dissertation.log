@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 DEC 2016 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  12 DEC 2016 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1585,7 +1585,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 
+l.43 
       [2]) [3]
 chapter 2.
 (./sec/2_social_networks_in_sociology/social_networks_in_sociology.tex
@@ -1932,7 +1932,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
 Here is how much of TeX's memory you used:
  37396 strings out of 493014
  696336 string characters out of 6133352
- 1075002 words of memory out of 5000000
+ 1075004 words of memory out of 5000000
  40081 multiletter control sequences out of 15000+600000
  55519 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1958,7 +1958,7 @@ urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
 uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (47 pages, 1534981 bytes).
+Output written on dissertation.pdf (47 pages, 1534930 bytes).
 PDF statistics:
  719 PDF objects out of 1000 (max. 8388607)
  637 compressed objects within 7 object streams
