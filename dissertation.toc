@@ -17,25 +17,25 @@
 \contentsline {subsection}{\numberline {3.3.1}Facebook}{14}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Instagram}{17}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}LinkedIn}{19}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}ResearchGate}{21}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Pinterest}{23}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Twitter}{26}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Summary}{28}{subsection.3.3.7}
-\contentsline {section}{\numberline {3.4}How Online Social Networks Have Changed The World}{29}{section.3.4}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Graphs Theory}{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}Network Analysis}{32}{section.4.3}
-\contentsline {section}{\numberline {4.4}Small World Problem, Stanley Milgram's Experiment}{33}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Six Degrees of Separation}{33}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Network Visualization}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Social Network Analysis Software}{33}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Structure}{33}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Gephi}{34}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}UCINET}{34}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}SocNetV}{34}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}NetworkX}{34}{subsection.4.6.5}
-\contentsline {section}{\numberline {4.7}Real World Applications}{35}{section.4.7}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{36}{chapter.5}
+\contentsline {subsection}{\numberline {3.3.4}ResearchGate}{22}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Pinterest}{25}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Twitter}{27}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Summary}{30}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}How Online Social Networks Have Changed The World}{30}{section.3.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Social Network Analysis}}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Graphs Theory}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Network Analysis}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}Small World Problem, Stanley Milgram's Experiment}{35}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Six Degrees of Separation}{35}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Network Visualization}{35}{section.4.5}
+\contentsline {section}{\numberline {4.6}Social Network Analysis Software}{35}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Structure}{35}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Gephi}{36}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}UCINET}{36}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}SocNetV}{36}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}NetworkX}{36}{subsection.4.6.5}
+\contentsline {section}{\numberline {4.7}Real World Applications}{37}{section.4.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{38}{chapter.5}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
