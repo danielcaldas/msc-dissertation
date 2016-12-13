@@ -1,15 +1,9 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[AsapSCIENCE(2014)]{asapscience}
-AsapSCIENCE.
-\newblock {5 Crazy Ways Social Media is changing your brain right now}.
-\newblock \url{https://www.youtube.com/watch?v=HffWFd_6bJ0}, 2014.
-\newblock Online accessed 29 October 2016.
 
 \bibitem[Barnes(1954)]{barnes1954class}
 John~Arundel Barnes.
@@ -26,6 +20,13 @@ Mathieu Bastian, Sebastien Heymann, and Mathieu Jacomy.
 \bibitem[Beal(2016)]{webopediasn}
 Vangie Beal.
 \newblock Webopedia definition for social network, 2016.
+
+\bibitem[Berridge and Robinson(1998)]{berridge1998role}
+Kent~C Berridge and Terry~E Robinson.
+\newblock What is the role of dopamine in reward: hedonic impact, reward
+  learning, or incentive salience?
+\newblock \emph{Brain Research Reviews}, 28\penalty0 (3):\penalty0 309--369,
+  1998.
 
 \bibitem[couchsurfing.com(2016)]{csurf}
 couchsurfing.com.
@@ -143,6 +144,20 @@ Martin Kilduff and Wenpin Tsai.
 \newblock \emph{Social networks and organizations}.
 \newblock Sage, 2003.
 
+\bibitem[Kunegis(2013)]{kunegis2013konect}
+J{\'e}r{\^o}me Kunegis.
+\newblock Konect: the koblenz network collection.
+\newblock In \emph{Proceedings of the 22nd International Conference on World
+  Wide Web}, pages 1343--1350. ACM, 2013.
+
+\bibitem[Lin et~al.(2012)Lin, Zhou, Du, Qin, Zhao, Xu, and
+  Lei]{lin2012abnormal}
+Fuchun Lin, Yan Zhou, Yasong Du, Lindi Qin, Zhimin Zhao, Jianrong Xu, and Hao
+  Lei.
+\newblock Abnormal white matter integrity in adolescents with internet
+  addiction disorder: a tract-based spatial statistics study.
+\newblock \emph{PloS one}, 7\penalty0 (1):\penalty0 e30253, 2012.
+
 \bibitem[Lin~Freeman(2002)]{ucinet-software}
 Steve~Borgatti Lin~Freeman, Bruce~MacEvoy.
 \newblock Ucinet software.
@@ -161,6 +176,12 @@ Miller McPherson, Lynn Smith-Lovin, and James~M Cook.
 \bibitem[meetup.com(2016)]{meetup}
 meetup.com.
 \newblock Meetup about page, 2016.
+
+\bibitem[Ophir et~al.(2009)Ophir, Nass, and Wagner]{ophir2009cognitive}
+Eyal Ophir, Clifford Nass, and Anthony~D Wagner.
+\newblock Cognitive control in media multitaskers.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 106\penalty0
+  (37):\penalty0 15583--15587, 2009.
 
 \bibitem[Pinterest(2016)]{pintabout}
 Pinterest.
