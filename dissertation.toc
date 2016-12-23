@@ -36,6 +36,9 @@
 \contentsline {subsection}{\numberline {4.6.4}SocNetV}{36}{subsection.4.6.4}
 \contentsline {subsection}{\numberline {4.6.5}NetworkX}{36}{subsection.4.6.5}
 \contentsline {section}{\numberline {4.7}Real World Applications}{37}{section.4.7}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Conclusion}}{38}{chapter.5}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {System Architecture Proposal}}{38}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}General overview}{39}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}Detailed Components Description}{39}{subsection.5.0.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusion}}{40}{chapter.6}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
