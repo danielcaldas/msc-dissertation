@@ -40,5 +40,7 @@
 \contentsline {subsection}{\numberline {5.0.1}General overview}{39}{subsection.5.0.1}
 \contentsline {subsection}{\numberline {5.0.2}Detailed Components Description}{39}{subsection.5.0.2}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusion}}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Working Plan}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Where we are and Future Work}{41}{section.6.2}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
