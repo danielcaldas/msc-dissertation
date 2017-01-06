@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 JAN 2017 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 JAN 2017 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1895,7 +1895,7 @@ Missing character: There is no â in font pplri9o!
 Missing character: There is no € in font pplri9o!
 Missing character: There is no “ in font pplri9o!
 
-Overfull \hbox (0.51326pt too wide) in paragraph at lines 319--320
+Overfull \hbox (0.51326pt too wide) in paragraph at lines 320--321
 []\OT1/pplj/m/it/10.95 "KONECT (the Koblenz Net-work Col-lec-tion) is a project
  to col-lect large net-work datasets
  []
@@ -1932,26 +1932,34 @@ Missing character: There is no ¢ in font pplr9o!
 [38]
 chapter 5.
 (./sec/system_arch_proposal.tex
-<img/architecture.png, id=525, 794.97pt x 614.295pt>
+<img/architecture.png, id=526, 1766.6pt x 1365.1pt>
 File: img/architecture.png Graphic file (type png)
+ <use img/architecture.png>
+Package pdftex.def Info: img/architecture.png used on input line 6.
+(pdftex.def)             Requested size: 486.92181pt x 376.24727pt.
 
-<use img/architecture.png>
-Package pdftex.def Info: img/architecture.png used on input line 4.
-(pdftex.def)             Requested size: 486.92181pt x 376.266pt.
-
-Overfull \hbox (25.0068pt too wide) in paragraph at lines 3--5
+Overfull \hbox (25.0068pt too wide) in paragraph at lines 5--7
  |  [] 
  []
 
 [39
 
 
- <./img/architecture.png>]) [40]
+ <./img/architecture.png>]
+./sec/system_arch_proposal.tex:29: Undefined control sequence.
+<recently read> \arcfull 
+                         
+l.29     \item \textbf{\textit{\arcfull{osn}}}
+                                               - This are the object of stud...
+
+? ret
+OK, entering \nonstopmode...
+[40]) [41]
 chapter 6.
-(./sec/conclusion.tex [41
+(./sec/conclusion.tex [42
 
 
-]) [42] (./dissertation.bbl
+]) [43] (./dissertation.bbl
 Underfull \hbox (badness 4752) in paragraph at lines 77--84
 []\OT1/pplj/m/n/10.95 Jessica El-got.  From re-la-tion-ships to rev-o-lu-tions:
  seven ways Face-book has
@@ -1969,7 +1977,7 @@ Overfull \hbox (5.8166pt too wide) in paragraph at lines 77--84
 cebook-[]has-[]changed-[]the-[]world$[][]\OT1/pplj/m/n/10.95 ,
  []
 
-[43
+[44
 
 
 
@@ -2000,13 +2008,13 @@ Underfull \hbox (badness 3068) in paragraph at lines 117--123
 h$[][]\OT1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
  []
 
-[44]
+[45]
 Underfull \hbox (badness 1221) in paragraph at lines 202--206
 []\OT1/pplj/m/n/10.95 Stanford Pritchard Lab.  Struc-ture soft-ware.  [][]$\OT1
 /cmtt/m/n/10.95 http : / / pritchardlab . stanford . edu /
  []
 
-) [45]
+) [46]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./dissertation.aux
@@ -2023,10 +2031,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 37455 strings out of 493014
- 697453 string characters out of 6133352
+ 37459 strings out of 493014
+ 697516 string characters out of 6133352
  1075004 words of memory out of 5000000
- 40113 multiletter control sequences out of 15000+600000
+ 40116 multiletter control sequences out of 15000+600000
  56804 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2051,10 +2059,10 @@ urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
 uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (53 pages, 1599517 bytes).
+Output written on dissertation.pdf (54 pages, 1652331 bytes).
 PDF statistics:
- 783 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 152 named destinations out of 1000 (max. 500000)
+ 788 PDF objects out of 1000 (max. 8388607)
+ 697 compressed objects within 7 object streams
+ 153 named destinations out of 1000 (max. 500000)
  17789 words of extra memory for PDF output out of 20736 (max. 10000000)
 
