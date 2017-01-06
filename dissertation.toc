@@ -26,21 +26,20 @@
 \contentsline {section}{\numberline {4.1}Fundamental Concepts for Network Analysis}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Graphs Theory}{34}{section.4.2}
 \contentsline {section}{\numberline {4.3}Network Analysis}{34}{section.4.3}
-\contentsline {section}{\numberline {4.4}Small World Problem, Stanley Milgram's Experiment}{35}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Six Degrees of Separation}{35}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Network Visualization}{35}{section.4.5}
-\contentsline {section}{\numberline {4.6}Social Network Analysis Software}{35}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Structure}{35}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.4}Small World Problem}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}Network Visualization}{36}{section.4.5}
+\contentsline {section}{\numberline {4.6}Social Network Analysis Software}{36}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Structure}{36}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Gephi}{36}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}UCINET}{36}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}SocNetV}{36}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}NetworkX}{36}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.3}UCINET}{37}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}SocNetV}{37}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}NetworkX}{37}{subsection.4.6.5}
 \contentsline {section}{\numberline {4.7}Real World Applications}{37}{section.4.7}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {System Architecture Proposal}}{38}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}General overview}{39}{subsection.5.0.1}
-\contentsline {subsection}{\numberline {5.0.2}Detailed Components Description}{39}{subsection.5.0.2}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusion}}{40}{chapter.6}
-\contentsline {section}{\numberline {6.1}Working Plan}{40}{section.6.1}
-\contentsline {section}{\numberline {6.2}Where we are and Future Work}{41}{section.6.2}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {System Architecture Proposal}}{39}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}General overview}{40}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}Detailed Components Description}{40}{subsection.5.0.2}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusion}}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Working Plan}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Where we are and Future Work}{42}{section.6.2}
 \vspace \bigskipamount 
 \vspace \bigskipamount 

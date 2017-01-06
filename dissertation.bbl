@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,16 +10,21 @@ John~Arundel Barnes.
 \newblock \emph{Class and committees in a Norwegian island parish}.
 \newblock Plenum New York, 1954.
 
-\bibitem[Bastian et~al.(2009)Bastian, Heymann, and Jacomy]{ICWSM09154}
-Mathieu Bastian, Sebastien Heymann, and Mathieu Jacomy.
-\newblock Gephi: An open source software for exploring and manipulating
+\bibitem[Bastian et~al.(2009)Bastian, Heymann, Jacomy,
+  et~al.]{bastian2009gephi}
+Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy, et~al.
+\newblock Gephi: an open source software for exploring and manipulating
   networks.
-\newblock 2009.
-\newblock URL \url{http://www.aaai.org/ocs/index.php/ICWSM/09/paper/view/154}.
+\newblock \emph{ICWSM}, 8:\penalty0 361--362, 2009.
 
 \bibitem[Beal(2016)]{webopediasn}
 Vangie Beal.
 \newblock Webopedia definition for social network, 2016.
+
+\bibitem[Beck et~al.(2014)Beck, Burch, Diehl, and Weiskopf]{beck2014state}
+Fabian Beck, Michael Burch, Stephan Diehl, and Daniel Weiskopf.
+\newblock The state of the art in visualizing dynamic graphs.
+\newblock \emph{EuroVis STAR}, 2014.
 
 \bibitem[Berridge and Robinson(1998)]{berridge1998role}
 Kent~C Berridge and Terry~E Robinson.
@@ -27,6 +32,11 @@ Kent~C Berridge and Terry~E Robinson.
   learning, or incentive salience?
 \newblock \emph{Brain Research Reviews}, 28\penalty0 (3):\penalty0 309--369,
   1998.
+
+\bibitem[Borgatti(2002)]{borgatti2002netdraw}
+Stephen~P Borgatti.
+\newblock Netdraw: Graph visualization software.
+\newblock \emph{Harvard: Analytic Technologies}, 2002.
 
 \bibitem[couchsurfing.com(2016)]{csurf}
 couchsurfing.com.
@@ -111,12 +121,11 @@ The Guardian.
   2016.
 \newblock Online accessed 22 October 2016.
 
-\bibitem[Heer and danah boyd(2005)]{2005-vizster}
-Jeffrey Heer and danah boyd.
+\bibitem[Heer and Boyd(2005)]{heer2005vizster}
+Jeffrey Heer and Danah Boyd.
 \newblock Vizster: Visualizing online social networks.
-\newblock In \emph{IEEE Information Visualization (InfoVis)}, pages 32--39,
-  2005.
-\newblock URL \url{http://vis.stanford.edu/papers/vizster}.
+\newblock In \emph{IEEE Symposium on Information Visualization, 2005. INFOVIS
+  2005.}, pages 32--39. IEEE, 2005.
 
 \bibitem[https://developer.linkedin.com/docs/rest api(2016)]{linkapi}
 https://developer.linkedin.com/docs/rest api.
