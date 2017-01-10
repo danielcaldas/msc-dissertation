@@ -16,9 +16,7 @@ main and distinct parts of the system:
 \begin{itemize}
     \item \textbf{\textit{Information extraction and data mining}} - All the other components are built for extracting information
     from existent databases, or from \glspl{osn} (through the \textbf{Web Crawler}) and store information being information properly treated before stored;
-    \item \textbf{\textit{Application/Visualization and Analysis Tool}} - The tool that directly interacts with the end user
-    its composed by a \textbf{Back-end} that fetches data from a database, runs calculations and algorithms on top of stored networks
-    as the user requests by interacting with a \textbf{Front-end} that provides the visualization and interaction features.
+    \item \textbf{\textit{Analysis and Application/Visualization}} - The tool that directly interacts with the end user is composed by a \textbf{Back-end} that fetches data from a database, runs calculations and algorithms on top of stored networks as the user requests by interacting with a \textbf{Front-end} that provides the visualization and interaction features.
 \end{itemize}
 
 
@@ -31,5 +29,5 @@ The components presented in Figure \ref{img:architectureprop} more detailed expl
     \item \textbf{\textit{ExtractionAPI}} - This module consists in a wrapper for extracting information from social networks, and allows extraction orchestration spreading extraction processes along multiple hosts, so that we can mitigate the slowness of web crawlers and extraction process in general;
     \item \textbf{\textit{Database}} - The database is where we store our data. It is not represented by the \textit{classical cilindro} because it resembles relational databases, and the possibility of using non relational databases such as document databases, grows strongly within the project, and the reason is the unstructured data that we will be storing into our database;
     \item \textbf{\textit{Back-end}} - Ideally this back-end component application will read the already normalized information from the database, run \glspl{sna} calculations and algorithms against the stored networks;
-    \item \textbf{\textit{Front-end}} - The front-end will render the networks to the user, and will allow the user to interact with the network, this interactions will be defined in the requirements specifications.
+    \item \textbf{\textit{Front-end}} - The front-end will render the networks to the user, and will allow the user to interact with the network; these interactions will be defined in the requirements specifications.
 \end{itemize}
