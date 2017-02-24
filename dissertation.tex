@@ -8,6 +8,8 @@
 ]{scrbook}
 
 \usepackage{dissertation}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 % ACRONYMS -----------------------------------------------------
 \usepackage[acronym,nonumberlist,nomain]{glossaries}
@@ -64,18 +66,14 @@
 	% Cover page ---------------------------------------
 	\umfrontcover
 	\umtitlepage
-	
-	% Add acknowledgements ----------------------------
-	\chapter*{Acknowledgements}
-	Write acknowledgements here
 
 	% Add abstracts (en,pt) ---------------------------
 	\chapter*{Abstract}
-	Write abstract here (en) or import corresponding file
+	\input{sec/0_abstract/abstract_en}
 	
 	\cleardoublepage
 	\chapter*{Resumo}
-	Escrever aqui resumo (pt) ou importar respectivo ficheiro
+	\input{sec/0_abstract/abstract_pt}
 	
 	% Summary Lists ------------------------------------
 	\tableofcontents
@@ -93,68 +91,36 @@
 	
 	\pagenumbering{arabic}
 	
-	% CHAPTER - Introduction -------------------------
+	% CHAPTER 1 - Introduction -------------------------
 	\chapter{Introduction}
 	\input{sec/1_introduction/intro}
 	
 	
-	% CHAPTER - Social Networks in Sociology -------------------------
+	% CHAPTER 2 - Social Networks in Sociology -------------------------
 	\chapter{Social Networks in Sociology}
 	\input{sec/2_social_networks_in_sociology/social_networks_in_sociology}
 	
 	
-	% CHAPTER - Online Social Networks -------------------------
+	% CHAPTER 3 - Online Social Networks -------------------------
 	\chapter{Online Social Networks}
 	\input{sec/3_online_social_networks/online_social_networks}
 	
 	
-	% CHAPTER - Social Network Analysis -------------------------
+	% CHAPTER 4 - Social Network Analysis -------------------------
 	\chapter{Social Network Analysis}
 	\input{sec/4_social_network_analysis/social_network_analysis}
 
+	% CHAPTER 5 - System Architecture Proposal -------------------------
+	\chapter{System Architecture Proposal}
+	\input{sec/system_arch_proposal}
 
-	% CHAPTER - Problem and Challenges ---------------
-	\chapter{The problem and its challenges}
-
-
-	% CHAPTER - Proposed Solution -------------------------
-	\chapter{Proposed Solution}
-	\section{Solution Requirements}
-	\subsection{Requirements Analysis}
-	\subsection{Requirements Specification}
-	\subsection{Requirements Prioritization}
-	\section{System Modeling}
-	\section{System Architecture}
-	\section{Technology Selection}
-	\subsection{Technology A}
-	\subsection{Technology B}
-	\subsection{Technology C}
-	\subsection{Technology Comparison}
-	\subsection{Decision}
+	% CHAPTER 6 - Conclusion - Create a framework for Online Social Networks deriving from the analysis
+	% of pattern simillarity found in the OSNs exploration Chapter 3.
+	% ...
 	
-	
-	% CHAPTER - Implementation -------------------------
-	\chapter{Implementation}
-	\section{Data Extraction}
-	\subsection{Data Sources} % Related to Online Social Networks Chapter
-	\section{Data Mining}
-	\section{Back end}
-	\section{Front end}
-	\section{Outcomes}
-
-
-	% CHAPTER - Results -------------------------
-	\chapter{Case Studies}
-	Application of main result (examples and case studies)
-    	\section{Results}
-    	\section{Discussion}
-	\section{Summary}
-
-	% CHAPTER - Conclusion/Future Work --------------
+	% CHAPTER - Conclusion and Future Work for RPD --------------
 	\chapter{Conclusion}
-	Conclusions and future work.
-	\section{Conclusions}
-	\section{Prospect for future work}
+	\input{sec/conclusion}
 			
 	\bookmarksetup{startatroot}
 	\addtocontents{toc}{\bigskip}

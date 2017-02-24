@@ -3,47 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 The style file: plainnat.bst
 Database file #1: dissertation.bib
-Warning--I didn't find a database entry for "netdraw"
-Warning--empty journal in ICWSM09154
-You've used 35 entries,
+You've used 40 entries,
             2773 wiz_defined-function locations,
-            749 strings with 8728 characters,
-and the built_in function-call counts, 11563 in all, are:
-= -- 1016
-> -- 444
-< -- 37
-+ -- 167
-- -- 132
-* -- 605
-:= -- 1740
-add.period$ -- 104
-call.type$ -- 35
-change.case$ -- 145
-chr.to.int$ -- 35
-cite$ -- 71
-duplicate$ -- 599
-empty$ -- 1184
-format.name$ -- 176
-if$ -- 2507
+            782 strings with 9629 characters,
+and the built_in function-call counts, 14377 in all, are:
+= -- 1272
+> -- 618
+< -- 40
++ -- 226
+- -- 186
+* -- 848
+:= -- 2166
+add.period$ -- 118
+call.type$ -- 40
+change.case$ -- 177
+chr.to.int$ -- 40
+cite$ -- 80
+duplicate$ -- 720
+empty$ -- 1403
+format.name$ -- 237
+if$ -- 3100
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 181
-num.names$ -- 140
-pop$ -- 432
+missing$ -- 17
+newline$ -- 203
+num.names$ -- 160
+pop$ -- 489
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 140
 quote$ -- 0
-skip$ -- 512
+skip$ -- 605
 stack$ -- 0
-substring$ -- 191
-swap$ -- 64
-text.length$ -- 4
+substring$ -- 346
+swap$ -- 82
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 370
-warning$ -- 1
-while$ -- 116
+type$ -- 425
+warning$ -- 0
+while$ -- 141
 width$ -- 0
-write$ -- 428
-(There were 2 warnings)
+write$ -- 490

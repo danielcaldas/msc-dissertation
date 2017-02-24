@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  6 DEC 2016 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  12 JAN 2017 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1143,13 +1143,338 @@ Package hyperref Info: Option `pdffitwindow' set `true' on input line 271.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 271.
 Package hyperref Info: Option `colorlinks' set `true' on input line 271.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks47
+\inpenc@posthook=\toks48
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2016/04/30 v4.23 (NLCT)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2015/12/17 v2.02 (NLCT)
-\@glsmfirst=\toks47
-\@glsmrest=\toks48
+\@glsmfirst=\toks49
+\@glsmrest=\toks50
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
@@ -1212,7 +1537,7 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks49
+\@dtl@toks=\toks51
 \@dtl@tmpcount=\count272
 \dtl@tmplength=\skip123
 \dtl@sortresult=\count273
@@ -1227,12 +1552,12 @@ ible-307.sty
 Package: glossaries-compatible-307 2016/04/30 v4.23 (NLCT)
 )
 \gls@level=\count279
-\@gls@tmpb=\toks50
+\@gls@tmpb=\toks52
 \gls@tmplen=\skip124
-\glskeylisttok=\toks51
-\glslabeltok=\toks52
-\glsshorttok=\toks53
-\glslongtok=\toks54
+\glskeylisttok=\toks53
+\glslabeltok=\toks54
+\glsshorttok=\toks55
+\glslongtok=\toks56
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -1262,7 +1587,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count282
 \c@LT@tables=\count283
 \c@LT@chunks=\count284
-\LT@p@ftn=\toks55
+\LT@p@ftn=\toks57
 )
 Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip130
@@ -1297,43 +1622,42 @@ Package: glossary-tree 2016/04/30 v4.23 (NLCT)
 ))
 
 Package glossaries Warning: \defglsdisplayfirst is now obsolete.
- Use \defglsentryfmt instead on input line 18.
+ Use \defglsentryfmt instead on input line 20.
 
 
 Package glossaries Warning: Deprecated command \glossarystyle.
  I recommend you switch to \setglossarystyle unless you want to maintain backwa
-rd compatibility on input line 20.
+rd compatibility on input line 22.
 
 \glswrite=\write6
 \glo@acronym@file=\write7
 \openout7 = `dissertation.acn'.
 
 Package glossaries Info: Writing glossary file dissertation.acn on input line 2
-4.
+6.
 (./dissertation.aux)
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 65.
 
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pplj.fd
-File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pplj.fd
+File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1342,15 +1666,15 @@ File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 \scratchbox=\box56
 \nofMPsegments=\count287
 \nofMParguments=\count288
-\everyMPshowfont=\toks56
+\everyMPshowfont=\toks58
 \MPscratchCnt=\count289
 \MPscratchDim=\dimen272
 \MPnumerator=\count290
 \makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks57
+\everyMPtoPDFconversion=\toks59
 )
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 65.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1359,10 +1683,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
-LaTeX Info: Redefining \microtypecontext on input line 63.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1386,17 +1710,17 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-Package soulpos Info: Loading soulutf8 on input line 63.
+Package soulpos Info: Loading soulutf8 on input line 65.
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/soulutf8.sty
 Package: soulutf8 2016/05/16 v1.1 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks58
-\SOUL@lasttoken=\toks59
-\SOUL@cmds=\toks60
-\SOUL@buffer=\toks61
-\SOUL@token=\toks62
+\SOUL@word=\toks60
+\SOUL@lasttoken=\toks61
+\SOUL@cmds=\toks62
+\SOUL@buffer=\toks63
+\SOUL@token=\toks64
 \SOUL@spaceskip=\skip136
 \SOUL@ttwidth=\dimen273
 \SOUL@uldp=\dimen274
@@ -1431,31 +1755,31 @@ Package caption Info: End \AtBeginDocument code.
 
 (./dissertation.glsdefs)
 \GPT@outputbox=\box58
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 67.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 65.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 67.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 65.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 67.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 65.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 67.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 67.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1465,13 +1789,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 65.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 67.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: OT1).
+(microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [1
@@ -1486,61 +1810,59 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 73.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <9> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 73.
+(./sec/0_abstract/abstract_en.tex)
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 74.
  [1
 
 
 
 
-] [2
-
-
-] [3
+] (./sec/0_abstract/abstract_pt.tex)
+[2
 
 
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 81
+Package tocbasic Info: character protrusion at toc deactivated on input line 79
 .
-
-(./dissertation.toc
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/10.95'.
+ (./dissertation.toc
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [4
+ [3
 
 
 ])
 \tf@toc=\write8
 \openout8 = `dissertation.toc'.
 
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 81.
- [5]
-Package tocbasic Info: character protrusion at lof deactivated on input line 86
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 79.
+ [4]
+Package tocbasic Info: character protrusion at lof deactivated on input line 84
 .
  (./dissertation.lof)
 \tf@lof=\write9
 \openout9 = `dissertation.lof'.
 
- [6
+ [5
 
 
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 87
+Package tocbasic Info: character protrusion at lot deactivated on input line 85
 .
  (./dissertation.lot)
 \tf@lot=\write10
 \openout10 = `dissertation.lot'.
 
 
-[7
+[6
 
 
 
@@ -1562,18 +1884,8 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-(./sec/1_introduction/intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+(./sec/1_introduction/intro.texpdfTeX warning (ext4): destination with the same
+ identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.11 
@@ -1597,15 +1909,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \section{Research Hypothesis}
-                                   [2]) [3]
+l.43 
+      [2]) [3] [4]
 chapter 2.
 (./sec/2_social_networks_in_sociology/social_networks_in_sociology.tex
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[4
+[5
 
 
 ]
@@ -1613,50 +1925,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--62
 
  []
 
-[5]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 93.
-Missing character: There is no ‚ in font pplbi9o!
-Missing character: There is no Ä in font pplbi9o!
-Missing character: There is no ú in font pplbi9o!
-Missing character: There is no ‚ in font pplbi9o!
-Missing character: There is no Ä in font pplbi9o!
-Missing character: There is no ù in font pplbi9o!
- [6]
+[6]
+LaTeX Font Info:    Font shape `T1/pplj/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/it' tried instead on input line 93.
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-) [7] [8]
+) [8] [9]
 chapter 3.
 (./sec/3_online_social_networks/online_social_networks.tex
 (./sec/3_online_social_networks/chapter_introduction.tex)
 (./sec/3_online_social_networks/table_of_osns.tex
-LaTeX Font Info:    Try loading font information for OML+pplj on input line 8.
-LaTeX Font Info:    No file OMLpplj.fd. on input line 8.
-
-
-LaTeX Font Warning: Font shape `OML/pplj/m/n' undefined
-(Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 8.
-
-Missing character: There is no ‚ in font pplr9o!
-Missing character: There is no Ä in font pplr9o!
-Missing character: There is no ô in font pplr9o!
-
 Overfull \hbox (53.31088pt too wide) in paragraph at lines 2--43
 []|   [] 
  []
 
-[9
+[10
 
 
 ]
 Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
-[10]) (./sec/3_online_social_networks/history_of_osns.tex
-<img/timeline.png, id=331, 448.67625pt x 712.6625pt>
+[11]) (./sec/3_online_social_networks/history_of_osns.tex
+<img/timeline.png, id=284, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
  <use img/timeline.png>
 Package pdftex.def Info: img/timeline.png used on input line 4.
@@ -1665,53 +1959,52 @@ Package pdftex.def Info: img/timeline.png used on input line 4.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sec/3_online_social_networks/portuguese_and_osns.tex [11] [12 <./img/timel
-ine.png>]) (./sec/3_online_social_networks/exploring_some_osns.tex [13]
-<img/facebook-domain-model-opt.jpg, id=365, 1090.0725pt x 1230.5975pt>
-File: img/facebook-domain-model-opt.jpg Graphic file (type jpg)
+) (./sec/3_online_social_networks/portuguese_and_osns.tex [12] [13 <./img/timel
+ine.png>]) (./sec/3_online_social_networks/exploring_some_osns.tex [14]
+<img/facebook-domain-model.jpg, id=319, 1017.8025pt x 1231.60126pt>
+File: img/facebook-domain-model.jpg Graphic file (type jpg)
 
-<use img/facebook-domain-model-opt.jpg>
-Package pdftex.def Info: img/facebook-domain-model-opt.jpg used on input line 3
-9.
-(pdftex.def)             Requested size: 522.32817pt x 589.66612pt.
+<use img/facebook-domain-model.jpg>
+Package pdftex.def Info: img/facebook-domain-model.jpg used on input line 41.
+(pdftex.def)             Requested size: 486.92181pt x 589.20744pt.
 
-Overfull \hbox (45.95938pt too wide) in paragraph at lines 37--40
+Overfull \hbox (10.55302pt too wide) in paragraph at lines 39--42
 []|  [] 
  []
-
-[14]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [15]
 
-LaTeX Warning: Text page 16 contains only floats.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16]
+
+LaTeX Warning: Text page 17 contains only floats.
 
 
-Overfull \vbox (2.06584pt too high) has occurred while \output is active []
+Overfull \vbox (1.60716pt too high) has occurred while \output is active []
 
 
-[16 <./img/facebook-domain-model-opt.jpg>]
-Overfull \hbox (31.55342pt too wide) in paragraph at lines 73--84
-\OT1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing
- to [][]developers.facebook.com/docs/graph-
+[17 <./img/facebook-domain-model.jpg>]
+Overfull \hbox (31.55342pt too wide) in paragraph at lines 75--86
+\T1/pplj/m/n/10.95 book such as posts, pho-tos, videos, pages etc. Ac-cord-ing 
+to [][]developers.facebook.com/docs/graph-
  []
 
 
-Overfull \hbox (47.59229pt too wide) in paragraph at lines 93--94
-\OT1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion."
- [][]\OT1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
+Overfull \hbox (47.59229pt too wide) in paragraph at lines 95--96
+\T1/pplj/m/it/10.95 teens, mu-si-cians and any-one with a cre-ative pas-sion." 
+[][]\T1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
  []
 
-[17] <img/instagram-domain-model.jpg, id=400, 1142.2675pt x 739.76375pt>
+[18] <img/instagram-domain-model.jpg, id=354, 1142.2675pt x 739.76375pt>
 File: img/instagram-domain-model.jpg Graphic file (type jpg)
 
 <use img/instagram-domain-model.jpg>
-Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 107.
+Package pdftex.def Info: img/instagram-domain-model.jpg used on input line 109.
 
 (pdftex.def)             Requested size: 566.59625pt x 366.9461pt.
 
-Overfull \hbox (54.09247pt too wide) in paragraph at lines 106--108
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 108--110
 []|  [] 
  []
 
@@ -1719,206 +2012,167 @@ Overfull \hbox (54.09247pt too wide) in paragraph at lines 106--108
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (12.51135pt too wide) in paragraph at lines 122--128
-\OT1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]htt
-ps://www.instagram.com/developer/limits/[][]
+Overfull \hbox (12.51135pt too wide) in paragraph at lines 124--130
+\T1/pplj/m/n/10.95 per hour to get-ting users' re-la-tion-ships data. ([][]http
+s://www.instagram.com/developer/limits/[][]
  []
 
-[18]
-Overfull \hbox (38.56065pt too wide) in paragraph at lines 133--138
-\OT1/pplj/m/n/10.95 Moving on to the next []OSN we now have LinkedIn. Ac-cord-i
-ng to [][]https://press.linkedin.com/about
+[19]
+Overfull \hbox (38.56065pt too wide) in paragraph at lines 135--140
+\T1/pplj/m/n/10.95 Moving on to the next []OSN we now have LinkedIn. Ac-cord-in
+g to [][]https://press.linkedin.com/about
  []
 
-<img/linkedin-domain-model.jpg, id=414, 1318.9275pt x 751.80875pt>
+<img/linkedin-domain-model.jpg, id=368, 862.22125pt x 1018.80624pt>
 File: img/linkedin-domain-model.jpg Graphic file (type jpg)
 
 <use img/linkedin-domain-model.jpg>
-Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 143.
-(pdftex.def)             Requested size: 531.18314pt x 302.78307pt.
+Package pdftex.def Info: img/linkedin-domain-model.jpg used on input line 145.
+(pdftex.def)             Requested size: 486.92181pt x 575.34679pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 142--144
+Overfull \hbox (10.55302pt too wide) in paragraph at lines 144--146
 []|  [] 
  []
 
-[19 <./img/instagram-domain-model.jpg>] [20 <./img/linkedin-domain-model.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+[20 <./img/instagram-domain-model.jpg>] [21 <./img/linkedin-domain-model.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 173.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: OT1).
+(microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Missing character: There is no √ in font pplri9o!
-Missing character: There is no ∂ in font pplri9o!
-[21] <img/researchgate-domain-model.jpg, id=441, 1262.7175pt x 702.625pt>
+ [22] [23]
+<img/researchgate-domain-model.jpg, id=400, 1008.76875pt x 895.345pt>
 File: img/researchgate-domain-model.jpg Graphic file (type jpg)
 
 <use img/researchgate-domain-model.jpg>
 Package pdftex.def Info: img/researchgate-domain-model.jpg used on input line 2
-01.
-(pdftex.def)             Requested size: 531.18314pt x 295.57222pt.
+03.
+(pdftex.def)             Requested size: 566.59625pt x 502.8926pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 200--202
+Overfull \hbox (54.09247pt too wide) in paragraph at lines 202--204
 []|  [] 
  []
 
-[22
+[24
 
- <./img/researchgate-domain-model.jpg>] [23]
-<img/pinterest-domain-model.jpg, id=457, 1258.7025pt x 667.49374pt>
+ <./img/researchgate-domain-model.jpg>] [25]
+<img/pinterest-domain-model.jpg, id=413, 929.4725pt x 670.505pt>
 File: img/pinterest-domain-model.jpg Graphic file (type jpg)
 
 <use img/pinterest-domain-model.jpg>
-Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 243.
+Package pdftex.def Info: img/pinterest-domain-model.jpg used on input line 245.
 
-(pdftex.def)             Requested size: 531.18314pt x 281.6899pt.
+(pdftex.def)             Requested size: 531.18314pt x 383.19447pt.
 
-Overfull \hbox (18.67935pt too wide) in paragraph at lines 242--244
+Overfull \hbox (18.67935pt too wide) in paragraph at lines 244--246
 []|  [] 
  []
-
-[24 <./img/pinterest-domain-model.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
-
- []
-
-[25] <img/twitter-domain-model.jpg, id=474, 660.4675pt x 883.3pt>
-File: img/twitter-domain-model.jpg Graphic file (type jpg)
-
-<use img/twitter-domain-model.jpg>
-Package pdftex.def Info: img/twitter-domain-model.jpg used on input line 280.
-(pdftex.def)             Requested size: 442.65375pt x 592.02359pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[26] [27 <./img/pinterest-domain-model.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--273
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--289
+ []
+
+[28] <img/twitter-domain-model.jpg, id=437, 667.49374pt x 883.3pt>
+File: img/twitter-domain-model.jpg Graphic file (type jpg)
+
+<use img/twitter-domain-model.jpg>
+Package pdftex.def Info: img/twitter-domain-model.jpg used on input line 284.
+(pdftex.def)             Requested size: 398.38567pt x 527.19414pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
+
+ []
+
+[29
+
+ <./img/twitter-domain-model.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 294--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
-
+Overfull \hbox (0.51326pt too wide) in paragraph at lines 320--321
+[]\T1/pplj/m/it/10.95 "KONECT (the Koblenz Net-work Col-lec-tion) is a project 
+to col-lect large net-work datasets
  []
 
-[26]
-
-LaTeX Warning: Text page 27 contains only floats.
-
-
-Overfull \vbox (4.42331pt too high) has occurred while \output is active []
-
-
-[27 <./img/twitter-domain-model.jpg>]
-Missing character: There is no ‚ in font pplri9o!
-Missing character: There is no Ä in font pplri9o!
-Missing character: There is no ì in font pplri9o!
-
-Overfull \hbox (0.51326pt too wide) in paragraph at lines 315--316
-[]\OT1/pplj/m/it/10.95 "KONECT (the Koblenz Net-work Col-lec-tion) is a project
- to col-lect large net-work datasets
- []
-
-) (./sec/3_online_social_networks/how_osns_have_changed_the_world.tex
-Missing character: There is no ‚ in font pplbi9o!
-Missing character: There is no Ä in font pplbi9o!
-Missing character: There is no ú in font pplbi9o!
-Missing character: There is no ‚ in font pplbi9o!
-Missing character: There is no Ä in font pplbi9o!
-Missing character: There is no ù in font pplbi9o!
-Missing character: There is no ‚ in font pplb9o!
-Missing character: There is no Ä in font pplb9o!
-Missing character: There is no ô in font pplb9o!
-Missing character: There is no ‚ in font pplri9o!
-Missing character: There is no Ä in font pplri9o!
-Missing character: There is no ô in font pplri9o!
-Missing character: There is no ‚ in font pplri9o!
-Missing character: There is no Ä in font pplri9o!
-Missing character: There is no ô in font pplri9o!
-Missing character: There is no ‚ in font pplb9o!
-Missing character: There is no Ä in font pplb9o!
-Missing character: There is no ì in font pplb9o!
-))
-[28] [29] [30]
+[30]) (./sec/3_online_social_networks/how_osns_have_changed_the_world.tex))
+[31] [32] [33]
 chapter 4.
 (./sec/4_social_network_analysis/social_network_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
-[31
+[34
 
 
-] [32] (./sec/4_social_network_analysis/sna_software.tex [33]
-Missing character: There is no ‚ in font pplr9o!
-Missing character: There is no Ñ in font pplr9o!
-Missing character: There is no ¢ in font pplr9o!
-
-
-Package natbib Warning: Citation `netdraw' on page 34 undefined on input line 1
-8.
-
-
-Package natbib Warning: Citation `socnetv' on page 34 undefined on input line 2
-2.
-
-
-Package natbib Warning: Citation `networkx' on page 34 undefined on input line 
-29.
-
-[34])) [35]
+] [35] [36] (./sec/4_social_network_analysis/sna_software.tex [37]) [38])
+[39]
 chapter 5.
-[36
+(./sec/system_arch_proposal.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
+ []
 
-]
-chapter 6.
-[37
-
-
-]
-chapter 7.
-[38
-
-
-]
-chapter 8.
-[39
-
-
-]
-chapter 9.
 [40
 
 
-] (./dissertation.bbl
-Underfull \hbox (badness 4752) in paragraph at lines 66--73
-[]\OT1/pplj/m/n/10.95 Jessica El-got.  From re-la-tion-ships to rev-o-lu-tions:
- seven ways Face-book has
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrfull' on input line 11.
+
+<img/architecture.png, id=556, 794.97pt x 614.295pt>
+File: img/architecture.png Graphic file (type png)
+
+<use img/architecture.png>
+Package pdftex.def Info: img/architecture.png used on input line 35.
+(pdftex.def)             Requested size: 486.92181pt x 376.266pt.
+
+Overfull \hbox (25.0068pt too wide) in paragraph at lines 34--36
+ |  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--73
-\OT1/pplj/m/n/10.95 changed the world.  [][]$\OT1/cmtt/m/n/10.95 https : / / ww
-w . theguardian . com / technology / 2015 / aug / 28 /
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41] [42 <./img/architecture.png>]) [43]
+chapter 6.
+(./sec/conclusion.tex [44
+
+
+]) [45] (./dissertation.bbl
+Underfull \hbox (badness 4752) in paragraph at lines 77--84
+[]\T1/pplj/m/n/10.95 Jessica El-got.  From re-la-tion-ships to rev-o-lu-tions: 
+seven ways Face-book has
  []
 
 
-Overfull \hbox (5.8166pt too wide) in paragraph at lines 66--73
-\OT1/cmtt/m/n/10.95 from-[]relationships-[]to-[]revolutions-[]seven-[]ways-[]fa
-cebook-[]has-[]changed-[]the-[]world$[][]\OT1/pplj/m/n/10.95 ,
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+\T1/pplj/m/n/10.95 changed the world.  [][]$\T1/cmtt/m/n/10.95 https : / / www 
+. theguardian . com / technology / 2015 / aug / 28 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
-[]\OT1/pplj/m/n/10.95 Facebook.  Project palan-tir.  [][]$\OT1/cmtt/m/n/10.95 h
-ttps : / / www . facebook . com / video / video . php ? v =
+Underfull \hbox (badness 10000) in paragraph at lines 77--84
+\T1/cmtt/m/n/10.95 from-[]relationships-[]to-[]revolutions-[]seven-[]ways-[]fac
+ebook-[]has-[]changed-[]the-[]world$[][]\T1/pplj/m/n/10.95 ,
  []
 
-[41
+[46
 
 
 
@@ -1926,59 +2180,57 @@ ttps : / / www . facebook . com / video / video . php ? v =
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
-[]\OT1/pplj/m/n/10.95 The Guardian.  LinkedIn bought by Mi-crosoft for $26.2bn 
-in
+Underfull \hbox (badness 6063) in paragraph at lines 103--109
+\T1/cmtt/m/n/10.95 weforum . org / agenda / 2016 / 04 / 6-[]ways-[]social-[]med
+ia-[]is-[]changing-[]the-[]world/$[][]\T1/pplj/m/n/10.95 , 2016.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
-\OT1/pplj/m/n/10.95 cash.  [][]$\OT1/cmtt/m/n/10.95 https : / / www . theguardi
-an . com / technology / 2016 / jun / 13 /
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+[]\T1/pplj/m/n/10.95 The Guardian.  LinkedIn bought by Mi-crosoft for $26.2bn i
+n
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 106--112
-\OT1/cmtt/m/n/10.95 linkedin-[]bought-[]by-[]microsoft-[]for-[]262bn-[]in-[]cas
-h$[][]\OT1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+\T1/pplj/m/n/10.95 cash.  [][]$\T1/cmtt/m/n/10.95 https : / / www . theguardian
+ . com / technology / 2016 / jun / 13 /
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 172--176
-[]\OT1/pplj/m/n/10.95 Stanford Pritchard Lab.  Struc-ture soft-ware.  [][]$\OT1
-/cmtt/m/n/10.95 http : / / pritchardlab . stanford . edu /
+Underfull \hbox (badness 4229) in paragraph at lines 117--123
+\T1/cmtt/m/n/10.95 linkedin-[]bought-[]by-[]microsoft-[]for-[]262bn-[]in-[]cash
+$[][]\T1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
  []
 
-[42])
+[47]
+Underfull \hbox (badness 1521) in paragraph at lines 202--206
+[]\T1/pplj/m/n/10.95 Stanford Pritchard Lab.  Struc-ture soft-ware.  [][]$\T1/c
+mtt/m/n/10.95 http : / / pritchardlab . stanford . edu /
+ []
 
-Package natbib Warning: There were undefined citations.
-
-[43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+) [48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./dissertation.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 * soulpos - computing points - it may take a few seconds *
 \openout4 = `dissertation.upb'.
 
  (./dissertation.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 37457 strings out of 493014
- 696672 string characters out of 6133352
- 1075002 words of memory out of 5000000
- 40109 multiletter control sequences out of 15000+600000
- 55519 words of font info for 112 fonts, out of 8000000 for 9000
+ 38016 strings out of 493014
+ 704079 string characters out of 6133352
+ 1075004 words of memory out of 5000000
+ 40643 multiletter control sequences out of 15000+600000
+ 82545 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
@@ -1990,22 +2242,22 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
-latino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
-uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (52 pages, 1539391 bytes).
+/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
+tino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
+lbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on dissertation.pdf (56 pages, 1667619 bytes).
 PDF statistics:
- 917 PDF objects out of 1000 (max. 8388607)
- 828 compressed objects within 9 object streams
- 176 named destinations out of 1000 (max. 500000)
- 18024 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 746 compressed objects within 8 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 17845 words of extra memory for PDF output out of 20736 (max. 10000000)
 
