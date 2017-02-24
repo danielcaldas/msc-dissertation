@@ -1,0 +1,109 @@
+In this chapter we will specify with detail the system requirements and particular features to be implemented.
+
+\section{Requirements List}
+
+...
+
+\subsection{Social Networks Prioritization}
+- Facebook, Linked and then ...
+
+
+\subsection{Back end}
+\begin{itemize}
+    \item Extraction modules must be able to extract information from facebook and linkedin (prioritized \gslpl{SN});
+\end{itemize}
+
+\subsubsection{Webcrawlers and Extraction requirements}
+\item General web crawler requirements:
+\begin{itemize}
+    \item The web crawler should be able to login as a user (entrypoint);
+    \item The web crawler must be able to navigate between pages;
+    \item The web crawler must be capable of performing "human" intereractions such as click and scroll;
+\end{itemize}
+\item Facebook and Linkedin webcrawler should for each user be able to extract information from a specific user via parametrization.
+\item Facebook parametrization for extaction:
+\begin{itemize}
+    \item About information
+    \item Frieds list
+    \item Likes list
+    \item \textbf{...}
+\end{itemize}
+\item Linkedin parametrization for extaction:
+\begin{itemize}
+    \item About information
+    \item Frieds list
+    \item Likes list
+    \item \textbf{...}
+\end{itemize}
+
+\subsubsection{Data mining requirements}
+...
+
+\subsubsection{Data base requirements}
+...
+
+\subsubsection{Schedulers and extraction managers requirements}
+\begin{itemize}
+    \item Extraction endpoints should be available via api
+    \item Extraction should handle configuration of host machines for extraction orchestration
+    \item ...
+\end{itemize}
+
+\subsubsection{Data structure contracts}
+Despite extraction of unstructured data we want to be sure that each extraction module has a proper data structure in order to allow
+further data processing.
+
+\subsubsection*{Facebook data structure}
+\begin{verbatim}
+{
+    "livesIn": {
+        "id": "112533615426425",
+        "description": "Póvoa de Varzim"
+    },
+    "life_events": {
+        "2012": [
+            "Começou a estudar em Universidade do Minho - Oficial",
+            "Deixou a Escola Secundária de Amarante"
+        ],
+        "...": []
+    },
+    "birthDate": "1994/02/1",
+    "likes": {
+        "luisasobralmusic": "Luisa Sobral",
+        "AD-Amarante-Atletismo-165966353797121": "A.D. Amarante Atletismo",
+        "...": "..."
+    },
+    "friends": [
+        "fabio.cruz.31924",
+        "goncalo.caldax",
+        "luis.sousa.79230305",
+        "..."
+    ],
+    "relationships": {
+        "civil_status": "hidden",
+        "family_members": [
+            {
+                "id": "goncalo.caldax",
+                "relationship": "Irmão"
+            }
+        ]
+    },
+    "from": {
+        "id": "105821552791168",
+        "description": "Amarante, Portugal"
+    },
+    "name": "Daniel Caldas",
+    "gender": "male",
+    "age": 23,
+    "posts": [
+        {
+            "timestamp": "2017-01-14 13:01:00 UTC",
+            "description": "Grande intro 🎸🎸🎸",
+            "author": "daniel.caldas.x"
+        }
+    ],
+    "personal_details": {}
+}
+\end{verbatim}
+
+\subsubsection*{Linkedin data structure}
