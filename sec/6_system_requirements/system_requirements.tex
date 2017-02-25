@@ -182,8 +182,95 @@ Defining data schemas in earlier stages of system specifications will allow us t
 }
 \end{verbatim}
 
+\subsection{Network operations module}
+In this section we will list the requirements for the module that is responsible for calculating metrics upon
+our stored networks.
+
+...
+
+\begin{enumerate}
+    \item max_clique
+    \item enumerate_all_cliques
+    \item number_of_cliques
+    \item cliques_containing_node
+
+    \item clustering
+    \item average_clustering
+    \item max_clustering
+
+    \item average_neighbor_degree
+
+    \item degree_centrality
+    \item closeness_centrality
+    \item betweenness_centrality
+    \item eigenvector_centrality
+
+    \item triangles
+
+    \item is_strongly_connected
+    \item number_strongly_connected_components
+    \item strongly_connected_components
+
+    \item is_weakly_connected
+    \item number_weakly_connected_components
+    \item weakly_connected_components
+
+    \item pagerank
+
+    \item shortest_path
+\end{enumerate}
+
 
 \section{Front-end}
 Visual requirements, interaction etc. etc.
-goals...
-all ideas discharge here
+
+\subsection{Information extraction and network structure}
+\begin{enumerate}
+    \item The user must be able to register available \gslpl{osn} in the system;
+    \item The user must be able to order the build of its network with depth I or II where:
+    \begin{enumerate}
+        \item Depth I - Builds network with user and user's friends;
+        \item Depth II - Builds network with user's friends and friend's of friend's.
+    \end{enumerate}
+    \item The user must be able to \textit{blacklist} nodes specific from being extracted and consequently rendered on the user's graph;
+    \item The user must be able \textit{blacklist} from the network nodes with a minimum or maximum number of connections;
+    \item The user must be able to choose for each network node which details will be extracted within a given \gslpl{osn} \footnote{\textbf{Despite being these flags activated by the user, for privacy reasons some information will not be available, the web crawlers will never extract these kind of data}}:
+    \begin{enumerate}
+        \item \textbf{Facebook}:
+        \begin{enumerate}
+            \item \textit{Relationships} - If this flag is checked, relationships will be included;
+            \item \textit{Personal} details - If this flag is checked, personal details will be included;
+            \item \textit{Life events} - If this flag is checked, life events will be included;
+            \item \textit{Likes} - If this flag is checked, user's likes will be included;
+            \item \textit{Posts} - If this flag is checked, most recent posts will be included.
+        \end{enumerate}
+        \item \textbf{LinkedIn}:
+        \begin{enumerate}
+            \item \textit{Experience} - If this flag is checked, experience will be included;
+            \item \textit{Education} - If this flag is checked, education will be included;
+            \item \textit{Skills} - If this flag is checked, skills will be included;
+            \item \textit{Languages} - If this flag is checked, languages will be included;
+            \item \textit{Projects} - If this flag is checked, projects will be included;
+            \item \textit{Groups} - If this flag is checked, groups will be included;
+            \item \textit{Connections} - If this flag is checked, connections will be included.
+            \item \textit{following} - If this flag is checked, following will be included.
+        \end{enumerate}
+    \end{enumerate}
+    \item The system must be clear and warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook)
+    could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
+    \item ...
+\end{enumerate}
+
+\subsection{Graph interaction}
+
+\begin{enumerate}
+    \item User should be able to enable and disable Fisheye Distortion alike effect (https://bost.ocks.org/mike/fisheye/);
+    \item ...
+\end{enumerate}
+
+\subsection{Other operations}
+\begin{enumerate}
+    \item The user must be able to download his network in standard graph formats: Trivial Graph Format (TGF) and GraphML so that it could
+    be imported to other \gslpl{sna} tools such as Gephi or SocNetV;
+    \item ...
+\end{enumerate}
