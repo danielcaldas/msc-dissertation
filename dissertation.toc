@@ -47,10 +47,15 @@
 \contentsline {subsection}{\numberline {5.5.2}Detailed Components Description}{43}{subsection.5.5.2}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {System Requirements}}{44}{chapter.6}
 \contentsline {section}{\numberline {6.1}Social Networks Prioritization}{44}{section.6.1}
-\contentsline {section}{\numberline {6.2}Back end}{45}{section.6.2}
+\contentsline {section}{\numberline {6.2}Back-end}{45}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Web crawlers}{45}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Data miner}{45}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Extraction pipeline}{46}{subsection.6.2.3}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{51}{chapter.7}
+\contentsline {subsection}{\numberline {6.2.2}Extraction Manager}{46}{subsection.6.2.2}
+\contentsline {subsubsection}{Extraction pipeline}{46}{Item.10}
+\contentsline {subsection}{\numberline {6.2.3}Data miner}{48}{subsection.6.2.3}
+\contentsline {subsubsection}{Data schemas}{48}{Item.13}
+\contentsline {subsubsection}{Facebook data structure}{48}{Item.13}
+\contentsline {subsubsection}{LinkedIn data structure}{49}{Item.13}
+\contentsline {section}{\numberline {6.3}Front-end}{51}{section.6.3}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{52}{chapter.7}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
