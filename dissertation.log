@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 FEB 2017 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 FEB 2017 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2173,16 +2173,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--47
 [46] [47 <./img/ext-pipeline.png>] [48
 
 ] [49] [50] [51])
-(./sec/6_system_requirements/frontend.tex [52] [53] [54] [55]
-Overfull \hbox (0.27313pt too wide) in paragraph at lines 138--140
-\T1/pplj/m/n/10.95 Face-book we may have a rank by num-ber of re-ac-tions to us
-er's posts while in LinkedIn
- []
-
-[56]
+(./sec/6_system_requirements/frontend.tex [52] [53] [54] [55] [56]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\glspl' on input line 153.
+(hyperref)                removing `\glspl' on input line 154.
 
 [57])) [58]
 chapter 7.
@@ -2301,7 +2295,7 @@ w/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
 lbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (70 pages, 1723027 bytes).
+Output written on dissertation.pdf (70 pages, 1724350 bytes).
 PDF statistics:
  1122 PDF objects out of 1200 (max. 8388607)
  1010 compressed objects within 11 object streams
