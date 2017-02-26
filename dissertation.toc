@@ -62,10 +62,16 @@
 \contentsline {subsection}{\numberline {6.3.3}General interactions and display}{54}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}Node interactions}{55}{subsection.6.3.4}
 \contentsline {subsection}{\numberline {6.3.5}Link interaction}{56}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Bulk operations}{56}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.6}Bulk operations}{57}{subsection.6.3.6}
 \contentsline {subsection}{\numberline {6.3.7}Statistic analysis}{57}{subsection.6.3.7}
 \contentsline {subsection}{\numberline {6.3.8}Other operations}{57}{subsection.6.3.8}
 \contentsline {subsection}{\numberline {6.3.9}Specific \glspl {osn} requirements}{58}{subsection.6.3.9}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{59}{chapter.7}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{60}{chapter.7}
+\contentsline {section}{\numberline {7.1}Choose of Technologies}{60}{section.7.1}
+\contentsline {section}{\numberline {7.2}Implementation architecture}{60}{section.7.2}
+\contentsline {section}{\numberline {7.3}Implementation details}{60}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Extraction and data mining}{60}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Network metrics}{60}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Front-end and service aggregator}{60}{subsection.7.3.3}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
