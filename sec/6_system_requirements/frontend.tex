@@ -5,28 +5,25 @@
 
 \section{Front-end}
 
-Visual requirements, interaction etc. etc.
-
-The majority of the requirements do not depend on the \glspl{osn} that we are, in that cases we will mark the requirements with specific tags, if the requirement
-...\\
-
-\indent These represent the tool requirements, what the user actually is able to interact with. For sake of structure these requirements we will give a code for each
-requirements section, being then the requirements numerated inside each section, so in the future when we refer to a certain requirement by its code and number so that w'ill be able to immediately identify it.\\
+The Front-end is actually where the majority of the requirements work is, since we need to go into detail of how the user will interact with the tool, we must decide how that interactions will be drawn so that the tool can actually be what it was meant to, also bear in mind that these represent the tool requirements, what the user actually will able to see.
 
 \subsection{Requirements Prioritization}
-For simplifying the prioritization process we will use the \textbf{MoSCoW} method that is a simple method to find what requirements are more important for the system overall...
+For simplifying the prioritization process we will use the \textbf{MoSCoW} method that is a simple method to define what requirements are more important for the system overall functionality, allowing us to focus on the very essential requirements for getting a functional product \footnote{In this section we will tend to user some terms often find in requirements engineering that may seem a bit off topic, still we find that this is the more objective way for describing our prioritization method}.\\
+\indent Next we present the MoSCoW method as it is defined in requirements engineering.
 
 \begin{itemize}
-    \item \textbf{M}ust have - ...;
-    \item \textbf{S}hould have - ...;
-    \item \textbf{C}ould have - ...;
-    \item \textbf{W}on't have - These are requirements that are agreed to not be included in the first deliver of a project, this does not excludes the possibility of including them in later stages of the project.
+    \item \textit{\textbf{M}ust} have requirements are critical requirements that are part of the identity of the product, they must by all means be implemented;
+    \item \textit{\textbf{S}hould} have requirements are definitely important, but they are not critic to the product definition, and they are not time critic as well having the possibility of being included in later stages of the implementation. Some times these requirements may have another ways of satisfying the customer;
+    \item \textit{\textbf{C}ould} have requirements are indeed the \textit{nice to have} requirements, being often left outside of the first deliver, but seen as very valuable to the future of the product in later stages of the product time line;
+    \item \textit{\textbf{W}on't} have requirements that are agreed to not be included in the first deliver of a project, this does not excludes the possibility of including them in later stages of the project.
 \end{itemize}
+
+The requirements will be listed by groups (sections) that aggregate common requirements or features. Each requirement will have a classification according MoSCoW method.
 
 \subsection{Network configuration and construction}
 
 \begin{enumerate}
-    \item The user must be able to register available \glspl{osn} in the system;
+    \item The user must be able to register available \glspl{osn} accounts in the system;
     \item The user must be able to order the build of its network with depth I or II where:
     \begin{enumerate}
         \item Depth I - Builds network with user and user's friends;
@@ -58,13 +55,14 @@ For simplifying the prioritization process we will use the \textbf{MoSCoW} metho
     \end{enumerate}
     \item The system must be clearly warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook)
     could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
-    \item The system must give feedback on the extraction status.
     \item After the first extraction all the extracted nodes must be marked as extracted, being the user able to extract the missing properties for some given nodes;
+    \item The system must give feedback on the extraction status.
 \end{enumerate}
 
 \subsection{General interactions and display}
 
 \begin{enumerate}
+    \item The system must be able to render a graph using the information provided by the aggregation service;
     \item The system should be able to automatically deactivate heavy graph animations if a large graph is being rendered;
     \item The user should be able to choose activate animations despite these have been deactivated by the system for sake of graph interactions performance;
     \item The user must be able to drag and drop the graph to any place on the graph render area;
@@ -82,9 +80,8 @@ For simplifying the prioritization process we will use the \textbf{MoSCoW} metho
 Here as described interactions at the node level:
 \begin{enumerate}
     \item Along side the node a label with the node name or id should be displayed;
-    % http://link-prediction.herokuapp.com/network
     \item The user must be able to activate highlight functionality for more interactive node consulting. This functionality will highlight the node
-    and his first degree connections, clarifying relations within very dense clusters;
+    and his first degree connections, clarifying relations within very dense clusters; % http://link-prediction.herokuapp.com/network
     \item The user can pick color and size of specific pre selected nodes within the network;
     \item The user can pick color and size of his nodes within the network;
     \item When the user clicks a node a side panel must be opened, this panel should display the following:
@@ -103,23 +100,24 @@ Here as described interactions at the node level:
         \item Opening the users' profile in the current \glspl{osn};
         \item Change the node symbol (e.g. if it is a circle the user might want to make the node a triangle instead). % https://bl.ocks.org/mbostock/1062383
     \end{itemize}
-    \item The user should be able to enter an edition mode where he appends new nodes to the social structure;
-    \item Double click on some should grow the target node. % http://bl.ocks.org/d3noob/8043434
+    \item Double click on some node should make the node grow and stand out comparing remaining nodes. % http://bl.ocks.org/d3noob/8043434
 \end{enumerate}
 
 \subsection{Link interaction}
 
-Links are not only visual node connectors, these also possess characteristics and metrics that can be consulted:
+Links are not only visual node connectors, these also possess characteristics and metrics that can be consulted.
+
 \begin{enumerate}
     \item User may choose to render the graph links with semantic thickness, if the user checks this flag the link thickness should be
     proportional to the number of common connections between two given nodes, indicating strongly connected individuals;
     \item When the user performs a mouseover on some link, the link itself should be highlighted as well the intervenient nodes;
-    \item When the user performs a mouseover on some link, relevant information about the link should be displayed such as number of interactions between the two nodes, or number of common connections;
+    \item When the user performs a mouseover on some link, relevant information about the link should be displayed such as number of interactions between the two nodes, or number of common connections.
 \end{enumerate}
 
 \subsection{Bulk operations}
 
 The user may select a set of nodes with a selection box, allowing him to perform bulk operations on nodes, such as:
+
 \begin{enumerate}
     \item The user must be able to group nodes in communities based on specific \glspl{osn} property (e.g. such as page likes on Facebook or skills on LinkedIn);
     \item The user must be able to paint all selected nodes same color;
@@ -132,35 +130,40 @@ The user may select a set of nodes with a selection box, allowing him to perform
 
 \subsection{Statistic analysis}
 
+The system could also provide some statistics on the user's network.
+
 \begin{enumerate}
     \item The user must be able to visualize geographical network distribution;
     \item The user must be able to rank nodes by various metrics such as node centrality;
-    \item The user must
+    \item The user must be able watch rankings such according to social interaction (e.g. on Facebook we may have a rank by number of reactions to user's posts while in LinkedIn we can
+    have a rank of must recommended user's on particular skills).
 \end{enumerate}
 
 \subsection{Other operations}
 
+These are other operations that differentiate for the other groups of requirements and do not fit any particular requirements bucket.
+
 \begin{enumerate}
     \item The user must be able to download his network in standard graph formats: Trivial Graph Format (TGF) and GraphML so that it could
     be imported to other \glspl{sna} tools such as Gephi or SocNetV (\hyperref[sec:snas]{see Chapter 4 section 4.6});
-    \item ...
-
+    \item The user should be able to enter an edition mode where he appends new nodes to the social structure.
 \end{enumerate}
 
 
+\subsection{Specific \glspl{osn} requirements}
 
 As we previously mentioned in Chapter 5, one of the main value propositions of building such a tool is to offer contextual analysis, specific inferences driven
 by system awareness regarding the \glspl{osn} that we are analyzing.
 
-\subsection{Facebook specific requirements}
+\subsubsection*{Facebook specific requirements}
 
 \begin{enumerate}
     \item \textbf{Sentiment analysis} - The user must be able to see a metric on each node that describe sentiments such as happiness or sadness, this will be simply the result of the mapping and extraction of reactions to user's posts giving us an overall idea of the user sentiments without involving any natural language processing or other complex processes;
     \item \textbf{User activity} - By analyzing timestamps on user's posts we will provide a metric that describes user activity;
-    \item \textbf{Link Analysis for user social interaction} - When clicking on links in the graph the user must be able to tell the degree of interaction between two nodes (this interaction metric should derive from the number mentions or posts in user's posts);
+    \item \textbf{Link Analysis for user social interaction} - When clicking on links in the graph the user must be able to tell the degree of interaction between two nodes (this interaction metric should derive from the number mentions or posts in user's posts).
 \end{enumerate}
 
-\subsection{LinkedIn specific requirements}
+\subsubsection*{LinkedIn specific requirements}
 
 \begin{enumerate}
     \item \textbf{Carrear history} - Because nowadays people tend change jobs more frequently, it could be useful to see a particular career path for a specific
