@@ -57,6 +57,15 @@
 \contentsline {subsubsection}{LinkedIn data structure}{49}{Item.13}
 \contentsline {subsection}{\numberline {6.2.4}Network operations module}{51}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Front-end}{52}{section.6.3}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{56}{chapter.7}
+\contentsline {subsection}{\numberline {6.3.1}Network configuration and construction}{52}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}General interactions and display}{53}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Node interactions}{54}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Link interaction}{55}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Bulk operations}{55}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Statistic analysis}{56}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Other operations}{56}{subsection.6.3.7}
+\contentsline {subsection}{\numberline {6.3.8}Facebook specific requirements}{56}{subsection.6.3.8}
+\contentsline {subsection}{\numberline {6.3.9}LinkedIn specific requirements}{56}{subsection.6.3.9}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{58}{chapter.7}
 \vspace \bigskipamount 
 \vspace \bigskipamount 

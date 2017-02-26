@@ -1,42 +1,30 @@
 % This should be one of my major arguments when talking on static rendering and network perception trough time!
 % https://en.wikiquote.org/wiki/Edsger_W._Dijkstra - Related cool stuff
 % Our intellectual powers are rather geared to master static relations and that our powers to visualize processes evolving in time are relatively poorly developed. For that reason we should do (as wise programmers aware of our limitations) our utmost to shorten the conceptual gap between the static program and the dynamic process, to make the correspondence between the program (spread out in text space) and the process (spread out in time) as trivial as possible.
-%
-% Graph Oriented Databases [Study this it might be worth it!]
-% https://neo4j.com/
-%
-% ARS - Análise de Redes Sociais
-% (OBSERVAÇÂO OBRIGATÓRIA DESTES DOCUMENTOS)
-% http://www.slideshare.net/ciberesfera/anlise-de-redes (iscsp.ulisboa.pt)
-% http://www.slideshare.net/fhguarnieri/anlise-de-redes-sociais-teoria-e-prtica (Fernando Guarnieri)
-% http://www.slideshare.net/fabiomalini/introduo-teoria-dos-grafos-e-anlise-de-redes-sociais (Dr. Fábio Malini)
-%
-% SNA Tools
-% http://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html
-% https://en.wikipedia.org/wiki/Social_network_analysis_software
-% http://www.butleranalytics.com/20-free-and-open-source-social-network-analysis-software/
-% http://www.kstoolkit.org/Social+Network+Analysis
-% http://www.gmw.rug.nl/~huisman/sna/software.html
-%
-%
-%
-% This link has a twitter map representing sort of what I was thinking!
-% https://www.quora.com/What-are-some-cool-fun-APIs
-%
-% ANOTHER AMAZING!
-
-%
-
-
-
+% \textbf{\textit{"You can think of networks as vast fabrics of humanity, and we all occupy particular spots within the network. Nicholas Christakis}} \url{https://www.youtube.com/watch?v=wadBvDPeE4E&t=1133s}"
 
 \section{Front-end}
+
 Visual requirements, interaction etc. etc.
 
 The majority of the requirements do not depend on the \glspl{osn} that we are, in that cases we will mark the requirements with specific tags, if the requirement
+...\\
 
+\indent These represent the tool requirements, what the user actually is able to interact with. For sake of structure these requirements we will give a code for each
+requirements section, being then the requirements numerated inside each section, so in the future when we refer to a certain requirement by its code and number so that w'ill be able to immediately identify it.\\
 
-\subsection*{\textbf{[NCF] Network configuration and construction}}
+\subsection{Requirements Prioritization}
+For simplifying the prioritization process we will use the \textbf{MoSCoW} method that is a simple method to find what requirements are more important for the system overall...
+
+\begin{itemize}
+    \item \textbf{M}ust have - ...;
+    \item \textbf{S}hould have - ...;
+    \item \textbf{C}ould have - ...;
+    \item \textbf{W}on't have - These are requirements that are agreed to not be included in the first deliver of a project, this does not excludes the possibility of including them in later stages of the project.
+\end{itemize}
+
+\subsection{Network configuration and construction}
+
 \begin{enumerate}
     \item The user must be able to register available \glspl{osn} in the system;
     \item The user must be able to order the build of its network with depth I or II where:
@@ -71,95 +59,112 @@ The majority of the requirements do not depend on the \glspl{osn} that we are, i
     \item The system must be clearly warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook)
     could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
     \item The system must give feedback on the extraction status.
+    \item After the first extraction all the extracted nodes must be marked as extracted, being the user able to extract the missing properties for some given nodes;
 \end{enumerate}
 
-\subsubsection*{\textbf{[GID] General interactions and display}}
+\subsection{General interactions and display}
+
 \begin{enumerate}
-    \item User should be able to enable and disable Fisheye Distortion alike effect (\url{https://bost.ocks.org/mike/fisheye/});
-    \item ...
-    \item The user can pick color and size of his node and friends' nodes within the graph;
-    \item User may choose to render the graph links with semantic thickness, if the user checks this flag the link thickness should be
-    proportional to the number of common connections between two given nodes, indicating strongly connected individuals;
-
-
-    \item The user may select a node;
+    \item The system should be able to automatically deactivate heavy graph animations if a large graph is being rendered;
+    \item The user should be able to choose activate animations despite these have been deactivated by the system for sake of graph interactions performance;
+    \item The user must be able to drag and drop the graph to any place on the graph render area;
+    \item The user must be able to zoom in and zoom out the network so that he his able to explore specific parts with more detail;
+    \item The user should be able to enable and disable \textit{fisheye distortion} alike effect. % https://bost.ocks.org/mike/fisheye/
+    \item Double clicking on a black zone should perform a smooth zooming effect on that are; %https://bl.ocks.org/mbostock/3828981
+    \item The user must be able to perform a hive plot of his network;
+    \item The system should be able to automatically identify communities by painting nodes belonging to the same community by same the color and providing
+    information about the community such as \textit{"People that studied at School X"} or \textit{"People that live in Lisbon"};
+    \item The user must be able to perform text search and filter or highlight the nodes that match the text query.
 \end{enumerate}
 
-\subsubsection*{\textbf{[NI] Node interactions}}
-When clicking on some node in the graph the user may be able to:
+\subsection{Node interactions}
+
+Here as described interactions at the node level:
 \begin{enumerate}
-    \item Drag and drop the node to some place else in the screen and the node should be fixed in that place (being the rest of the graph
+    \item Along side the node a label with the node name or id should be displayed;
+    % http://link-prediction.herokuapp.com/network
+    \item The user must be able to activate highlight functionality for more interactive node consulting. This functionality will highlight the node
+    and his first degree connections, clarifying relations within very dense clusters;
+    \item The user can pick color and size of specific pre selected nodes within the network;
+    \item The user can pick color and size of his nodes within the network;
+    \item When the user clicks a node a side panel must be opened, this panel should display the following:
+    \begin{enumerate}
+        \item Should contain all node user's available information;
+        \item Should allow the user to perform calculations on that specific node;
+        \item Should allow user to request extraction of more information on that node (e.g. if the list of user's likes wasn't extracted this option should be available);
+        \item Should offer the user all the metrics mentioned in section (\textbf{XXXXXXXXXXXX}).
+    \end{enumerate}
+    \item When the user mouseover a specific node relevant information should be displayed when possible, such as: name, age, address, number of connections;
+    % http://bl.ocks.org/norrs/2883411
+    \item The user must be able to drag and drop the node to some place else in the screen and the node should be fixed in that place (being the rest of the graph
     automatically rearranged);
-    \item Right clicking on some node should open a context menu that provides several options to the user such as:
+    \item Right clicking on some node should open a context menu that provide options to the user such as:
     \begin{itemize}
-        \item Open tab in the users' profile in a given \glspl{osn};
-        \item
+        \item Opening the users' profile in the current \glspl{osn};
+        \item Change the node symbol (e.g. if it is a circle the user might want to make the node a triangle instead). % https://bl.ocks.org/mbostock/1062383
     \end{itemize}
+    \item The user should be able to enter an edition mode where he appends new nodes to the social structure;
+    \item Double click on some should grow the target node. % http://bl.ocks.org/d3noob/8043434
 \end{enumerate}
 
-\subsubsection*{\textbf{[LI] Link interaction}}
+\subsection{Link interaction}
+
 Links are not only visual node connectors, these also possess characteristics and metrics that can be consulted:
 \begin{enumerate}
-    \item
+    \item User may choose to render the graph links with semantic thickness, if the user checks this flag the link thickness should be
+    proportional to the number of common connections between two given nodes, indicating strongly connected individuals;
+    \item When the user performs a mouseover on some link, the link itself should be highlighted as well the intervenient nodes;
+    \item When the user performs a mouseover on some link, relevant information about the link should be displayed such as number of interactions between the two nodes, or number of common connections;
 \end{enumerate}
 
-\subsubsection*{\textbf{[BO] Bulk operations}}
+\subsection{Bulk operations}
+
 The user may select a set of nodes with a selection box, allowing him to perform bulk operations on nodes, such as:
 \begin{enumerate}
-    \item Paint all selected nodes same color;
-    \item Collapse the nodes in a community (all nodes would be replaced by a bigger node, representative of the community);
-    \item Wrap the nodes inside a visible circle of geometric form representative of a community;
+    \item The user must be able to group nodes in communities based on specific \glspl{osn} property (e.g. such as page likes on Facebook or skills on LinkedIn);
+    \item The user must be able to paint all selected nodes same color;
+    \item The user must be able to collapse dense clusters in one single node (all nodes would be replaced by a bigger node, not necessarily representing a community); % http://mbostock.github.io/d3/talk/20111116/force-collapsible.html
     \item Check what are the connections that the selected nodes have in common;
     \item Check what are the preferences (in Facebook it would be the \textit{likes}, in LinkedIn would be the companies they follow) that the selected nodes have in common;
     \item All the metrics that can be consulted in node interaction must also be available in bulk interactions so that the user may compare metrics among a set of
-    nodes;
-    \item ...
+    nodes.
 \end{enumerate}
 
-\subsubsection*{\textbf{[SA] Statistic analysis}}
+\subsection{Statistic analysis}
+
 \begin{enumerate}
-    \item User must be able to visualize geographical network distribution;
-    \item
+    \item The user must be able to visualize geographical network distribution;
+    \item The user must be able to rank nodes by various metrics such as node centrality;
+    \item The user must
 \end{enumerate}
 
-\subsubsection*{\textbf{[OO] Other operations}}
+\subsection{Other operations}
+
 \begin{enumerate}
     \item The user must be able to download his network in standard graph formats: Trivial Graph Format (TGF) and GraphML so that it could
-    be imported to other \glspl{sna} tools such as Gephi or SocNetV;
+    be imported to other \glspl{sna} tools such as Gephi or SocNetV (\hyperref[sec:snas]{see Chapter 4 section 4.6});
     \item ...
 
 \end{enumerate}
 
 
 
+As we previously mentioned in Chapter 5, one of the main value propositions of building such a tool is to offer contextual analysis, specific inferences driven
+by system awareness regarding the \glspl{osn} that we are analyzing.
 
+\subsection{Facebook specific requirements}
 
-%%%%%%%%
-
-As we previously mentioned, one of the main value propositions of building such a tool is to offer contextual analysis, this is specific inferences driven
-by the fact that the system being aware that is analyzing a graph from Facebook or a graph of LinkedIn, being able to offer different perspectives.
-
-\subsubsection*{\textbf{[FSR] Facebook specific requirements}}
 \begin{enumerate}
-    \item Sentiment analysis;
-    \item User activity and post frequency;
-    \item When clicking on links in the graph the user must be able to tell the degree of interaction between two nodes and see (number of posts shared between user X and Y, number of mentions etc. etc.)
-    \item Sentiment Analysis How happy are you on OSN? Mean of posts' reactions to estimate!
+    \item \textbf{Sentiment analysis} - The user must be able to see a metric on each node that describe sentiments such as happiness or sadness, this will be simply the result of the mapping and extraction of reactions to user's posts giving us an overall idea of the user sentiments without involving any natural language processing or other complex processes;
+    \item \textbf{User activity} - By analyzing timestamps on user's posts we will provide a metric that describes user activity;
+    \item \textbf{Link Analysis for user social interaction} - When clicking on links in the graph the user must be able to tell the degree of interaction between two nodes (this interaction metric should derive from the number mentions or posts in user's posts);
 \end{enumerate}
 
+\subsection{LinkedIn specific requirements}
 
-
-\subsubsection*{\textbf{[LSR] LinkedIn specific requirements}}
 \begin{enumerate}
-    \item Because nowadays people tend change jobs more frequently, it could be useful to see a particular career path for a specific
+    \item \textbf{Carrear history} - Because nowadays people tend change jobs more frequently, it could be useful to see a particular career path for a specific
     user (we could call it a user career diagram);
-    \item The user could be able tell from the network general behavior, that users' from a certain company tend next to go to some particular companies;
-
+    \item \textbf{Carrear development} - The user could be able tell from the network general behavior, that users' from a certain company tend next to go to some particular companies;
+    \item \textbf{Human resources discovery} - As companies struggle to find people with particular skills, it might in some cases be a matter of how to reach certain nodes in the network. The user must be able to find individuals with particular skills on the network but also the \textit{shortest path} to that individual, as well as the point of contact a third individual that is a first degree connection with the target and that could serve as proxy to reach that person.
 \end{enumerate}
-
-% It would be awesome if we could visualize a "ROADMAP" or tree (like Spotify's artists tree) that would
-% show us depending on the first job company what is the must common company that a employee goes next!
-% This would be awesome....
-\\
-\\
-"You can think of networks as vast fabrics of humanity, and we all ocupy particular spots within the network. Nicholas Christakis \url{https://www.youtube.com/watch?v=wadBvDPeE4E&t=1133s}"
