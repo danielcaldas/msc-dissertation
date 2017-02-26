@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  25 FEB 2017 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.7)  26 FEB 2017 03:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1950,7 +1950,7 @@ Overfull \vbox (32.23424pt too high) has occurred while \output is active []
 
 
 [11]) (./sec/3_online_social_networks/history_of_osns.tex
-<img/timeline.png, id=304, 448.67625pt x 712.6625pt>
+<img/timeline.png, id=298, 448.67625pt x 712.6625pt>
 File: img/timeline.png Graphic file (type png)
  <use img/timeline.png>
 Package pdftex.def Info: img/timeline.png used on input line 4.
@@ -1961,7 +1961,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./sec/3_online_social_networks/portuguese_and_osns.tex [12] [13 <./img/timel
 ine.png>]) (./sec/3_online_social_networks/exploring_some_osns.tex [14]
-<img/facebook-domain-model.jpg, id=339, 1017.8025pt x 1231.60126pt>
+<img/facebook-domain-model.jpg, id=333, 1017.8025pt x 1231.60126pt>
 File: img/facebook-domain-model.jpg Graphic file (type jpg)
 
 <use img/facebook-domain-model.jpg>
@@ -1996,7 +1996,7 @@ Overfull \hbox (47.59229pt too wide) in paragraph at lines 95--96
 [][]\T1/pplj/m/n/10.95 https://www.instagram.com/about/us/[][]
  []
 
-[18] <img/instagram-domain-model.jpg, id=374, 1142.2675pt x 739.76375pt>
+[18] <img/instagram-domain-model.jpg, id=368, 1142.2675pt x 739.76375pt>
 File: img/instagram-domain-model.jpg Graphic file (type jpg)
 
 <use img/instagram-domain-model.jpg>
@@ -2023,7 +2023,7 @@ Overfull \hbox (38.56065pt too wide) in paragraph at lines 135--140
 g to [][]https://press.linkedin.com/about
  []
 
-<img/linkedin-domain-model.jpg, id=388, 862.22125pt x 1018.80624pt>
+<img/linkedin-domain-model.jpg, id=382, 862.22125pt x 1018.80624pt>
 File: img/linkedin-domain-model.jpg Graphic file (type jpg)
 
 <use img/linkedin-domain-model.jpg>
@@ -2049,7 +2049,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [22] [23]
-<img/researchgate-domain-model.jpg, id=420, 1008.76875pt x 895.345pt>
+<img/researchgate-domain-model.jpg, id=414, 1008.76875pt x 895.345pt>
 File: img/researchgate-domain-model.jpg Graphic file (type jpg)
 
 <use img/researchgate-domain-model.jpg>
@@ -2064,7 +2064,7 @@ Overfull \hbox (54.09247pt too wide) in paragraph at lines 202--204
 [24
 
  <./img/researchgate-domain-model.jpg>] [25]
-<img/pinterest-domain-model.jpg, id=433, 929.4725pt x 670.505pt>
+<img/pinterest-domain-model.jpg, id=427, 929.4725pt x 670.505pt>
 File: img/pinterest-domain-model.jpg Graphic file (type jpg)
 
 <use img/pinterest-domain-model.jpg>
@@ -2084,7 +2084,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--273
 
  []
 
-[28] <img/twitter-domain-model.jpg, id=457, 667.49374pt x 883.3pt>
+[28] <img/twitter-domain-model.jpg, id=451, 667.49374pt x 883.3pt>
 File: img/twitter-domain-model.jpg Graphic file (type jpg)
 
 <use img/twitter-domain-model.jpg>
@@ -2135,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrfull' on input line 11.
 
-<img/architecture.png, id=576, 1766.6pt x 1365.1pt>
+<img/architecture.png, id=570, 1766.6pt x 1365.1pt>
 File: img/architecture.png Graphic file (type png)
  <use img/architecture.png>
 Package pdftex.def Info: img/architecture.png used on input line 35.
@@ -2155,7 +2155,7 @@ chapter 6.
 
 
 ] [45]
-<img/ext-pipeline.png, id=614, 785.93625pt x 1087.06125pt>
+<img/ext-pipeline.png, id=608, 785.93625pt x 1087.06125pt>
 File: img/ext-pipeline.png Graphic file (type png)
 
 <use img/ext-pipeline.png>
@@ -2172,16 +2172,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
 [46] [47 <./img/ext-pipeline.png>] [48
 
-] [49] [50])
-(./sec/6_system_requirements/frontend.tex [51] [52]
-Overfull \hbox (120.90907pt too wide) in paragraph at lines 44--45
-[]\T1/pplj/m/n/10.95 User should be able to en-able and dis-able Fish-eye Dis-t
-or-tion alike ef-fect (https://bost.ocks.org/mike/fisheye/); 
+] [49] [50] [51])
+(./sec/6_system_requirements/frontend.tex [52] [53] [54]
+
+./sec/6_system_requirements/frontend.tex:164: LaTeX Error: There's no line here
+ to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \\
+        
+? ret
+OK, entering \nonstopmode...
+
+./sec/6_system_requirements/frontend.tex:165: LaTeX Error: There's no line here
+ to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 "
+       You can think of networks as vast fabrics of humanity, and we all ocu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+))
+Overfull \hbox (1.3082pt too wide) in paragraph at lines 165--120
+\T1/pplj/m/n/10.95 within the net-work. Nicholas Chris-takis [][]$\T1/cmtt/m/n/
+10.95 https : / / www . youtube . com / watch ? v = wadBvDPeE4E &
  []
 
-)) [53]
+[55]
 chapter 7.
-(./sec/7_system_implementation/system_impl.tex) [54
+(./sec/7_system_implementation/system_impl.tex) [56
 
 
 ] (./dissertation.bbl
@@ -2202,7 +2230,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--84
 ebook-[]has-[]changed-[]the-[]world$[][]\T1/pplj/m/n/10.95 ,
  []
 
-[55
+[57
 
 
 
@@ -2233,13 +2261,13 @@ Underfull \hbox (badness 4229) in paragraph at lines 117--123
 $[][]\T1/pplj/m/n/10.95 , 2016.  On-line ac-cessed 22
  []
 
-[56]
+[58]
 Underfull \hbox (badness 1521) in paragraph at lines 202--206
 []\T1/pplj/m/n/10.95 Stanford Pritchard Lab.  Struc-ture soft-ware.  [][]$\T1/c
 mtt/m/n/10.95 http : / / pritchardlab . stanford . edu /
  []
 
-) [57]
+) [59]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./dissertation.aux
@@ -2256,13 +2284,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 38148 strings out of 493014
- 706145 string characters out of 6133352
- 1075004 words of memory out of 5000000
- 40679 multiletter control sequences out of 15000+600000
+ 38166 strings out of 493014
+ 706247 string characters out of 6133352
+ 1075003 words of memory out of 5000000
+ 40676 multiletter control sequences out of 15000+600000
  82545 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,22n,106p,8491b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,22n,106p,8491b,933s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2293,10 +2321,10 @@ w/helvetic/uhvr8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
 lbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (65 pages, 1711256 bytes).
+Output written on dissertation.pdf (67 pages, 1717199 bytes).
 PDF statistics:
- 1016 PDF objects out of 1200 (max. 8388607)
- 910 compressed objects within 10 object streams
- 246 named destinations out of 1000 (max. 500000)
- 17922 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 933 compressed objects within 10 object streams
+ 267 named destinations out of 1000 (max. 500000)
+ 17898 words of extra memory for PDF output out of 20736 (max. 10000000)
 

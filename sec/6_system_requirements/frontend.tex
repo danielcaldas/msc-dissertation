@@ -1,7 +1,42 @@
+% This should be one of my major arguments when talking on static rendering and network perception trough time!
+% https://en.wikiquote.org/wiki/Edsger_W._Dijkstra - Related cool stuff
+% Our intellectual powers are rather geared to master static relations and that our powers to visualize processes evolving in time are relatively poorly developed. For that reason we should do (as wise programmers aware of our limitations) our utmost to shorten the conceptual gap between the static program and the dynamic process, to make the correspondence between the program (spread out in text space) and the process (spread out in time) as trivial as possible.
+%
+% Graph Oriented Databases [Study this it might be worth it!]
+% https://neo4j.com/
+%
+% ARS - Análise de Redes Sociais
+% (OBSERVAÇÂO OBRIGATÓRIA DESTES DOCUMENTOS)
+% http://www.slideshare.net/ciberesfera/anlise-de-redes (iscsp.ulisboa.pt)
+% http://www.slideshare.net/fhguarnieri/anlise-de-redes-sociais-teoria-e-prtica (Fernando Guarnieri)
+% http://www.slideshare.net/fabiomalini/introduo-teoria-dos-grafos-e-anlise-de-redes-sociais (Dr. Fábio Malini)
+%
+% SNA Tools
+% http://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html
+% https://en.wikipedia.org/wiki/Social_network_analysis_software
+% http://www.butleranalytics.com/20-free-and-open-source-social-network-analysis-software/
+% http://www.kstoolkit.org/Social+Network+Analysis
+% http://www.gmw.rug.nl/~huisman/sna/software.html
+%
+%
+%
+% This link has a twitter map representing sort of what I was thinking!
+% https://www.quora.com/What-are-some-cool-fun-APIs
+%
+% ANOTHER AMAZING!
+
+%
+
+
+
+
 \section{Front-end}
 Visual requirements, interaction etc. etc.
 
-\subsection{Information extraction and network structure}
+The majority of the requirements do not depend on the \glspl{osn} that we are, in that cases we will mark the requirements with specific tags, if the requirement
+
+
+\subsection*{\textbf{[NCF] Network configuration and construction}}
 \begin{enumerate}
     \item The user must be able to register available \glspl{osn} in the system;
     \item The user must be able to order the build of its network with depth I or II where:
@@ -33,21 +68,98 @@ Visual requirements, interaction etc. etc.
             \item \textit{following} - If this flag is checked, following will be included.
         \end{enumerate}
     \end{enumerate}
-    \item The system must be clear and warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook)
+    \item The system must be clearly warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook)
     could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
-    \item ...
+    \item The system must give feedback on the extraction status.
 \end{enumerate}
 
-\subsection{Graph interaction}
-
+\subsubsection*{\textbf{[GID] General interactions and display}}
 \begin{enumerate}
-    \item User should be able to enable and disable Fisheye Distortion alike effect (https://bost.ocks.org/mike/fisheye/);
+    \item User should be able to enable and disable Fisheye Distortion alike effect (\url{https://bost.ocks.org/mike/fisheye/});
+    \item ...
+    \item The user can pick color and size of his node and friends' nodes within the graph;
+    \item User may choose to render the graph links with semantic thickness, if the user checks this flag the link thickness should be
+    proportional to the number of common connections between two given nodes, indicating strongly connected individuals;
+
+
+    \item The user may select a node;
+\end{enumerate}
+
+\subsubsection*{\textbf{[NI] Node interactions}}
+When clicking on some node in the graph the user may be able to:
+\begin{enumerate}
+    \item Drag and drop the node to some place else in the screen and the node should be fixed in that place (being the rest of the graph
+    automatically rearranged);
+    \item Right clicking on some node should open a context menu that provides several options to the user such as:
+    \begin{itemize}
+        \item Open tab in the users' profile in a given \glspl{osn};
+        \item
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{\textbf{[LI] Link interaction}}
+Links are not only visual node connectors, these also possess characteristics and metrics that can be consulted:
+\begin{enumerate}
+    \item
+\end{enumerate}
+
+\subsubsection*{\textbf{[BO] Bulk operations}}
+The user may select a set of nodes with a selection box, allowing him to perform bulk operations on nodes, such as:
+\begin{enumerate}
+    \item Paint all selected nodes same color;
+    \item Collapse the nodes in a community (all nodes would be replaced by a bigger node, representative of the community);
+    \item Wrap the nodes inside a visible circle of geometric form representative of a community;
+    \item Check what are the connections that the selected nodes have in common;
+    \item Check what are the preferences (in Facebook it would be the \textit{likes}, in LinkedIn would be the companies they follow) that the selected nodes have in common;
+    \item All the metrics that can be consulted in node interaction must also be available in bulk interactions so that the user may compare metrics among a set of
+    nodes;
     \item ...
 \end{enumerate}
 
-\subsection{Other operations}
+\subsubsection*{\textbf{[SA] Statistic analysis}}
+\begin{enumerate}
+    \item User must be able to visualize geographical network distribution;
+    \item
+\end{enumerate}
+
+\subsubsection*{\textbf{[OO] Other operations}}
 \begin{enumerate}
     \item The user must be able to download his network in standard graph formats: Trivial Graph Format (TGF) and GraphML so that it could
     be imported to other \glspl{sna} tools such as Gephi or SocNetV;
     \item ...
+
 \end{enumerate}
+
+
+
+
+
+%%%%%%%%
+
+As we previously mentioned, one of the main value propositions of building such a tool is to offer contextual analysis, this is specific inferences driven
+by the fact that the system being aware that is analyzing a graph from Facebook or a graph of LinkedIn, being able to offer different perspectives.
+
+\subsubsection*{\textbf{[FSR] Facebook specific requirements}}
+\begin{enumerate}
+    \item Sentiment analysis;
+    \item User activity and post frequency;
+    \item When clicking on links in the graph the user must be able to tell the degree of interaction between two nodes and see (number of posts shared between user X and Y, number of mentions etc. etc.)
+    \item Sentiment Analysis How happy are you on OSN? Mean of posts' reactions to estimate!
+\end{enumerate}
+
+
+
+\subsubsection*{\textbf{[LSR] LinkedIn specific requirements}}
+\begin{enumerate}
+    \item Because nowadays people tend change jobs more frequently, it could be useful to see a particular career path for a specific
+    user (we could call it a user career diagram);
+    \item The user could be able tell from the network general behavior, that users' from a certain company tend next to go to some particular companies;
+
+\end{enumerate}
+
+% It would be awesome if we could visualize a "ROADMAP" or tree (like Spotify's artists tree) that would
+% show us depending on the first job company what is the must common company that a employee goes next!
+% This would be awesome....
+\\
+\\
+"You can think of networks as vast fabrics of humanity, and we all ocupy particular spots within the network. Nicholas Christakis \url{https://www.youtube.com/watch?v=wadBvDPeE4E&t=1133s}"

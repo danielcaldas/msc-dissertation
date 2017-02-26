@@ -57,9 +57,6 @@
 \contentsline {subsubsection}{LinkedIn data structure}{49}{Item.13}
 \contentsline {subsection}{\numberline {6.2.4}Network operations module}{51}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Front-end}{52}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Information extraction and network structure}{52}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Graph interaction}{53}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Other operations}{53}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{54}{chapter.7}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{56}{chapter.7}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
