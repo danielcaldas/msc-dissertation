@@ -1,6 +1,6 @@
 \section{Back-end}
 
-As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by essentially two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data miner}, we will write the requirements for each one of the components. We will not prioritize this requirements (as we will do in the next section for the Front-end requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
+As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by essentially two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data miner}, we will write the requirements for each one of the components. We will not prioritize this requirements (as we will do in the \hyperref[sec:frontend]{next section for the Front-end} requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
 
 \subsection{Web crawlers}
 
@@ -138,12 +138,12 @@ Defining data schemas in earlier stages of system specifications will allow us t
         {
             "institution": {string},
             "course": {string},
-            "startYear": 2015,
-            "endYear": 2017
+            "startYear": {number},
+            "endYear": {number}
         }
     ],
     "skills": {
-        {string}: 7
+        {string}: {number}
     },
     "languages": {
         {string}: {string}
@@ -173,35 +173,19 @@ In this section we will list the requirements for the module that is responsible
 provide a web API in order to access all the algorithms and metrics calculations that the service offers.
 
 \begin{enumerate}
-    \item max\_clique
-    \item enumerate\_all\_cliques
-    \item number\_of\_cliques
-    \item cliques\_containing\_node
-
-    \item clustering
-    \item average\_clustering
-    \item max\_clustering
-
-    \item average\_neighbor\_degree
-
-    \item degree\_centrality
-    \item closeness\_centrality
-    \item betweenness\_centrality
-    \item eigenvector\_centrality
-
-    \item triangles
-
-    \item is\_strongly\_connected
-    \item number\_strongly\_connected\_components
-    \item strongly\_connected\_components
-
-    \item is\_weakly\_connected
-    \item number\_weakly\_connected\_components
-    \item weakly\_connected\_components
-
-    \item pagerank
-
-    \item shortest\_path
-
-    \item WHERE IS TRANSITIVITY!!!!
+    \item The API must be able to calculate strongly and weakly connected components;
+    \item The API must be able to calculate the clustering coefficient (including average and maximum) and transitivity for a given network;
+    \item The API must be able to calculate the average neighbor degree;
+    \item The API must be able to calculate centrality measures, these include:
+    \begin{enumerate}
+        \item Degree centrality;
+        \item Closeness centrality;
+        \item Betweenness centrality;
+        \item Eigenvector centrality;
+    \end{enumerate}
+    \item The API must be able to compute node importance trough the page rank algorithm;
+    \item The API must be able to calculate the isolated graphs within a certain network;
+    \item The API must be able to calculate the shortest path between two nodes;
+    \item The API must be able to run dominance algorithms agains a certain network;
+    % \item The API must be able to run link prediction algorithms against a certain network;
 \end{enumerate}

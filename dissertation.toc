@@ -56,16 +56,16 @@
 \contentsline {subsubsection}{Facebook data structure}{49}{Item.13}
 \contentsline {subsubsection}{LinkedIn data structure}{50}{Item.13}
 \contentsline {subsection}{\numberline {6.2.4}Network metrics}{52}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Front-end}{53}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Requirements Prioritization}{53}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Network configuration and construction}{54}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}General interactions and display}{55}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Node interactions}{56}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Link interaction}{57}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Bulk operations}{57}{subsection.6.3.6}
-\contentsline {subsection}{\numberline {6.3.7}Statistic analysis}{58}{subsection.6.3.7}
-\contentsline {subsection}{\numberline {6.3.8}Other operations}{58}{subsection.6.3.8}
+\contentsline {section}{\numberline {6.3}Front-end}{52}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Requirements Prioritization}{52}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Network configuration and construction}{53}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}General interactions and display}{54}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Node interactions}{55}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Link interaction}{56}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Bulk operations}{56}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Statistic analysis}{57}{subsection.6.3.7}
+\contentsline {subsection}{\numberline {6.3.8}Other operations}{57}{subsection.6.3.8}
 \contentsline {subsection}{\numberline {6.3.9}Specific \glspl {osn} requirements}{58}{subsection.6.3.9}
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{60}{chapter.7}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{59}{chapter.7}
 \vspace \bigskipamount 
 \vspace \bigskipamount 
