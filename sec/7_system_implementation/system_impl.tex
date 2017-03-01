@@ -1,5 +1,46 @@
 Here we present the system specifications such as which technologies we use in each component by drawing a new architecture diagram that specifies what technologies are used in each part of the system.
 
+\section{Implementation first steps}
+In this section we will describe out approach towards the implementation of the system, we will describe the process since the requirements
+definition to the technological choices, some challenges and implementation details.
+
+For gathering requirements we simply defined two groups, the first, the system Back-end has essential base functionalities, we focused only
+on the essential without scoping or prioritizing, all the collected requirements are in the progress of being implemented, these include
+web crawling modules, data mining for some data treatment and an extraction manager that allows remote calls of parameterized (granular) extractions.
+In the system Front-end we followed a different approach by collecting a larger group of requirements that consist mainly in user interactions with the tool,
+allowing us to narrow down the essential features based on requirements comparison. So at the end we sum up a few \textit{must have} requirements that
+define the system identity an reflect the principles on which the project was designed upon (accessibility, simplicity, \glspl{osn} integration and contextual analysis).\\
+
+\indent From here we built a simple \textit{proof of concept} that demonstrates the most basic of the workflow, this consists in a few steps that we next list:
+\begin{itemize}
+    \item \textbf{Back-end} - Extract users from a \glspl{osn} (for this particular case we used Facebook as source);
+    \item \textbf{Service Aggregator} - Aggregate the extracted users in a graph respecting front end data contract;
+    \item \textbf{Front-end} - Rendering a graph on the browser, allow simple interaction of node data display on the user mouse click.
+\end{itemize}
+
+\subsection*{Aside note}
+As one may noticed in the previous list, for sake of productivity we skipped the implementation of some pieces in the architecture,
+NOMEADAMENTE the network metrics api and the data mining process, these will only be included in the full implementation, because for the proof
+of concept we labeled this components as complements (this may be seen as add ons or plugins that added to proof of concept will bring the
+project to life).
+
+These steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
+the best tools and technologies that better suite the project requirements.
+
+... What we did\\
+Picture, Picture\\
+Caption, Caption\\
+
+\begin{enumerate}
+    \item d3.js
+    \item html, js and css
+    \item node js
+    \item python, flask, xpath, webdrivermanager/phantomjs
+    \item ...
+    \item why python, and networkx library
+    \item ...
+\end{enumerate}
+
 \section{Choose of Technologies}
 ...
 \section{Implementation architecture}
