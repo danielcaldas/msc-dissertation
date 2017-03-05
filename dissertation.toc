@@ -68,11 +68,16 @@
 \contentsline {subsection}{\numberline {6.3.9}Specific \glspl {osn} requirements}{58}{subsection.6.3.9}
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {System Specifications}}{60}{chapter.7}
 \contentsline {section}{\numberline {7.1}Implementation first steps}{60}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Proof of concept results}{61}{subsection.7.1.1}
 \contentsline {section}{\numberline {7.2}Choose of Technologies}{61}{section.7.2}
-\contentsline {section}{\numberline {7.3}Implementation architecture}{61}{section.7.3}
-\contentsline {section}{\numberline {7.4}Implementation details}{61}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Extraction and data mining}{62}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Network metrics}{62}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Front-end and service aggregator}{62}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.2.1}Database technologies}{61}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Back-end technologies}{62}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Middleware technologies}{62}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Front-end technologies}{62}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}Implementation architecture}{62}{section.7.3}
+\contentsline {section}{\numberline {7.4}Implementation details}{63}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Extraction and data mining}{63}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Network metrics}{63}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Front-end and service aggregator}{63}{subsection.7.4.3}
 \vspace \bigskipamount 
 \vspace \bigskipamount 

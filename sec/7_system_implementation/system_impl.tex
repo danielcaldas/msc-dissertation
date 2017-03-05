@@ -19,17 +19,53 @@ define the system identity an reflect the principles on which the project was de
 \end{itemize}
 
 \subsection*{Aside note}
-As one may noticed in the previous list, for sake of productivity we skipped the implementation of some pieces in the architecture,
-NOMEADAMENTE the network metrics api and the data mining process, these will only be included in the full implementation, because for the proof
+As one may noticed in the previous list, for sake of objectivity we skipped the implementation of some pieces in the architecture,
+namely, the network metrics api and the data mining process, these will only be included in the full implementation, because for the current proof
 of concept we labeled this components as complements (this may be seen as add ons or plugins that added to proof of concept will bring the
-project to life).
+project to life).\\
 
-These steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
-the best tools and technologies that better suite the project requirements.
+\subsection{Proof of concept results}
+\indent These steps previous listed steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
+the best tools and technologies that better suite the project requirements.\\
 
-... What we did\\
-Picture, Picture\\
-Caption, Caption\\
+FIGURE 1\\
+FIGURE 2\\
+
+\indent In in the Figure XXX, we can observe a network being rendered, this represents the friendship network of a given user. Since there is an entrypoint user, if we let him
+in this network we would obtain a egocentric network that could not depict all the surrounding relations in these small society. What we did was remove this node order to obtain
+more clarity to observe the network. At the Figure XXX we also can see the interaction of clicking on a certain node and displaying the node information.
+
+\section{Choose of Technologies}
+Having the requirements been defined and a small proof of concept being developed as we seen in the previous section, we are now able to present our technological choices
+and provide some context on how we came to these conclusions.
+
+\subsection{Database technologies}
+Relational databases such as MySQL or PostgreSQL are very famous... still.. Document Mongo... Graph Neo4j, GraphDB but
+Neo4j seems to have a bigger community and nice interfaces for supporting data management.
+
+
+\subsection{Back-end technologies}
+The main language that will supports our back-end is Python, this conclusion came very naturally since Python is one of the most used programming languages in the data
+sciece field along with others such as R or Java. We choosed Python for two main reasons:
+Data extraction and XPath and PhantomJs selenium driver (SEE THIS BETTER)
+Network Analysis with Networkx Library
+
+Flask as a simplist framework for building our web APIs such as extraction and
+
+\subsection{Middleware technologies}
+Python should do as well, but since we may want to agelize... We may use modern platforms such as NodeJS that are very well known for
+building scalable network applications.
+
+\subsection{Front-end technologies}
+Since we will be building a web application the base Front-end technologies will be:
+HTML
+JS
+CSS
+
+Additionally we may add an MVC modern web library such as ReactJS if needed.
+
+In terms of visualization the main Front-end library is D3.js that brings many visualization features out of the box that will help us on
+network representation and graph interaction (in the proof of concept we used D3 for rendering the network).
 
 \begin{enumerate}
     \item d3.js
@@ -40,8 +76,6 @@ Caption, Caption\\
     \item why python, and networkx library
     \item ...
 \end{enumerate}
-
-\section{Choose of Technologies}
 ...
 \section{Implementation architecture}
 ...
