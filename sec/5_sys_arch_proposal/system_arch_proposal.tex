@@ -15,16 +15,6 @@ Social Network Visualizer \cite{socnetv}, allows to \textit{scrap} web sites to 
 As we state before when talking about simplicity, the mentioned \glspl{sna} tools provide generic metrics on networks such as network density or actor centrality. The values outputted from this tools are the result of running generic formulas and algorithms against some networks, so its very common for current \glspl{sna} researchers to be worried about the size of the network, being their focus on \textbf{quantitive analysis}.\\
 \indent In a hypothetical analysis scenario where some researcher has a network with a few thousand nodes, \textbf{what is the meaning of his assumptions when analyzing the network}? Since this is a pure quantitive analysis the numbers will seem reasonable for the given network, but this will not allow him to extract contextual conclusions, because in this case analyzing data form Facebook or analyzing data from LinkedIn will sound just like the same, because deep down it all comes down to the network. A better approach for drawing conclusions would be to have a mixture between \textbf{quantitive analysis} and \textbf{quality analysis}, the tool could do some content and context analysis to help the end user to get a more meaningful conclusion rather than just simple metrics.
 
-% LOOK TO ME IF YOU WANT TO CLARIFY THIS IN THE FUTURE
-% One thing that I see far to little of is a clever and reasonable combination of qualitative and quantitative data. Often SNA
-% researchers will collect a lot of (quantitative) data about the links between the actors and calculate all kinds of amazing
-% network and actor centrality measures and then basically make up the meaning of those by using their own assumptions. Let's
-% say Vladis Krebs claimed that power in a network is where actors have high betweenness centrality (control) and closeness
-% centrality (access). That sounds great and makes sense in theory. But when I combine (quantitative) network mapping with
-% (qualitative) discussion of the meaning and an additional independent measure of influence, I find some actors influential
-% because of their network position and others influential because of other factors. By adding the influence measure and
-% discussion I get to really understand what the centrality measures mean in this specific context. If you are interested in the method I use for this:
-
 \section{System Architecture}
 
 Now, after building up our aiming for this project, we now present a more concrete image of the overall system. In Figure \ref{img:architectureprop} we present an abstract system architecture.

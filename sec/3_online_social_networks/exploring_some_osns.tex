@@ -71,17 +71,17 @@ interested users and number of confirmed users (these relations are expressed as
 or gather users from one same institution or organization (e.g. Facebook group of students of the University of Minho).
 Having this feature of groups, clustering users by they interests one may say that groups, some way, transform Facebook in a \textit{"multi interest-based \gls{osn}"}.
 
-\subsubsection*{Facebook Graph API}
+\subsubsection*{Facebook Graph \gls{api}}
 Facebook has today several software \textit{kits} for developers to interact with the platform in the most diversified and imaginable ways. Facebook developers
 offers a range of variated software products that vary from monetization programs, that focus on how to make users profit from Facebook, Analytics to developers who
 have their apps embedded in the Facebook platform understand their audience and the performance of their apps, etc. (\cite{fbproducts}).\\
-\indent In this master's thesis context, the relevant software that Facebook has available is the Facebook Graph API. This API basically allows developers to collect information
-from Facebook such as posts, photos, videos, pages etc. According to \cite{fbgapi}, the common scenarios for using the Graph API
+\indent In this master's thesis context, the relevant software that Facebook has available is the Facebook Graph \gls{api}. This \gls{api} basically allows developers to collect information
+from Facebook such as posts, photos, videos, pages etc. According to \cite{fbgapi}, the common scenarios for using the Graph \gls{api}
 are the following: determine whether two people are friends on Facebook; publishing new status and updates, uploading content (photos, video etc.); sharing links. But in this project what we seek is
 build the most biggest and detailed network as possible, with analysis and visualization purposes in mind.\\
-\indent For building the network fetching users friends information is crucial, this was possible until Facebook Graph API v2.0 (trough the router \textit{/me/friends}), one could actually retrieve
+\indent For building the network fetching users friends information is crucial, this was possible until Facebook Graph \gls{api} v2.0 (trough the router \textit{/me/friends}), one could actually retrieve
 friends information and build a network from there. From v2.0 on, to achieve what was explained before, one must request a special permission called \textbf{user\_friends}
-from each user. The permission \textbf{user\_friends} is no longer included by default in every login. This change breaks down the possibility of gather Facebook information via its Graph API,
+from each user. The permission \textbf{user\_friends} is no longer included by default in every login. This change breaks down the possibility of gather Facebook information via its Graph \gls{api},
 this said, we need in the future to look up alternative paths to extract data from Facebook.
 
 
@@ -120,12 +120,12 @@ being chronologically ordered, do not intend to form any kind of timeline such a
 comment posts (\textit{Comment} box), but one cannot react or respond to comments (this preserves simplicity even more, for nested comments represent
  a complex part of \gls{osn} such as Facebook), and react to them by the \textit{like} reaction (\textit{Like} box).
 
-\subsection*{Instagram API Platform}
-In consequence of a simple domain, Instagram API Platform, provides simple and useful
+\subsection*{Instagram \gls{api} Platform}
+In consequence of a simple domain, Instagram \gls{api} Platform, provides simple and useful
 end points for programmatic publishing, and for network discovering, as far as concerning to this project, the late utility
 is more of interest. Instagram allows to get users, their relationships and also the media shared content (posts).\\
-\indent Similarly when exploring Facebook Graph API, we now found also very intimidating restrictions for the purpose of this project,
-this restrictions include limited rate of 500 API requests per hour, and end point specific limitations that allow only to
+\indent Similarly when exploring Facebook Graph \gls{api}, we now found also very intimidating restrictions for the purpose of this project,
+this restrictions include limited rate of 500 \gls{api} requests per hour, and end point specific limitations that allow only to
 perform 30 requests per hour to getting users' relationships data. (\cite{instadev})
 
 %% ---------------------------------------------- Exploring Some OSNs
@@ -166,8 +166,8 @@ number of employees (giving the idea of the company dimension) and the area wher
 \indent Other important concept of LinkedIn is the user feed where the user can chronologically consult a series of posts produced by their connections
 or by companies that their follow.
 
-\subsection*{LinkedIn API}
-LinkedIn provides a REST API (\cite{linkapi}), but still similarly to the \glspl{osn} we been studying its very limited. In what concerns to data retrieval LinkedIn only allows
+\subsection*{LinkedIn \gls{api}}
+LinkedIn provides a REST \gls{api} (\cite{linkapi}), but still similarly to the \glspl{osn} we been studying its very limited. In what concerns to data retrieval LinkedIn only allows
 the consult of basic profile data, this is the data retried from the LinkedIn interactive REST console:\\
 
 \begin{verbatim}
@@ -230,8 +230,8 @@ the best experts on a specific matter giving their opinion, thus the possibility
 \indent ResearchGate users' receive open jobs suggestions based on their profile, also user's have a post where they receive activity notifications of the people
 or publications that they are following.
 
-\subsubsection*{API}
-Today ResearchGate does not provide any API for accessing its data or for any kind of interaction with the platform.
+\subsubsection*{\gls{api}}
+Today ResearchGate does not provide any \gls{api} for accessing its data or for any kind of interaction with the platform.
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Pinterest
@@ -261,8 +261,8 @@ Pinterest introduces new concepts forming a very original \gls{osn}, because it'
 \indent In what concerns to Pins, they may be commented by users (\textit{Comments} box), they also may be targeted by likes as posts in Facebook (\textit{Likes} box). A particular point concerning to Pins is that they can have a explicit external reference, for instance, if some image is extracted by some other web site or from other \gls{osn} they can be explicitly referenced, and that same reference appears at the top of the pin along with its title (\textit{ExternalSource} box).\\
 \indent Pinterest was the traditional concept of feed, but in this case, the feed represents a completely different concept compared to other \gls{osn}. First the content of the feed (pins) is not related with users we follow on the network, is instead related is our personal interests (\textit{InterestArea} box) and second, they are not presented according to a chronological order, and visually they do not follow the standards of typical timeline/feed design, instead the different pins displayed on some user's feed, form some kind of board or catalog, like the ones people use to hang in walls and pin post-its on it.
 
-\subsubsection*{Pinterest API}
-According to \cite{pintdev}, Pinterest provides a REST API for developers interact with the platform. The data restrictions follow Facebook politics, where the application that integrates Pinterest API can only fetch data for authenticated users. Pinterest provides endpoints to interact with users, boards and pins. Concerning to the requests limitation, Pinterest offers a 60 minute sliding window where 1000 requests can be made by unique user token.
+\subsubsection*{Pinterest \gls{api}}
+According to \cite{pintdev}, Pinterest provides a REST \gls{api} for developers interact with the platform. The data restrictions follow Facebook politics, where the application that integrates Pinterest \gls{api} can only fetch data for authenticated users. Pinterest provides endpoints to interact with users, boards and pins. Concerning to the requests limitation, Pinterest offers a 60 minute sliding window where 1000 requests can be made by unique user token.
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Twitter
@@ -302,9 +302,9 @@ start to adopt hashtag to express sentiments or simply describing a tweet pushin
 Twitter handles are the same as tags in Facebook they serve as a mean to mark a specific twitter user, a twitter handle may be used in a comment or
 in a tweet leading directly to the respective user's twitter profile.
 
-\subsubsection*{Twitter API}
-Similarly to other \glspl{osn}, twitter provides a REST API to fetch users data such as profile data, tweets or user's followers. Restrictions are felt
-again this API is very limited providing a 15 minutes window for making http requests.
+\subsubsection*{Twitter \gls{api}}
+Similarly to other \glspl{osn}, twitter provides a REST \gls{api} to fetch users data such as profile data, tweets or user's followers. Restrictions are felt
+again this \gls{api} is very limited providing a 15 minutes window for making http requests.
 
 \subsubsection*{Other data sources}
 \label{sec:otherdatasources}

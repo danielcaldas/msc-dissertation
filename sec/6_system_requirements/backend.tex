@@ -14,13 +14,13 @@ Each web crawler (or extraction module) must fulfill common requirements that ar
     exceptions due to privacy limitations;
     \item Web crawlers must be able to perform user extraction with second order depth, from the user entry point perspective (this means that we want to extract user's friends and friends of friends information);
     \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying scope of extraction as specified from the outside (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
-    \item Extraction modules must be available to the data miner trough a web API in order to allow remote and distributed extraction. The web API must wrap all the different supported \glspl{osn} being each one accessible trough a different path within the same web API. The extraction web API required specifications are presented next:
+    \item Extraction modules must be available to the data miner trough a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible trough a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
     \begin{itemize}
-        \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that API is up and ready for receiving requests;
+        \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that \gls{api} is up and ready for receiving requests;
         \item \textbf{GET /api/v1/extraction/\{osn\}/\{user\_id\}} - should perform full extraction of the user with the \textit{user\_id} in the \textit{osn} ;
         \item \textbf{POST /api/v1/extraction/\{osn\}/\{user\_id\}} - should receive a set of and set of options, that parameterize the extraction and reduce the scope of the extraction for a given \textit{user\_id} within some \textit{osn}.
         \item \textbf{POST /api/v1/extraction/\{osn\}/} - same as the previous but instead of performing extraction for a given \textit{user\_id}, performs it to a set of \textit{user\_ids} performing multiple extractions;
-        \item In API version 1 \textbf{osn} must be one of the following: \textbf{facebook}, \textbf{linkedin};
+        \item In \gls{api} version 1 \textbf{osn} must be one of the following: \textbf{facebook}, \textbf{linkedin};
         \item \textbf{user\_id} is a string that uniquely represents the user within a specific \gls{osn}.
     \end{itemize}
 \end{enumerate}
@@ -45,8 +45,8 @@ Below are the extraction manager requirements \footnote{Again, these requirement
 \end{figure}
 
 Being listed above the requirements for each component we will now draw the specification of what is the expected workflow for data extraction, in Figure \ref{img:extpipeline} we design a pipeline that tries to reflect with maximum detail, the listed requirements. The diagram will not cover the data mining process that is responsible for normalizing data and store it. This diagram is exclusively focused on how we pretend that data extraction is achieved in order to mitigate the slowness of web crawlers.\\
-\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts files that describes the resources available for extractions, this is intended to be simply a list of hosts (ip addresses) that have the extraction web API running and awaiting for extraction requests.\\
-\indent Next each extraction API instance is responsible for handling a session of some web crawler instance and waits for it to return data so it can give it back to the extraction manager.
+\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts files that describes the resources available for extractions, this is intended to be simply a list of hosts (ip addresses) that have the extraction web \gls{api} running and awaiting for extraction requests.\\
+\indent Next each extraction \gls{api} instance is responsible for handling a session of some web crawler instance and waits for it to return data so it can give it back to the extraction manager.
 
 \clearpage
 
@@ -171,22 +171,22 @@ Defining data schemas in earlier stages of system specifications will allow us t
 \label{subsec:networkmetrics}
 
 In this section we will list the requirements for the module that is responsible for calculating metrics upon our stored networks. This component must
-provide a web API in order to access all the algorithms and metrics calculations that the service offers.
+provide a web \gls{api} in order to access all the algorithms and metrics calculations that the service offers.
 
 \begin{enumerate}
-    \item The API must be able to calculate strongly and weakly connected components;
-    \item The API must be able to calculate the clustering coefficient (including average and maximum) and transitivity for a given network;
-    \item The API must be able to calculate the average neighbor degree;
-    \item The API must be able to calculate centrality measures, these include:
+    \item The \gls{api} must be able to calculate strongly and weakly connected components;
+    \item The \gls{api} must be able to calculate the clustering coefficient (including average and maximum) and transitivity for a given network;
+    \item The \gls{api} must be able to calculate the average neighbor degree;
+    \item The \gls{api} must be able to calculate centrality measures, these include:
     \begin{enumerate}
         \item Degree centrality;
         \item Closeness centrality;
         \item Betweenness centrality;
         \item Eigenvector centrality;
     \end{enumerate}
-    \item The API must be able to compute node importance trough the page rank algorithm;
-    \item The API must be able to calculate the isolated graphs within a certain network;
-    \item The API must be able to calculate the shortest path between two nodes;
-    \item The API must be able to run dominance algorithms agains a certain network;
-    % \item The API must be able to run link prediction algorithms against a certain network;
+    \item The \gls{api} must be able to compute node importance trough the page rank algorithm;
+    \item The \gls{api} must be able to calculate the isolated graphs within a certain network;
+    \item The \gls{api} must be able to calculate the shortest path between two nodes;
+    \item The \gls{api} must be able to run dominance algorithms agains a certain network;
+    % \item The \gls{api} must be able to run link prediction algorithms against a certain network;
 \end{enumerate}
