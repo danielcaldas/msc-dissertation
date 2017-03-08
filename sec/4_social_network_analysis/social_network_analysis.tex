@@ -30,20 +30,15 @@ According to \cite{wasserman1994social}, the concepts listed below are of key im
 
 %% ---------------------------------------------- Graphs Theory
 \section{Graphs Theory}
-Graphs are typically the base of representation of social structures. This mathematical approach maps with  extreme convenience social networks. Nodes are individuals, and edges are relationships. Despite looking a quite simple approach, there is a very strong theoretical background that is of basilar importance for interpreting social networks.
-
-%% ---------------------------------------------- Statistics
-%% \section{Statistics}
-%% ...
+Graphs are typically the base of representation of social structures. This mathematical approach maps with  extreme convenience social networks. Nodes are individuals, and edges are relationships. Despite looking a quite simple approach, there is a very strong theoretical background that is of basilar importance for interpreting social networks. In the next sections we will explore how graph theory and network analysis coexist in order to provide more formal metrics for analyzing network structures and provide information about each node within the network.
 
 %% ---------------------------------------------- Network Analysis
-\section{Network Analysis}
+\section{Network Analysis Overview}
 In this section we intent to explore the scientific concepts behind network analysis, always trying to map them to reality, so only the core
 and applicable concepts will be explored in this section, namely:
 
 \begin{itemize}
 \item \textbf{\textit{Power Laws}} - Power laws or power law distribution, represent in general a dependency relationship between two quantities. In \glspl{sn}, power law distribution describes a particular trend in the evolution of the number of relationships of individuals within a network;
-\item \textbf{\textit{Random Graphs}} - Radom graphs are a way of generating one of the possible graph within the universe of possibilities of a given number of nodes and a given number edges. This graphs are used to map predictions to real networks;
 \item \textbf{\textit{Centrality Measures}} - Centrality measures aim to answer the following question \textit{\textbf{Which vertices are important?}}. In a \glspl{sn}, an actor centrality measures the actor's interactions with other individuals;
 \item \textbf{\textit{Link Analysis}} - Link analysis is a well known term form web search engines, popularized by the Page Rank algorithm. In \glspl{sn}, link analysis measures individuals connections, such as identifying strongly connected nodes, absorbing nodes or even cycles inside networks;
 \item \textbf{\textit{Community Detection}} - Community detection is related to clustering in social networks. Normally when analyzing \glspl{sn} we aim for detecting communities (groups) that express similar ideas in matters such as politics, music or philosophy. Community detection is a far more abstract concept than geographical clustering, despite we often found it in \glspl{osn} such as Facebook, that the two concepts are tightly coupled;
@@ -51,16 +46,66 @@ and applicable concepts will be explored in this section, namely:
 \item \textbf{\textit{Social Learning}} - Social learning consists in the change of behavior or beliefs based on direct observation of other individuals. Considering again a Facebook post by some random individual A, and consider an individual B that shares ('\textit{re-posts}') the individual's A post. If one detects a pattern in this kind of interaction, one may say that individual B is learning from individual A (imitating, mirroring).
 \end{itemize}
 
+Some of the previous listed concepts represent metrics for analyzing networks, thus requiring a more detailed explanation. In the next sections we will focus one the most fundamental metrics that will be relevant for further reference in this document.
+
+%% ---------------------------------------------- Network Analysis - Fundamental Metrics
+\section{Relevant metrics for network analysis}
+These are crucial metrics that will be integral part of our system. We will use these metrics to add value to the capabilities
+of analysis that we will provide in our system. For that we must first address this concepts with a smaller granularity in terms of
+what they represent and also what can they offer us.
+
+\subsection{Centrality}
+
+Centrality if often mixed with node degree. Despite node degree being in fact used for centrality calculations, these metric has some variations
+that are worth to take a close look in order to understand the different perspectives from where we can observe a particular node in a particular network.
+
+\subsubsection*{Degree Centrality}
+In the most purest form the \textbf{degree} of a node is equal do the his number of adjacent nodes (or simply the number of first degree connections).
+So basically what do we get from this metric? When normalized the node degree value tells us the level of direct interaction of an actor with other
+actors within a network.
+
+\subsubsection*{Closeness Centrality}
+Closeness centrality informs us how close an actor is to all the other actors in the network (not only with his first degree connections).
+
+
+Closeness centrality: how close an actor to all the other actors in network
+Actor in the center can quickly interact with all others, short
+communication path to others, minimal number of steps to reach others
+
+\subsubsection*{Betweenness Centrality}
+
+
+Betweenness centrality: number of shortest paths going through the actor
+Normalized betweenness centrality
+
+
+\subsubsection*{Eigenvector Centrality}
+Importance of a node depends on the importance of its neighbors
+
+
+
+\subsection{Clustering and Community Detection}
+Clustering cooeficiente
+
+\subsection{Link Analysis}
+\subsubsection*{Page Rank}
+\subsubsection*{Strongly and weakly connected components}
+
+\subsection*{Isolated components}
+
+\subsection{Node Dominance}
+?? Include in centrality or what ?!?
+
 %% ---------------------------------------------- Small World Problem
 \section{Small World Problem}
-This principle of \textit{small-world phenomenon} is based on the idea that all human beings are connected by \textbf{short chains of acquaintances}. The pioneer of this work was Stanley Milgram.
+This principle of \textit{small-world phenomenon} is based on the idea that all human beings are connected by \textbf{short chains of acquaintances}. The pioneer of this work was Stanley Milgram (\cite{travers1967small}).
 
 \subsection*{Six Degrees of Separation}
 The concept of six degrees of separation is an extension of the small world problem. In the sequence of what we state before, the six degrees of separation materialize the previous concept in six interconnections for some individual to reach any other one. Six degrees of separation gained a particularly strong relevance, when a play was written in the 90's portraying the concept.
 
 \section{Network Visualization}
-Network visualization may be considered as a science by itself. In this section we will explore some relevant techniques for graph representation and visualization, we will look in particular, into \cite{beck2014state}, where a good overview is made upon graph representation approaches. We will also in a later phase of this project mentioned the graph representation technologies explored and used in this project.
-
+Network visualization may be considered as a science by itself. In the context of this project we will not look further into network visualization, we will instead
+in further chapters (more technical chapters) reference advanced visualization technologies that will help us on the tool implementation serving as a fundamental complement to social network analysis.
 
 %% ---------------------------------------------- Social Network Analysis Software
 \input{sec/4_social_network_analysis/sna_software}
