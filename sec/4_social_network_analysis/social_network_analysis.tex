@@ -46,55 +46,61 @@ and applicable concepts will be explored in this section, namely:
 \item \textbf{\textit{Social Learning}} - Social learning consists in the change of behavior or beliefs based on direct observation of other individuals. Considering again a Facebook post by some random individual A, and consider an individual B that shares ('\textit{re-posts}') the individual's A post. If one detects a pattern in this kind of interaction, one may say that individual B is learning from individual A (imitating, mirroring).
 \end{itemize}
 
-Some of the previous listed concepts represent metrics for analyzing networks, thus requiring a more detailed explanation. In the next sections we will focus one the most fundamental metrics that will be relevant for further reference in this document.
+Some of the previous listed concepts represent metrics for analyzing networks, thus requiring a more detailed explanation. In the next sections we will focus one the most fundamental metrics that will be relevant for further reference in this document. \footnote{At this point, and being network analysis basic concepts being covered it is normal that we interchangeably use the terms actor, node or vertices for denoting the same things}
 
 %% ---------------------------------------------- Network Analysis - Fundamental Metrics
 \section{Relevant metrics for network analysis}
-These are crucial metrics that will be integral part of our system. We will use these metrics to add value to the capabilities
-of analysis that we will provide in our system. For that we must first address this concepts with a smaller granularity in terms of
-what they represent and also what can they offer us.
+These are crucial metrics that will be referenced within integral components of our system (that we will propose in the next Chapter 5). We will use these metrics to add value to analysis features that we will provide to the end user. For that we must first address this concepts with a smaller granularity in terms of
+what they represent and also in terms of what can they offer us.
 
 \subsection{Centrality}
-
-Centrality if often mixed with node degree. Despite node degree being in fact used for centrality calculations, these metric has some variations
-that are worth to take a close look in order to understand the different perspectives from where we can observe a particular node in a particular network.
+Centrality if often mixed with node degree. Despite node degree being in fact used for centrality calculations, these metric have some variations
+that are worth to take a close look, in order to understand the different perspectives from where we can observe a particular node in a particular network.
 
 \subsubsection*{Degree Centrality}
-In the most purest form the \textbf{degree} of a node is equal do the his number of adjacent nodes (or simply the number of first degree connections).
+\textbf{Degree} of a node is equal do the his number of adjacent nodes (or simply the number of first degree connections).
 So basically what do we get from this metric? When normalized the node degree value tells us the level of direct interaction of an actor with other
 actors within a network.
 
 \subsubsection*{Closeness Centrality}
-Closeness centrality informs us how close an actor is to all the other actors in the network (not only with his first degree connections).
-
-
-Closeness centrality: how close an actor to all the other actors in network
-Actor in the center can quickly interact with all others, short
-communication path to others, minimal number of steps to reach others
+Closeness centrality tells us how close an actor is to all the other actors in the network (not only with his first degree connections).\\
+\indent This metric is considered a sophisticated measure of centrality in network theory. It is defined as the mean geodesic distance
+(i.e., the shortest path) between a certain vertex \textit{v} and all other vertices reachable from it. This concept is normally associated to
+geographic distances, being actors closeness mapped to reality. Still there are abstractions that compute
+this value not considering nodes as geodesic markers (\cite{politaktivsna}).
 
 \subsubsection*{Betweenness Centrality}
-
-
-Betweenness centrality: number of shortest paths going through the actor
-Normalized betweenness centrality
-
+This measure reflects the number number of shortest paths going trough a particular actor. \textbf{Nodes that
+occur in many shortest paths} between other nodes in the network have a higher betweenness centrality, basically
+takes into account the connectivity of the nodes' neighbors, giving a \textbf{higher value for nodes which bridge clusters} (\cite{politaktivsna}).
 
 \subsubsection*{Eigenvector Centrality}
-Importance of a node depends on the importance of its neighbors
+This measure is based on the following statement:
 
+\begin{quote}
+\textbf{\textit{"Importance of a node depends on the importance of its neighbors."}}
+\end{quote}
 
+Eigenvector centrality (\cite{politaktivsna}) measures importance of a node within a network. This measure assigns relative scores to all nodes, then if
+a node is connected to a \textit{high scored} node it has a bigger increment to its score then when connected to a \textit{low scored} node.
+One of the most famous variants of eigenvector centrality is the Google's PageRank algorithm (\cite{brin1998anatomy}).
+
+\subsubsection*{Page Rank}
+PageRank algorithm (\cite{brin1998anatomy}) was thought as a way to rank online content (online sites) in order to discover
+what sites are important and really worth to consult. The algorithm sums up a score for every node (web site),
+this score is in some way proportional to the number of times a site is cross referenced (linked by other web site), gaining higher score,
+on the other hand when a site links to other that has a high score it loses score, meaning that is a less important site.
 
 \subsection{Clustering and Community Detection}
-Clustering cooeficiente
-
-\subsection{Link Analysis}
-\subsubsection*{Page Rank}
-\subsubsection*{Strongly and weakly connected components}
-
-\subsection*{Isolated components}
+Represents the value of tendency for certain nodes to form a cluster. Normally actors within a network tend to aggregate when having some
+simple characteristic in common such as living in the same city, working in the same place or event frequenting the same gymnasium.\\
+\indent A common approach for detecting communities is trough graph clicks (subset of vertices of an
+undirected graph where all vertices are connected between each other), being the normalized clustering coefficient a high value
+when the network consists in a set of disjoint clicks.
 
 \subsection{Node Dominance}
-?? Include in centrality or what ?!?
+Dominance may be related with betweeness centrality but it focus particularly on node reachability. One may say that a node \textit{\textbf{v1}} dominates
+a node \textit{\textbf{v2}} if \textit{\textbf{v2}} needs to go trough \textit{\textbf{v1}} to reach a certain node \textit{\textbf{v3}}.
 
 %% ---------------------------------------------- Small World Problem
 \section{Small World Problem}
