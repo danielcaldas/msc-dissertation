@@ -42,11 +42,13 @@ the best tools and technologies that better suite the project requirements.\\
 Having the requirements been defined and a small proof of concept being developed as we seen in the previous section, we are now able to present our technological choices and provide some context on how we came to these conclusions.
 
 \subsection{Database technologies}
-(\textbf{MongoDB}, \textbf{Neo4j})\\
-Relational databases are one of the complex and advance technologies that we have today. We have been building our applications on top of this technologies with very strict rules that allow our data to remain coherent trough applications lifetimes. Databases engines such as MySQL, PostgresSQL and SQL Server are good live examples of the relevance of this technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, this are today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way. The most suitable NoSQL database in the context of this project are graph databases such as \textbf{Neo4j} (\cite{developers2012neo4j}) that allows to think on data structures as graphs in the the more purest form. Also engines such as \textbf{MongoDB} (a document oriented database, \cite{mongodb}) will give us more flexibility allowing us to have replicated data documents stored in a primary database and then migrate them into a graph database.
+(\textbf{MongoDB}(\cite{mongodb}), \textbf{Neo4j}(\cite{developers2012neo4j}))\\
+
+Relational databases are one of the complex and advance technologies that we have today. We have been building our applications on top of this technologies with very strict rules that allow our data to remain coherent trough applications lifetimes. Databases engines such as MySQL, PostgresSQL and SQL Server are good live examples of the relevance of this technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, this are today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way. The most suitable NoSQL database in the context of this project are graph databases such as \textbf{Neo4j} that allows to think on data structures as graphs in the the more purest form. Also engines such as \textbf{MongoDB} (a document oriented database, will give us more flexibility allowing us to have replicated data documents stored in a primary database and then migrate them into a graph database.
 
 \subsection{Back-end technologies}
-(\textbf{Python}, \textbf{Flask}, \textbf{Selenium WebDriver}, \textbf{PhantomJS}, \textbf{XPath})\\
+(\textbf{Flask}(\cite{ronacher2015flask}), \textbf{Python}, \textbf{NetworkX}(\cite{hagberg2013networkx}), \textbf{PhantomJS}(\cite{hidayat2013phantomjs}), \textbf{Selenium WebDriver}(\cite{documentation2013selenium}), \textbf{XPath}(\cite{clark1999xml}))\\
+
 The main language that will supports our back-end is Python, this conclusion came very naturally since Python is one of the most used programming languages in the data
 science field along with others such as R or Java. We choose Python for two main reasons:
 Data extraction and XPath and PhantomJs selenium driver (SEE THIS BETTER)
@@ -55,19 +57,19 @@ Network Analysis with Networkx Library
 Flask as a simplist framework for building our web \glspl{api} such as extraction and
 
 \subsection{Middleware technologies}
-(\textbf{NetworkX}, \textbf{Python}, \textbf{NodeJS})\\
+(\textbf{NodeJS}(\cite{nodejs}), \textbf{Python})\\
+
 Python should do as well, but since we may want to agelize... We may use modern platforms such as NodeJS that are very well known for
 building scalable network applications.
 
 \subsection{Front-end technologies}
-(\textbf{HTML}, \textbf{Javascript}, \textbf{CSS}, \textbf{ReactJS}, \textbf{D3.js})\\
-\\
+(\textbf{HTML}, \textbf{Javascript}, \textbf{CSS}, \textbf{D3.js}(\cite{bostock2012d3}))\\
+
 Additionally we may add an MVC modern web library such as ReactJS if needed.
 
 In terms of visualization the main Front-end library is D3.js that brings many visualization features out of the box that will help us on
 network representation and graph interaction (in the proof of concept we used D3 for rendering the network).
 
-...
 \section{Implementation architecture}
 ...
 \section{Implementation details}
