@@ -1,5 +1,5 @@
 Before diving into the architectural details of the system, we first present a state of the art summary, that concisely describes what is the positioning of this project in light of the previous explored \glspl{sna} tools that we presented in Chapter 4, and also considering the \glspl{osn} that we study in Chapter 3.\\
-\indent Specifically regarding the \glspl{sna} tools, we will comment some of them, some of their useful features and overall comments to what may lack on this tools that this project may target, in order to differentiate and not only \textit{''reinvent the wheel''}.\\
+\indent Specifically regarding the \glspl{sna} tools, we will comment some of them, some of their useful features and overall comments to what may lack on this tools that this project may target, in order to differentiate and not only \textit{''reinvent the wheel''}.
 
 \section{Simplicity}
 Aside of \textbf{Vizster} (\cite{heer2005vizster}), the majority of the previously presented tools such as Gephi \cite{bastian2009gephi} or Social Network Visualizer \cite{socnetv}, are very complex tools with very heavy interfaces, that have a big learning and are meant for users that have particular advanced knowledge in \glspl{sn} and \glspl{sna}. The tool to be developed could also serve for less expert users, providing a set of core basic functionalities (e.g only allow users to load and visualize they're networks), and then, allow the user to build complexity from there enabling and disabling other features.
@@ -14,6 +14,41 @@ Social Network Visualizer \cite{socnetv}, allows to \textit{scrap} web sites to 
 \section{Drawing Accurate Conclusions}
 As we state before when talking about simplicity, the mentioned \glspl{sna} tools provide generic metrics on networks such as network density or actor centrality. The values outputted from this tools are the result of running generic formulas and algorithms against some networks, so its very common for current \glspl{sna} researchers to be worried about the size of the network, being their focus on \textbf{quantitive analysis}.\\
 \indent In a hypothetical analysis scenario where some researcher has a network with a few thousand nodes, \textbf{what is the meaning of his assumptions when analyzing the network}? Since this is a pure quantitive analysis the numbers will seem reasonable for the given network, but this will not allow him to extract contextual conclusions, because in this case analyzing data form Facebook or analyzing data from LinkedIn will sound just like the same, because deep down it all comes down to the network. A better approach for drawing conclusions would be to have a mixture between \textbf{quantitive analysis} and \textbf{quality analysis}, the tool could do some content and context analysis to help the end user to get a more meaningful conclusion rather than just simple metrics.
+
+\section{System positioning and tools comparison}
+In this section we will make a high level comparison between the software tools presented in Chapter 4. In Table \ref{table:toolscompare} we can observe the tools classification based on some pre defined metrics that well show the positioning of the proposed system, these metrics are:
+
+\begin{itemize}
+    \item \textbf{Availability (Desktop or Web)} - Whether the tool available trough a desktop application or a web application;
+    \item \textbf{Complexity (Low, Moderate, High)} - Whether the tool has very complex features that require expertise to be used, also we may consider the learning curve for using the tool with efficiency;
+    \item \textbf{Performance (Low, Medium , High)} - Whether the tool is performant, if it computes metrics with velocity and if it renders dense graphs without struggle;
+    \item \textbf{Network Editor (Yes, No)} - Whether the tool allows network editing, such feature allows adding nodes and edges to existing network or event creating new networks from scratch;
+    \item \textbf{\glspl{osn} Integration (Yes, No)} - Whether the tool is able to integrate data analysis of \glspl{osn}.
+    \item \textbf{Contextual Analysis (Yes, No)} - By contextual analysis we do not mean that the user will not be aware of the network context, our contextual analysis has a strong meaning, it represents the capacity that the system demonstrates (or not) to be aware of the context of the network and providing metrics with a specific meaning.
+\end{itemize}
+
+\begin{table}[H]
+\hspace*{-0.9in}
+\renewcommand{\tabcolsep}{2pt}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|  }
+\hline
+\textbf{Tool} & \textbf{Availability} & \textbf{Complexity} & \textbf{Performance} & \textbf{Network Editor} & \textbf{\glspl{osn} Integration} & \textbf{Contextual Analysis}\\
+\hline
+\textbf{Structure} & Desktop & Moderate & Medium & Yes & No & No\\
+\hline
+\textbf{Gephi} & Desktop & Moderate & Good & Yes & No & No\\
+\hline
+\textbf{UCINET} & Desktop & High & Very Good & Yes & No & No\\
+\hline
+\textbf{SocNetV} & Desktop & Low & Medium & Yes & No\footnote{SocNetV has a feature that allows the user to launch a \textit{web spider} that navigates trough web sites building a network representative of the links between the sites, but the \textit{spider} is not content aware, it blindly builds a network without context} & No\\
+\hline
+\textbf{Our system} & Web & Low & Low & No & Yes & Yes\\
+\hline
+\end{tabular}
+\caption{\label{table:toolscompare} Software tools comparison and our system positioning.}
+\end{table}
+
+As we can observe in Table \ref{table:toolscompare} our system has essentially three differential factors, that are: web availability; \glspl{osn} integration; contextual analysis; being the trade off for such gains the system performance. When describing our system compared to the other tools we want to be able to have a web tool that has a complexity level similar to SocNetV.
 
 \section{System Architecture}
 
