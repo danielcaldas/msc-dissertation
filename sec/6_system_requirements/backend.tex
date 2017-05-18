@@ -1,24 +1,24 @@
 \section{Back-end}
 
-As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by essentially two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data miner}, we will write the requirements for each one of the components. We will not prioritize this requirements (as we will do in the \hyperref[sec:frontend]{next section for the Front-end} requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
+As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data miner}. We will write the requirements for each one of the components. We will not prioritize these requirements (as we will do in the \hyperref[sec:frontend]{next section for the Front-end} requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
 
 \subsection{Web crawlers}
 
 Each web crawler (or extraction module) must fulfill common requirements that are listed below \footnote{These requirements are agnostic to the \glspl{osn} context}:
 
 \begin{enumerate}
-    \item Web crawlers should be able to login with an user account (an \textit{entry point});
-    \item Web crawlers should be able to navigate trough the pages of a given \glspl{osn};
+    \item Web crawlers should be able to login with a user account (an \textit{entry point});
+    \item Web crawlers should be able to navigate trough????????????????? the pages of a given \gls{osn};
     \item Web crawlers must be capable of performing "human" interactions such as click and scroll;
     \item Web crawlers should be able to output a pre defined (agreed and formally defined in the next section) data schema, covering eventual
     exceptions due to privacy limitations;
     \item Web crawlers must be able to perform user extraction with second order depth, from the user entry point perspective (this means that we want to extract user's friends and friends of friends information);
-    \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying scope of extraction as specified from the outside (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
+    \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying the scope of extraction as specified from the outside (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
     \item Extraction modules must be available to the data miner trough a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible trough a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
     \begin{itemize}
         \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that \gls{api} is up and ready for receiving requests;
         \item \textbf{GET /api/v1/extraction/\{osn\}/\{user\_id\}} - should perform full extraction of the user with the \textit{user\_id} in the \textit{osn} ;
-        \item \textbf{POST /api/v1/extraction/\{osn\}/\{user\_id\}} - should receive a set of and set of options, that parameterize the extraction and reduce the scope of the extraction for a given \textit{user\_id} within some \textit{osn}.
+        \item \textbf{POST /api/v1/extraction/\{osn\}/\{user\_id\}} - should receive a set of options, that parameterize the extraction and reduce the scope of the extraction for a given \textit{user\_id} within some \textit{osn}.
         \item \textbf{POST /api/v1/extraction/\{osn\}/} - same as the previous but instead of performing extraction for a given \textit{user\_id}, performs it to a set of \textit{user\_ids} performing multiple extractions;
         \item In \gls{api} version 1 \textbf{osn} must be one of the following: \textbf{facebook}, \textbf{linkedin};
         \item \textbf{user\_id} is a string that uniquely represents the user within a specific \gls{osn}.
@@ -30,9 +30,9 @@ Each web crawler (or extraction module) must fulfill common requirements that ar
 Below are the extraction manager requirements \footnote{Again, these requirements are agnostic to the \glspl{osn} context}:
 
 \begin{enumerate}
-    \item Orchestration of extraction processes scattered trough various hosts: one should be able to define a list of hosts and the number of extraction processes that each host should handle;
+    \item Orchestration of extraction processes scattered across various hosts: one should be able to define a list of hosts and the number of extraction processes that each host should handle;
     \item Chunk an entry point (that is a set of user identifiers within the \glspl{osn}) in order to delegate different users to different hosts;
-    \item Call the extraction endpoints according to the \glspl{osn} from where we need to extract data;
+    \item Call the extraction endpoints according to the \glspl{osn} from where we need to extract data.
 \end{enumerate}
 
 \subsubsection{Extraction pipeline}
@@ -44,13 +44,14 @@ Below are the extraction manager requirements \footnote{Again, these requirement
 \caption{\label{img:extpipeline} Extraction pipeline diagram.}
 \end{figure}
 
-Being listed above the requirements for each component we will now draw the specification of what is the expected workflow for data extraction, in Figure \ref{img:extpipeline} we design a pipeline that tries to reflect with maximum detail, the listed requirements. The diagram will not cover the data mining process that is responsible for normalizing data and store it. This diagram is exclusively focused on how we pretend that data extraction is achieved in order to mitigate the slowness of web crawlers.\\
-\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts files that describes the resources available for extractions, this is intended to be simply a list of hosts (ip addresses) that have the extraction web \gls{api} running and awaiting for extraction requests.\\
-\indent Next each extraction \gls{api} instance is responsible for handling a session of some web crawler instance and waits for it to return data so it can give it back to the extraction manager.
+Being listed above the requirements for each component we will now draw the specification of what is the expected workflow for data extraction, in Figure \ref{img:extpipeline} we design a pipeline that tries to reflect, with maximum detail, the listed requirements. The diagram does not cover the data mining process that is responsible for normalizing data and store it. This diagram is exclusively focused on how we pretend that data extraction is achieved in order to mitigate the slowness of web crawlers.\\
+\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts file that describes the resources available for extractions, this is intended to be simply a list of hosts (ip addresses) that have the extraction web \gls{api} running and awaiting for extraction requests.\\
+\indent Next each extraction \gls{api} instance is responsible for handling a session of some web crawler instance and waits for it to return data so the extraction API instance  can give it back to the extraction manager.
 
 \clearpage
 
 \subsection{Data miner}
+\label{sec:dataminer}
 
 The data miner simply assures some data treatment before storing it on the database, that said there is a very narrow requirements list for this component:
 

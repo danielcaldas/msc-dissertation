@@ -20,12 +20,12 @@ define the system identity an reflect the principles on which the project was de
 
 \subsection*{Aside note}
 As one may noticed in the previous list, for sake of objectivity we skipped the implementation of some pieces in the architecture,
-namely, the network metrics api and the data mining process, these will only be included in the full implementation, because for the current proof
+namely, the network metrics \gls{api} and the data mining process, these will only be included in the full implementation, because for the current proof
 of concept we labeled this components as complements (this may be seen as add ons or plugins that added to proof of concept will bring the
 project to life).\\
 
 \subsection{Proof of concept results}
-\indent These steps previous listed steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
+\indent These steps previously listed steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
 the best tools and technologies that better suite the project requirements.\\
 
 \begin{figure}[h!]
@@ -36,10 +36,10 @@ the best tools and technologies that better suite the project requirements.\\
 \caption{\label{img:poc} A \textit{screenshoot} of our first proof of concept.}
 \end{figure}
 
-\indent In in the Figure \ref{img:poc}, we can observe a network being rendered, this represents the friendship network of a given user. Since there is an entry point user, if we let him in this network we would obtain a egocentric network that could not depict all the surrounding relations in these small society. What we did was remove this node order to obtain more clarity to observe the network. At the Figure \ref{img:poc} we also can see the interaction of clicking on a certain node and displaying the node information.
+\indent In the Figure \ref{img:poc}, we can observe a network being rendered, this represents the friendship network of a given user. Since there is an entry point user, if we let him in this network we would obtain a egocentric network that could not depict all the surrounding relations in this small society. What we did was remove this node in order to obtain more clarity to observe the network. At Figure \ref{img:poc} we also can see the interaction of clicking on a certain node and displaying the node information.
 
 \section{Choose of Technologies}
-Having the requirements been defined and a small proof of concept being developed as we seen in the previous section, we are now able to present our technological choices and provide some context on how we came to these conclusions. We will divide the presentation into four main sections where we present technologies specific of a application layer, starting from database technologies until we reach the front end technologies. For each section we first list the technologies and then we present the motives that lead us to that specific choices.
+Having the requirements been defined and a small proof of concept being developed as we see in the previous section, we are now able to present our technological choices and provide some context on how we came to these conclusions. We will divide the presentation into four main sections where we present technologies specific to an application layer, starting from database technologies until we reach the front end technologies. For each section we first list the technologies and then we present the motives that lead us to that specific choices.
 
 \subsection{Database technologies}
 \begin{itemize}
@@ -47,7 +47,7 @@ Having the requirements been defined and a small proof of concept being develope
     \item \textbf{MongoDB}.
 \end{itemize}
 
-Relational databases are one of the complex and advance technologies that we have today. We have been building our applications on top of this technologies with very strict rules that allow our data to remain coherent trough applications lifetimes. Databases engines such as MySQL, PostgresSQL and SQL Server are good live examples of the relevance of this technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, this are today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way. The most suitable NoSQL database in the context of this project are graph databases such as \textbf{Neo4j} (\cite{developers2012neo4j}) that allows to think on data structures as graphs in the the more purest form. Also engines such as \textbf{MongoDB} (\cite{mongodb}) (a document oriented database, will give us more flexibility allowing us to have replicated data documents stored in a primary database and then migrate them into a graph database.
+Relational databases are one of the complex and advanced technologies that we have today. We have been building our applications on top of these technologies with very strict rules that allow our data to remain coherent trough applications lifetimes. Databases engines such as MySQL, PostgresSQL and SQL Server are good live examples of the relevance of these technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, this are today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way. The most suitable NoSQL database in the context of this project are graph databases such as \textbf{Neo4j} (\cite{developers2012neo4j}) that allows to think on data structures as graphs in the the more purest form. Also engines such as \textbf{MongoDB} (\cite{mongodb}) (a document oriented database, will give us more flexibility allowing us to have replicated data documents stored in a primary database and then migrate them into a graph database.
 
 \subsection{Back-end technologies}
 \begin{itemize}
