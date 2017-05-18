@@ -8,13 +8,13 @@ Each web crawler (or extraction module) must fulfill common requirements that ar
 
 \begin{enumerate}
     \item Web crawlers should be able to login with a user account (an \textit{entry point});
-    \item Web crawlers should be able to navigate trough????????????????? the pages of a given \gls{osn};
+    \item Web crawlers should be able to navigate through????????????????? the pages of a given \gls{osn};
     \item Web crawlers must be capable of performing "human" interactions such as click and scroll;
     \item Web crawlers should be able to output a pre defined (agreed and formally defined in the next section) data schema, covering eventual
     exceptions due to privacy limitations;
     \item Web crawlers must be able to perform user extraction with second order depth, from the user entry point perspective (this means that we want to extract user's friends and friends of friends information);
     \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying the scope of extraction as specified from the outside (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
-    \item Extraction modules must be available to the data miner trough a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible trough a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
+    \item Extraction modules must be available to the data miner through a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible through a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
     \begin{itemize}
         \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that \gls{api} is up and ready for receiving requests;
         \item \textbf{GET /api/v1/extraction/\{osn\}/\{user\_id\}} - should perform full extraction of the user with the \textit{user\_id} in the \textit{osn} ;
@@ -185,5 +185,5 @@ provide a web \gls{api} in order to access all the algorithms and metrics calcul
         \item Betweenness centrality;
         \item Eigenvector centrality;
     \end{enumerate}
-    \item The \gls{api} must be able to compute node importance trough the page rank algorithm.
+    \item The \gls{api} must be able to compute node importance through the page rank algorithm.
 \end{enumerate}
