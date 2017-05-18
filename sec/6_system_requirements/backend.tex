@@ -67,6 +67,7 @@ Defining data schemas in earlier stages of system specifications will allow us t
 \subsubsection{Facebook data structure}
 \begin{verbatim}
 {
+    "uid": {string},
     "livesIn": {
         "id": {string},
         "description": {string}
@@ -102,13 +103,12 @@ Defining data schemas in earlier stages of system specifications will allow us t
             "author": {string},
             "reactions": {
                 "likes": {number},
+                "love": {number},
                 "laugh": {number},
                 "sad": {number},
                 "angry": {number},
                 "surprise": {number}
-            },
-            "comments": {number},
-            "shares": {number}
+            }
         }
     ]
 }
@@ -117,7 +117,7 @@ Defining data schemas in earlier stages of system specifications will allow us t
 \subsubsection{LinkedIn data structure}
 \begin{verbatim}
 {
-    "id": {string},
+    "uid": {string},
     "name": {string},
     "headline": {string},
     "from": {string},
