@@ -14,23 +14,23 @@ funcionalidades oferecidas pela aplicação)\\
 \hline
 6.3.2, 1 & Socci login & \ding{51}\\
 \hline
-6.3.2, 2 & Order extraction & BLOCKED\\
+6.3.2, 2 & Order network build (extraction simulation) & \ding{51}\\
 \hline
-6.3.2, 3 & Extraction feedback & In Progress\\
+6.3.2, 3 & Extraction feedback & \ding{51}\\
 \hline
 6.3.3, 1 & Render network & \ding{51}\\
 \hline
-6.3.3, 2 & Community detection (visually identifiable) & In Progress\\
+6.3.3, 2 & Community detection (visually identifiable) & \ding{51}\\
 \hline
 6.3.3, 3 & Drag and Drop all network & \ding{51}\\
 \hline
-NOREQ & Global network interactions (Toolbar) & \ding{51}\\
+6.3.3, 5 & Global network interactions (Toolbar) & \ding{51}\\
 \hline
-NOREQ & Network Generator (Facebook) & \ding{51}\\
+6.3.2, 1 & Network Generator (Facebook) & \ding{51}\\
 \hline
-NOREQ & Network Generator (LinkedIn) & -\\
+6.3.2, 1 & Network Generator (LinkedIn) & \textbf{On Hold}\\
 \hline
-NOREQ & Network Generator - Configuration & -\\
+6.3.2, 2 & Network Generator - Configuration & \ding{51}\\
 \hline
 6.3.3, 4 & Zoom network & \ding{51}\\
 \hline
@@ -40,17 +40,17 @@ NOREQ & Network Generator - Configuration & -\\
 \hline
 6.3.4, 2 & Highlight node and adjacent connections & \ding{51}\\
 \hline
-6.3.4, 3 & \begin{tabular}{@{}l@{}}Node click and show information\\ (network metrics and information in\\ the context of the \glspl{osn})\end{tabular} & In Progress\\
+6.3.4, 3 & \begin{tabular}{@{}l@{}}Node click and show information\\ (network metrics and information in\\ the context of the \glspl{osn})\end{tabular} & \ding{51}\\
 \hline
 6.3.4, 4 & Drag and Drop nodes & \ding{51}\\
 \hline
 6.3.5, 1 & Render network links with \textit{semantic thickness} & \ding{51}\\
 \hline
-6.3.8, 1 & Download network in the formats TGF and GraphML & -\\
+6.3.8, 1 & Download network in the format GraphML & \ding{51}\\
 \hline
-6.3.9, Facebook, 1 & Sentiment Analisys & -\\
+6.3.9, Facebook, 1 & Sentiment Analisys & \textbf{In Progress}\\
 \hline
-6.3.9, LinkedIn, 1 & Human resources discovery & -\\
+6.3.9, LinkedIn, 1 & Human resources discovery & \textbf{On Hold}\\
 \hline
 \end{tabular}
 \caption{\label{table:featuresocci} Table that summarizes Socci features that were developed and that refer to the requirements in Chapter 6.}
@@ -61,6 +61,7 @@ In this section we do an overview across Socci application, we present the overa
 from an end user perspective.
 
 \section{Case Study}
+...
 As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present
 a real case study with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For this case study we will use
 a real account and extract information from Facebook using the facebook web crawler module that was developed initially as a back-end requirements to allow extraction on the fly, but not that being possible by the mentioned reasons, we use it as mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that besides being able of generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case study data).

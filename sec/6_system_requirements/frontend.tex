@@ -26,11 +26,14 @@ The requirements will be listed by groups (sections) that aggregate common requi
 In this requirements group we present a set of requirements that represent the operations that allow the users to get their network built.
 
 \begin{enumerate}
+    \item \textbf{[MUST]} The user must be able to generate network for available \glspl{osn};
+    \item \textbf{[MUST]} The user must be able to choose the number of nodes for a certain network and which metrics he wants to compute
+    for that network.
     \item \textbf{[MUST]} The user must be able to register available \glspl{osn} accounts in the system;
     \item \textbf{[MUST]} The user must be able to order the build of its network for a given \gls{osn};
     \item \textbf{[MUST]} The system must give feedback on the extraction status;
-    \item \textbf{[SHOULD]} The user must be able to \textit{blacklist} from the network nodes with a minimum or maximum number of connections;
-    \item \textbf{[SHOULD]} The system must clearly warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook) could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
+    \item \textbf{[COULD]} The user must be able to \textit{blacklist} from the network nodes with a minimum or maximum number of connections;
+    \item \textbf{[COULD]} The system must clearly warn the user about the impacts that extracting some kind of data (e.g. extracting complete list of user's likes on Facebook) could have on extraction time and consequently on render network time (these could be expressed via label warnings in the user's interface);
     \item \textbf{[COULD]} The user must be able to \textit{blacklist} nodes specific from being extracted and consequently rendered on the user's graph;
     \item \textbf{[WON'T]} After the first extraction all the extracted nodes must be marked as extracted, being the user able to extract the missing properties for some given nodes.
 \end{enumerate}
@@ -66,8 +69,8 @@ These requirements express general behavior of the tool, and some display featur
     information about the community such as \textit{"People that studied at School/University X"} or \textit{"People that live in city Y"};
     \item \textbf{[MUST]} The user must be able to drag and drop the graph to any place on the graph render area;
     \item \textbf{[MUST]} The user must be able to zoom in and zoom out the network so he is able to explore specific parts with more detail;
+    \item \textbf{[SHOULD]} The user should be able to choose activate animations despite these have been deactivated by the system for sake of graph interactions performance ;
     \item \textbf{[SHOULD]} The system should be able to automatically deactivate heavy graph animations if a large graph is being rendered;
-    \item \textbf{[COULD]} The user should be able to choose activate animations despite these have been deactivated by the system for sake of graph interactions performance;
     \item \textbf{[COULD]} The user should be able to enable and disable \textit{fisheye distortion} alike effect; % https://bost.ocks.org/mike/fisheye/
     \item \textbf{[WON'T]} The user must be able to perform a \textit{hive plot} \footnote{hive plots define a linear layout for nodes, grouping nodes by type and arranging them along radial axes based on some property of data} of his network;
     \item \textbf{[WON'T]} Double clicking on a empty zone should perform a smooth zooming effect on that are. %https://bl.ocks.org/mbostock/3828981
@@ -88,8 +91,8 @@ Here we describe interactions at the node level.
         \item Should offer the user all the metrics already mentioned the previous \hyperref[subsec:networkmetrics]{network metrics section 6.2.4}.
     \end{enumerate}
     \item \textbf{[MUST]} The user must be able to drag and drop the node to some place else in the screen and the node should be fixed in that place (being the rest of the graph automatically rearranged); % http://bl.ocks.org/norrs/2883411
-    \item \textbf{[SHOULD]} The user can pick color and size of his nodes within the network;
-    \item \textbf{[SHOULD]} When the user mouseover a specific node relevant information should be displayed when possible, such as: name, age, address, number of connections;
+    \item \textbf{[COULD]} The user can pick color and size of his nodes within the network;
+    \item \textbf{[COULD]} When the user mouseover a specific node relevant information should be displayed when possible, such as: name, age, address, number of connections;
     \item \textbf{[COULD]} The user can pick color and size of specific pre selected nodes within the network;
     \item \textbf{[WON'T]} Right clicking on some node should open a context menu that provides options to the user such as:
     \begin{itemize}
@@ -106,7 +109,7 @@ Links are not only visual node connectors, these also possess characteristics an
 \begin{enumerate}
     \item \textbf{[MUST]} User may choose to render the graph links with semantic thickness, if the user activates this option, the link thickness should be
     proportional to the number of common connections between two given nodes, indicating strongly connected individuals;
-    \item \textbf{[SHOULD]} When the user performs a mouseover on some link, the link itself should be highlighted as well as the intervenient nodes;
+    \item \textbf{[COULD]} When the user performs a mouseover on some link, the link itself should be highlighted as well as the intervenient nodes;
     \item \textbf{[COULD]} When the user performs a mouseover on some link, relevant information about the link should be displayed such as number of interactions between the two nodes, or number of common connections.
 \end{enumerate}
 
@@ -138,7 +141,7 @@ The system could also provide some statistics on the user's network.
 These are other operations that differentiate from the other groups of requirements and do not fit any particular requirements bucket.
 
 \begin{enumerate}
-    \item \textbf{[MUST]} The user must be able to download his network in standard graph formats: Trivial Graph Format (TGF) and GraphML so that it could be imported to other \glspl{sna} tools such as Gephi or SocNetV (\hyperref[sec:snas]{see Chapter 4 section 4.6});
+    \item \textbf{[MUST]} The user must be able to download his network in the standard graph format \textbf{GraphML} \cite{brandes2001graphml} so that it could be imported to other \glspl{sna} tools such as Gephi (\hyperref[sec:snas]{see Chapter 4 section 4.6});
     \item \textbf{[WON'T]} The user should be able to enter an edition mode where he appends new nodes to the social structure.
 \end{enumerate}
 
