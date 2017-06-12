@@ -119,11 +119,26 @@ In this section we explore for each system component some important implementati
 \end{itemize}
 
 
-% ...
-% \subsection{[PLACEHOLDER] Extraction and data mining}
-% ...
-% \subsection{[PLACEHOLDER] Network metrics}
-% ...
+\subsection{Extraction (web crawler)}
+The web crawler is the module that will allow us to extract
+
+
+\subsection{Network metrics}
+As we mentioned already we use networkx to perform metrics calculations such as centrality measures (betweeness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests.
+
+CODE CODE CODE\\
+\\
+
+An then we simply observe what are the requested metrics and build a response that is divided into two metrics groups. \textbf{Node} metrics are node specific, meaning that we will have this metric value for each node, other metrics are global, these are metrics that concern to the network as a global entity (e.g. network clustering coefficient).
+
+CODE CODE CODE\\
+\\
+
+\subsubsection{Implemented Metrics}
+In the following list we may consult the metrics that are offered by our API:
+
+TABLE TABLE TABLE
+
 % \subsection{[PLACEHOLDER] Front-end and service aggregator}
 %
 % \subsubsection{Graph render and interaction component}
