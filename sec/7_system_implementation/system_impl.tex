@@ -75,57 +75,177 @@ as \textit{glue} between these two larger components, we will use NodeJS for tha
 \subsection{Front-end technologies}
 \begin{itemize}
     \item \textbf{HTML};
-    \item \textbf{Javascript}
+    \item \textbf{Javascript};
     \item \textbf{CSS};
     \item \textbf{D3.js};
     \item \textbf{React};
 \end{itemize}
 
-Since we are building a web application, we automatically address to three main technologies that need no introduction, these are HTML, Javascript and CSS. In complement, we will use for, our specific needs that consist in building interactive graphs, a web data driven document representation system, \textbf{D3.js} (\cite{bostock2012d3}). In what concerns to visualization D3.js will be our main third party, that will bring us many features to help us on network representation and graph interaction \footnote{in our proof of concept we already used D3.js for rendering the network as we have demonstrated in Figure \ref{img:poc}}. In order to improve front-end performance and development process a modern web component based library was choosed, React REACT\_REF.
-
+Since we are building a web application, we automatically address to three main technologies that need no introduction, these are HTML, Javascript and CSS. In complement, we will use for, our specific needs that consist in building interactive graphs, a web data driven document representation system, \textbf{D3.js} (\cite{bostock2012d3}). In what concerns to visualization D3.js will be our main third party, that will bring us many features to help us on network representation and graph interaction \footnote{in our proof of concept we already used D3.js for rendering the network as we have demonstrated in Figure \ref{img:poc}}. In order to improve front-end performance and development process a modern web component based library we choose React \cite{react}.
 
 %% ---------------------------------------------- Implementation details
 \section{Implementation details}
 
 In this section we will explain with more detail the more important parts of the system, how they were implemented with some technical notes and more importantly how they interact within our architecture, we will show some of the main workflows of the Socii tool in order to clarify that.
 
-\subsection{Extraction (web crawler)}
-The web crawler is the module that will allow us to extract
+\subsection{Extraction (web crawlers)}
+The web crawler is the module that will allow us to extract data from \glspl{osn}. Each \glspl{osn} has its own web site so each web crawler module has its own implementation, still the extract operations are wrapped in a single API as we described in Chapter 6 when explaining the requirements for the web crawlers. The workflow for extracting some user is the following:
+\begin{itemize}
+    \item Login with user credentials;
+    \item Go to a specific page within its social profile;
+    \item Perform extraction on that page.
+\end{itemize}
+This listed three steps may be repeated more then one time since we extract information from different pages. In the following explanations we will be refering to facebook implementation details for clarification only (the specific is required in this explanations in order to provide a comprehensible explanation).
 
+\subsubsection*{Login}
+This piece of code performs the login:
+
+\lstinputlisting[language=Python]{code/login.py}
+
+Here we see that browser driver is used to navigate between pages and selector functions such as \textit{find\_element\_by\_id} are used to access DOM elements.
+
+\subsubsection*{Perform extraction of facebook friends list}
+Here we see a function that extracts a list of facebook friends:
+
+\lstinputlisting[language=Python]{code/facebook_friends_list.py}
+
+Here we see some helper functions where the names are sufficiently explicit in order for one to understand the goal of this function without consulting the others. First we navigate to the users' friends list, then we get the total number of friends and call \textbf{\_load\_all\_friends} that will scroll the friends' list in order to load all friends in the same page (this needs to happen because Facebook uses lazy loading of friends in order to not load them at once in the web page). Next we get the container that wraps the friends list, loop for each block that holds some friend info and for each one of them we extract the \textbf{user id (uid)} from the link to the friend's profile, this may be a numeric value (code in the \textit{try} block) or it can be a string that comes as first parameters in the URL query (\textit{except} block).
+
+\subsection{Network generator}
+
+Network generator is a very purpose oriented piece of software is this architecture. It's only goal it's to produce data sets (users) for a given \glspl{osn}. This component is implemented in \textit{Node JS} and it uses faker \cite{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for facebook data generator.
+
+\begin{verbatim}
+var schema = {
+    'uid': 'number',
+    'livesIn': 'city',
+    'lifeEvents': 'lifeEvents',
+    'birthDate': 'restrictedDate',
+    'likes': 'facebookLikes',
+    'relationships': 'facebookRelationships',
+    'from': 'cityCountry',
+    'name': 'name',
+    'gender': 'gender',
+    'age': 'number',
+    'posts': 'facebookPost'
+};
+
+var facebookPostSchema = {
+    timestamp: 'dateRecent',
+    description: 'text',
+    reactions: 'facebookReactions',
+    comments: 'number',
+    shares: 'number'
+};
+\end{verbatim}
+
+We also add some threshold restriction to some values in order to not produce extremely unrealistic data.
+
+\begin{verbatim}
+var facebookThreshold = {
+    MAX_FB_LIKES: 20,
+    MAX_FB_POSTS: 10,
+    MAX_FB_REACTION_VALUE: 1000,
+    MAX_FB_POST_COMMENTS: 1000,
+    MAX_FB_POST_SHARED: 1000,
+    // There is a 30% changes of no reactions for a given post
+    NO_REACTION_PROB: 30,
+    // There is a 60% changes that a given post only receives likes (as reaction)
+    ONLY_LIKES_REACTION_PROB: 60,
+    // There is 40% chance that some post is not commented
+    NO_COMMENTS_PROB: 40,
+    // There is 50% chance that some post is not shared
+    NO_SHARES_POST: 40,
+    MAX_FB_LIFE_EVENTS: 10
+};
+\end{verbatim}
+
+Given a data model and a set of restrictions we generate sets of contextualized data for a given \glspl{osn}, this previous specific case for Facebook.
 
 \subsection{Network metrics}
-As we mentioned already we use networkx to perform metrics calculations such as centrality measures (betweeness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests.
+As we mentioned already we use networkx \cite{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
-CODE CODE CODE\\
-\\
+\begin{verbatim}
+    {
+        directed: {boolean},
+        graph: {name: "Graph's Name"}
+        links: [{source: 0, target:1}, ...],
+        nodes: [{id: 0}, ...],
+        metrics: [
+            'averageClustering',
+            'betweennessCentrality',
+            'closenessCentrality',
+            'clusteringCoefficient'
+            'degree',
+            'degreeCentrality',
+            'eigenvectorCentrality',
+            'pageRank'
+        ]
+    }
+\end{verbatim}
 
-An then we simply observe what are the requested metrics and build a response that is divided into two metrics groups. \textbf{Node} metrics are node specific, meaning that we will have this metric value for each node, other metrics are global, these are metrics that concern to the network as a global entity (e.g. network clustering coefficient).
+If no metrics array is requested all metrics will be computed, this is a fallback/default API behavior.\\
+\indent And the response is a mapping between each node and the respective computed metrics, and a \textbf{global} object that holds metrics for the graph.
 
-CODE CODE CODE\\
-\\
+\begin{verbatim}
+    {
+        "0": {
+            "betweennessCentrality": 0.006629585250616832,
+            "closenessCentrality": 0.29365513766170576,
+            "degreeCentrality": 0.026819923371647507,
+            "eigenvectorCentrality": 4.889334831194343e-05
+        },
+        "1": {...},
+        "global": {
+            "averageClustering": 0.0434353
+        }
+    }
+\end{verbatim}
 
-\textbf{Implemented Metrics}
-In the following list we may consult the metrics that are offered by our API:
+Next we present the piece of code responsible for receiving such request and that bridges the request with the networkx software wrapper module (our \textbf{nx\_interface}). The responsibility for compute the metrics is delegated to the \textbf{nx\_interface} which calls the correct networkx method for computing a given metric.
 
-TABLE TABLE TABLE
+\lstinputlisting[language=Python]{code/metrics_api.py}
 
-% \subsection{[PLACEHOLDER] Front-end and service aggregator}
-%
-% \subsubsection{Graph render and interaction component}
-% https://danielcaldas.github.io/react-d3-graph/sandbox/index.html
-% Talk about the component, why it was built how it is going to be integrated in Socci tool.
-\subsubsection{react-d3-graph: software component for graph visualization [PLACEHOLDER]}
+An then we simply observe what are the requested metrics and build a response that is divided into two metrics groups. \textbf{Node} metrics are node specific, meaning that we will have this metric value for each node, other metrics are global, these are metrics that concern to the network as a global entity (e.g. network clustering coefficient). The next presented method is called one time per metric.
+
+\lstinputlisting[language=Python]{code/nx_interface.py}
+
+\subsection{Service Aggregator}
+Anytime our front end needs to interact with some of the previous micro services, it goes trough this service aggregator
+in order to fetch data or to perform some other data operation. This service aggregator also manages Socii users concerning the authentication process.
+Next we present a simple generic client that is implemented in our aggregator in order to communicate with the metrics micro service.
+
+\lstinputlisting[language=java]{code/metrics_client.js}
+
+In a next section we will explain the main workflow that takes place inside the service aggregator, and there more details about this component will be provided.
+
+\subsubsection{Middleware optimizations}
+Some optimizations were put in place considering that this is the main networking component, where more traffic flows. The considered optimizations consist in using an existent middleware third parties in order to mitigate high payload exchange (between front-end and aggregator, and also between aggregator and other micro services). We use the \textbf{compression} \cite{compression} middleware to achieve optimal payload compression levels.
+
+\subsection{Front-end}
+
+Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that display an interactive network that is rendered using an open source component that we built, \textbf{react-d3-graph} \cite{reactd3graph} that we will explain in the following sections. Other relevant third parties that we use in our front end are the following:
+
+\begin{itemize}
+    \item \textit{\textbf{react-redux}} (\cite{reactredux}) - redux architecture official bindings for React library. This eases the process of manage application state.
+    \item \textit{\textbf{axios}} (\cite{axios}) - a http client library that makes networking operations more straightforward.
+    \item \textit{\textbf{material-ui}} (\cite{materialui}) - a library that offers visual components with a pre established look and feel and some built in interactions.
+    \item \textit{\textbf{react-bootstrap}} (\cite{reactbootstrap}) - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
+\end{itemize}
+
+\subsubsection{Graph render and interaction component with react-d3-graph}
+
 \begin{quote}
 \textit{"React component to build interactive and configurable graphs with d3 effortlessly"}
 \end{quote}
 
 From an end user perspective one of the most relevant and valuable aspect of a \glspl{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph} REF\_RD3G\_GITHUBREPO. This component allows us to focused only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation of react-d3-graph
-may be consulted on the web REF\_RD3G\_DOCS, also a live demo with the all the possible public configurations offered by react-d3-graph is also available in the web REF\_SANDBOX.\\
-With this development we will isolate all the visualization concerns leaving Socii with less work on this matter, also socii can wrap this component and use the available user actions to interact with the graph, and all the visual aspects such as nodes colors or text size may or may not be editable by a Socii user, Socii has the power to decide the level of granularity of user control upon graph configurations, but of course since we want a simple application we will leave it to Socii on how the network looks like exposing some basic interactions to the end user such as node click, zooming, mouse overing and drag and drop on all the network or upon a specific node.
+may be consulted on the web \cite{reactd3graph}\url{https://danielcaldas.github.io/react-d3-graph/docs/index.html}, also a live demo with the all the possible public configurations offered by react-d3-graph is also available in the web \url{https://danielcaldas.github.io/react-d3-graph/sandbox/index.html}.\\
+With this development we will isolate all the visualization concerns leaving Socii with less work on this matter, also Socii can wrap this component and use the available user actions to interact with the graph, and all the visual aspects such as nodes colors or text size may or may not be editable by a Socii user, Socii has the power to decide the level of granularity of user control upon graph configurations, but of course since we want a simple application we will leave it to Socii on how the network looks like exposing some basic interactions to the end user such as node click, zooming, mouse overing and drag and drop on all the network or upon a specific node.
 
+\section{Main Workflows}
 
-\subsection{Main Workflows}
-..................
+In this section we describe two of our main workflows within Socii tool. The first and most relevant workflow is the network aggregation and rendering that has within its main intervenient the aggregator, with next sections we will clarify more the role of this aggregator. Then we will present a front-end only interaction that consists in coloring nodes with given properties.
 
 \subsubsection{Network Aggregation and Rendering}
 
@@ -142,7 +262,7 @@ Do the diagram first, then implement then write.
 \end{huge}
 In the diagram of figure XXX, on may observe what happens since the user requests that a certain \glspl{osn} network is built.
 First the user configures the network choosing the number of nodes for a certain \gls{osn} and what metrics he wants to calculate against the network
-and then see in the network visualizer area. Then the user presses the \textit{"Build Network"} button, and for some undetermined amount of time
+and then see in the network visualizer area. Then the user presses a button that orders network build, and for some undetermined amount of time
 the application only displays a spinner to the user. From the front-end the first request was \textbf{POST /generate-network} to the service aggregator, the service aggregator generates a network, collects users from the \textbf{network generator} service, and returns a raw representation of the network (raw meaning that it only contains nodes and links) so that the user may be the most immediately as possible the network. At the same time that the user sees the network gaining form and the nodes positioning themselves a new request is made by the front-end ....
 
 \subsubsection{Community detection with node coloring by property...?}
