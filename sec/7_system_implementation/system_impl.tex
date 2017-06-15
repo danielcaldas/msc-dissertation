@@ -1,5 +1,6 @@
 Here we present the system specifications such as which technologies we use in each component by drawing a new architecture diagram that specifies what technologies are used in each part of the system.
 
+%% ---------------------------------------------- Implementation first steps
 \section{Implementation first steps}
 In this section we will describe out approach towards the implementation of the system, we will describe the process since the requirements
 definition to the technological choices, some challenges and implementation details.
@@ -82,42 +83,11 @@ as \textit{glue} between these two larger components, we will use NodeJS for tha
 
 Since we are building a web application, we automatically address to three main technologies that need no introduction, these are HTML, Javascript and CSS. In complement, we will use for, our specific needs that consist in building interactive graphs, a web data driven document representation system, \textbf{D3.js} (\cite{bostock2012d3}). In what concerns to visualization D3.js will be our main third party, that will bring us many features to help us on network representation and graph interaction \footnote{in our proof of concept we already used D3.js for rendering the network as we have demonstrated in Figure \ref{img:poc}}. In order to improve front-end performance and development process a modern web component based library was choosed, React REACT\_REF.
 
-\section{Implementation architecture}
 
-In the diagram of Figure XXX, we may find our system architecture now with the respective technology attached. In order to understand the most important interactions we will present in the following sections two sequence diagrams that describe two major end to end interactions (meaning what happens when the user performs some action in the system, and what actually happens under the hood in order to obtain a certain final result).
-
-\subsection{Network Aggregation and Rendering}
-
-\begin{figure}[h!]
-\begin{center}
-  \hspace*{-0.8in}
-  \includegraphics[width=1.2\textwidth]{img/socii-sd.jpg}
-\end{center}
-\caption{\label{img:sociisd} In this figure we may observe Socii sequence diagram for building a network.}
-\end{figure}
-
-\begin{huge}
-Do the diagram first, then implement then write.
-\end{huge}
-In the diagram of figure XXX, on may observe what happens since the user requests that a certain \glspl{osn} network is built.
-First the user configures the network choosing the number of nodes for a certain \gls{osn} and what metrics he wants to calculate against the network
-and then see in the network visualizer area. Then the user presses the \textit{"Build Network"} button, and for some undetermined amount of time
-the application only displays a spinner to the user. From the front-end the first request was \textbf{POST /generate-network} to the service aggregator, the service aggregator generates a network, collects users from the \textbf{network generator} service, and returns a raw representation of the network (raw meaning that it only contains nodes and links) so that the user may be the most immediately as possible the network. At the same time that the user sees the network gaining form and the nodes positioning themselves a new request is made by the front-end ....
-
-\subsection{Community detection with node coloring by property...?}
-\begin{huge}
-Do the diagram first, then implement then write... same as above
-\end{huge}
-
+%% ---------------------------------------------- Implementation details
 \section{Implementation details}
-In this section we explore for each system component some important implementation details not yet mentioned such as:
-\begin{itemize}
-    \item Code overview and architecture;
-    \item Most relevant 3rd parties that were used;
-    \item Deployment process.
-    \item ...
-\end{itemize}
 
+In this section we will explain with more detail the more important parts of the system, how they were implemented with some technical notes and more importantly how they interact within our architecture, we will show some of the main workflows of the Socii tool in order to clarify that.
 
 \subsection{Extraction (web crawler)}
 The web crawler is the module that will allow us to extract
@@ -134,7 +104,7 @@ An then we simply observe what are the requested metrics and build a response th
 CODE CODE CODE\\
 \\
 
-\subsubsection{Implemented Metrics}
+\textbf{Implemented Metrics}
 In the following list we may consult the metrics that are offered by our API:
 
 TABLE TABLE TABLE
@@ -152,4 +122,32 @@ TABLE TABLE TABLE
 From an end user perspective one of the most relevant and valuable aspect of a \glspl{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph} REF\_RD3G\_GITHUBREPO. This component allows us to focused only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation of react-d3-graph
 may be consulted on the web REF\_RD3G\_DOCS, also a live demo with the all the possible public configurations offered by react-d3-graph is also available in the web REF\_SANDBOX.\\
 With this development we will isolate all the visualization concerns leaving Socii with less work on this matter, also socii can wrap this component and use the available user actions to interact with the graph, and all the visual aspects such as nodes colors or text size may or may not be editable by a Socii user, Socii has the power to decide the level of granularity of user control upon graph configurations, but of course since we want a simple application we will leave it to Socii on how the network looks like exposing some basic interactions to the end user such as node click, zooming, mouse overing and drag and drop on all the network or upon a specific node.
+
+
+\subsection{Main Workflows}
+..................
+
+\subsubsection{Network Aggregation and Rendering}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii-sd.jpg}
+\end{center}
+\caption{\label{img:sociisd} In this figure we may observe Socii sequence diagram for building a network.}
+\end{figure}
+
+\begin{huge}
+Do the diagram first, then implement then write.
+\end{huge}
+In the diagram of figure XXX, on may observe what happens since the user requests that a certain \glspl{osn} network is built.
+First the user configures the network choosing the number of nodes for a certain \gls{osn} and what metrics he wants to calculate against the network
+and then see in the network visualizer area. Then the user presses the \textit{"Build Network"} button, and for some undetermined amount of time
+the application only displays a spinner to the user. From the front-end the first request was \textbf{POST /generate-network} to the service aggregator, the service aggregator generates a network, collects users from the \textbf{network generator} service, and returns a raw representation of the network (raw meaning that it only contains nodes and links) so that the user may be the most immediately as possible the network. At the same time that the user sees the network gaining form and the nodes positioning themselves a new request is made by the front-end ....
+
+\subsubsection{Community detection with node coloring by property...?}
+\begin{huge}
+Do the diagram first, then implement then write... same as above
+\end{huge}
+
 
