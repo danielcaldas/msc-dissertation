@@ -264,4 +264,14 @@ In the diagram of figure \ref{img:sociisd}, on may observe what happens since th
 
 \subsubsection{Community detection with node coloring by property...?}
 
+In these case we present a more simple workflow that happens only on the front-end. The community detection is a module that allows the user to paint nodes that have some property in common. For example, lets say we want to color our network according to where the users live, we will have to associate a unique color per city and then map this colors to the nodes painting each node with the color that corresponds to his city. This algorithm is generic so we can reproduce the same of other properties such as birthday, name or gender.
 
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii-cdet.jpg}
+\end{center}
+\caption{\label{img:sociicdet} In this figure we may observe Socii sequence diagram community detection based on node properties.}
+\end{figure}
+
+As we can see in Figure \ref{img:sociicdet} the process is simple, the user chooses an available property for community detection (\textbf{1}), then some logic helper front-end component takes the request and maps the different cities to a unique color (\textbf{2}). The next step consists in paint user nodes according to the color of their city (\textbf{3}) and update the store (the store is the object that holds the network state, this includes nodes and their properties). When the store is updated the network visualizer component is notified and delegates the new node properties to react-d3-graph that handles visual updates (\textbf{5 and 6}).
