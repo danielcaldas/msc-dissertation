@@ -122,53 +122,24 @@ Here we see some helper functions where the names are sufficiently explicit in o
 
 Network generator is a very purpose oriented piece of software is this architecture. Its only goal is to produce data sets (users) for a given \gls{osn}. This component is implemented in \textit{Node JS} and it uses faker \cite{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for facebook data generator.
 
-\lstinputlisting[language=Python]{code/fb_schema.js}
+\lstinputlisting[language=java]{code/fb_schema.js}
 
 We also add some threshold restriction to some values in order to not produce extremely unrealistic data.
 
-\lstinputlisting[language=Python]{code/fb_restrict.js}
+\lstinputlisting[language=java]{code/fb_restrict.js}
 
-Given a data model and a set of restrictions we generate sets of contextualized data for a given \glspl{osn}, this previous specific case for Facebook.
+Given a data model and a set of restrictions we generate sets of contextualized data for a given \glspl{osn} (in the previous examples, for Facebook).
 
 \subsection{Network metrics}
 As we mentioned already we use networkx \cite{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
-\begin{verbatim}
-    {
-        directed: {boolean},
-        graph: {name: "Graph's Name"}
-        links: [{source: 0, target:1}, ...],
-        nodes: [{id: 0}, ...],
-        metrics: [
-            'averageClustering',
-            'betweennessCentrality',
-            'closenessCentrality',
-            'clusteringCoefficient'
-            'degree',
-            'degreeCentrality',
-            'eigenvectorCentrality',
-            'pageRank'
-        ]
-    }
-\end{verbatim}
+\clearpage
+\lstinputlisting[language=java]{code/metrics_payload.js}
 
 If no metrics array is requested all metrics will be computed, this is a fallback/default API behavior.\\
 \indent And the response is a mapping between each node and the respective computed metrics, and a \textbf{global} object that holds metrics for the graph.
 
-\begin{verbatim}
-    {
-        "0": {
-            "betweennessCentrality": 0.006629585250616832,
-            "closenessCentrality": 0.29365513766170576,
-            "degreeCentrality": 0.026819923371647507,
-            "eigenvectorCentrality": 4.889334831194343e-05
-        },
-        "1": {...},
-        "global": {
-            "averageClustering": 0.0434353
-        }
-    }
-\end{verbatim}
+\lstinputlisting[language=java]{code/metrics_response.js}
 
 Next we present the piece of code responsible for receiving such request and that bridges the request with the networkx software wrapper module (our \textbf{nx\_interface}). The responsibility for compute the metrics is delegated to the \textbf{nx\_interface} which calls the correct networkx method for computing a given metric.
 
