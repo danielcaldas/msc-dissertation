@@ -76,11 +76,32 @@ In the Table \ref{table:featuresocii} we present a list of the implemented requi
 In this section we do an overview across Socci application, we present the overall functionalities that Socii offers
 from an end user perspective.
 
-\subsection{Login}
-[TODO]
-
 \subsection{Network Configuration Area}
-[TODO]
+
+\subsubsection*{Entry state}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_1.png}
+\end{center}
+\caption{\label{img:socii_1} Socii landing page. Network configuration area.}
+\end{figure}
+
+In Figure \ref{img:socii_1} we may observe our initial page where we display available \glspl{osn} that can be configured in this area and then a network generation or network calculation upon real network may be ordered. Each \glspl{osn} consists in a expandable card that once expanded contains all the details and information about the \glspl{osn} and metrics configuration.
+
+\subsubsection*{Configuration card detail}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_2.png}
+\end{center}
+\caption{\label{img:socii_2} Network configuration area. Facebook configuration expanded.}
+\end{figure}
+
+In Figure \ref{img:socii_2} Facebook configuration card is expanded and here we see that we can have a great level of granularity upon the \glspl{sna} metrics that we want to calculate against a certain network. On the top of the card we have a brief description of the \gls{osn} followed by sections that represents sets of metrics, and for each one of the metrics we also provide a brief explanation for a given metric.\\
+\indent These are the metrics that we will then be able to see for each node in the network visualization area. To reach more flexibility we decide on switches visual elements to turn on/off a certain metric, by doing this we may combine any set or subset of metrics. Some of the metrics are global (these mean that they are calculated regarding the graph/network in general) other are node specific (have a meaning at node level), this is implicit within each metric description.
 
 \subsection{Network Visualization Area}
 [TODO]
