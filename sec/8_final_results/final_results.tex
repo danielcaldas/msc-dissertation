@@ -1,12 +1,21 @@
-[PLACEHOLDER] Chapter introduction.
+In this Chapter we will present the results of implemented the previously specified requirements that originated the Socii tool. As we previously mentioned we
+choose a set of requirements (among a big list of possibilities) that would allows us to have a tool with the most relevant and core functionalities
+in order to prove our hypothesis of building a web based \glspl{sna} tool.\\
+\indent Along the Chapter we will not only list results but show them as well, in some of the following sections we present a set of Socii images that depict the implemented functionalities and how to use them. In a more final part of this Chapter we present a case study, were we analyze a real network and derive some different conclusions that well demonstrate some of the use cases of Socii.
+
+\section{Note about the final results}
+
+As the development of the tool depended on the \glspl{osn} integration and real data analysis, we had to somehow manage to fed real data sets into
+Socii. The way we achieve this was not an totally automatic process, we used the crawler modules and extraction \glspl{api} mentioned and very well explained in Chapter 5 and 6, to extract real data sets into a local filesystem, and then with a migration script we pointed to the production MongoDB instance in order to store the real data so that Socii aggregator component could get the real data. To improve data feeding interoperability we have two functionalities working side by side, the user may choose to analyze a real network (previously extracted by the mentined process) or the user may choose to generate a network with data from our generators module.
+
 
 \section{Final Results Summarization}
 
-The following table summarizes the features that Socci prototype implemented.\\
-(\textbf{NOTA}: Vou atualizando esta tabela à medida que os desenvolvimentos avançam, no final teremos sumarizadas as
-funcionalidades oferecidas pela aplicação)\\
+The following table summarizes the features that were implemented on Socii. All the "\textbf{MUST}" requirements were implemented
+and two additional "\textbf{SHOULD}" requirements were also implemented since they were almost cost free once we had the
+component react-d3-graph in a more advanced stage. As mean of summarization we will present a table concisely points to
+each requirement with the proper reference that we created in Chapter 6.
 
-% 6.3.2, 3 and 4 why were they not implemented final results, our workaround, collect real data etc. ...
 \begin{table}[H]
 \renewcommand{\tabcolsep}{2pt}
 \begin{tabular}{ |c|l|c| }
@@ -55,13 +64,13 @@ funcionalidades oferecidas pela aplicação)\\
 \hline
 6.3.8, 1 & Download network in the format GraphML & \ding{51}\\
 \hline
-6.3.9, Facebook, 1 & Sentiment Analisys & \textbf{In Progress}\\
-\hline
-6.3.9, LinkedIn, 1 & Human resources discovery & \textbf{On Hold}\\
+6.3.9, Facebook, 1 & Sentiment Analysis & \textbf{In Progress}\\
 \hline
 \end{tabular}
-\caption{\label{table:featuresocci} Table that summarizes Socci features that were developed and that refer to the requirements in Chapter 6. All the requirements are \textbf{MUST} requirements except other is indicated}
+\caption{\label{table:featuresocii} Summarization of Socii features.}
 \end{table}
+
+In the Table \ref{table:featuresocii} we present a list of the implemented requirements, these refer to the requirements in Chapter 6. All the requirements are \textbf{MUST} requirements unless otherwise is stated.
 
 \section{Socii - final aspect and functionalities overview}
 In this section we do an overview across Socci application, we present the overall functionalities that Socii offers
