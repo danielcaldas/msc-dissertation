@@ -38,9 +38,9 @@ each requirement with the proper reference that we created in Chapter 6.
 \hline
 6.3.3, 5 & Interactive node comparison & \ding{51}\\
 \hline
-6.3.3, 6 [\textbf{SHOULD}] & Global network interactions (Toolbar) & \ding{51}\\
+6.3.3, 6 \begin{small}(should requirement)\end{small} & Global network interactions (Toolbar) & \ding{51}\\
 \hline
-6.3.3, 7 [\textbf{SHOULD}] & Disable heavy animations & \ding{51}\\
+6.3.3, 7 \begin{small}(should requirement)\end{small} & Disable heavy animations & \ding{51}\\
 \hline
 6.3.2, 1 & Network Generator (Facebook) & \ding{51}\\
 \hline
@@ -104,16 +104,64 @@ In Figure \ref{img:socii_2} Facebook configuration card is expanded and here we 
 \indent These are the metrics that we will then be able to see for each node in the network visualization area. To reach more flexibility we decide on switches visual elements to turn on/off a certain metric, by doing this we may combine any set or subset of metrics. Some of the metrics are global (these mean that they are calculated regarding the graph/network in general) other are node specific (have a meaning at node level), this is implicit within each metric description.
 
 \subsection{Network Visualization Area}
-[TODO]
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_3.png}
+\end{center}
+\caption{\label{img:socii_3} Network visualization area.}
+\end{figure}
+
+The network visualization are is the main area of Socii tool, here is where the user will actually be able to visualize and analyze a given social structure for a certain \gls{osn}. As we may observe in Figure \ref{img:socii_3}, we still have the app header where the user can logout at any time, below we have a large area where the network is rendered. At the bottom of the page we have the toolbar that contain among others, that will be explain latter with greater detail, main graph interactions such as pause animations or show/hide nodes labels.
 
 \subsubsection{Toolbar}
-[TODO]
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_3.png}
+\end{center}
+\caption{\label{img:socii_4} Dialog containing toolbar help information. At the bottom the toolbar.}
+\end{figure}
+
+In this particular section we will only focus on the toolbar and on the functionality that this application component offers. As we can see in image \ref{img:socii_4} we may observe an explanation of each icon present on the toolbar, this pop up descriptive dialog appears when the information icon (last icon counting from the left) is pressed, this will allow us to keep the toolbar clean (not having to render descriptions or labels at the side of the symbols) having only the toolbar with the icons and no additional descriptive content.\\
+\indent Next we present the detailed description of each action/icon (icons are enumerated from left to right as displayed in the toolbar).
+\begin{itemize}
+    \item \textbf{pause} - the pause icon allows users to stop ongoing animations, this animations happened mainly at the start of the visualization when the network is still being arranged and nodes are being positioned to not overlap (this job is done by D3.js);
+    \item \textbf{refresh/redo} - clicking this icon will make all the dragged nodes go back to their initial positions (approximately);
+    \item \textbf{label/etiquette} - clicking in this icon shows and hides the labels of the nodes in the network, the user may use this as he pleases according to its visualization needs;
+    \item \textbf{strokes} - clicking this icon will make nodes connections semantic visually, this means that the link thickness will be propositional to the number of common relations between the two parts;
+    \item \textbf{LANTERNA} - when this feature is active the user is able to mouse over nodes in the network and to stand out the selected nodes relations (only the mouse hovered node relationships 1st and 2nd degree will be highlighted);
+    \item \textbf{switch/compare} - activating this feature will make the clicked nodes comparable. This means that when we click on some 1st and then a 2nd node, we will be able to compare this two nodes at the most granular level (this feature is explained in the Node Comparison section);
+    \item \textbf{circle/community} - clicking here opens a pop up dialog form that allows users to perform some community detection studies on the network, this is explained in the Community Detection section;
+    \item \textbf{arrow/download} - when the user clicks the downloaded icon a GraphML file is generated and download containing the rendered network basic structure.
+\end{itemize}
+
+\indent After this actions/icons section the toolbar presents some global metadata about the rendered network. This information consists in: the \gls{osn} name, the number of rendered nodes and links and some global metrics such as average clustering coefficient and average node degree.
 
 \subsubsection{Node Discovery}
-[TODO]
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_5.png}
+\end{center}
+\caption{\label{img:socii_5} Node discovery feature.}
+\end{figure}
+
+Node discover allows us to stand out some nodes upon the rest of the network. When we mouse over some node we will highlight that nodes and its 1st and 2nd degree connections, as we can see in the example provided in the Figure \ref{img:socii_5}
 
 \subsubsection{Node Details}
-[TODO]
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_6.png}
+\end{center}
+\caption{\label{img:socii_6} Node details panel opens on the right side of the screen.}
+\end{figure}
+
+When clicking on some network node a right side panel will slide and display all that node information, this information includes the computed \gls{sna} requested metrics and the \gls{osn} data that appears in a more fashionable way.
 
 \subsubsection{Node Comparison}
 [TODO]
