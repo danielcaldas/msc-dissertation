@@ -3,12 +3,14 @@ choose a set of requirements (among a big list of possibilities) that would allo
 in order to prove our hypothesis of building a web based \glspl{sna} tool.\\
 \indent Along the Chapter we will not only list results but show them as well, in some of the following sections we present a set of Socii images that depict the implemented functionalities and how to use them. In a more final part of this Chapter we present a case study, were we analyze a real network and derive some different conclusions that well demonstrate some of the use cases of Socii.
 
+%% ---------------------------------------------- Note about the final results
 \section{Note about the final results}
 
 As the development of the tool depended on the \glspl{osn} integration and real data analysis, we had to somehow manage to fed real data sets into
 Socii. The way we achieve this was not an totally automatic process, we used the crawler modules and extraction \glspl{api} mentioned and very well explained in Chapter 5 and 6, to extract real data sets into a local filesystem, and then with a migration script we pointed to the production MongoDB instance in order to store the real data so that Socii aggregator component could get the real data. To improve data feeding interoperability we have two functionalities working side by side, the user may choose to analyze a real network (previously extracted by the mentined process) or the user may choose to generate a network with data from our generators module.
 
 
+%% ---------------------------------------------- Final Results Summarization
 \section{Final Results Summarization}
 
 The following table summarizes the features that were implemented on Socii. All the "\textbf{MUST}" requirements were implemented
@@ -72,6 +74,8 @@ each requirement with the proper reference that we created in Chapter 6.
 
 In the Table \ref{table:featuresocii} we present a list of the implemented requirements, these refer to the requirements in Chapter 6. All the requirements are \textbf{MUST} requirements unless otherwise is stated.
 
+
+%% ---------------------------------------------- Socii - final aspect and functionalities overview
 \section{Socii - final aspect and functionalities overview}
 In this section we do an overview across Socci application, we present the overall functionalities that Socii offers
 from an end user perspective.
@@ -153,6 +157,7 @@ In this particular section we will only focus on the toolbar and on the function
 Node discover allows us to stand out some nodes upon the rest of the network. When we mouse over some node we will highlight that nodes and its 1st and 2nd degree connections, as we can see in the example provided in the Figure \ref{img:socii_5}
 
 \subsubsection{Node Details}
+
 \begin{figure}[h!]
 \begin{center}
   \hspace*{-0.8in}
@@ -164,19 +169,77 @@ Node discover allows us to stand out some nodes upon the rest of the network. Wh
 When clicking on some network node a right side panel will slide and display all that node information, this information includes the computed \gls{sna} requested metrics and the \gls{osn} data that appears in a more fashionable way.
 
 \subsubsection{Node Comparison}
-[TODO]
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_7.png}
+\end{center}
+\caption{\label{img:socii_7} In the right side panel we may observe the detail of the selected nodes.}
+\end{figure}
+
+When activating node comparison functionality the user is able to compare two distinct nodes anywhere in the network (this said, they don't need to be connected so that we are able to compare them). But in what really consists this node comparison? It simply allows us to visualize in a comprehensive manner the metrics and \gls{osn} data of each one of the nodes simultaneously so that we don't have to jump between some two nodes details in order to compare them.\\
+\indent As we can observe in Figure \ref{img:socii_7}, we can simultaneously see the metrics of the \textcolor{blue}{blue} (that represents the last node that the user clicked), and the the \textcolor{orange}{orange} node (color that represents the previous selected node).
 
 \subsubsection{Community Detection}
-[TODO]
 
+This feature is one of the most crucial because it allows us to intercept individuals properties/attributes and intercept them at a large scale.\\
+\indent Community detection functionlaity allows users to coloring the network according to some individuals \gls{osn} specific data property such as \textit{where the users live} or \textbf{what the are the users gender}, allowing us to perceive community patterns and identify communities based on a certain PRESSUPOSTO. Also we may made available a special property that allows users to be colored in terms of what Facebook pages they have liked.
+
+\subsubsection*{Community by user properties}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_8.png}
+\end{center}
+\caption{\label{img:socii_8} Pop up where user can configure community detection settings.}
+\end{figure}
+
+In Figure \ref{img:socii_8} we may observe how the user may choose to color the network by simply choosing a \textbf{"key question"}. The questions available what the result that they produce are the follwing:
+
+\begin{itemize}
+    \item \textbf{Where the users live?} - by choosing this option the all the users that have a common residence (current address) will be colored with the same color \footnote{\textbf{Note for future reference}: our color generator mechanism makes sure that no color collision happens, still, some colors may be the same with different tonalities};
+    \item \textbf{Birth date?} - individuals with the same birth date will have the same color;
+    \item \textbf{Where the users are from?} - individuals with the same place of birth will have the same color;
+    \item \textbf{Gender} - individuals with the same gender will have the same color;
+    \item \textbf{Users with the same name?} - users with the same name will have the same color.
+\end{itemize}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_8.png}
+\end{center}
+\caption{\label{img:socii_9} Community detection: \textbf{"Where the user lives?"}.}
+\end{figure}
+
+In Figure \ref{img:socii_9} we may observe the result of having detected individuals with the same place of birth.
+
+\subsubsection*{Community by Facebook page likes}
+
+By coloring individuals by a specific Facebook page like we can track users preferences within the network, this preferences can be anything (sports, Hollywood stars, food, shoes brand, tv channels, musics etc.).
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_9.png}
+\end{center}
+\caption{\label{img:socii_10} Community detection for facebook page likes. \textit{SyfyPT} is a Facebook page.}
+\end{figure}
+
+As we can see in Figure \ref{img:socii_10} one may select among a variety ....
+
+\clearpage
+
+
+%% ---------------------------------------------- Case Study
 \section{Case Study}
 (...)
 As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present
 a real case study with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For this case study we will use
 a real account and extract information from Facebook using the facebook web crawler module that was developed initially as a back-end requirements to allow extraction on the fly, but not that being possible by the mentioned reasons, we use it as mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that besides being able of generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case study data).
 (...)
-
-\subsection{Socii Applications}
 
 %% \subsubsection{Migration Flows} Painting nodes by city or country should have uniform colors and not redo coloring and stuff....
 %% Use socii community detection to overlap.
@@ -187,4 +250,4 @@ A real example within the case study. Study community preferences.
 \subsubsection{Sentiment Analysis (Facebook)}
 Society happiness studies/Depression detection.
 
-\subsubsection{HR Discovery (LinkedIn)}
+%% \subsubsection{HR Discovery (LinkedIn)} ONLY IF TIME!!!!!!!!!!
