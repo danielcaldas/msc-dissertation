@@ -246,10 +246,10 @@ As we can see in Figure \ref{img:socii_10} one may select among a variety of Fac
 
 %% ---------------------------------------------- Case Study
 \section{Case Study}
-Now that we exaustivelly presented all Socii features, we will know present how can we use them and derive some conclusions from network observation and analysis.\\
-\indent As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present a real case study with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For this case study we will use a real account and extract information from Facebook using the respective web crawler module that was developed initially as a back-end requirements to allow extraction on the fly, but not that being possible by the mentioned reasons, we use it as mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that besides being able of generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case study data).
+Now that we exhaustively presented all Socii features, we will know present how can we use them and derive some conclusions from network observation and analysis.\\
+\indent As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present a real case study with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For this case study we will use a real account and extract information from Facebook using the respective web crawler module that was developed initially as a back-end requirements to allow extraction on the fly, but not that being possible by the mentioned reasons, we use it as mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that besides being able of generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case study data)\footnote{Since the data is real some of the images in the following sections may have some hidden content in order to maintain anonymity of data. If no data is hidden then all the data in the image is false, it is provided by the generator component}.
 
-\subsubsection{Detecting active and influent Facebook users img 12, 13}
+\subsubsection{Detecting active and influent Facebook users}
 Image. How to trace important users in the network that are very active.
 \begin{enumerate}
     \item Stop the network.
@@ -263,9 +263,27 @@ Image. How to trace important users in the network that are very active.
     %SOLUTION: Maria Granja, Cluster de Amarante (com ligações a Braga), substituír nomes concretos por letras!!! Todos os dados dever ser incógnitas
 \end{enumerate}
 
-Following the previous \textit{"script"} one may find using Socii the most influent and active Facebook user. Using node metrics such as \textbf{degree centrality} and \textbf{average degree centrality} we can easily capture users that have many connections, also features like network discovery are thought to help users understands nodes underlying connections. \glspl{osn} specific metrics (e.g. \textbf{average reactions per posts} may indicate us what users are well established in terms of Facebook activity).
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_12.png}
+\end{center}
+\caption{\label{img:socii_12} Finding most influent node.}
+\end{figure}
 
-\subsubsection{Marketing with community detection (Facebook) img 14}
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_13.png}
+\end{center}
+\caption{\label{img:socii_13} Found most influent and active (in Facebook) node.}
+\end{figure}
+
+\indent Following the previous \textit{"script"} (starting in Figure \ref{img:socii_12} and ending in \ref{img:socii_13}) one may find using Socii the most influent and active Facebook user. Using node metrics such as \textbf{degree centrality} and \textbf{average degree centrality} we can easily capture users that have many connections, also features like network discovery are thought to help users understands nodes underlying connections. \glspl{osn} specific metrics (e.g. \textbf{average reactions per posts} may indicate us what users are well established in terms of Facebook activity). In this particular case we found that the (\textcolor{orange}{orange}) individual is the most influent and active (in Facebook) as we can see in Figure \ref{img:socii_13}) where he is compared to another influent individual (\textcolor{blue}{blue} individual).
+
+\clearpage
+
+\subsubsection{Marketing with community detection (Facebook)}
 A real example within the case study. Study community preferences.
 
 \begin{enumerate}
@@ -277,17 +295,40 @@ A real example within the case study. Study community preferences.
     \item Within the colored nodes find the most active and influent (we explained how to obtain this nodes in the previous section);
 \end{enumerate}
 
-By performing the following steps we may then plan a market strategy upon a certain group of individuals that may be implemented in all sorts of forms such as:
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_14.png}
+\end{center}
+\caption{\label{img:socii_14} Found target individual to propagate the \textcolor{purple}{purple brand}.}
+\end{figure}
+
+By performing the following steps we may then plan a brand market strategy upon a certain group of individuals or particular individual as we can see in Figure \ref{img:socii_14} that may be implemented in all sorts of forms such as:
 \begin{itemize}
     \item Send newsletters directly to the target users;
     \item Try and reach the target users personally;
     \item Save data and cross results with another networks in order to launch public campaign.
 \end{itemize}
 
-\subsubsection{Professional discovery with LinkedIn Network img 15, 16}
+\subsubsection{Professional discovery with LinkedIn Network}
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_15.png}
+\end{center}
+\caption{\label{img:socii_15} Rendering LinkedIn network and visualize node detail.}
+\end{figure}
 
 As we did previously with Facebook page likes and other node coloring strategies to color nodes given a certain property, we reproduce a very similar feature in LinkedIn networks, we used community detection to detect nodes that possess a certain skill, this feature could be developed in order to achieve an optimal talent discovery tool but for proof of Socii functionality our simply community detection method will suffice. Also in this section we will proof the adaptability of our tool by rendering a LinkedIn network, and as we see by Figure \ref{img:socii_15}.\\
-\indent By picking the community detection in a LinkedIn network we are prompted with a very similar pop up configuration menu to Facebook networks, here we can pick
-a particular skill (professional competence) and a color to paint all the nodes in the network that posses that particular skill.\\
-\indent As we may observe in Figure \ref{img:socii_16} we may now apply some of Socii previous demonstrated features to choose a particular individual for a suitable
-position based on either his LinkedIn profile information and/or some \gls{osn} metrics also offered by Socii.
+
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_16.png}
+\end{center}
+\caption{\label{img:socii_16} LinkedIn community detection by professional skill.}
+\end{figure}
+
+\indent By picking the community detection in a LinkedIn network we are prompted with a very similar pop up configuration menu to Facebook networks, here we can pick a particular skill (professional competence) and a color to paint all the nodes in the network that posses that particular skill.\\
+\indent As we may observe in Figure \ref{img:socii_16} we may now apply some of Socii previous demonstrated features to choose a particular individual for a suitable position based on either his LinkedIn profile information and/or some \gls{osn} metrics also offered by Socii. We then my use node comparison to compare a cadidate to another one by some other parameters.
