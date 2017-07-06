@@ -5,38 +5,48 @@ dissertation.\\
 \indent From here we started to design our solution in order to define a useful tool that would help users understanding their social structures in these \glspl{osn}. In Chapter 5 we presented our solution in the most conceptual way, in Chapter 6 we defined the requirements and their respective priorities in order to obtain a minimum viable product at the end of the project.\\
 \indent At the same time that we were developing our tool we documented all the relevant technicalities in Chapter 7. Finally having Socii been implemented and tested we present all the final results in Chapter 8, this chapter contains a \textit{walktrough} of the functionalities of our tool, it also includes case studies that demonstrate how the end user can use Socii to obtain concrete results, with these we prove the utility of our final product.
 
-\section{Could big \glspl{osn} contribute to this field}
-YES. MAINLY THEM. Open data, let developers query public data freely.
+%% ---------------------------------------------- The main obstacle for Socii
+\section{The main obstacle for Socii}
+As he have seen trough the thesis since the beginning we based our work on \glspl{osn}, and we have seen as well that our platform is data driven meaning that it is built on the assumption of available and accessible data, but in reality this is not happening, \glspl{osn} has we have seen in Chapter 3 are not \textit{"opening the doors"} to the community making their \glspl{api} and social public data available, that is why we went trough the technical and architectural struggle of feeding in Socii networks trough a extraction pipeline built on top of web crawlers, that are known and probed to be very slow and error prune. If \glspl{osn} such as Facebook or LinkedIn provide access to their social \glspl{api} Socii final results could be much more positive and surprising.
 
+\subsection*{Other ways on how \glspl{osn} could contribute}
+In fact yes, despite these platforms could open their \glspl{osn} to the public they should also play an extremely important role in social education, security, environment (etc.), they have today the power to influence their users in good ways.
+
+%% ---------------------------------------------- Alternative technical approaches that could improve Socii
 \section{Alternative technical approaches that could improve Socii}
-...
-...
-These represent topics to not forget to mention on future work and conclusions:
-\begin{itemize}
-    \item Web GL REF REF is the better option if we want to aim for performance on the web;
-    \item From analyzing OSN we see a possible research project on creating a framework for building
-    and managing \glspl{osn} automatically and effortlessly;
-    \item Server side rendering may also be a good approach since all the heavy calculations for positioning nodes
-    may be done in the server side, this would however have impacts in terms of scalability if we had to many users requesting
-    the rendering of huge networks.
-\end{itemize}
+In this section we will explore alternative approaches that can bee implemented in order to improve certain bottlenecks of Socii such as performance. We will list this alternatives explaining both what Socii could gain and loose by selecting those paths.
 
+\subsection{Using WebGL for network visualization and interaction}
+Web GL REF REF is the better option if we want to aim for performance on the web;...
+
+\subsection{Using server side rendering}
+Server side rendering may also be a good approach since all the heavy calculations for positioning nodes
+may be done in the server side, this would however have impacts in terms of scalability if we had to many users requesting
+the rendering of huge networks.
+
+%% ---------------------------------------------- Socii usage and applications
 \section{Socii usage and applications}
-%% Why socci? What is main purpose? How can we observe it from the built functional prototype
+We have already demonstrated some case studies/use cases in Chapter 8... still..
+Explore where Socii could be used... What are the real world applications more suitable for this tool
 Expand horizons... What fields could we explore...\\
 \begin{itemize}
     \item Sociology general studies, society analysis;
     \item Migratory flux of population (maybe even mention the refugees crisis);
     \item Society happiness studies/Depression detection among youngsters;
+    \item Terrorism awareness detection (exemplo: analisar relações dos individuos comparativamente às suas nacionalidades.. se
+    de repente tenho um individuo de nacionalidade X que nunca falou com ninguem da nacionalidade Y e está agora a falar com 20 individuos da nacionalidade Y lançar um alerta!.
 \end{itemize}
-% Talk here about Socci applications where it could be used...!!!
-% - Terrorism awareness detection (exemplo: analisar relações dos individuos comparativamente às suas nacionalidades.. se
-% de repente tenho um individuo de nacionalidade X que nunca falou com ninguem da nacionalidade Y e está agora a falar com 20 individuos da nacionalidade Y lançar um alerta!);
-% - Is this a OAIS system? Study this because they may ask!
-% - Parallel studies - framework to create Online Social Networks Platforms, this could be huge.. Another theis... Other branch of studies
-% of computer science + social sciences
-\section{Derived work??????????}
 
+%% ---------------------------------------------- Alternative work
+\section{Alternative work}
+From analyzing OSN we see a possible research project on creating a framework for building
+and managing \glspl{osn} automatically and effortlessly;
+Parallel studies - framework to create Online Social Networks Platforms, this could be huge.. Another theis... Other branch of studies
+
+%% ---------------------------------------------- Final note
 \section{Final note}
 \textbf{Mencionar a publicação no SLATE' 17 ????}
 \textbf{Mencionar que fizemos validação de trabalho e recolha de feedback com alguém da área ???}
+
+% For presentation day think of this things
+% - Is this a OAIS system? Study this because they may ask!
