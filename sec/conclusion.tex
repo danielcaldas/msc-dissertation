@@ -17,12 +17,15 @@ In fact yes, despite these platforms could open their \glspl{osn} to the public 
 In this section we will explore alternative approaches that can bee implemented in order to improve certain bottlenecks of Socii such as performance. We will list this alternatives explaining both what Socii could gain and loose by selecting those paths.
 
 \subsection{Using WebGL for network visualization and interaction}
-Web GL REF REF is the better option if we want to aim for performance on the web;...
+Web GL REF is the better option if we want to aim for performance on the web when display heavy graphical elements on the browser. This would require an adaptation of our front end app in order to couple this \textit{"foreign technologie"} since our front end stack is built in Javascript only. Dispite the performance gains we would end up with a much more complex tool (and Socii front end has already is share of complexity), also harder to mantain and to scale in terms of new functionalities.
 
 \subsection{Using server side rendering}
 Server side rendering may also be a good approach since all the heavy calculations for positioning nodes
 may be done in the server side, this would however have impacts in terms of scalability if we had to many users requesting
 the rendering of huge networks.
+
+\subsection{Using web workers for heavy front end background processing}
+Modern browsers already support web workers REF...
 
 %% ---------------------------------------------- Socii usage and applications
 \section{Socii usage and applications}
@@ -43,6 +46,10 @@ From analyzing OSN we see a possible research project on creating a framework fo
 and managing \glspl{osn} automatically and effortlessly;
 Parallel studies - framework to create Online Social Networks Platforms, this could be huge.. Another theis... Other branch of studies
 
+%% ---------------------------------------------- Future work
+\section{Future work}
+All the requirements in Chapter 6 that were not relevant for the purpose of this master's dissertation could bring many improvements to the existing tool...
+
 %% ---------------------------------------------- Final note
 \section{Final note}
 \textbf{Mencionar a publicação no SLATE' 17 ????}
@@ -50,3 +57,4 @@ Parallel studies - framework to create Online Social Networks Platforms, this co
 
 % For presentation day think of this things
 % - Is this a OAIS system? Study this because they may ask!
+% - Who are the people that will be evaluating me and what are their fields of studies?

@@ -134,7 +134,7 @@ In this particular section we will only focus on the toolbar and on the function
     \item \textbf{refresh/redo} - clicking this icon will make all the dragged nodes go back to their initial positions (approximately);
     \item \textbf{label/etiquette} - clicking in this icon shows and hides the labels of the nodes in the network, the user may use this as he pleases according to its visualization needs;
     \item \textbf{strokes} - clicking this icon will make nodes connections semantic visually, this means that the link thickness will be propositional to the number of common relations between the two parts;
-    \item \textbf{LANTERNA} - when this feature is active the user is able to mouse over nodes in the network and to stand out the selected nodes relations (only the mouse hovered node relationships 1st and 2nd degree will be highlighted);
+    \item \textbf{flashlight} - when this feature is active the user is able to mouse over nodes in the network and to stand out the selected nodes relations (only the mouse hovered node relationships 1st and 2nd degree will be highlighted);
     \item \textbf{switch/compare} - activating this feature will make the clicked nodes comparable. This means that when we click on some 1st and then a 2nd node, we will be able to compare this two nodes at the most granular level (this feature is explained in the Node Comparison section);
     \item \textbf{circle/community} - clicking here opens a pop up dialog form that allows users to perform some community detection studies on the network, this is explained in the Community Detection section;
     \item \textbf{arrow/download} - when the user clicks the downloaded icon a GraphML file is generated and download containing the rendered network basic structure.
@@ -182,7 +182,7 @@ When activating node comparison functionality the user is able to compare two di
 \subsubsection{Community Detection}
 
 This feature is one of the most crucial because it allows us to intercept individuals properties/attributes and intercept them at a large scale.\\
-\indent Community detection functionality allows users to coloring the network according to some individuals \gls{osn} specific data property such as \textit{where the users live} or \textbf{what the are the users gender}, allowing us to perceive community patterns and identify communities based on a certain PRESSUPOSTO. Also we may made available a special property that allows users to be colored in terms of what Facebook pages they have liked.
+\indent Community detection functionality allows users to coloring the network according to some individuals \gls{osn} specific data property such as \textit{where the users live} or \textbf{what the are the users gender}, allowing us to perceive community patterns and identify communities based on a certain assumption. Also we may made available a special property that allows users to be colored in terms of what Facebook pages they have liked.
 
 \subsubsection*{Community detection by user properties}
 
@@ -194,7 +194,7 @@ This feature is one of the most crucial because it allows us to intercept indivi
 \caption{\label{img:socii_8} Pop up where user can configure community detection settings.}
 \end{figure}
 
-In Figure \ref{img:socii_8} we may observe how the user may choose to color the network by simply choosing a \textbf{"key question"}. The questions available what the result that they produce are the follwing:
+In Figure \ref{img:socii_8} we may observe how the user may choose to color the network by simply choosing a \textbf{"key question"}. The questions available what the result that they produce are the following:
 
 \begin{itemize}
     \item \textbf{Where the users live?} - by choosing this option the all the users that have a common residence (current address) will be colored with the same color \footnote{\textbf{Note for future reference}: our color generator mechanism makes sure that no color collision happens, still, some colors may be the same with different tonalities};
@@ -331,4 +331,4 @@ As we did previously with Facebook page likes and other node coloring strategies
 \end{figure}
 
 \indent By picking the community detection in a LinkedIn network we are prompted with a very similar pop up configuration menu to Facebook networks, here we can pick a particular skill (professional competence) and a color to paint all the nodes in the network that posses that particular skill.\\
-\indent As we may observe in Figure \ref{img:socii_16} we may now apply some of Socii previous demonstrated features to choose a particular individual for a suitable position based on either his LinkedIn profile information and/or some \gls{osn} metrics also offered by Socii. We then my use node comparison to compare a cadidate to another one by some other parameters.
+\indent As we may observe in Figure \ref{img:socii_16} we may now apply some of Socii previous demonstrated features to choose a particular individual for a suitable position based on either his LinkedIn profile information and/or some \gls{osn} metrics also offered by Socii. We then my use node comparison to compare a candidate to another one by some other parameters.
