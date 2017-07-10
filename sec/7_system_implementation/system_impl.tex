@@ -1,5 +1,5 @@
-In this Chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that better suite our needs, we will then present our technological choices based on this first proof of concept.
-\indent In the next parts of the Chapter, we will detail more on each component of our system from the extraction component to the front-end of Socii. We will also present at the end of the Chapter some of the main workflows within Socii and how all the components interact between them in order to produce a certain outcome.
+In this chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that better suite our needs, we will then present our technological choices based on this first proof of concept.
+\indent In the next parts of the chapter, we will detail more on each component of our system from the extraction component to the front-end of Socii. We will also present at the end of the chapter some of the main workflows within Socii and how all the components interact between them in order to produce a certain outcome.
 
 %% ---------------------------------------------- Implementation first steps
 \section{Implementation first steps}
@@ -63,7 +63,7 @@ Relational databases are one of the complex and advanced technologies that we ha
 \end{itemize}
 
 The main language that will support our back-end is \textbf{Python}. The choice for this language came very naturally since Python is one of the most used programming languages in the data science field along with others such as R or Java. We also choose Python for two other main reasons: first, we will be building data scrapper modules that need to simulate browser interactions.
- For that we will use \textbf{Selenium WebDriver} (\cite{documentation2013selenium}) for browser automation and interaction (with the complement of \textbf{PhantomJS}(\cite{hidayat2013phantomjs}), a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} (\cite{clark1999xml}) for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} that (\cite{hagberg2013networkx}), already presented in Chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
+ For that we will use \textbf{Selenium WebDriver} (\cite{documentation2013selenium}) for browser automation and interaction (with the complement of \textbf{PhantomJS}(\cite{hidayat2013phantomjs}), a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} (\cite{clark1999xml}) for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} that (\cite{hagberg2013networkx}), already presented in chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
 \indent For networking, to make our back-end services available through web \glspl{api}, we will use \textbf{flask} (\cite{ronacher2015flask}), a micro-framework for building simple networking applications in Python.
 
 \subsection{Middleware technologies}
@@ -93,7 +93,7 @@ In order to improve our application performance and also the development process
 In this section we will explain with more detail the more important parts of the system, how they were implemented with some technical notes and more importantly how they interact within our architecture. We show some of the main workflows of the Socii tool in order to clarify that.
 
 \subsection{Extraction (web crawlers)}
-The web crawler is the module that will allow us to extract data from \glspl{osn}. Each \gls{osn} has its own web site so each web crawler module has its own implementation, still the extract operations are wrapped in a single API as we described in Chapter 6 when explaining the requirements for the web crawlers. The workflow for extracting some user is the following:
+The web crawler is the module that will allow us to extract data from \glspl{osn}. Each \gls{osn} has its own web site so each web crawler module has its own implementation, still the extract operations are wrapped in a single API as we described in chapter 6 when explaining the requirements for the web crawlers. The workflow for extracting some user is the following:
 \begin{itemize}
     \item Login with user credentials;
     \item Go to a specific page within its social profile;
@@ -128,7 +128,7 @@ We also add some threshold restriction to some values in order to not produce ex
 Given a data model and a set of restrictions we generate sets of contextualized data for a given \gls{osn} (in the previous examples, for Facebook).
 
 \subsection{Network metrics}
-As we mentioned already in this Chapter (Section 7.2) we use networkx \cite{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
+As we mentioned already in this chapter (Section 7.2) we use networkx \cite{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
 \clearpage
 \lstinputlisting[language=java]{code/metrics_payload.js}
