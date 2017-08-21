@@ -130,7 +130,6 @@ Given a data model and a set of restrictions we generate sets of contextualized 
 \subsection{Network metrics}
 As we mentioned already in this chapter (Section 7.2) we use networkx \citep{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
-\clearpage
 \lstinputlisting[language=java]{code/metrics_payload.js}
 
 If no metrics array is requested all metrics will be computed, this is a fallback/default API behavior.\\
