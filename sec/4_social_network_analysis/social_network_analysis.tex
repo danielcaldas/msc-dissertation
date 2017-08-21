@@ -7,7 +7,7 @@ it have that structure. \glspl{sna} is also about looking at the individuals ins
 %% ---------------------------------------------- Fundamental Concepts for Network Analysis
 \section{Fundamental Concepts for Network Analysis}
 
-According to \cite{wasserman1994social}, the concepts listed below are of key importance to understand \glspl{sna}.
+According to \citep{wasserman1994social}, the concepts listed below are of key importance to understand \glspl{sna}.
 
 \begin{itemize}
     \item \emph{Actor} - \gls{sna} is concerned with understanding the linkages among social entities and the implications of these linkages, these social entities are described as actors. Actors are  discrete individual, corporate, or collective social units.
@@ -67,12 +67,12 @@ Closeness centrality tells us how close an actor is to all the other actors in t
 \indent This metric is considered a sophisticated measure of centrality in network theory. It is defined as the mean geodesic distance
 (i.e., the shortest path) between a certain vertex \textit{v} and all other vertices reachable from it. This concept is normally associated to
 geographic distances, being actors closeness mapped to reality. Still there are abstractions that compute
-this value not considering nodes as geodesic markers (\cite{politaktivsna}).
+this value not considering nodes as geodesic markers \citep{politaktivsna}.
 
 \subsubsection*{Betweenness Centrality}
 This measure reflects the number number of shortest paths going through a particular actor. \textbf{Nodes that
 occur in many shortest paths} between other nodes in the network have a higher betweenness centrality, basically
-takes into account the connectivity of the nodes' neighbors, giving a \textbf{higher value for nodes which bridge clusters} (\cite{politaktivsna}).
+takes into account the connectivity of the nodes' neighbors, giving a \textbf{higher value for nodes which bridge clusters} \citep{politaktivsna}.
 
 \subsubsection*{Eigenvector Centrality}
 This measure is based on the following statement:
@@ -81,12 +81,12 @@ This measure is based on the following statement:
 \textbf{\textit{"Importance of a node depends on the importance of its neighbors."}}
 \end{quote}
 
-Eigenvector centrality (\cite{politaktivsna}) measures importance of a node within a network. This measure assigns relative scores to all nodes, then if
+Eigenvector centrality \citep{politaktivsna} measures importance of a node within a network. This measure assigns relative scores to all nodes, then if
 a node is connected to a \textit{high scored} node it has a bigger increment to its score then when connected to a \textit{low scored} node.
-One of the most famous variants of eigenvector centrality is the Google's PageRank algorithm (\cite{brin1998anatomy}).
+One of the most famous variants of eigenvector centrality is the Google's PageRank algorithm \citep{brin1998anatomy}.
 
 \subsubsection*{Page Rank}
-PageRank algorithm (\cite{brin1998anatomy}) was thought as a way to rank online content (online sites) in order to discover
+PageRank algorithm \citep{brin1998anatomy} was thought as a way to rank online content (online sites) in order to discover
 what sites are important and really worth to consult. The algorithm sums up a score for every node (web site),
 this score is in some way proportional to the number of times a site is cross referenced (linked by other web site), gaining higher score,
 on the other hand when a site links to other that has a high score it loses score, meaning that is a less important site.
@@ -104,7 +104,7 @@ a node \textit{\textbf{v2}} if \textit{\textbf{v2}} needs to go through \textit{
 
 %% ---------------------------------------------- Small World Problem
 \section{Small World Problem}
-This principle of \textit{small-world phenomenon} is based on the idea that all human beings are connected by \textbf{short chains of acquaintances}. The pioneer of this work was Stanley Milgram (\cite{travers1967small}).
+This principle of \textit{small-world phenomenon} is based on the idea that all human beings are connected by \textbf{short chains of acquaintances}. The pioneer of this work was Stanley Milgram \citep{travers1967small}.
 
 \subsection*{Six Degrees of Separation}
 The concept of six degrees of separation is an extension of the small world problem. In the sequence of what we state before, the six degrees of separation materialize the previous concept in six interconnections for some individual to reach any other one. Six degrees of separation gained a particularly strong relevance, when a play was written in the 90's portraying the concept.

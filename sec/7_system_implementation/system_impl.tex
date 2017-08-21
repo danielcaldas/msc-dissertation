@@ -50,7 +50,7 @@ Having the requirements been defined and a small proof of concept been developed
 \end{itemize}
 
 Relational databases are one of the complex and advanced technologies that we have today. We have been building our applications on top of these technologies with very strict rules that allow our data to remain coherent through applications lifetimes. Databases engines such as MySQL, PostgreSQL and SQL Server are good live examples of the relevance of these technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way.\\
-\indent We use \textbf{MongoDB} (\cite{mongodb}) (a document oriented database) to store data, this gives us more flexibility in manipulating complex JSON structures that are persisted in documents. These flexibility and interoperability would be considerably more complex to achieve using relational databases.
+\indent We use \textbf{MongoDB} \citep{mongodb} (a document oriented database) to store data, this gives us more flexibility in manipulating complex JSON structures that are persisted in documents. These flexibility and interoperability would be considerably more complex to achieve using relational databases.
 
 \subsection{Back-end technologies}
 \begin{itemize}
@@ -63,15 +63,15 @@ Relational databases are one of the complex and advanced technologies that we ha
 \end{itemize}
 
 The main language that will support our back-end is \textbf{Python}. The choice for this language came very naturally since Python is one of the most used programming languages in the data science field along with others such as R or Java. We also choose Python for two other main reasons: first, we will be building data scrapper modules that need to simulate browser interactions.
- For that we will use \textbf{Selenium WebDriver} (\cite{documentation2013selenium}) for browser automation and interaction (with the complement of \textbf{PhantomJS}(\cite{hidayat2013phantomjs}), a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} (\cite{clark1999xml}) for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} that (\cite{hagberg2013networkx}), already presented in chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
-\indent For networking, to make our back-end services available through web \glspl{api}, we will use \textbf{flask} (\cite{ronacher2015flask}), a micro-framework for building simple networking applications in Python.
+ For that we will use \textbf{Selenium WebDriver} \citep{documentation2013selenium} for browser automation and interaction (with the complement of \textbf{PhantomJS}\citep{hidayat2013phantomjs}, a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} \citep{clark1999xml} for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} that \citep{hagberg2013networkx}, already presented in chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
+\indent For networking, to make our back-end services available through web \glspl{api}, we will use \textbf{flask} \citep{ronacher2015flask}, a micro-framework for building simple networking applications in Python.
 
 \subsection{Middleware technologies}
 \begin{itemize}
     \item \textbf{NodeJS};
 \end{itemize}
 
-Sometimes we just need something very specific to perform some networking middleware operations, for this purpose NodeJS (\cite{nodejs}) is an emerging technology
+Sometimes we just need something very specific to perform some networking middleware operations, for this purpose NodeJS \citep{nodejs} is an emerging technology
 that has been famous for performing well this kind of tasks. For bridging between our back-end and front-end we might need some small pieces that act
 as \textit{glue} between these two larger components, we will use NodeJS for that purpose.
 
@@ -84,8 +84,8 @@ as \textit{glue} between these two larger components, we will use NodeJS for tha
     \item \textbf{React};
 \end{itemize}
 
-Since we are building a web application, we automatically address to three main technologies that need no introduction, these are HTML, Javascript and CSS. In complement, we will use for our specific needs, that consist in building interactive graphs, a web data driven document representation system, \textbf{D3.js} (\cite{bostock2012d3}). In what concerns to visualization D3.js will be our main third party, that will bring us many features to help us on network representation and graph interaction \footnote{in our proof of concept we already used D3.js for rendering the network as we have demonstrated in Figure \ref{img:poc}}.
-In order to improve our application performance and also the development process, we choose a modern web library, React \cite{react}.
+Since we are building a web application, we automatically address to three main technologies that need no introduction, these are HTML, Javascript and CSS. In complement, we will use for our specific needs, that consist in building interactive graphs, a web data driven document representation system, \textbf{D3.js} \citep{bostock2012d3}. In what concerns to visualization D3.js will be our main third party, that will bring us many features to help us on network representation and graph interaction \footnote{in our proof of concept we already used D3.js for rendering the network as we have demonstrated in Figure \ref{img:poc}}.
+In order to improve our application performance and also the development process, we choose a modern web library, React \citep{react}.
 
 %% ---------------------------------------------- Implementation details
 \section{Implementation details}
@@ -128,7 +128,7 @@ We also add some threshold restriction to some values in order to not produce ex
 Given a data model and a set of restrictions we generate sets of contextualized data for a given \gls{osn} (in the previous examples, for Facebook).
 
 \subsection{Network metrics}
-As we mentioned already in this chapter (Section 7.2) we use networkx \cite{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
+As we mentioned already in this chapter (Section 7.2) we use networkx \citep{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
 \clearpage
 \lstinputlisting[language=java]{code/metrics_payload.js}
@@ -156,17 +156,17 @@ Next we present a simple generic client that is implemented in our aggregator in
 In the Section 7.4 we will explain the main workflow that takes place inside the service aggregator, and there more details about this component will be provided.
 
 \subsubsection{Middleware optimizations}
-Some optimizations were put in place considering that this is the main networking component, where more traffic flows. The considered optimizations consist in using an existent middleware third parties in order to mitigate high payload exchange (between front-end and aggregator, and also between aggregator and other micro services). We use the \textbf{compression} \cite{compression} middleware to achieve optimal payload compression levels.
+Some optimizations were put in place considering that this is the main networking component, where more traffic flows. The considered optimizations consist in using an existent middleware third parties in order to mitigate high payload exchange (between front-end and aggregator, and also between aggregator and other micro services). We use the \textbf{compression} \citep{compression} middleware to achieve optimal payload compression levels.
 
 \subsection{Front-end}
 
-Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that display an interactive network that is rendered using an open source component that we built, \textbf{react-d3-graph} \cite{reactd3graph} that we will explain in the following sections. Other relevant third parties that we use in our front end are the following:
+Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that display an interactive network that is rendered using an open source component that we built, \textbf{react-d3-graph} \citep{reactd3graph} that we will explain in the following sections. Other relevant third parties that we use in our front end are the following:
 
 \begin{itemize}
-    \item \textit{\textbf{react-redux}} (\cite{reactredux}) - redux architecture official bindings for React library. This eases the process of manage application state.
-    \item \textit{\textbf{axios}} (\cite{axios}) - a http client library that makes networking operations more straightforward.
-    \item \textit{\textbf{material-ui}} (\cite{materialui}) - a library that offers visual components with a pre established look and feel and some built in interactions.
-    \item \textit{\textbf{react-bootstrap}} (\cite{reactbootstrap}) - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
+    \item \textit{\textbf{react-redux}} \citep{reactredux} - redux architecture official bindings for React library. This eases the process of manage application state.
+    \item \textit{\textbf{axios}} \citep{axios} - a http client library that makes networking operations more straightforward.
+    \item \textit{\textbf{material-ui}} \citep{materialui} - a library that offers visual components with a pre established look and feel and some built in interactions.
+    \item \textit{\textbf{react-bootstrap}} \citep{reactbootstrap} - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
 \end{itemize}
 
 \subsubsection{Graph render and interaction component with react-d3-graph}
@@ -175,8 +175,8 @@ Our front-end is built using the react library as we have already mentioned, and
 \textit{"React component to build interactive and configurable graphs with d3 effortlessly"}
 \end{quote}
 
-From an end user perspective one of the most relevant and valuable aspects of a \gls{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph}\cite{reactd3graph}. This component allows us to focus only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation of react-d3-graph
-may be consulted on the web \cite{reactd3graph} \url{https://danielcaldas.github.io/react-d3-graph/docs/index.html}, also a live demo with the all the possible public configurations offered by react-d3-graph is also available in the web \url{https://danielcaldas.github.io/react-d3-graph/sandbox/index.html}.\\
+From an end user perspective one of the most relevant and valuable aspects of a \gls{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph}\citep{reactd3graph}. This component allows us to focus only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation of react-d3-graph
+may be consulted on the web \citep{reactd3graph} \url{https://danielcaldas.github.io/react-d3-graph/docs/index.html}, also a live demo with the all the possible public configurations offered by react-d3-graph is also available in the web \url{https://danielcaldas.github.io/react-d3-graph/sandbox/index.html}.\\
 With this development we will isolate all the visualization concerns leaving Socii with less work on this matter. Also Socii can wrap this component and use the available user actions to interact with the graph, and all the visual aspects such as nodes colors or text size may or may not be editable by a Socii user. Socii has the power to decide the level of granularity of user control upon graph configurations, but of course since we want a simple application we will leave to Socii how the network looks like exposing some basic interactions to the end user such as node click, zooming, mouse overing and drag and drop on all the network or upon a specific node.
 
 %% ---------------------------------------------- Main Workflows

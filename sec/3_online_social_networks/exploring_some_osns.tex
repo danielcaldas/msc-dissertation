@@ -74,9 +74,9 @@ Having this feature of groups, clustering users by they interests one may say th
 \subsubsection*{Facebook Graph \gls{api}}
 Facebook has today several software \textit{kits} for developers to interact with the platform in the most diversified and imaginable ways. Facebook developers
 offers a range of variated software products that vary from monetization programs, that focus on how to make users profit from Facebook, Analytics to developers who
-have their apps embedded in the Facebook platform understand their audience and the performance of their apps, etc. (\cite{fbproducts}).\\
+have their apps embedded in the Facebook platform understand their audience and the performance of their apps, etc. \citep{fbproducts}.\\
 \indent In this master's thesis context, the relevant software that Facebook has available is the Facebook Graph \gls{api}. This \gls{api} basically allows developers to collect information
-from Facebook such as posts, photos, videos, pages etc. According to \cite{fbgapi}, the common scenarios for using the Graph \gls{api}
+from Facebook such as posts, photos, videos, pages etc. According to \citep{fbgapi}, the common scenarios for using the Graph \gls{api}
 are the following: determine whether two people are friends on Facebook; publishing new status and updates, uploading content (photos, video etc.); sharing links. But in this project what we seek is
 build the most biggest and detailed network as possible, with analysis and visualization purposes in mind.\\
 \indent For building the network fetching users friends information is crucial, this was possible until Facebook Graph \gls{api} v2.0 (through the router \textit{/me/friends}), one could actually retrieve
@@ -92,14 +92,14 @@ this said, we need in the future to look up alternative paths to extract data fr
 \begin{quote}
 \textit{"Since the beginning, Kevin has focused on simplicity and inspiring creativity through solving problems with thoughtful
 product design. As a result, Instagram has become the home for visual storytelling for everyone from celebrities, newsrooms and
-brands, to teens, musicians and anyone with a creative passion."} \cite{instabout}
+brands, to teens, musicians and anyone with a creative passion."} \citep{instabout}
 \end{quote}
 
 Similarly to Facebook we are going to explore Instagram in the same way. Instagram was originally developed by Kevin Systrom and Mike Krieger, and launched in 2010, only
 for iPhone devices. Within a year Instagram was able to gather around 10 million of users. Later, in 2012 Facebook acquire Instagram for approximately 1 billion dollars.\\
 \indent As already mentioned in Table \ref{table:osns}, Instagram does not belong to the group of general purpose \glspl{osn}, instead, Instagram specially focused on photo
 and video sharing, building a global community that shares more than 95 million photos every day.\\
-\indent According to \cite{instabout}, since
+\indent According to \citep{instabout}, since
 the very beginning Instagram was a very simplistic platform, being this characteristic reflected on its domain model.
 
 \subsubsection*{Domain Model}
@@ -126,15 +126,15 @@ end points for programmatic publishing, and for network discovering, as far as c
 is more of interest. Instagram allows to get users, their relationships and also the media shared content (posts).\\
 \indent Similarly when exploring Facebook Graph \gls{api}, we now found also very intimidating restrictions for the purpose of this project,
 this restrictions include limited rate of 500 \gls{api} requests per hour, and end point specific limitations that allow only to
-perform 30 requests per hour to getting users' relationships data. (\cite{instadev})
+perform 30 requests per hour to getting users' relationships data. \citep{instadev}
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- LinkedIn
 \subsection{LinkedIn}
 
-Moving on to the next \gls{osn} we now have LinkedIn. According to \cite{linkabout}, LinkedIn was launched officially on May 5 of 2003, and by the end of
+Moving on to the next \gls{osn} we now have LinkedIn. According to \citep{linkabout}, LinkedIn was launched officially on May 5 of 2003, and by the end of
 that month, the network had already more than 4500 members. In 13 June of 2016 LinkedIn was acquired by Microsoft in an all-cash transaction valued at \$26.2
-billion (\cite{microlink}).\\
+billion \citep{microlink}.\\
 \indent LinkedIn is an \gls{osn} that has a very narrow purpose, which is
 connecting professionals around the globe to make them more productive and successful.
 
@@ -167,7 +167,7 @@ number of employees (giving the idea of the company dimension) and the area wher
 or by companies that their follow.
 
 \subsection*{LinkedIn \gls{api}}
-LinkedIn provides a REST \gls{api} (\cite{linkapi}), but still similarly to the \glspl{osn} we been studying its very limited. In what concerns to data retrieval LinkedIn only allows
+LinkedIn provides a REST \gls{api} \citep{linkapi}, but still similarly to the \glspl{osn} we been studying its very limited. In what concerns to data retrieval LinkedIn only allows
 the consult of basic profile data, this is the data retried from the LinkedIn interactive REST console:\\
 
 \begin{verbatim}
@@ -189,7 +189,7 @@ the consult of basic profile data, this is the data retried from the LinkedIn in
 
 \begin{quote}
 \textit{"Founded in 2008 by physicians Dr. Ijad Madisch and Dr. Sören Hofmayer, and computer scientist
-Horst Fickenscher, ResearchGate today has more than 11+ million members. We strive to help them make progress happen faster."} \cite{rgate}
+Horst Fickenscher, ResearchGate today has more than 11+ million members. We strive to help them make progress happen faster."} \citep{rgate}
 \end{quote}
 
 ResearchGate is an \gls{osn} built specifically for scientists, with the goal of easing the task of collaborative research around the globe. ResearchGate
@@ -236,7 +236,7 @@ Today ResearchGate does not provide any \gls{api} for accessing its data or for 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Pinterest
 \subsection{Pinterest}
-According to \cite{pintabout}, Pinterest \textbf{is the world's catalog of ideas}. Created by Ben Silbermann, Paul Sciarra and Evan Sharp and launched in 2010, Pinterest is a simple but yet very original \gls{osn}, instead of aiming for connecting people like Facebook or LinkedIn, it aims for inspire people through new ideas.
+According to \citep{pintabout}, Pinterest \textbf{is the world's catalog of ideas}. Created by Ben Silbermann, Paul Sciarra and Evan Sharp and launched in 2010, Pinterest is a simple but yet very original \gls{osn}, instead of aiming for connecting people like Facebook or LinkedIn, it aims for inspire people through new ideas.
 
 \clearpage
 
@@ -264,7 +264,7 @@ Pinterest introduces new concepts forming a very original \gls{osn}, because it'
 \indent Pinterest was the traditional concept of feed, but in this case, the feed represents a completely different concept compared to other \gls{osn}. First the content of the feed (pins) is not related with users we follow on the network, is instead related is our personal interests (\textit{InterestArea} box) and second, they are not presented according to a chronological order, and visually they do not follow the standards of typical timeline/feed design, instead the different pins displayed on some user's feed, form some kind of board or catalog, like the ones people use to hang in walls and pin post-its on it.
 
 \subsubsection*{Pinterest \gls{api}}
-According to \cite{pintdev}, Pinterest provides a REST \gls{api} for developers interact with the platform. The data restrictions follow Facebook politics, where the application that integrates Pinterest \gls{api} can only fetch data for authenticated users. Pinterest provides endpoints to interact with users, boards and pins. Concerning to the requests limitation, Pinterest offers a 60 minute sliding window where 1000 requests can be made by unique user token.
+According to \citep{pintdev}, Pinterest provides a REST \gls{api} for developers interact with the platform. The data restrictions follow Facebook politics, where the application that integrates Pinterest \gls{api} can only fetch data for authenticated users. Pinterest provides endpoints to interact with users, boards and pins. Concerning to the requests limitation, Pinterest offers a 60 minute sliding window where 1000 requests can be made by unique user token.
 
 %% ---------------------------------------------- Exploring Some OSNs
 %% -------------------------------------------------- Twitter
@@ -312,14 +312,14 @@ again this \gls{api} is very limited providing a 15 minutes window for making ht
 \label{sec:otherdatasources}
 As more and more of \gls{osn} appear to be closing doors to data availability even when for research purposes one may
 want to search for alternative data sources to feed the system that we intend to build along this project. Projects as
-KONECT (\cite{kunegis2013konect}) provide large data sets of networks collected online so that researchers may
+KONECT \citep{kunegis2013konect} provide large data sets of networks collected online so that researchers may
 perform all types of operations and experiments on that data. This kind of alternatives are very valuable in terms of network
 analysis even for real time data analysis systems that may in a more immature phase of the project benefit from this data sets.
 
 \begin{quote}
 \textit{"KONECT (the Koblenz Network Collection) is a project to collect large network datasets of all
 types in order to perform research in network science and related fields, collected by the Institute
-of Web Science and Technologies at the University of Koblenz–Landau."} \cite{kunegis2013konect}
+of Web Science and Technologies at the University of Koblenz–Landau."} \citep{kunegis2013konect}
 \end{quote}
 
 %% ---------------------------------------------- Exploring Some OSNs
