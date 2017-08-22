@@ -155,17 +155,17 @@ Next we present a simple generic client that is implemented in our aggregator in
 In the Section 7.4 we will explain the main workflow that takes place inside the service aggregator, and there more details about this component will be provided.
 
 \subsubsection{Middleware optimizations}
-Some optimizations were put in place considering that this is the main networking component, where more traffic flows. The considered optimizations consist in using an existent middleware third parties in order to mitigate high payload exchange (between front-end and aggregator, and also between aggregator and other micro services). We use the \textbf{compression} \citep{compression} middleware to achieve optimal payload compression levels.
+Some optimizations were put in place considering that this is the main networking component, where more traffic flows. The considered optimizations consist in using an existent middleware third parties in order to mitigate high payload exchange (between front-end and aggregator, and also between aggregator and other micro services). We use the \textbf{compression} \footnote{\url{https://github.com/expressjs/compression}} NodeJs middleware to achieve optimal payload compression levels.
 
 \subsection{Front-end}
 
 Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that display an interactive network that is rendered using an open source component that we built, \textbf{react-d3-graph} \citep{reactd3graph} that we will explain in the following sections. Other relevant third parties that we use in our front end are the following:
 
 \begin{itemize}
-    \item \textit{\textbf{react-redux}} \citep{reactredux} - redux architecture official bindings for React library. This eases the process of manage application state.
-    \item \textit{\textbf{axios}} \citep{axios} - a http client library that makes networking operations more straightforward.
-    \item \textit{\textbf{material-ui}} \citep{materialui} - a library that offers visual components with a pre established look and feel and some built in interactions.
-    \item \textit{\textbf{react-bootstrap}} \citep{reactbootstrap} - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
+    \item \textit{\textbf{react-redux}}\footnote{Official React bindings for Redux \url{https://github.com/reactjs/react-redux}} - redux architecture official bindings for React library. This eases the process of manage application state.
+    \item \textit{\textbf{axios}}\footnote{Promise based HTTP client for the browser and node.js \url{https://github.com/mzabriskie/axios}} - a http client library that makes networking operations more straightforward.
+    \item \textit{\textbf{material-ui}} \footnote{React Components that Implement Google's Material Design \url{http://www.material-ui.com}} - a library that offers visual components with a pre established look and feel and some built in interactions.
+    \item \textit{\textbf{react-bootstrap}} \footnote{Bootstrap 3 components built with React \url{https://react-bootstrap.github.io/}} - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
 \end{itemize}
 
 \subsubsection{Graph render and interaction component with react-d3-graph}

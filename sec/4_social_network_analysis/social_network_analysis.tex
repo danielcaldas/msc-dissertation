@@ -67,12 +67,12 @@ Closeness centrality tells us how close an actor is to all the other actors in t
 \indent This metric is considered a sophisticated measure of centrality in network theory. It is defined as the mean geodesic distance
 (i.e., the shortest path) between a certain vertex \textit{v} and all other vertices reachable from it. This concept is normally associated to
 geographic distances, being actors closeness mapped to reality. Still there are abstractions that compute
-this value not considering nodes as geodesic markers \citep{politaktivsna}.
+this value not considering nodes as geodesic markers \footnote{Social Network Analysis - Theory and Applications: \url{https://www.politaktiv.org/documents/10157/29141/SocNet_TheoryApp.pdf}}.
 
 \subsubsection*{Betweenness Centrality}
 This measure reflects the number number of shortest paths going through a particular actor. \textbf{Nodes that
 occur in many shortest paths} between other nodes in the network have a higher betweenness centrality, basically
-takes into account the connectivity of the nodes' neighbors, giving a \textbf{higher value for nodes which bridge clusters} \citep{politaktivsna}.
+takes into account the connectivity of the nodes' neighbors, giving a \textbf{higher value for nodes which bridge clusters} \footnotemark[2].
 
 \subsubsection*{Eigenvector Centrality}
 This measure is based on the following statement:
@@ -81,7 +81,7 @@ This measure is based on the following statement:
 \textbf{\textit{"Importance of a node depends on the importance of its neighbors."}}
 \end{quote}
 
-Eigenvector centrality \citep{politaktivsna} measures importance of a node within a network. This measure assigns relative scores to all nodes, then if
+Eigenvector centrality \footnotemark[2] measures importance of a node within a network. This measure assigns relative scores to all nodes, then if
 a node is connected to a \textit{high scored} node it has a bigger increment to its score then when connected to a \textit{low scored} node.
 One of the most famous variants of eigenvector centrality is the Google's PageRank algorithm \citep{brin1998anatomy}.
 
