@@ -1,15 +1,15 @@
 In this chapter we will present the results of the implementation of the requirements previously specified. As we previously mentioned we
-choose a set of requirements (among a big list of possibilities) that would allows us to have a tool with the most relevant and core functionalities
+choose a set of requirements (among a big list of possibilities) that would allow us to have a tool with the most relevant and core functionalities
 in order to prove our hypothesis of building a web based \glspl{sna} tool.\\
-\indent Along the chapter we will not only list results but show them as well: in some of the following sections we present a set of Socii images that depict the implemented functionalities and how to use them. Then, we present a case study, were we analyze a real network and derive some different conclusions that well demonstrate some of the use cases of Socii.\\
+\indent Along the chapter we will not only list the system outputs (considered the project outcomes) but we will also illustrate them; in some of the following sections we present a set of Socii images that depict the implemented functionalities and how to use them. Then, we present a case study, concerned with the analysis of a real network that enabled us to draw some different conclusions that demonstrate well some of the use cases of Socii defined previously.\\
 
 \indent As the development of the tool depended on the \glspl{osn} integration and real data analysis, we had to somehow manage to fed real data sets into
 Socii. The way we achieve this was not a totally automatic process, we used the crawler modules and extraction \glspl{api} explained in chapter 5 and 6, to extract real data sets into a local filesystem, and then with a migration script we pointed to the production MongoDB instance in order to store the real data so that Socii aggregator component could get the real data. To improve data feeding interoperability we have two functionalities working side by side, the user may choose to analyze a real network (previously extracted by the mentioned process) or the user may choose to generate a network with data from our generators module.\\
 
 \indent The following table summarizes the features that were implemented on Socii. All the "\textbf{MUST}" requirements were implemented
 and two additional "\textbf{SHOULD}" requirements were also implemented since they were almost cost free once we had the
-component react-d3-graph in a more advanced stage. As mean of summarization we will present a table concisely points to
-each requirement with the proper reference that we created in chapter 6.
+component react-d3-graph in a more advanced stage. To sum up, we will present a concise table that points to
+each requirement with the proper reference created in chapter 6.
 
 \begin{table}[H]
 \renewcommand{\tabcolsep}{2pt}
@@ -63,8 +63,7 @@ each requirement with the proper reference that we created in chapter 6.
 \caption{\label{table:featuresocii} Summarization of Socii features.}
 \end{table}
 
-In Table \ref{table:featuresocii} we present a list of the implemented requirements, these refer to the requirements in chapter 6. All the requirements are \textbf{MUST} requirements unless otherwise is stated.
-
+In Table \ref{table:featuresocii} we present the actual list of implemented requirements, taking into account the requirements introduced in chapter 6. All the requirements are \textbf{MUST} requirements unless otherwise stated.
 
 %% ---------------------------------------------- Socii - final aspect and functionalities
 \section{Socii - final aspect and functionalities}
@@ -115,9 +114,9 @@ The network visualization are is the main area of Socii tool, here is where the 
 \begin{figure}[h!]
 \begin{center}
   \hspace*{-0.8in}
-  \includegraphics[width=1.2\textwidth]{img/socii/socii_3.png}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_4.png}
 \end{center}
-\caption{\label{img:socii_4} Dialog containing toolbar help information. At the bottom the toolbar.}
+\caption{\label{img:socii_4} Dialog containing toolbar help information.}
 \end{figure}
 
 In this particular section we will only focus on the toolbar and on the functionality that this application component offers. As we can see in Figure \ref{img:socii_4}, we may observe an explanation of each icon present on the toolbar, this pop up descriptive dialog appears when the information icon (last icon counting from the left) is pressed, this will allow us to keep the toolbar clean (not having to render descriptions or labels at the side of the symbols) having only the toolbar with the icons and no additional descriptive content.\\
@@ -135,6 +134,7 @@ In this particular section we will only focus on the toolbar and on the function
 
 \indent After this actions/icons section the toolbar presents some global metadata about the rendered network. This information consists in: the \gls{osn} name, the number of rendered nodes and links and some global metrics such as average clustering coefficient and average node degree.
 
+\clearpage
 \subsubsection{Node Discovery}
 
 \begin{figure}[h!]
@@ -231,9 +231,10 @@ As we can see in Figure \ref{img:socii_10} one may select among a variety of Fac
 
 \indent After choosing the page from the dropdown in Figure \ref{img:socii_10} we may see that the user is prompted with a color palette and a color input field. The user may either pick an already available color, or he may choose instead to insert the color code directly in the input field.
 
-\indent Next after the user performs the previous two steps and clicks in the \textbf{"OK"} button the nodes in the network are coloring accordingly, a \textcolor{red}{red} label (\textit{chip} visual element) appears on the top left corner of the network visualization area so that the user knows what the color represents. In the specific case of Figure \ref{img:socii_11} all the \textcolor{red}{red} nodes \textit{like} the \textbf{SyfyPT} Facebook page \footnote{Aside note: if one wants actually to access the Facebook page one just needs to navigate into \url{https://facebook.com/SyfyPT}, if we have a open Facebook session the page will open in our browser}.
+\indent Next after the user performs the previous two steps and clicks in the \textbf{"OK"} button the nodes in the network are coloring accordingly, a \textcolor{red}{red} label (\textit{chip} visual element) appears on the top left corner of the network visualization area so that the user knows what the color represents. In the specific case of Figure \ref{img:socii_11} all the \textcolor{red}{red} nodes represent Facebook users that \textit{like} the \textbf{SyfyPT} Facebook page \footnote{Aside note: if one wants actually to access the Facebook page one just needs to navigate into \url{https://facebook.com/SyfyPT}, if we have a open Facebook session the page will open in our browser}.
 
 %% ---------------------------------------------- Case Study
+\newpage
 \section{Case Study}
 Now that we exhaustively presented all Socii features, we will present how we can use them and derive some conclusions from network observation and analysis.\\
 \indent As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present a real case study with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For this case study we use a real account and extract information from Facebook using the respective web crawler module that was developed initially as a back-end requirement to allow extraction on the fly. However, that not being possible by the mentioned reasons, we use it a mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that, besides being able to generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case study data)\footnote{Since the data is real some of the images in the following sections may have hidden content in order to maintain anonymity of data. If no data is hidden then all the data in the image is false, it is provided by the generator component.}.
