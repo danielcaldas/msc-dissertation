@@ -19,7 +19,7 @@ each requirement with the proper reference created in chapter 6.
 \hline
 6.3.2, 1 & Socci login & \ding{51}\\
 \hline
-6.3.2, 2 & Order network build (extraction simulation) & \ding{51}\\
+6.3.2, 2 & Order network build & \ding{51}\\
 \hline
 6.3.2, 3 & Extraction feedback & \ding{51}\\
 \hline
@@ -197,15 +197,7 @@ In Figure \ref{img:socii_8} we may observe how the user may choose to color the 
     \item \textbf{Users with the same name} - users with the same name will have the same color.
 \end{itemize}
 
-\begin{figure}[h!]
-\begin{center}
-  \hspace*{-0.8in}
-  \includegraphics[width=1.2\textwidth]{img/socii/socii_8.png}
-\end{center}
-\caption{\label{img:socii_9} Community detection: \textbf{"Where the user lives?"}.}
-\end{figure}
-
-In Figure \ref{img:socii_9} we may observe the result of having detected individuals with the same place of birth.
+In Figure \ref{img:socii_8} we may observe the result of having detected individuals with the same place of birth.
 
 \subsubsection*{Community by Facebook page likes}
 
@@ -216,20 +208,28 @@ By coloring individuals by a specific Facebook page like we can track users pref
   \hspace*{-0.8in}
   \includegraphics[width=1.2\textwidth]{img/socii/socii_9.png}
 \end{center}
-\caption{\label{img:socii_10} Community detection for Facebook page likes. \textit{SyfyPT} is a Facebook page.}
+\caption{\label{img:socii_9} Community detection for Facebook page likes. \textit{SyfyPT} is a Facebook page.}
 \end{figure}
 
-As we can see in Figure \ref{img:socii_10} one may select among a variety of Facebook pages, note that after each page id we have the number of Facebook likes within the all network.
+As we can see in Figure \ref{img:socii_9} one may select among a variety of Facebook pages, note that after each page id we have the number of Facebook likes within the all network.
 
 \begin{figure}[h!]
 \begin{center}
   \hspace*{-0.8in}
   \includegraphics[width=1.2\textwidth]{img/socii/socii_10.png}
 \end{center}
-\caption{\label{img:socii_11} Community detection for Facebook page likes. Picking a color.}
+\caption{\label{img:socii_10} Community detection for Facebook page likes. Picking a color.}
 \end{figure}
 
-\indent After choosing the page from the dropdown in Figure \ref{img:socii_10} we may see that the user is prompted with a color palette and a color input field. The user may either pick an already available color, or he may choose instead to insert the color code directly in the input field.
+\begin{figure}[h!]
+\begin{center}
+  \hspace*{-0.8in}
+  \includegraphics[width=1.2\textwidth]{img/socii/socii_11.png}
+\end{center}
+\caption{\label{img:socii_11} Colored nodes \textit{like} the Facebook Syfy page.}
+\end{figure}
+
+\indent After choosing the page from the dropdown in Figure \ref{img:socii_9} we may see that the user is prompted with a color palette and a color input field. The user may either pick an already available color, or he may choose instead to insert the color code directly in the input field (Figure \ref{img:socii_10}).
 
 \indent Next after the user performs the previous two steps and clicks in the \textbf{"OK"} button the nodes in the network are coloring accordingly, a \textcolor{red}{red} label (\textit{chip} visual element) appears on the top left corner of the network visualization area so that the user knows what the color represents. In the specific case of Figure \ref{img:socii_11} all the \textcolor{red}{red} nodes represent Facebook users that \textit{like} the \textbf{SyfyPT} Facebook page \footnote{Aside note: if one wants actually to access the Facebook page one just needs to navigate into \url{https://facebook.com/SyfyPT}, if we have a open Facebook session the page will open in our browser}.
 
