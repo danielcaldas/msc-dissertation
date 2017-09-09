@@ -40,7 +40,7 @@ In this section we will make a high level comparison between the software tools 
 \hline
 \textbf{UCINET} & Desktop & High & Very Good & Yes & No & No\\
 \hline
-\textbf{SocNetV} & Desktop & Low & Medium & Yes & No\footnote{SocNetV has a feature that allows the user to launch a \textit{web spider} that navigates through web sites building a network representative of the links between the sites, but the \textit{spider} is not content aware, it blindly builds a network without context} & No\\
+\textbf{SocNetV} & Desktop & Low & Medium & Yes & No\footnotemark{}\addtocounter{footnote}{-1} & No\\
 \hline
 \textbf{\begin{tabular}{@{}c@{}}Our system\\projections\end{tabular}} & Web & Low & Low & No & Yes & Yes\\
 \hline
@@ -48,7 +48,7 @@ In this section we will make a high level comparison between the software tools 
 \caption{\label{table:toolscompare} Software tools comparison and our system positioning.}
 \end{table}
 
-As we can observe in Table \ref{table:toolscompare} our system has essentially three differential factors, that are: web availability; \glspl{osn} integration; contextual analysis; being the trade off for such gains the system performance. When describing our system compared to the other tools we want to be able to have a web tool that has a complexity level similar to SocNetV.
+As we can observe in Table \ref{table:toolscompare} our system has essentially three differential factors, that are: web availability; \glspl{osn} integration; contextual analysis; being the trade off for such gains the system performance. When describing our system compared to the other tools we want to be able to have a web tool that has a complexity level similar to SocNetV\footnote{\label{socnetv-footnote}SocNetV has a feature that allows the user to launch a \textit{web spider} that navigates through web sites building a network representative of the links between the sites, but the \textit{spider} is not content aware, it blindly builds a network without context.}.
 
 \section{System Architecture}
 
