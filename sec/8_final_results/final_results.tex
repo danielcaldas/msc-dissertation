@@ -1,5 +1,4 @@
-In this Chapter we will present the results of the implementation of the requirements previously specified. As we previously mentioned we
-choose a set of requirements (among a big list of possibilities) that would allow us to have a tool with the most relevant and core functionalities
+In this Chapter we will present the results of the implementation of the requirements previously specified. As we previously mentioned we chose a set of requirements (among a big list of possibilities) that would allow us to have a tool with the most relevant and core functionalities
 in order to prove our hypothesis of building a web-based \glspl{sna} tool.\\
 \indent Along the Chapter we will not only list the system outputs (considered the project outcomes) but we will also illustrate them; in some of the following sections we present a set of Socii images that depict the implemented functionalities and how to use them. Then, we present some case studies, concerned with the analysis of a real network that enabled us to draw some different conclusions that demonstrate well some of the use cases of Socii defined previously.\\
 
@@ -107,7 +106,7 @@ In Figure \ref{img:socii_2} Facebook configuration card is expanded and here we 
 \caption{\label{img:socii_3} Network visualization area.}
 \end{figure}
 
-The network visualization are is the main area of Socii tool, here is where the user will actually be able to visualize and analyze a given social structure for a certain \gls{osn}. As we may observe in Figure \ref{img:socii_3}, we still have the app header where the user can logout at any time, below we have a large area where the network is rendered. At the bottom of the page we have the toolbar that contains among others, that will be explain latter with greater detail, main graph interactions such as pause animations or show/hide nodes labels.
+The network visualization area is the main area of Socii tool, here is where the user will actually be able to visualize and analyze a given social structure for a certain \gls{osn}. As we may observe in Figure \ref{img:socii_3}, we still have the app header where the user can logout at any time, below we have a large area where the network is rendered. At the bottom of the page we have the toolbar that contains among others, that will be explain latter with greater detail, main graph interactions such as pause animations or show/hide nodes labels.
 
 \subsubsection{Toolbar}
 
@@ -145,7 +144,7 @@ In this particular section we will only focus on the toolbar and on the function
 \caption{\label{img:socii_5} Node discovery feature.}
 \end{figure}
 
-Node discover allows us to stand out some nodes upon the rest of the network. When we mouse over some node, the selected node and its 1st and 2nd degree connections, as we can see in the example provided in the Figure \ref{img:socii_5}.
+Node discover allows us to stand out some nodes upon the rest of the network. When we mouse over some node, the selected node and its 1st and 2nd degree connections are highlighted, as we can see in the example provided in the Figure \ref{img:socii_5}.
 
 \subsubsection{Node Details}
 
@@ -157,7 +156,7 @@ Node discover allows us to stand out some nodes upon the rest of the network. Wh
 \caption{\label{img:socii_6} Node details panel opens on the right side of the screen.}
 \end{figure}
 
-When clicking on some network node a right side panel will slide and display all that node information, includes the computed \gls{sna} requested metrics and the \gls{osn} data that appears in a more fashionable way.
+When clicking on some network node a right side panel will slide and display all that node information, including the computed \gls{sna} requested metrics and the \gls{osn} data that appears in a more fashionable way.
 
 \subsubsection{Node Comparison}
 
@@ -175,7 +174,7 @@ When activating node comparison functionality the user is able to compare two di
 \subsubsection{Community Detection}
 
 This feature is one of the most crucial because it allows us to intercept individuals properties/attributes and intercept them at a large scale.\\
-\indent Community detection functionality allows users for coloring the network according to some individuals \gls{osn} specific data property such as \textit{where the users live} or \textit{what the are the users gender}, allowing us to perceive community patterns and identify communities based on a certain assumption. Also we made available a special property that allows users to be colored in terms of what Facebook pages they have liked.
+\indent Community detection functionality allows users to color the network according to some individuals \gls{osn} specific data property such as \textit{where the users live} or \textit{what the are the users gender}, allowing us to perceive community patterns and identify communities based on a certain assumption. Also we made available a special property that allows users to be colored in terms of what Facebook pages they have liked.
 
 \subsubsection*{Community detection by user properties}
 
@@ -201,7 +200,7 @@ In Figure \ref{img:socii_8} we may observe the result of having detected individ
 
 \subsubsection*{Community by Facebook page likes}
 
-By coloring individuals by a specific Facebook page like we can track users preferences within the network, this preferences can be anything (sports, Hollywood stars, food, shoes brand, tv channels, musics etc.).
+By coloring individuals by a specific Facebook page like we can track users preferences within the network, this preferences can be anything (sports, Hollywood stars, food, shoes brand, tv channels, musics, etc.).
 
 \begin{figure}[h!]
 \begin{center}
@@ -237,7 +236,7 @@ As we can see in Figure \ref{img:socii_9} one may select among a variety of Face
 \newpage
 \section{Case Studies}
 Now that we exhaustively presented all Socii features, we will present how we can use them and derive some conclusions from network observation and analysis.\\
-\indent As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present some real case studies with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For these case studies we use a real account and extract information from Facebook using the respective web crawler module that was developed initially as a back-end requirement to allow extraction on the fly. However, that not being possible by the mentioned reasons, we use it a mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that, besides being able to generating \glspl{osn} networks as normal users, the whitelisted users will also have available an option to consult a predefined network that is built on the fly with already stored data (the case studies data)\footnote{Since the data is real some of the images in the following sections may have hidden content in order to maintain anonymity of data. If no data is hidden then all the data in the image is false, it is provided by the generator component.}.
+\indent As we mentioned Socii uses generators to build a network for a given \gls{osn} with a specific required number of nodes. In this section we present some real case studies with real data in order to prove the accuracy of conclusions that Socii provides in a real context. For these case studies we use a real account and extract information from Facebook using the respective web crawler module that was developed initially as a back-end requirement to allow extraction on the fly. However, that not being possible by the mentioned reasons, we use it as a mean to obtain a real data set that we inject in Socii and associate to a whitelisted Socii account that, besides being able to generating \glspl{osn} networks as normal users. Also, a real data set is also available as an option to consult a predefined network that is built on the fly with already stored users (the case studies data)\footnote{Since the data is real some of the images in the following sections may have hidden content in order to maintain anonymity of data. If no data is hidden then all the data in the image is false, it is provided by the generator component.}.
 
 \subsubsection{Detecting active and influent Facebook users}
 
@@ -249,7 +248,7 @@ Now that we exhaustively presented all Socii features, we will present how we ca
     \item Turn on node comparison.
     \item Compare the previous group of central nodes and choose the one that has the highest eigenvector centrality
     and betweenness centrality and highest average Facebook reactions per post.
-    \item If the previously steps lead to a specific node we may conclude that we found the most active and influent user in our network. Active because he simply posts with a certain frequency. Influent because of the \textbf{interception} of \textbf{\gls{sna} metrics} that lead us to a specific individual and \textbf{\gls{osn} Facebook specific data} that tells us that this particular user is socially (online) active and has a significat impact on other users since they react to its posts.
+    \item If the previously steps led to a specific node we may conclude that we found the most active and influent user in our network. Active because he simply posts with a certain frequency. Influent because of the \textbf{interception} of \textbf{\gls{sna} metrics} that leads us to a specific individual and \textbf{\gls{osn} Facebook specific data} that tells us that this particular user is socially (online) active and has a significat impact on other users since they react to his posts.
     %SOLUTION: Maria Granja, Cluster de Amarante (com ligações a Braga), substituír nomes concretos por letras!!! Todos os dados dever ser incógnitas
 \end{enumerate}
 
@@ -278,7 +277,7 @@ A real example within the case studies. Study community preferences.
     \item Stop the network.
     \item Rearrange the network to better suite visualization needs. For that one may use features such as network drag and drop, network zooming, and node drag and drop.
     \item Turn on node discovery (optionally turn on node labels);
-    \item Open community detection dialog and find the marketing target (this is a Facebook page, it may be a brand a tv channel etc.);
+    \item Open community detection dialog and find the marketing target (this is a Facebook page, it may be a brand, a tv channel, etc.);
     \item Color the nodes that like this certain marketing target;
     \item Within the colored nodes find the most active and influent (we explained how to obtain these nodes in the previous section).
 \end{enumerate}
@@ -318,5 +317,5 @@ As we did previously with Facebook page likes and other node coloring strategies
 \caption{\label{img:socii_16} LinkedIn community detection by professional skill.}
 \end{figure}
 
-\indent By picking the community detection in a LinkedIn network we are prompted with a very similar pop up configuration menu to Facebook networks. Here we can pick a particular skill (professional competence) and a color to paint all the nodes in the network that posses that particular skill.\\
+\indent By picking the community detection in a LinkedIn network we are prompted with a very similar pop up configuration menu to Facebook networks. Here we can pick a particular skill (professional competence) and a color to paint all the nodes in the network that possess that particular skill.\\
 \indent As we may observe in Figure \ref{img:socii_16} we may now apply some of Socii previous demonstrated features to choose a particular individual for a suitable position based on either his LinkedIn profile information and/or some \gls{osn} metrics also offered by Socii. We then may use node comparison to compare a candidate to another one by some other parameters.
