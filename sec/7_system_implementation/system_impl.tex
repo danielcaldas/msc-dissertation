@@ -1,4 +1,4 @@
-In this Chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that better suite our needs, we will then present our technological choices based on this first proof of concept.
+In this Chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that best suite our needs, we will then present our technological choices based on this first proof of concept.\\
 \indent In the next parts of the Chapter, we will detail more on each component of our system from the extraction component to the front-end of Socii. We will also present at the end of the Chapter some of the main workflows within Socii and how all the components interact between them in order to produce a certain outcome.
 
 %% ---------------------------------------------- Implementation first steps
@@ -27,8 +27,7 @@ of concept we labeled this components as complements (this may be seen as add on
 project to life).\\
 
 \subsection{Proof of concept results}
-\indent The previously listed steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are
-the best tools and technologies that better suite the project requirements.\\
+\indent The previously listed steps prove that the designed architecture produces the expected results, furthermore we also conclude in an empiric way what are the best tools and technologies that better suite the project requirements.\\
 
 \begin{figure}[h!]
 \begin{center}
@@ -49,7 +48,7 @@ Having the requirements been defined and a small proof of concept been developed
     \item \textbf{MongoDB}.
 \end{itemize}
 
-Relational databases are one of the complex and advanced technologies that we have today. We have been building our applications on top of these technologies with very strict rules that allow our data to remain coherent through applications lifetimes. Databases engines such as MySQL, PostgreSQL and SQL Server are good live examples of the relevance of these technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that better allow us to store unstructured data or store data in a non relational way.\\
+Relational databases are one of the complex and advanced technologies that we have today. We have been building our applications on top of these technologies with very strict rules that allow our data to remain coherent through applications lifetimes. Databases engines such as MySQL, PostgreSQL and SQL Server are good live examples of the relevance of these technologies. Meanwhile, applications have grown not just in size but also in complexity, the \textit{web era} came, and with it the need for tools that allow us to manage unstructured data. Other alternatives to relational databases have emerged, today known as \textbf{non relational databases} (also known as NoSQL databases). These are database engines that allow us to store unstructured data or store data in a non relational way.\\
 \indent We use \textbf{MongoDB} \citep{mongodb} (a document oriented database) to store data, this gives us more flexibility in manipulating complex JSON structures that are persisted in documents. These flexibility and interoperability would be considerably more complex to achieve using relational databases.
 
 \subsection{Back-end technologies}
@@ -63,7 +62,7 @@ Relational databases are one of the complex and advanced technologies that we ha
 \end{itemize}
 
 The main language that will support our back-end is \textbf{Python}. The choice for this language came very naturally since Python is one of the most used programming languages in the data science field along with others such as R or Java. We also choose Python for two other main reasons: first, we will be building data scrapper modules that need to simulate browser interactions.
- For that we will use \textbf{Selenium WebDriver} \citep{documentation2013selenium} for browser automation and interaction (with the complement of \textbf{PhantomJS}\citep{hidayat2013phantomjs}, a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} \citep{clark1999xml} for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} that \citep{hagberg2013networkx}, already presented in Chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
+ For that we will use \textbf{Selenium WebDriver} \citep{documentation2013selenium} for browser automation and interaction (with the complement of \textbf{PhantomJS} \citep{hidayat2013phantomjs}, a headless browser with a Javascript API), and Python integrates very naturally with these technologies, along side with \textbf{XPath} \citep{clark1999xml} for querying HTML pages and narrow extraction to the essentials; second because \textbf{networkx} \citep{hagberg2013networkx} that, already presented in Chapter 4, is written in Python and is a Python module. networkx is the most popular and powerful library that offers a large range of metrics and algorithms to run against graphs that come \textit{out of the box}.\\
 \indent For networking, to make our back-end services available through web \glspl{api}, we will use \textbf{flask} \citep{ronacher2015flask}, a micro-framework for building simple networking applications in Python.
 
 \subsection{Middleware technologies}
@@ -117,7 +116,7 @@ Here we see some helper functions where the names are sufficiently explicit in o
 
 \subsection{Network generator}
 
-Network generator is a very purpose-oriented piece of software is this architecture. Its only goal is to produce data sets (users) for a given \gls{osn}. This component is implemented in \textit{Node JS} and it uses faker \citep{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for Facebook data generator.
+Network generator is a very purpose-oriented piece of software in this architecture. Its only goal is to produce data sets (users) for a given \gls{osn}. This component is implemented in \textit{Node JS} and it uses faker \citep{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for Facebook data generator.
 
 \lstinputlisting[language=java]{code/fb_schema.js}
 
@@ -141,7 +140,7 @@ Next we present the piece of code responsible for receiving such request and bri
 
 \lstinputlisting[language=Python]{code/metrics_api.py}
 
-An then we simply observe what are the requested metrics and build a response that is divided into two metrics groups. \textbf{Node} metrics are node specific, meaning that we will have this metric value for each node; other metrics are global, these are metrics that concern to the network as a global entity (e.g. network clustering coefficient). The next presented method is called one time per metric.
+Then we simply observe what are the requested metrics and build a response that is divided into two metrics groups. \textbf{Node} metrics are node specific, meaning that we will have this metric value for each node; other metrics are global, these are metrics that concern to the network as a global entity (e.g. network clustering coefficient). The next presented method is called one time per metric.
 
 \lstinputlisting[language=Python]{code/nx_interface.py}
 
@@ -159,11 +158,11 @@ Some optimizations were put in place considering that this is the main networkin
 
 \subsection{Front-end}
 
-Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that display an interactive network that is rendered using an open source component that we built, \textbf{react-d3-graph} \citep{reactd3graph} that we will explain in the following sections. Other relevant third parties that we use in our front end are the following:
+Our front-end is built using the react library as we have already mentioned, and the main component of the application consists on a visualization dashboard that displays an interactive network that is rendered using an open source component that we have built, \textbf{react-d3-graph} \citep{reactd3graph} that will be explained in the following sections. Other relevant third parties that we use in our front end are the following:
 
 \begin{itemize}
     \item \textit{\textbf{react-redux}}\footnote{Official React bindings for Redux \url{https://github.com/reactjs/react-redux}} - redux architecture official bindings for React library. This eases the process of manage application state.
-    \item \textit{\textbf{axios}}\footnote{Promise based HTTP client for the browser and node.js \url{https://github.com/mzabriskie/axios}} - a http client library that makes networking operations more straightforward.
+    \item \textit{\textbf{axios}}\footnote{Promise based HTTP client for the browser and node.js \url{https://github.com/mzabriskie/axios}} - an HTTP client library that makes networking operations more straightforward.
     \item \textit{\textbf{material-ui}} \footnote{React Components that Implement Google's Material Design \url{http://www.material-ui.com}} - a library that offers visual components with a pre established look and feel and some built in interactions.
     \item \textit{\textbf{react-bootstrap}} \footnote{Bootstrap 3 components built with React \url{https://react-bootstrap.github.io/}} - a complement to the previous library, this one offers also some visual components like overlays and tooltips.
 \end{itemize}
@@ -174,14 +173,14 @@ Our front-end is built using the react library as we have already mentioned, and
 \textit{"React component to build interactive and configurable graphs with d3 effortlessly"}
 \end{quote}
 
-From an end user perspective one of the most relevant and valuable aspects of a \gls{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph} \citep{reactd3graph}. This component allows us to focus only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation \footnote{\url{https://danielcaldas.github.io/react-d3-graph/docs/index.html}} of react-d3-graph
+From an end user perspective the most relevant and valuable aspects of a \gls{sna} tool are powerful network interactions and clean visualization (and by clean we mean perceptible). In order to achieve this in Socii our efforts were directed into a generic, reusable and configurable software: \textbf{react-d3-graph} \citep{reactd3graph}. This component allows us to focus only on the visualization features and in how we want to represent and interact with our network (graph). This component is built on top of the react library and creates configurable abstractions upon D3.js. All the detailed documentation \footnote{\url{https://danielcaldas.github.io/react-d3-graph/docs/index.html}} of react-d3-graph
 may be consulted on the web, also a live demo\footnote{\url{https://danielcaldas.github.io/react-d3-graph/sandbox/index.html}} with the all the possible public configurations offered by react-d3-graph is also available.\\
 With this development we will isolate all the visualization concerns leaving Socii with less work on this matter. Also Socii can wrap this component and use the available user actions to interact with the graph, and all the visual aspects such as nodes colors or text size may or may not be editable by a Socii user. Socii has the power to decide the level of granularity of user control upon graph configurations, but of course since we want a simple application we will leave to Socii how the network looks like exposing some basic interactions to the end user such as node click, zooming, mouse overing and drag and drop on all the network or upon a specific node.
 
 %% ---------------------------------------------- Main Workflows
 \section{Main Workflows}
 
-In this section we describe two of our main workflows within Socii tool. The first and most relevant workflow is the network aggregation and rendering that has within its main intervenient the aggregator. Next sections clarify more the role of this aggregator. Then we will present a front-end only interaction that consists in coloring nodes with given properties.
+In this section we describe two of our main workflows within Socii tool. The first and most relevant workflow is the network aggregation and rendering that has within its main intervenient the aggregator. Next sections clarify the role of this aggregator. Then we will present a front-end only interaction that consists in coloring nodes with given properties.
 
 \subsubsection{Network Aggregation and Rendering}
 
@@ -199,7 +198,7 @@ In the diagram of Figure \ref{img:sociisd}, one may observe what happens since t
 
 \subsubsection{Community detection with node coloring by property}
 
-In this case we present a more simple workflow that happens only on the front-end. The community detection is a module that allows the user to paint nodes that have some property in common. For example, lets say we want to color our network according to where the users live, we will have to associate a unique color per city and then map this colors to the nodes painting each node with the color that corresponds to the corresponding user's city. This algorithm is generic so we can reproduce the same of other properties such as birthday, name or gender.
+In this case we present a more simple workflow that happens only on the front-end. The community detection is a module that allows the user to paint nodes that have some property in common. For example, lets say we want to color our network according to where the users live, we will have to associate a unique color per city and then map these colors to the nodes painting each node with the color that corresponds to the corresponding user's city. This algorithm is generic so we can reproduce the same of other properties such as birthday, name or gender.
 
 \begin{figure}[h!]
 \begin{center}
