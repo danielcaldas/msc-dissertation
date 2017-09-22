@@ -13,7 +13,7 @@ Each web crawler (or extraction module) must fulfill common requirements that ar
     \item Web crawlers should be able to output a predefined (agreed and formally defined in the next section) data schema, covering eventual
     exceptions due to privacy limitations;
     \item Web crawlers must be able to perform user extraction with second order depth, from the user entry point perspective (this means that we want to extract user's friends and friends of friends information);
-    \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying the scope of extraction as specified from the outside (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
+    \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying the scope of extraction as specified (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
     \item Extraction modules must be available to the data miner through a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible through a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
     \begin{itemize}
         \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that \gls{api} is up and ready for receiving requests;
@@ -45,7 +45,7 @@ Below are the extraction manager requirements \footnote{Again, these requirement
 \end{figure}
 
 Being listed above the requirements for each component we will now draw the specification of what is the expected workflow for data extraction, in Figure \ref{img:extpipeline} we design a pipeline that tries to reflect, with maximum detail, the listed requirements. The diagram does not cover the data mining process that is responsible for normalizing data and store it. This diagram is exclusively focused on how we pretend that data extraction is achieved in order to mitigate the slowness of web crawlers.\\
-\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts file that describes the resources available for extractions, this is intended to be simply a list of hosts (ip addresses) that have the extraction web \gls{api} running and awaiting for extraction requests.\\
+\indent As we can see from Figure \ref{img:extpipeline} we aim to follow a very straight forward process in order to extract information. First we provide an entry point for a given \glspl{osn} (the user the web crawlers will use to log in into the social platform), and a hosts file that describes the resources available for extractions, this is intended to be simply a list of hosts (IP addresses) that have the extraction web \gls{api} running and awaiting for extraction requests.\\
 \indent Next each extraction \gls{api} instance is responsible for handling a session of some web crawler instance and waits for it to return data so the extraction API instance  can give it back to the extraction manager.
 
 \clearpage
@@ -178,7 +178,7 @@ provide a web \gls{api} in order to access all the algorithms and metrics calcul
     \item The \gls{api} must be able to calculate strongly and weakly connected components;
     \item The \gls{api} must be able to calculate the clustering coefficient for a given network;
     \item The \gls{api} must be able to calculate the average neighbor degree;
-    \item The \gls{api} must be able to calculate centrality measures, these include:
+    \item The \gls{api} must be able to calculate centrality measures, including:
     \begin{enumerate}
         \item Degree centrality;
         \item Closeness centrality;

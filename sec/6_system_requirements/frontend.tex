@@ -9,7 +9,7 @@
 The Front-end is actually where the majority of the requirements work is, since we need to go into detail of how the user will interact with the tool, we must decide how those interactions will be drawn so that the tool can actually be what it was meant to, also bear in mind that these represent the tool requirements, what the user actually will able to see.
 
 \subsection{Requirements Prioritization}
-For simplifying the prioritization process we will use the \textbf{MoSCoW} method \citep{clegg1994case} that is a simple method to define what requirements are more important for the system overall functionality, allowing us to focus on the very essential requirements for getting a functional product \footnote{In this section we will tend to user some terms often find in requirements engineering that may seem a bit off topic, still we find that this is the more objective way for describing our prioritization method}.\\
+For simplifying the prioritization process we will use the \textbf{MoSCoW} method \citep{clegg1994case} that is a simple method to define what requirements are more important for the system overall functionality, allowing us to focus on the very essential requirements for getting a functional product \footnote{In this section we will tend to use some terms often find in requirements engineering that may seem a bit off topic, still we find that this is the more objective way for describing our prioritization method}.\\
 \indent Next we present the MoSCoW method as it is defined in requirements engineering.
 
 \begin{itemize}
@@ -19,16 +19,15 @@ For simplifying the prioritization process we will use the \textbf{MoSCoW} metho
     \item \textit{\textbf{W}on't} have requirements that are agreed to not be included in the first deliver of a project, this does not exclude the possibility of including them in later stages of the project. \textit{Won't} requirements may be seen as future work.
 \end{itemize}
 
-The requirements will be listed by groups (sections) that aggregate common requirements or features. Each requirement will have a classification according MoSCoW method.
+The requirements will be listed by groups (sections) that aggregate common requirements or features. Each requirement will have a classification according the MoSCoW method.
 
 \subsection{Network configuration and construction}
 
-In this requirements group we present a set of requirements that represent the operations that allow the users to get their network built.
+In this group of requirements we present a set of requirements that represent the operations that allow the users to get their network built.
 
 \begin{enumerate}
-    \item \textbf{[MUST]} The user must be able to generate network for available \glspl{osn};
-    \item \textbf{[MUST]} The user must be able to choose the number of nodes for a certain network and which metrics he wants to compute
-    for that network.
+    \item \textbf{[MUST]} The user must be able to generate a network for available \glspl{osn};
+    \item \textbf{[MUST]} The user must be able to choose the number of nodes for a certain network and which metrics he wants to compute for that network;
     \item \textbf{[MUST]} The user must be able to register available \glspl{osn} accounts in the system;
     \item \textbf{[MUST]} The user must be able to order the build of its network for a given \gls{osn};
     \item \textbf{[MUST]} The system must give feedback on the extraction status;
@@ -69,12 +68,12 @@ These requirements express general behavior of the tool, and some display featur
     information about the community such as \textit{"People that studied at School/University X"} or \textit{"People that live in city Y"};
     \item \textbf{[MUST]} The user must be able to drag and drop the graph to any place on the graph render area;
     \item \textbf{[MUST]} The user must be able to zoom in and zoom out the network so he is able to explore specific parts with more detail;
-    \item \textbf{[MUST]} The user must be to select two nodes at the same time in order to compare them all values should be displayed side by side in order to provide a practical way to compare two individuals at any level;
+    \item \textbf{[MUST]} The user must be able to select two nodes at the same time in order to compare them all values should be displayed side by side in order to provide a practical way to compare two individuals at any level;
     \item \textbf{[SHOULD]} The user should be able to choose activate animations despite these have been deactivated by the system for sake of graph interactions performance ;
     \item \textbf{[SHOULD]} The system should be able to automatically deactivate heavy graph animations if a large graph is being rendered;
     \item \textbf{[COULD]} The user should be able to enable and disable \textit{fisheye distortion} alike effect; % https://bost.ocks.org/mike/fisheye/
     \item \textbf{[WON'T]} The user must be able to perform a \textit{hive plot} \footnote{hive plots define a linear layout for nodes, grouping nodes by type and arranging them along radial axes based on some property of data} of his network;
-    \item \textbf{[WON'T]} Double clicking on a empty zone should perform a smooth zooming effect on that are. %https://bl.ocks.org/mbostock/3828981
+    \item \textbf{[WON'T]} Double clicking on a empty zone should perform a smooth zooming effect on that area. %https://bl.ocks.org/mbostock/3828981
 \end{enumerate}
 
 \subsection{Node interactions}
@@ -129,7 +128,7 @@ The user may select a set of nodes with a selection box, allowing him to perform
 
 \subsection{Statistic analysis}
 
-The system could also provide some statistics on the user's network.
+The system should also provide some statistics on the user's network.
 
 \begin{enumerate}
     \item \textbf{[SHOULD]} The user must be able to visualize geographical network distribution;
@@ -149,7 +148,7 @@ These are other operations that differentiate from the other groups of requireme
 
 \subsection{Specific \glspl{osn} requirements}
 
-As we previously mentioned in Chapter 5, one of the main value propositions of building a \gls{osn} analysis and visualization tool is to offer contextual analysis, specific inferences driven by system awareness regarding the \glspl{osn} that we are analyzing.
+As we previously mentioned in Chapter 5, one of the main value propositions of building an \gls{osn} analysis and visualization tool is to offer contextual analysis, specific inferences driven by system awareness regarding the \glspl{osn} that we are analyzing.
 
 \subsubsection*{Facebook specific requirements}
 
@@ -180,5 +179,5 @@ Below we list requirements that are LinkedIn specific:
 \begin{enumerate}
     \item \textbf{[COULD]} \textbf{Human resources discovery} - As companies struggle to find people with particular skills, it might in some cases be a matter of how to reach certain nodes in the network. The user must be able to find individuals with particular skills on the network but also the \textit{shortest path} to that individual, as well as the point of contact a third individual that is a first degree connection with the target and that could serve as proxy to reach that person;
     \item \textbf{[WON'T]} \textbf{Carrear history} - It could be useful to see a particular career path for a specific user (we could call it a user career diagram);
-    \item \textbf{[WON'T]} \textbf{Carrear development} - Because nowadays people tend to change jobs more frequently, the user could be able tell from the network general behavior, that users' from a certain company tend next to go to some particular companies.
+    \item \textbf{[WON'T]} \textbf{Carrear development} - Because nowadays people tend to change jobs more frequently, the user could be able to tell from the network general behavior, that users from a certain company tend next to go to some particular companies.
 \end{enumerate}
