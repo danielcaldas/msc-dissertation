@@ -117,7 +117,7 @@ Here we see some helper functions where the names are sufficiently explicit in o
 
 \subsection{Network generator}
 
-Network generator is a very purpose oriented piece of software is this architecture. Its only goal is to produce data sets (users) for a given \gls{osn}. This component is implemented in \textit{Node JS} and it uses faker \citep{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for Facebook data generator.
+Network generator is a very purpose-oriented piece of software is this architecture. Its only goal is to produce data sets (users) for a given \gls{osn}. This component is implemented in \textit{Node JS} and it uses faker \citep{fakerjs} in order to generate data for a given data schema. Next we show a simple schema for Facebook data generator.
 
 \lstinputlisting[language=java]{code/fb_schema.js}
 
@@ -193,7 +193,7 @@ In this section we describe two of our main workflows within Socii tool. The fir
 \caption{\label{img:sociisd} In this figure we may observe Socii sequence diagram for building a network.}
 \end{figure}
 
-In the diagram of Figure \ref{img:sociisd}, on may observe what happens since the user requests that a certain \gls{osn} network is built. In the next explanation we will be referring to the workflow steps numbers in the figure.\\
+In the diagram of Figure \ref{img:sociisd}, one may observe what happens since the user requests that a certain \gls{osn} network is built. In the next explanation we will be referring to the workflow steps numbers in the figure.\\
 \indent First the user configures the network choosing the number of nodes for a certain \gls{osn} and what metrics he wants to calculate against the network and then see in the network visualizer area. Then the user presses a button that orders network build (\textbf{1}, \textbf{2}), and waits until all the aggregation operations are performed.\\
 \indent First the service aggregator fetches a set of \textit{N} requested users from the \textbf{socii-generator} (\textbf{2.1}) microservice, then based on the retrieved information it builds the network nodes and links data structure and performs some other minor operations (\textbf{4,5,6}). Once the previous operations are completed a request is made to the \textbf{socii-metrics} microservice in order to collect the metrics for the previous built network. The returned metric values are aggregated with the users, nodes and links within a network data structure (\textbf{8}) and a response is sent to the front-end (\textbf{9}). The front-end only needs to take the nodes and links that the aggregator puts together and delegate the network rendering to the react-d3-graph component (\textbf{10}), and that's it, the user has now available the full network with all the aggregated information (\textbf{11}).
 
