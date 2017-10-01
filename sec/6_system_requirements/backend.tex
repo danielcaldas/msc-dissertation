@@ -1,6 +1,6 @@
 \section{Back-end}
 
-As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data miner}. We will write the requirements for each one of the components. We will not prioritize these requirements (as we will do in the \hyperref[sec:frontend]{next section for the Front-end} requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
+As seen is Figure \ref{img:architectureprop}, our Back-end is essentially composed by two parts: \textbf{web crawlers/extraction modules}; \textbf{extraction manager} and the \textbf{data processing} component. We will write the requirements for each one of the components. We will not prioritize these requirements (as we will do in the \hyperref[sec:frontend]{next section for the Front-end} requirements) because \textbf{all listed requirements are essential for the overall system usefulness}.
 
 \subsection{Web crawlers}
 
@@ -14,7 +14,7 @@ Each web crawler (or extraction module) must fulfill common requirements that ar
     exceptions due to privacy limitations;
     \item Web crawlers must be able to perform user extraction with second order depth, from the user entry point perspective (this means that we want to extract user's friends and friends of friends information);
     \item Extraction modules should provide a global extraction method where extraction parameters can be passed from the outside reducing or amplifying the scope of extraction as specified (e.g. under given circumstances we may only need to extract the friends' list or the basic information like name, city and birth date);
-    \item Extraction modules must be available to the data miner through a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible through a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
+    \item Extraction modules must be available to the extraction manager through a web \gls{api} in order to allow remote and distributed extraction. The web \gls{api} must wrap all the different supported \glspl{osn} being each one accessible through a different path within the same web \gls{api}. The extraction web \gls{api} required specifications are presented next:
     \begin{itemize}
         \item \textbf{GET /api/v1/extraction/\{osn\}} - should return a confirmation message signalizing that \gls{api} is up and ready for receiving requests;
         \item \textbf{GET /api/v1/extraction/\{osn\}/\{user\_id\}} - should perform full extraction of the user with the \textit{user\_id} in the \textit{osn} ;
@@ -50,10 +50,10 @@ Being listed above the requirements for each component we will now draw the spec
 
 \clearpage
 
-\subsection{Data miner}
-\label{sec:dataminer}
+\subsection{Data processing}
+\label{sec:dataprocessing}
 
-The data miner simply assures some data treatment before storing it on the database, that said there is a very narrow requirements list for this component:
+The data processing component simply assures some data treatment before storing it on the database, that said there is a very narrow requirements list for this component:
 
 \begin{enumerate}
 \item Receive extraction data and normalize the fields that may need some treatment giving as result a normalized data structure;
@@ -63,7 +63,7 @@ The data miner simply assures some data treatment before storing it on the datab
 
 \subsubsection{Data schemas}
 
-Defining data schemas in earlier stages of system specifications will allow us to develop the Front-end and the Back-end simultaneously, we must for that consider that the only source of true when it comes to data structures is a well agreed contract between both parts. The data miner will assure that the next presented schemas are stored in the database. For convenience reasons we will describe the data structures with a JSON like notation.
+Defining data schemas in earlier stages of system specifications will allow us to develop the Front-end and the Back-end simultaneously, we must for that consider that the only source of true when it comes to data structures is a well agreed contract between both parts. The data processing will assure that the next presented schemas are stored in the database. For convenience reasons we will describe the data structures with a JSON like notation.
 
 \subsubsection{Facebook data structure}
 \begin{verbatim}
