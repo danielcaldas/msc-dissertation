@@ -1,5 +1,5 @@
-In this Chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that best suite our needs, we will then present our technological choices based on this first proof of concept.\\
-\indent In the next parts of the Chapter, we will detail more on each component of our system from the extraction component to the front-end of Socii. We will also present at the end of the Chapter some of the main workflows within Socii and how all the components interact between them in order to produce a certain outcome.
+In this chapter we will get a closer look to the steps we took towards Socii implementation. First we will present a small proof of concept as mean for validation of our architectural main workflow (get the network rendered with OSN data), and at the same time experimenting with some technologies that we think that best suite our needs, we will then present our technological choices based on this first proof of concept.\\
+\indent In the next parts of the chapter, we will detail more on each component of our system from the extraction component to the front-end of Socii. We will also present at the end of the chapter some of the main workflows within Socii and how all the components interact between them in order to produce a certain outcome.
 
 %% ---------------------------------------------- Implementation first steps
 \section{Implementation first steps}
@@ -126,7 +126,7 @@ We also add some threshold restriction to some values in order to not produce ex
 Given a data model and a set of restrictions we generate sets of contextualized data for a given \gls{osn} (in the previous examples, for Facebook).
 
 \subsection{Network metrics}
-As we mentioned already in this Chapter (Section 7.2) we use networkx \citep{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
+As we mentioned already in this chapter (Section 7.2) we use networkx \citep{hagberg2013networkx} to perform metrics calculations such as centrality measures (betweenness, degree, eigenvector etc.), node rank or clustering against a network that is fed into this API. This micro service is very simple and could practically be seen as a wrapper to networkx methods. In the API we made available an endpoint \textbf{/metrics} that is available to receive metrics requests. Below a sample payload that the \textbf{/metrics} endpoint is expecting in order to calculate metrics.
 
 \lstinputlisting[language=java]{code/metrics_payload.js}
 
