@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/latex
+#Created by https://www.gitignore.io/api/latex
 original
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
@@ -219,3 +219,4 @@ TSWLatexianTemp*
 *-tags.tex
 
 # End of https://www.gitignore.io/api/latex
+.DS_STORE
